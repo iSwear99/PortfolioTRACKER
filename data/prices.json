@@ -1,14 +1,14 @@
 {
  "AMZN": {
-  "px": 242.67,
+  "px": 247.26,
   "q": "AMZN"
  },
  "ASML": {
-  "px": 1769.3199,
+  "px": 1746.35,
   "q": "ASML"
  },
  "BABA": {
-  "px": 96.14,
+  "px": 114.96,
   "q": "BABA"
  },
  "BOSS": {
@@ -17,7 +17,7 @@
   "exchange": "XETR"
  },
  "BYDDY": {
-  "px": 10.14,
+  "px": 11.31,
   "q": "BYDDY"
  },
  "CSPX": {
@@ -26,11 +26,11 @@
   "exchange": "LSE"
  },
  "DIDIY": {
-  "px": 3.48,
+  "px": 3.53,
   "q": "DIDIY"
  },
  "EEFT": {
-  "px": 77.18,
+  "px": 81.31,
   "q": "EEFT"
  },
  "EVO": {
