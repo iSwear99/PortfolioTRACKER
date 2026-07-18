@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Portfolio — IBKR + Patria</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+:root{
+  --ink:#0A0D13; --panel:#141A24; --panel2:#0F141C; --line:#212A38; --line2:#2C384A;
+  --tx:#E6EAF2; --mut:#7C8AA0; --dim:#4E5A6E;
+  --gold:#E0B15E; --jade:#56B389; --coral:#E27065; --blue:#5B8DD9;
+  --mono:'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,monospace;
+  --disp:'Space Grotesk',system-ui,sans-serif;
+  --body:'Inter',system-ui,-apple-system,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--ink);color:var(--tx);font-family:var(--body);
+  font-size:14px;line-height:1.5;-webkit-font-smoothing:antialiased;
+  background-image:radial-gradient(1200px 600px at 80% -10%,rgba(224,177,94,.06),transparent 60%);}
+.wrap{max-width:1240px;margin:0 auto;padding:28px 22px 80px}
+.num{font-family:var(--mono);font-variant-numeric:tabular-nums;font-feature-settings:"tnum" 1}
+.pos{color:var(--jade)} .neg{color:var(--coral)}
+a{color:inherit}
+/* header */
+header{display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:16px;
+  padding-bottom:22px;border-bottom:1px solid var(--line);margin-bottom:26px}
+.brandrow{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap}
+h1{font-family:var(--disp);font-weight:600;font-size:26px;letter-spacing:-.02em;margin:0}
+.asof{color:var(--mut);font-size:12.5px;font-family:var(--mono)}
+.badges{display:flex;gap:8px;margin-top:10px}
+.badge{font-size:11px;font-family:var(--mono);letter-spacing:.04em;color:var(--mut);
+  border:1px solid var(--line2);border-radius:999px;padding:3px 11px;text-transform:uppercase}
+.badge b{color:var(--gold);font-weight:600}
+/* kpi */
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:14px}
+.kpi{background:linear-gradient(180deg,var(--panel),var(--panel2));border:1px solid var(--line);
+  border-radius:14px;padding:18px 18px 16px;position:relative;overflow:hidden}
+.kpi .lab{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--mut)}
+.kpi .val{font-family:var(--mono);font-size:27px;font-weight:600;margin-top:9px;letter-spacing:-.01em}
+.kpi .sub{font-family:var(--mono);font-size:12.5px;margin-top:5px;color:var(--mut)}
+.kpi.hero{grid-column:span 1;border-color:rgba(224,177,94,.35)}
+.kpi.hero:before{content:"";position:absolute;inset:0;background:radial-gradient(500px 140px at 0% 0%,rgba(224,177,94,.10),transparent 70%);pointer-events:none}
+/* period toggle */
+.periods{display:flex;gap:6px;margin:18px 0 26px;flex-wrap:wrap;align-items:center}
+.seg{display:inline-flex;background:var(--panel2);border:1px solid var(--line);border-radius:10px;padding:4px}
+.seg button{font-family:var(--mono);font-size:12.5px;color:var(--mut);background:none;border:0;
+  padding:7px 15px;border-radius:7px;cursor:pointer;transition:.15s;letter-spacing:.02em}
+.seg button.on{background:var(--gold);color:#1a1305;font-weight:600}
+.seg button:not(.on):hover{color:var(--tx)}
+.pnote{font-size:12px;color:var(--dim);font-family:var(--mono)}
+/* layout */
+.grid{display:grid;gap:16px}
+.g2{grid-template-columns:1fr 1fr}
+.g3{grid-template-columns:1.4fr 1fr 1fr}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:18px 20px}
+.card h2{font-family:var(--disp);font-weight:600;font-size:14px;letter-spacing:.02em;margin:0 0 4px;
+  display:flex;align-items:center;gap:9px}
+.card h2 .n{font-family:var(--mono);font-size:11px;color:var(--gold);border:1px solid var(--line2);
+  border-radius:5px;padding:1px 7px}
+.card .cap{color:var(--mut);font-size:12px;margin-bottom:14px}
+.sec{margin-top:30px}
+.sechead{display:flex;align-items:baseline;gap:12px;margin:0 0 14px}
+.sechead h3{font-family:var(--disp);font-weight:600;font-size:17px;margin:0;letter-spacing:-.01em}
+.sechead .k{font-family:var(--mono);font-size:11px;color:var(--dim)}
+/* table */
+table{width:100%;border-collapse:collapse;font-size:13px}
+th{font-family:var(--mono);font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;
+  color:var(--mut);text-align:right;padding:9px 10px;border-bottom:1px solid var(--line2);
+  cursor:pointer;user-select:none;white-space:nowrap}
+th:first-child,td:first-child{text-align:left}
+th.l{text-align:left} th .ar{opacity:.4;font-size:9px}
+td{padding:10px;border-bottom:1px solid rgba(33,42,56,.6);text-align:right;white-space:nowrap}
+tbody tr{transition:background .12s}
+tbody tr.click{cursor:pointer}
+tbody tr.click:hover{background:rgba(224,177,94,.05)}
+.tk{font-family:var(--disp);font-weight:600;font-size:13.5px}
+.brk{font-family:var(--mono);font-size:10.5px;color:var(--mut);border:1px solid var(--line2);
+  border-radius:4px;padding:1px 6px;margin-left:8px}
+.brk.ib{color:var(--blue)} .brk.pt{color:var(--gold)}
+.chip{font-family:var(--mono);font-size:10px;padding:1px 6px;border-radius:4px}
+.chip.buy{color:var(--jade);background:rgba(86,179,137,.12)}
+.chip.sell{color:var(--coral);background:rgba(226,112,106,.12)}
+.chip.adj{color:var(--mut);background:rgba(124,138,160,.12)}
+.exp{background:var(--panel2)}
+.exp td{padding:0}
+.expbox{padding:6px 10px 12px}
+.expbox table{font-size:12px}
+.expbox th{padding:6px 8px}
+.expbox td{padding:6px 8px}
+.bar{height:6px;border-radius:3px;background:var(--line2);overflow:hidden;min-width:54px;display:inline-block;vertical-align:middle}
+.bar>i{display:block;height:100%;border-radius:3px}
+/* filters */
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px}
+.filters input,.filters select{font-family:var(--mono);font-size:12.5px;background:var(--panel2);
+  border:1px solid var(--line2);color:var(--tx);border-radius:8px;padding:7px 11px;outline:none}
+.filters input:focus,.filters select:focus{border-color:var(--gold)}
+.mut{color:var(--mut)} .tny{font-size:11px}
+.scroll{max-height:520px;overflow:auto}
+.scroll::-webkit-scrollbar{width:9px;height:9px}
+.scroll::-webkit-scrollbar-thumb{background:var(--line2);border-radius:6px}
+.legend{display:flex;flex-direction:column;gap:9px;justify-content:center}
+.legend .li{display:flex;align-items:center;gap:9px;font-size:12.5px}
+.legend .sw{width:11px;height:11px;border-radius:3px;flex:none}
+.legend .lv{margin-left:auto;font-family:var(--mono);color:var(--mut)}
+.foot{margin-top:40px;padding-top:18px;border-top:1px solid var(--line);color:var(--dim);
+  font-size:11.5px;font-family:var(--mono);line-height:1.7}
+.chwrap{position:relative;height:230px}
+.chwrap.sm{height:200px}
+@media(max-width:900px){.kpis{grid-template-columns:1fr 1fr}.g2,.g3{grid-template-columns:1fr}
+  .hidesm{display:none}.wrap{padding:20px 14px 60px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <div>
+    <div class="brandrow"><h1>Portfolio</h1><span class="asof" id="asof"></span></div>
+    <div class="badges">
+      <span class="badge">IBKR <b>U13354925</b></span>
+      <span class="badge">Patria <b>22636233</b></span>
+      <span class="badge">báze <b>CZK</b></span>
+    </div>
+  </div>
+</header>
+
+<div class="kpis">
+  <div class="kpi hero"><div class="lab">Hodnota portfolia (NAV)</div><div class="val num" id="k_nav"></div><div class="sub">akcie <span id="k_mv"></span> · cash <span id="k_cash"></span></div></div>
+  <div class="kpi"><div class="lab">Celkový zisk</div><div class="val num" id="k_gain"></div><div class="sub num" id="k_gainpct"></div></div>
+  <div class="kpi"><div class="lab">IRR p.a. (XIRR)</div><div class="val num pos" id="k_irr"></div><div class="sub">money-weighted, od 02/2022</div></div>
+  <div class="kpi"><div class="lab">Vložený kapitál</div><div class="val num" id="k_dep"></div><div class="sub">čistý (vklady − výběry)</div></div>
+</div>
+
+<div class="periods">
+  <div class="seg" id="seg">
+    <button data-p="day">Day</button>
+    <button data-p="mtd">MTD</button>
+    <button data-p="ytd">YTD</button>
+    <button data-p="all" class="on">All-time</button>
+  </div>
+  <span class="pnote" id="pnote"></span>
+</div>
+
+<div class="grid g3">
+  <div class="card">
+    <h2><span class="n">P/L</span>Rozklad zisku</h2>
+    <div class="cap">Od čeho se odvíjí +748 tis. Kč (historické kurzy)</div>
+    <div class="chwrap"><canvas id="wf"></canvas></div>
+  </div>
+  <div class="card">
+    <h2><span class="n">MIX</span>Alokace dle brokera</h2>
+    <div class="cap">Podíl na NAV</div>
+    <div class="chwrap sm"><canvas id="dBroker"></canvas></div>
+  </div>
+  <div class="card">
+    <h2><span class="n">FX</span>Akcie dle měny</h2>
+    <div class="cap">Tržní hodnota v CZK</div>
+    <div class="chwrap sm"><canvas id="dCcy"></canvas></div>
+  </div>
+</div>
+
+<div class="sec">
+  <div class="sechead"><h3>Otevřené pozice</h3><span class="k" id="poscount"></span></div>
+  <div class="card" style="padding:6px 8px">
+  <div class="scroll">
+  <table id="posT">
+    <thead><tr>
+      <th class="l" data-s="ticker">Ticker</th>
+      <th data-s="qty">Ks</th>
+      <th data-s="avg">Ø nákup</th>
+      <th data-s="price">Cena</th>
+      <th data-s="mv">Hodnota CZK</th>
+      <th data-s="pl">Nereal. P/L</th>
+      <th data-s="plpct">P/L %</th>
+      <th class="hidesm">Váha</th>
+    </tr></thead>
+    <tbody id="posB"></tbody>
+  </table>
+  </div>
+  </div>
+</div>
+
+<div class="grid g2 sec">
+  <div class="card">
+    <h2><span class="n">CASH</span>Finanční zůstatky</h2>
+    <div class="cap">Hotovost dle brokera a měny</div>
+    <table id="cashT"><thead><tr><th class="l">Broker</th><th class="l">Měna</th><th>Zůstatek</th><th>CZK</th></tr></thead><tbody id="cashB"></tbody></table>
+  </div>
+  <div class="card">
+    <h2><span class="n">FEE</span>Poplatky brokerům</h2>
+    <div class="cap">Kumulativně za celou historii</div>
+    <table id="feeT"><tbody id="feeB"></tbody></table>
+  </div>
+</div>
+
+<div class="sec">
+  <div class="sechead"><h3>Historie obchodů</h3><span class="k" id="trcount"></span></div>
+  <div class="filters">
+    <input id="fq" placeholder="Hledat ticker…" style="min-width:160px"/>
+    <select id="fbroker"><option value="">Všichni brokeři</option><option>IBKR</option><option>Patria</option></select>
+    <select id="ftype"><option value="">Nákup i prodej</option><option value="BUY">Jen nákupy</option><option value="SELL">Jen prodeje</option></select>
+  </div>
+  <div class="card" style="padding:6px 8px">
+  <div class="scroll">
+  <table id="trT">
+    <thead><tr>
+      <th class="l" data-s="date">Datum</th>
+      <th class="l" data-s="ticker">Ticker</th>
+      <th data-s="side">Směr</th>
+      <th data-s="qty">Ks</th>
+      <th data-s="price">Cena</th>
+      <th data-s="fee">Poplatek</th>
+      <th data-s="rplczk">Real. P/L CZK</th>
+    </tr></thead>
+    <tbody id="trB"></tbody>
+  </table>
+  </div>
+  </div>
+</div>
+
+<div class="sec">
+  <div class="sechead"><h3>Ostatní pohyby</h3><span class="k">dividendy · daně · úroky · poplatky</span></div>
+  <div class="grid g2">
+    <div class="card">
+      <h2>Souhrn dle typu</h2>
+      <div class="cap">Historické kurzy, CZK</div>
+      <table id="oaggT"><tbody id="oaggB"></tbody></table>
+    </div>
+    <div class="card" style="padding:6px 8px">
+      <div class="scroll" style="max-height:340px">
+      <table id="oT"><thead><tr><th class="l">Datum</th><th class="l">Typ</th><th class="l">Měna</th><th>Částka</th><th>CZK</th></tr></thead><tbody id="oB"></tbody></table>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="foot" id="foot"></div>
+</div>
+
+<script>
+const D = __DATA__;
+const CZK = n => (n<0?'−':'') + Math.abs(Math.round(n)).toLocaleString('cs-CZ') + ' Kč';
+const SIGN = n => (n>0?'+':n<0?'−':'') + Math.abs(Math.round(n)).toLocaleString('cs-CZ');
+const cls = n => n>0?'pos':n<0?'neg':'mut';
+const fmt = (n,d=2) => n.toLocaleString('cs-CZ',{minimumFractionDigits:d,maximumFractionDigits:d});
+const GOLD='#E0B15E',JADE='#56B389',CORAL='#E27065',BLUE='#5B8DD9',MUT='#7C8AA0';
+const PAL=['#E0B15E','#5B8DD9','#56B389','#C77DBB','#E27065','#6FB6C1','#B7A46A','#8A7FD1'];
+
+// KPIs
+const ts=D.meta.asof.replace('T',' ');document.getElementById('asof').textContent='● '+ts.slice(8,10)+'.'+ts.slice(5,7)+'.'+ts.slice(0,4)+' '+ts.slice(11,16);
+document.getElementById('k_nav').textContent = CZK(D.meta.nav);
+document.getElementById('k_mv').textContent = CZK(D.meta.mv);
+document.getElementById('k_cash').textContent = CZK(D.meta.cash);
+const kg=document.getElementById('k_gain'); kg.textContent=SIGN(D.meta.gain)+' Kč'; kg.className='val num '+cls(D.meta.gain);
+const kgp=document.getElementById('k_gainpct'); kgp.textContent=(D.meta.gainpct>0?'+':'')+fmt(D.meta.gainpct,1)+' % na vložený kapitál'; kgp.className='sub num '+cls(D.meta.gain);
+document.getElementById('k_irr').textContent=(D.meta.irr>0?'+':'')+fmt(D.meta.irr,1)+' %';
+document.getElementById('k_dep').textContent=CZK(D.meta.deposits);
+
+// period toggle — Day/MTD/YTD z historie NAV, All-time z toků
+function periodChange(p){
+  const H=D.history||[]; if(H.length<1)return null;
+  const cur=H[H.length-1]; const cd=cur.ts.slice(0,10);
+  let ref=null;
+  if(p==='day'){for(let i=H.length-1;i>=0;i--){if(H[i].ts.slice(0,10)<cd){ref=H[i];break;}}}
+  if(p==='mtd'){const m=cd.slice(0,7);for(let i=H.length-1;i>=0;i--){if(H[i].ts.slice(0,7)<m){ref=H[i];break;}}}
+  if(p==='ytd'){const y=cd.slice(0,4);for(let i=H.length-1;i>=0;i--){if(H[i].ts.slice(0,4)<y){ref=H[i];break;}}}
+  if(!ref)return null;
+  // očištěno o vklady/výběry mezi ref a teď
+  const flows=(D.flows||[]).filter(f=>f.date>ref.ts.slice(0,10)&&f.date<=cd).reduce((a,f)=>a+f.amt,0);
+  const chg=cur.nav-ref.nav-flows;
+  return {chg,pct:chg/(ref.nav||1)*100,since:ref.ts.slice(0,10)};
+}
+const kgEl=document.getElementById('k_gain'),kgpEl=document.getElementById('k_gainpct');
+const kgLab=kgEl.parentElement.querySelector('.lab');
+function setPeriod(p){
+  const pn=document.getElementById('pnote');
+  if(p==='all'){
+    kgLab.textContent='Celkový zisk';
+    kgEl.textContent=SIGN(D.meta.gain)+' Kč'; kgEl.className='val num '+cls(D.meta.gain);
+    kgpEl.textContent=(D.meta.gainpct>0?'+':'')+fmt(D.meta.gainpct,1)+' % na vložený kapitál'; kgpEl.className='sub num '+cls(D.meta.gain);
+    pn.textContent='Od založení účtů (02/2022). IRR '+(D.meta.irr>0?'+':'')+fmt(D.meta.irr,1)+' % p.a.';
+    return;
+  }
+  const r=periodChange(p);
+  const names={day:'Denní změna',mtd:'Od začátku měsíce',ytd:'Od začátku roku'};
+  kgLab.textContent=names[p];
+  if(!r){kgEl.textContent='—';kgEl.className='val num mut';
+    kgpEl.textContent='zatím málo historie';kgpEl.className='sub num mut';
+    pn.textContent='Hodnota se objeví, jakmile historie NAV pokryje zvolené období (plní se každou aktualizací).';return;}
+  kgEl.textContent=SIGN(r.chg)+' Kč'; kgEl.className='val num '+cls(r.chg);
+  kgpEl.textContent=(r.pct>0?'+':'')+fmt(r.pct,2)+' %'; kgpEl.className='sub num '+cls(r.chg);
+  pn.textContent='vs '+r.since.split('-').reverse().join('.')+', očištěno o vklady a výběry';
+}
+setPeriod('all');
+document.getElementById('seg').addEventListener('click',e=>{
+  const b=e.target.closest('button'); if(!b)return;
+  [...e.currentTarget.children].forEach(x=>x.classList.remove('on')); b.classList.add('on');
+  setPeriod(b.dataset.p);
+});
+
+// waterfall
+(()=>{
+  const items=D.breakdown; let run=0; const bars=[],labels=[],colors=[];
+  items.forEach(([l,v])=>{ bars.push([run,run+v]); labels.push(l); colors.push(v>=0?JADE:CORAL); run+=v; });
+  bars.push([0,run]); labels.push('Celkem'); colors.push(GOLD);
+  new Chart(document.getElementById('wf'),{type:'bar',
+    data:{labels:labels.map(l=>l.length>20?l.slice(0,19)+'…':l),datasets:[{data:bars,backgroundColor:colors,borderRadius:3,barPercentage:.72}]},
+    options:{indexAxis:'y',responsive:true,maintainAspectRatio:false,
+      plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>{const v=items[c.dataIndex]?items[c.dataIndex][1]:run;return SIGN(v)+' Kč';}}}},
+      scales:{x:{grid:{color:'rgba(44,56,74,.5)'},ticks:{color:MUT,font:{family:'JetBrains Mono',size:10},callback:v=>(v/1000)+'k'}},
+              y:{grid:{display:false},ticks:{color:'#C3CCDA',font:{family:'Inter',size:11}}}}}});
+})();
+
+// donuts
+function donut(id,rows){
+  new Chart(document.getElementById(id),{type:'doughnut',
+    data:{labels:rows.map(r=>r[0]),datasets:[{data:rows.map(r=>r[1]),backgroundColor:PAL,borderColor:'#141A24',borderWidth:2}]},
+    options:{responsive:true,maintainAspectRatio:false,cutout:'62%',
+      plugins:{legend:{position:'right',labels:{color:'#C3CCDA',font:{family:'Inter',size:12},boxWidth:11,boxHeight:11,padding:10,
+        generateLabels:ch=>{const d=ch.data;const tot=d.datasets[0].data.reduce((a,b)=>a+b,0);
+          return d.labels.map((l,i)=>({text:l+'  '+(d.datasets[0].data[i]/tot*100).toFixed(0)+'%',fillStyle:PAL[i],strokeStyle:PAL[i],index:i}));}}},
+        tooltip:{callbacks:{label:c=>c.label+': '+CZK(c.raw)}}}}});
+}
+const byBroker={}; D.positions.forEach(p=>byBroker[p.broker]=(byBroker[p.broker]||0)+p.mv);
+byBroker['Hotovost']=D.meta.cash;
+donut('dBroker',Object.entries(byBroker));
+const byCcy={}; D.positions.forEach(p=>byCcy[p.ccy]=(byCcy[p.ccy]||0)+p.mv);
+donut('dCcy',Object.entries(byCcy).sort((a,b)=>b[1]-a[1]));
+
+// positions table
+let posSort={k:'mv',dir:-1};
+const posB=document.getElementById('posB');
+document.getElementById('poscount').textContent=D.positions.length+' titulů · '+CZK(D.meta.mv);
+function renderPos(){
+  const arr=[...D.positions].sort((a,b)=>(a[posSort.k]>b[posSort.k]?1:-1)*posSort.dir);
+  posB.innerHTML='';
+  arr.forEach((p,i)=>{
+    const w=p.mv/D.meta.mv*100;
+    const tr=document.createElement('tr'); tr.className='click';
+    tr.innerHTML=`<td><span class="tk">${p.ticker}</span><span class="brk ${p.broker==='IBKR'?'ib':'pt'}">${p.broker}</span></td>
+      <td class="num">${fmt(p.qty,0)}</td>
+      <td class="num mut">${fmt(p.avg,2)} ${p.ccy}</td>
+      <td class="num">${fmt(p.price,2)} ${p.ccy}</td>
+      <td class="num">${CZK(p.mv)}</td>
+      <td class="num ${cls(p.pl)}">${SIGN(p.pl)}</td>
+      <td class="num ${cls(p.pl)}">${(p.plpct>0?'+':'')+fmt(p.plpct,1)} %</td>
+      <td class="hidesm"><span class="bar"><i style="width:${Math.min(w*3,100)}%;background:${p.broker==='IBKR'?BLUE:GOLD}"></i></span> <span class="num tny mut">${fmt(w,1)}%</span></td>`;
+    const ex=document.createElement('tr'); ex.className='exp'; ex.style.display='none';
+    const trades=D.trades.filter(t=>t.ticker===p.ticker && t.broker===p.broker);
+    let rows=trades.map(t=>{const side=t.typ==='Adj'?'ADJ':(t.qty>0?'BUY':'SELL');
+      return `<tr><td class="l num mut">${t.date.split('-').reverse().join('.')}</td>
+        <td><span class="chip ${side.toLowerCase()}">${side}</span></td>
+        <td class="num">${fmt(Math.abs(t.qty),0)}</td>
+        <td class="num">${fmt(t.price,2)} ${t.ccy}</td>
+        <td class="num mut">${fmt(t.fee,2)}</td></tr>`;}).join('');
+    ex.innerHTML=`<td colspan="8"><div class="expbox"><table><thead><tr><th class="l">Datum</th><th class="l">Směr</th><th>Ks</th><th>Cena</th><th>Poplatek</th></tr></thead><tbody>${rows||'<tr><td class="mut">Žádné obchody</td></tr>'}</tbody></table></div></td>`;
+    tr.addEventListener('click',()=>{ex.style.display=ex.style.display==='none'?'':'none';});
+    posB.appendChild(tr); posB.appendChild(ex);
+  });
+}
+document.querySelectorAll('#posT th[data-s]').forEach(th=>th.addEventListener('click',()=>{
+  const k=th.dataset.s; posSort.dir=posSort.k===k?-posSort.dir:-1; posSort.k=k; renderPos();
+}));
+renderPos();
+
+// cash
+const cashB=document.getElementById('cashB');
+D.cash.forEach(c=>{cashB.innerHTML+=`<tr><td class="l"><span class="brk ${c.broker==='IBKR'?'ib':'pt'}">${c.broker}</span></td>
+  <td class="l num">${c.ccy}</td><td class="num">${fmt(c.bal,2)}</td><td class="num">${CZK(c.czk)}</td></tr>`;});
+cashB.innerHTML+=`<tr><td class="l mut">Σ</td><td></td><td></td><td class="num" style="color:var(--gold)">${CZK(D.meta.cash)}</td></tr>`;
+
+// fees
+const feeB=document.getElementById('feeB'); let feeSum=0;
+D.fees.forEach(([l,v])=>{feeSum+=v;feeB.innerHTML+=`<tr><td class="l">${l}</td><td class="num ${cls(v)}">${SIGN(v)} Kč</td></tr>`;});
+feeB.innerHTML+=`<tr><td class="l" style="font-weight:600">Celkem</td><td class="num neg" style="font-weight:600">${SIGN(feeSum)} Kč</td></tr>`;
+
+// trades
+let trSort={k:'date',dir:-1};
+const trB=document.getElementById('trB');
+document.getElementById('trcount').textContent=D.trades.length+' záznamů';
+function renderTr(){
+  const q=document.getElementById('fq').value.trim().toUpperCase();
+  const fb=document.getElementById('fbroker').value, ft=document.getElementById('ftype').value;
+  let arr=D.trades.filter(t=>{
+    if(q && !t.ticker.toUpperCase().includes(q))return false;
+    if(fb && t.broker!==fb)return false;
+    const side=t.typ==='Adj'?'ADJ':(t.qty>0?'BUY':'SELL');
+    if(ft && side!==ft)return false; return true;});
+  arr.sort((a,b)=>{let x=a[trSort.k],y=b[trSort.k];
+    if(trSort.k==='side'){x=a.qty;y=b.qty;} return (x>y?1:x<y?-1:0)*trSort.dir;});
+  trB.innerHTML=arr.map(t=>{const side=t.typ==='Adj'?'ADJ':(t.qty>0?'BUY':'SELL');
+    return `<tr><td class="l num mut">${t.date.split('-').reverse().join('.')}</td>
+      <td class="l"><span class="tk" style="font-size:12.5px">${t.ticker}</span><span class="brk ${t.broker==='IBKR'?'ib':'pt'}">${t.broker}</span></td>
+      <td><span class="chip ${side.toLowerCase()}">${side}</span></td>
+      <td class="num">${fmt(Math.abs(t.qty),0)}</td>
+      <td class="num">${fmt(t.price,2)} ${t.ccy}</td>
+      <td class="num mut">${fmt(t.fee,2)}</td>
+      <td class="num ${cls(t.rplczk)}">${t.rplczk?SIGN(t.rplczk):'·'}</td></tr>`;}).join('');
+  document.getElementById('trcount').textContent=arr.length+' / '+D.trades.length+' záznamů';
+}
+document.querySelectorAll('#trT th[data-s]').forEach(th=>th.addEventListener('click',()=>{
+  const k=th.dataset.s; trSort.dir=trSort.k===k?-trSort.dir:-1; trSort.k=k; renderTr();}));
+['fq','fbroker','ftype'].forEach(id=>document.getElementById(id).addEventListener('input',renderTr));
+renderTr();
+
+// others
+const agg={}; D.others.forEach(o=>agg[o.typ]=(agg[o.typ]||0)+o.czk);
+const oaggB=document.getElementById('oaggB');
+Object.entries(agg).sort((a,b)=>Math.abs(b[1])-Math.abs(a[1])).forEach(([k,v])=>{
+  oaggB.innerHTML+=`<tr><td class="l">${k}</td><td class="num ${cls(v)}">${SIGN(v)} Kč</td></tr>`;});
+const osum=Object.values(agg).reduce((a,b)=>a+b,0);
+oaggB.innerHTML+=`<tr><td class="l" style="font-weight:600">Σ</td><td class="num ${cls(osum)}" style="font-weight:600">${SIGN(osum)} Kč</td></tr>`;
+const oB=document.getElementById('oB');
+oB.innerHTML=[...D.others].sort((a,b)=>a.date<b.date?1:-1).map(o=>
+  `<tr><td class="l num mut">${o.date.split('-').reverse().join('.')}</td><td class="l tny">${o.typ}</td>
+   <td class="l num">${o.ccy}</td><td class="num ${cls(o.amt)}">${fmt(o.amt,2)}</td>
+   <td class="num ${cls(o.czk)}">${SIGN(o.czk)}</td></tr>`).join('');
+
+document.getElementById('foot').innerHTML=
+  'Aktualizováno '+D.meta.asof.replace('T',' ')+' · '+(D.meta.price_note||'')+' · '+(D.meta.fx_src||'')+'.<br>'+
+  'Ceny: Twelve Data (free tier, zpožděná data). Kurzy: ČNB denní fixing. Automatická aktualizace 2× denně (GitHub Actions).<br>'+
+  'Historické CZK rozklady metodou skutečných měnových konverzí; realizovaný P/L Patria metodou průměrných nákladů.';
+</script>
+</body>
+</html>
