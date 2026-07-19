@@ -41,6 +41,12 @@ def jsave(path, obj, indent=1):
 
 EPS = 0.01
 
+# Sané pásmo Ø kurzu (CZK za jednotku měny) — ochrana proti degeneraci CZK báze
+# na mikrozůstatcích (viz README_DIAGNOSTIKA: IBKR EUR Ø 74, Patria USD Ø 24,9).
+BANDS = {'USD': (15, 30), 'EUR': (20, 30), 'GBP': (24, 35),
+         'SEK': (1.5, 3.5), 'DKK': (2.5, 4.5), 'HKD': (2.0, 4.0)}
+MICRO_UNITS = 5.0   # zůstatek pod tolik jednotek měny je nemateriální (fallback + odpis)
+
 def shift(d, n=-3):
     y, m, dd = map(int, d.split('-'))
     return str(date(y, m, dd) + timedelta(days=n))
@@ -70,17 +76,49 @@ def run():
     stk = {}                                  # (broker, ticker) -> {q, czk_cost, ccy_cost}
     fx_realized = collections.defaultdict(float)
     shortfall = collections.defaultdict(float)
+    fx_writeoff = collections.defaultdict(float)   # odpis fantomové báze mikrozůstatků
+
+    def normalize(br, ccy):
+        """Brání degeneraci CZK báze na mikrozůstatcích. Vyčerpaný zůstatek odepíše
+        zbytkovou bázi, mikrozůstatek (< MICRO_UNITS) přecení fallback kurzem a přebytek
+        odepíše do fx_writeoff — tím se zastaví šíření nafouklého Ø kurzu do prodejů
+        a křížových konverzí (kořen chyby BOSS Ø 74 / Patria USD Ø 24,9)."""
+        if ccy == 'CZK': return
+        s = cur.get((br, ccy))
+        if not s: return
+        if s['q'] <= EPS:                              # zůstatek vyčerpán/mikro/záporný
+            if abs(s['czk']) > EPS: fx_writeoff[(br, ccy)] += s['czk']
+            if -EPS < s['q'] < EPS: s['q'] = 0.0
+            s['czk'] = 0.0
+            return
+        if s['q'] < MICRO_UNITS:                       # nemateriální zbytek → fallback
+            target = s['q'] * NOW[ccy]
+            if abs(s['czk'] - target) > EPS:
+                fx_writeoff[(br, ccy)] += s['czk'] - target
+                s['czk'] = target
 
     def rate(br, ccy):
         if ccy == 'CZK': return 1.0
         s = cur.get((br, ccy))
         if not s or s['q'] <= EPS: return NOW[ccy]
-        return s['czk'] / s['q']
+        r = s['czk'] / s['q']
+        lo, hi = BANDS.get(ccy, (None, None))
+        if lo is not None and not (lo <= r <= hi): return NOW[ccy]  # Ø mimo pásmo → fallback
+        return r
 
     def add(br, ccy, amt, czk):
         s = cur.setdefault((br, ccy), {'q': 0.0, 'czk': 0.0})
+        # Materialita přílivu: je-li stávající zůstatek zanedbatelný vůči příchozí
+        # částce (< max(MICRO_UNITS, 1 % amt)), odepiš jeho zbytkovou bázi předem —
+        # jinak nedůvěryhodný Ø kurz mikrozůstatku kontaminuje nový příliv (kořen
+        # Patria USD Ø 24,9: přežívající ~6 USD z 2022 přebíjel čerstvé USD z 2024).
+        if ccy != 'CZK' and amt > EPS and EPS < s['q'] < max(MICRO_UNITS, 0.01 * amt):
+            target = s['q'] * NOW[ccy]
+            fx_writeoff[(br, ccy)] += s['czk'] - target
+            s['czk'] = target
         s['q'] += amt; s['czk'] += czk
         if -EPS < s['q'] < EPS: s['q'] = 0.0; s['czk'] = 0.0
+        normalize(br, ccy)
 
     def consume(br, ccy, amt):
         """Odebere amt jednotek měny, vrátí jejich CZK nákladovou hodnotu."""
@@ -97,6 +135,7 @@ def run():
             s['q'] -= amt
             s['czk'] = 0.0
         if -EPS < s['q'] < EPS: s['q'] = 0.0; s['czk'] = 0.0
+        normalize(br, ccy)
         return czk
 
     for d, prio, kind, pl in ev:
@@ -170,6 +209,10 @@ def run():
     mv = round(sum(pos['qty'] * prices[pos['ticker']]['px'] * NOW[pos['ccy']]
                    for pos in port['positions']))
     cash = round(sum(c['bal'] * NOW[c['ccy']] for c in port['cash']))
+    # Odpis fantomové báze se už projevil ve fx_unreal (snížením czk báze měn),
+    # proto ho v residualu NEODEČÍTÁME (jinak by se počítal dvakrát). fx_wo je jen
+    # informativní ukazatel, kolik degenerované báze engine odepsal.
+    fx_wo = round(sum(fx_writeoff.values()))
     total_pl = mv + cash - port['deposits']
     unreal_hist = mv - basis_hist
     residual = round(total_pl - unreal_hist - real_hist - other_hist
@@ -191,6 +234,8 @@ def run():
         others_hist_czk=other_hist,
         fx_realized_czk={f'{b}|{c}': round(v) for (b, c), v in fx_realized.items()},
         fx_unrealized_cash_czk=fx_unreal,
+        fx_writeoff_czk={f'{b}|{c}': round(v) for (b, c), v in fx_writeoff.items() if abs(v) >= 1},
+        fx_writeoff_total_czk=fx_wo,
         residual_czk=residual,
         currency_ledger={f'{b}|{c}': dict(q=round(s['q'], 2),
                                           czk=round(s['czk'], 2),
@@ -216,7 +261,7 @@ def run():
         warn.append(f'vysoký zbytek rozpadu: {residual:+,} CZK — zkontrolujte úplnost konverzí/položek')
 
     print(f'Ledger OK | real.hist {real_hist:+,} | ostatní {other_hist:+,} | '
-          f'FX {fx_real:+,}/{fx_unreal:+,} | zbytek {residual:+,} CZK')
+          f'FX {fx_real:+,}/{fx_unreal:+,} | odpis reziduí {fx_wo:+,} | zbytek {residual:+,} CZK')
     if warn:
         print('VAROVÁNÍ:'); [print(' -', w) for w in warn]
         sys.exit(2)

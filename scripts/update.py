@@ -2,6 +2,11 @@
 """Aktualizace portfolia: Twelve Data + záloha Yahoo Finance + kurzy ČNB."""
 import json, os, sys, time, urllib.request, urllib.parse
 from datetime import datetime, timezone
+try:
+    from zoneinfo import ZoneInfo
+    PRAGUE = ZoneInfo('Europe/Prague')
+except Exception:  # fallback, kdyby chyběla tzdata
+    PRAGUE = None
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 def p(*a): return os.path.join(ROOT, *a)
@@ -69,7 +74,7 @@ def fetch_prices(seed):
 # ---------- Yahoo Finance záloha ----------
 YAHOO = {'BOSS': ('BOSS.DE', 1), 'P911': ('P911.DE', 1), 'NOV': ('NOV.DE', 1),
          'VOW3': ('VOW3.DE', 1), 'CSPX': ('CSPX.L', 1), 'WIZZ': ('WIZZ.L', 100),
-         'EVO': ('EVO.ST', 1)}
+         'EVO': ('EVO.ST', 1), '4GLD': ('4GLD.DE', 1)}
 
 def fetch_yahoo(prices, failed):
     recovered = []
@@ -130,7 +135,8 @@ def main():
     rec = fetch_yahoo(prices, failed)
 
     positions, cash, meta = compute(static, prices, fx)
-    now = datetime.now(timezone.utc).astimezone().strftime('%Y-%m-%dT%H:%M')
+    tz = PRAGUE or timezone.utc
+    now = datetime.now(timezone.utc).astimezone(tz).strftime('%Y-%m-%dT%H:%M')
     meta['asof'] = now
     meta['irr'] = xirr(static['flows'], meta['nav'], now[:10])
     meta['fx_src'] = fx_src
@@ -147,9 +153,7 @@ def main():
     jsave(p('data', 'fx.json'), dict(fx=fx, src=fx_src))
     jsave(p('data', 'nav_history.json'), hist)
 
-    payload = dict(meta=meta, fx=fx, history=hist,
-                   breakdown=static['breakdown_hist'], fees=static['fees'],
-                   positions=positions, cash=cash,
+    payload = dict(meta=meta, history=hist, positions=positions, cash=cash,
                    trades=static['trades'], others=static['others'], flows=static['flows'])
 
     tpl = open(p('docs', 'template.html'), encoding='utf-8').read()

@@ -56,7 +56,6 @@ h1{font-family:var(--disp);font-weight:600;font-size:26px;letter-spacing:-.02em;
 /* layout */
 .grid{display:grid;gap:16px}
 .g2{grid-template-columns:1fr 1fr}
-.g3{grid-template-columns:1.4fr 1fr 1fr}
 .card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:18px 20px}
 .card h2{font-family:var(--disp);font-weight:600;font-size:14px;letter-spacing:.02em;margin:0 0 4px;
   display:flex;align-items:center;gap:9px}
@@ -73,7 +72,7 @@ th{font-family:var(--mono);font-size:10.5px;letter-spacing:.06em;text-transform:
   color:var(--mut);text-align:right;padding:9px 10px;border-bottom:1px solid var(--line2);
   cursor:pointer;user-select:none;white-space:nowrap}
 th:first-child,td:first-child{text-align:left}
-th.l{text-align:left} th .ar{opacity:.4;font-size:9px}
+th.l{text-align:left}
 td{padding:10px;border-bottom:1px solid rgba(33,42,56,.6);text-align:right;white-space:nowrap}
 tbody tr{transition:background .12s}
 tbody tr.click{cursor:pointer}
@@ -94,6 +93,14 @@ tbody tr.click:hover{background:rgba(224,177,94,.05)}
 .expbox td{padding:6px 8px}
 .bar{height:6px;border-radius:3px;background:var(--line2);overflow:hidden;min-width:54px;display:inline-block;vertical-align:middle}
 .bar>i{display:block;height:100%;border-radius:3px}
+.nav24{display:flex;align-items:baseline;gap:16px;flex-wrap:wrap}
+.nav24lab{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--mut)}
+.nav24val{font-size:24px;font-weight:600;letter-spacing:-.01em}
+.nav24sub{margin-left:auto;font-size:12.5px;color:var(--mut)}
+.caret{display:inline-block;width:0;height:0;border-left:5px solid var(--mut);
+  border-top:4px solid transparent;border-bottom:4px solid transparent;
+  margin-right:9px;transition:transform .15s;vertical-align:middle}
+tbody tr.open .caret{transform:rotate(90deg);border-left-color:var(--gold)}
 /* filters */
 .filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px}
 .filters input,.filters select{font-family:var(--mono);font-size:12.5px;background:var(--panel2);
@@ -103,15 +110,10 @@ tbody tr.click:hover{background:rgba(224,177,94,.05)}
 .scroll{max-height:520px;overflow:auto}
 .scroll::-webkit-scrollbar{width:9px;height:9px}
 .scroll::-webkit-scrollbar-thumb{background:var(--line2);border-radius:6px}
-.legend{display:flex;flex-direction:column;gap:9px;justify-content:center}
-.legend .li{display:flex;align-items:center;gap:9px;font-size:12.5px}
-.legend .sw{width:11px;height:11px;border-radius:3px;flex:none}
-.legend .lv{margin-left:auto;font-family:var(--mono);color:var(--mut)}
 .foot{margin-top:40px;padding-top:18px;border-top:1px solid var(--line);color:var(--dim);
   font-size:11.5px;font-family:var(--mono);line-height:1.7}
 .chwrap{position:relative;height:230px}
-.chwrap.sm{height:200px}
-@media(max-width:900px){.kpis{grid-template-columns:1fr 1fr}.g2,.g3{grid-template-columns:1fr}
+@media(max-width:900px){.kpis{grid-template-columns:1fr 1fr}.g2{grid-template-columns:1fr}
   .hidesm{display:none}.wrap{padding:20px 14px 60px}}
 </style>
 </head>
@@ -145,22 +147,23 @@ tbody tr.click:hover{background:rgba(224,177,94,.05)}
   <span class="pnote" id="pnote"></span>
 </div>
 
-<div class="grid g3">
-  <div class="card">
-    <h2><span class="n">P/L</span>Rozklad zisku</h2>
-    <div class="cap">Od čeho se odvíjí +748 tis. Kč (historické kurzy)</div>
-    <div class="chwrap"><canvas id="wf"></canvas></div>
+<div class="grid g2" style="margin-bottom:16px">
+  <div class="card nav24" id="nav24card">
+    <div class="nav24lab">Změna NAV za posledních 24 h</div>
+    <div class="nav24val num" id="nav24val">—</div>
+    <div class="nav24sub num" id="nav24sub"></div>
   </div>
-  <div class="card">
-    <h2><span class="n">MIX</span>Alokace dle brokera</h2>
-    <div class="cap">Podíl na NAV</div>
-    <div class="chwrap sm"><canvas id="dBroker"></canvas></div>
+  <div class="card nav24" id="nav7card">
+    <div class="nav24lab">Změna NAV za posledních 7 dní</div>
+    <div class="nav24val num" id="nav7val">—</div>
+    <div class="nav24sub num" id="nav7sub"></div>
   </div>
-  <div class="card">
-    <h2><span class="n">FX</span>Akcie dle měny</h2>
-    <div class="cap">Tržní hodnota v CZK</div>
-    <div class="chwrap sm"><canvas id="dCcy"></canvas></div>
-  </div>
+</div>
+
+<div class="card" style="margin-bottom:16px">
+  <h2><span class="n">YTD</span>Výkonnost od začátku roku</h2>
+  <div class="cap" id="ytdCap">Kumulativní zhodnocení očištěné o vklady a výběry</div>
+  <div class="chwrap"><canvas id="ytd"></canvas></div>
 </div>
 
 <div class="sec">
@@ -184,16 +187,11 @@ tbody tr.click:hover{background:rgba(224,177,94,.05)}
   </div>
 </div>
 
-<div class="grid g2 sec">
+<div class="sec">
   <div class="card">
     <h2><span class="n">CASH</span>Finanční zůstatky</h2>
     <div class="cap">Hotovost dle brokera a měny</div>
     <table id="cashT"><thead><tr><th class="l">Broker</th><th class="l">Měna</th><th>Zůstatek</th><th>CZK</th></tr></thead><tbody id="cashB"></tbody></table>
-  </div>
-  <div class="card">
-    <h2><span class="n">FEE</span>Poplatky brokerům</h2>
-    <div class="cap">Kumulativně za celou historii</div>
-    <table id="feeT"><tbody id="feeB"></tbody></table>
   </div>
 </div>
 
@@ -248,7 +246,6 @@ const SIGN = n => (n>0?'+':n<0?'−':'') + Math.abs(Math.round(n)).toLocaleStrin
 const cls = n => n>0?'pos':n<0?'neg':'mut';
 const fmt = (n,d=2) => n.toLocaleString('cs-CZ',{minimumFractionDigits:d,maximumFractionDigits:d});
 const GOLD='#E0B15E',JADE='#56B389',CORAL='#E27065',BLUE='#5B8DD9',MUT='#7C8AA0';
-const PAL=['#E0B15E','#5B8DD9','#56B389','#C77DBB','#E27065','#6FB6C1','#B7A46A','#8A7FD1'];
 
 // KPIs
 const ts=D.meta.asof.replace('T',' ');document.getElementById('asof').textContent='● '+ts.slice(8,10)+'.'+ts.slice(5,7)+'.'+ts.slice(0,4)+' '+ts.slice(11,16);
@@ -302,37 +299,79 @@ document.getElementById('seg').addEventListener('click',e=>{
   setPeriod(b.dataset.p);
 });
 
-// waterfall
+// Změna NAV za posledních 24 h a 7 dní (bod nejblíže cílovému času, očištěno o toky)
 (()=>{
-  const items=D.breakdown; let run=0; const bars=[],labels=[],colors=[];
-  items.forEach(([l,v])=>{ bars.push([run,run+v]); labels.push(l); colors.push(v>=0?JADE:CORAL); run+=v; });
-  bars.push([0,run]); labels.push('Celkem'); colors.push(GOLD);
-  new Chart(document.getElementById('wf'),{type:'bar',
-    data:{labels:labels.map(l=>l.length>20?l.slice(0,19)+'…':l),datasets:[{data:bars,backgroundColor:colors,borderRadius:3,barPercentage:.72}]},
-    options:{indexAxis:'y',responsive:true,maintainAspectRatio:false,
-      plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>{const v=items[c.dataIndex]?items[c.dataIndex][1]:run;return SIGN(v)+' Kč';}}}},
-      scales:{x:{grid:{color:'rgba(44,56,74,.5)'},ticks:{color:MUT,font:{family:'JetBrains Mono',size:10},callback:v=>(v/1000)+'k'}},
-              y:{grid:{display:false},ticks:{color:'#C3CCDA',font:{family:'Inter',size:11}}}}}});
+  const H=D.history||[];
+  const pt=s=>Date.parse(s.length<=16?s+':00':s);
+  function change(hoursBack){
+    if(H.length<2)return null;
+    const cur=H[H.length-1], curT=pt(cur.ts), target=curT-hoursBack*3600*1000;
+    let ref=H[0], best=Infinity;
+    for(let i=0;i<H.length-1;i++){const d=Math.abs(pt(H[i].ts)-target);if(d<best){best=d;ref=H[i];}}
+    const flows=(D.flows||[]).filter(f=>f.date>ref.ts.slice(0,10)&&f.date<=cur.ts.slice(0,10)).reduce((a,f)=>a+f.amt,0);
+    const chg=cur.nav-ref.nav-flows;
+    return {chg,pct:chg/(ref.nav||1)*100,ref,hrs:(curT-pt(ref.ts))/3600000,flows};
+  }
+  function fill(valId,subId,r){
+    const el=document.getElementById(valId), sub=document.getElementById(subId);
+    if(!r){el.textContent='—';el.className='nav24val num mut';sub.textContent='zatím málo historie NAV';return;}
+    el.textContent=SIGN(r.chg)+' Kč'; el.className='nav24val num '+cls(r.chg);
+    const d=Math.floor(r.hrs/24), span=d>=1?fmt(d,0)+' d':fmt(r.hrs,0)+' h';
+    sub.textContent=(r.pct>0?'+':'')+fmt(r.pct,2)+' %  ·  vs '+r.ref.ts.replace('T',' ')+' ('+span+' zpět)'+(r.flows?' · očištěno o toky':'');
+  }
+  fill('nav24val','nav24sub',change(24));
+  fill('nav7val','nav7sub',change(24*7));
 })();
 
-// donuts
-function donut(id,rows){
-  new Chart(document.getElementById(id),{type:'doughnut',
-    data:{labels:rows.map(r=>r[0]),datasets:[{data:rows.map(r=>r[1]),backgroundColor:PAL,borderColor:'#141A24',borderWidth:2}]},
-    options:{responsive:true,maintainAspectRatio:false,cutout:'62%',
-      plugins:{legend:{position:'right',labels:{color:'#C3CCDA',font:{family:'Inter',size:12},boxWidth:11,boxHeight:11,padding:10,
-        generateLabels:ch=>{const d=ch.data;const tot=d.datasets[0].data.reduce((a,b)=>a+b,0);
-          return d.labels.map((l,i)=>({text:l+'  '+(d.datasets[0].data[i]/tot*100).toFixed(0)+'%',fillStyle:PAL[i],strokeStyle:PAL[i],index:i}));}}},
-        tooltip:{callbacks:{label:c=>c.label+': '+CZK(c.raw)}}}}});
-}
-const byBroker={}; D.positions.forEach(p=>byBroker[p.broker]=(byBroker[p.broker]||0)+p.mv);
-byBroker['Hotovost']=D.meta.cash;
-donut('dBroker',Object.entries(byBroker));
-const byCcy={}; D.positions.forEach(p=>byCcy[p.ccy]=(byCcy[p.ccy]||0)+p.mv);
-donut('dCcy',Object.entries(byCcy).sort((a,b)=>b[1]-a[1]));
+// YTD výkonnost — osa vždy 1.1. → den aktualizace; zhodnocení očištěné o vklady/výběry
+(()=>{
+  const H=D.history||[];
+  const cd=(H.length?H[H.length-1].ts:D.meta.asof).slice(0,10);
+  const year=+cd.slice(0,4);
+  const inYear=H.filter(h=>+h.ts.slice(0,4)===year);
+  const cap=document.getElementById('ytdCap');
+  const doy=s=>{const[y,m,dd]=s.split('-').map(Number);return Math.round((Date.UTC(y,m-1,dd)-Date.UTC(year,0,1))/86400000);};
+  const dlabel=n=>{const dt=new Date(Date.UTC(year,0,1)+n*86400000);return dt.getUTCDate()+'.'+(dt.getUTCMonth()+1)+'.';};
+  const maxDoy=doy(cd);
+  if(inYear.length<1){
+    cap.textContent='Zatím není žádný záznam NAV pro rok '+year+' — křivka se doplní každou aktualizací.';
+    return;
+  }
+  // referenční NAV: poslední bod z loňska (přelom roku), jinak první letošní bod
+  let base=null;
+  for(let i=H.length-1;i>=0;i--){if(+H[i].ts.slice(0,4)<year){base=H[i];break;}}
+  const anchoredNY=!!base;
+  if(!base) base=inYear[0];
+  const baseNav=base.nav, baseDate=base.ts.slice(0,10);
+  const pts=[];
+  // ukotvi křivku na 0 % k 1.1., pokud máme referenci z loňska
+  if(anchoredNY) pts.push({x:0,y:0});
+  inYear.forEach(h=>{
+    const d=h.ts.slice(0,10);
+    const flows=(D.flows||[]).filter(f=>f.date>baseDate&&f.date<=d).reduce((a,f)=>a+f.amt,0);
+    pts.push({x:doy(d),y:(h.nav-baseNav-flows)/(baseNav||1)*100});
+  });
+  const last=pts[pts.length-1].y;
+  cap.textContent='Od 1.1.'+year+' do '+cd.split('-').reverse().join('.')+' · očištěno o vklady a výběry · '
+    +(last>0?'+':'')+fmt(last,2)+' % YTD'+(anchoredNY?'':' (od prvního záznamu '+baseDate.split('-').reverse().join('.')+')');
+  const col=last>=0?JADE:CORAL;
+  const cv=document.getElementById('ytd');
+  const g=cv.getContext('2d').createLinearGradient(0,0,0,230);
+  g.addColorStop(0,(last>=0?'rgba(86,179,137,.28)':'rgba(226,112,106,.28)'));
+  g.addColorStop(1,'rgba(20,26,36,0)');
+  new Chart(cv,{type:'line',
+    data:{datasets:[{data:pts,borderColor:col,backgroundColor:g,fill:true,
+      borderWidth:2,tension:.25,pointRadius:pts.length>60?0:3,pointBackgroundColor:col,pointHoverRadius:5}]},
+    options:{responsive:true,maintainAspectRatio:false,parsing:false,
+      plugins:{legend:{display:false},tooltip:{callbacks:{
+        title:c=>dlabel(c[0].parsed.x),label:c=>(c.parsed.y>0?'+':'')+fmt(c.parsed.y,2)+' %'}}},
+      scales:{x:{type:'linear',min:0,max:maxDoy,grid:{display:false},
+        ticks:{color:MUT,font:{family:'JetBrains Mono',size:10},maxRotation:0,autoSkip:true,maxTicksLimit:12,callback:v=>dlabel(v)}},
+        y:{grid:{color:'rgba(44,56,74,.5)'},ticks:{color:MUT,font:{family:'JetBrains Mono',size:10},callback:v=>(v>0?'+':'')+v+'%'}}}}});
+})();
 
 // positions table
-let posSort={k:'mv',dir:-1};
+let posSort={k:'ticker',dir:1};
 const posB=document.getElementById('posB');
 document.getElementById('poscount').textContent=D.positions.length+' titulů · '+CZK(D.meta.mv);
 function renderPos(){
@@ -341,7 +380,7 @@ function renderPos(){
   arr.forEach((p,i)=>{
     const w=p.mv/D.meta.mv*100;
     const tr=document.createElement('tr'); tr.className='click';
-    tr.innerHTML=`<td><span class="tk">${p.ticker}</span><span class="brk ${p.broker==='IBKR'?'ib':'pt'}">${p.broker}</span></td>
+    tr.innerHTML=`<td><span class="caret"></span><span class="tk">${p.ticker}</span><span class="brk ${p.broker==='IBKR'?'ib':'pt'}">${p.broker}</span></td>
       <td class="num">${fmt(p.qty,0)}</td>
       <td class="num mut">${fmt(p.avg,2)} ${p.ccy}</td>
       <td class="num">${fmt(p.price,2)} ${p.ccy}</td>
@@ -358,7 +397,7 @@ function renderPos(){
         <td class="num">${fmt(t.price,2)} ${t.ccy}</td>
         <td class="num mut">${fmt(t.fee,2)}</td></tr>`;}).join('');
     ex.innerHTML=`<td colspan="8"><div class="expbox"><table><thead><tr><th class="l">Datum</th><th class="l">Směr</th><th>Ks</th><th>Cena</th><th>Poplatek</th></tr></thead><tbody>${rows||'<tr><td class="mut">Žádné obchody</td></tr>'}</tbody></table></div></td>`;
-    tr.addEventListener('click',()=>{ex.style.display=ex.style.display==='none'?'':'none';});
+    tr.addEventListener('click',()=>{const open=ex.style.display==='none';ex.style.display=open?'':'none';tr.classList.toggle('open',open);});
     posB.appendChild(tr); posB.appendChild(ex);
   });
 }
@@ -372,11 +411,6 @@ const cashB=document.getElementById('cashB');
 D.cash.forEach(c=>{cashB.innerHTML+=`<tr><td class="l"><span class="brk ${c.broker==='IBKR'?'ib':'pt'}">${c.broker}</span></td>
   <td class="l num">${c.ccy}</td><td class="num">${fmt(c.bal,2)}</td><td class="num">${CZK(c.czk)}</td></tr>`;});
 cashB.innerHTML+=`<tr><td class="l mut">Σ</td><td></td><td></td><td class="num" style="color:var(--gold)">${CZK(D.meta.cash)}</td></tr>`;
-
-// fees
-const feeB=document.getElementById('feeB'); let feeSum=0;
-D.fees.forEach(([l,v])=>{feeSum+=v;feeB.innerHTML+=`<tr><td class="l">${l}</td><td class="num ${cls(v)}">${SIGN(v)} Kč</td></tr>`;});
-feeB.innerHTML+=`<tr><td class="l" style="font-weight:600">Celkem</td><td class="num neg" style="font-weight:600">${SIGN(feeSum)} Kč</td></tr>`;
 
 // trades
 let trSort={k:'date',dir:-1};
@@ -392,6 +426,7 @@ function renderTr(){
     if(ft && side!==ft)return false; return true;});
   arr.sort((a,b)=>{let x=a[trSort.k],y=b[trSort.k];
     if(trSort.k==='side'){x=a.qty;y=b.qty;} return (x>y?1:x<y?-1:0)*trSort.dir;});
+  const total=arr.length; arr=arr.slice(0,10);
   trB.innerHTML=arr.map(t=>{const side=t.typ==='Adj'?'ADJ':(t.qty>0?'BUY':'SELL');
     return `<tr><td class="l num mut">${t.date.split('-').reverse().join('.')}</td>
       <td class="l"><span class="tk" style="font-size:12.5px">${t.ticker}</span><span class="brk ${t.broker==='IBKR'?'ib':'pt'}">${t.broker}</span></td>
@@ -400,7 +435,7 @@ function renderTr(){
       <td class="num">${fmt(t.price,2)} ${t.ccy}</td>
       <td class="num mut">${fmt(t.fee,2)}</td>
       <td class="num ${cls(t.rplczk)}">${t.rplczk?SIGN(t.rplczk):'·'}</td></tr>`;}).join('');
-  document.getElementById('trcount').textContent=arr.length+' / '+D.trades.length+' záznamů';
+  document.getElementById('trcount').textContent='posledních '+arr.length+' z '+total+' záznamů'+(total>10?' (zobrazeno 10 nejnovějších)':'');
 }
 document.querySelectorAll('#trT th[data-s]').forEach(th=>th.addEventListener('click',()=>{
   const k=th.dataset.s; trSort.dir=trSort.k===k?-trSort.dir:-1; trSort.k=k; renderTr();}));
