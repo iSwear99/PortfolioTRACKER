@@ -89,6 +89,10 @@
    "q": 500.0,
    "czk_cost": 128897.04
   },
+  "Patria|KWEB": {
+   "q": 175.0,
+   "czk_cost": 100846.66
+  },
   "Patria|SOFI": {
    "q": 300.0,
    "czk_cost": 51981.35
@@ -196,10 +200,6 @@
   "IBKR|GRAB": {
    "q": 1500.0,
    "czk_cost": 116070.01
-  },
-  "Patria|KWEB": {
-   "q": 175.0,
-   "czk_cost": 100846.66
   },
   "IBKR|4GLD": {
    "q": 30.0,

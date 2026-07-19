@@ -246,7 +246,7 @@
  "breakdown_hist": [
   [
    "Nerealizovaný P/L (hist.)",
-   158192
+   157691
   ],
   [
    "Realizovaný P/L (hist.)",
@@ -729,7 +729,7 @@
   {
    "date": "2024-02-09",
    "broker": "Patria",
-   "ticker": NaN,
+   "ticker": "KWEB",
    "typ": "Stock",
    "ccy": "USD",
    "qty": 125.0,
@@ -1681,7 +1681,7 @@
   {
    "date": "2025-02-27",
    "broker": "Patria",
-   "ticker": NaN,
+   "ticker": "KWEB",
    "typ": "Stock",
    "ccy": "USD",
    "qty": -125.0,
