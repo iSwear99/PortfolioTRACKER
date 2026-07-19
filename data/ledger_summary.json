@@ -1,15 +1,15 @@
 {
- "basis_hist_czk": 4489184,
- "realized_hist_czk": 910419,
- "others_hist_czk": 84311,
+ "basis_hist_czk": 4169547,
+ "realized_hist_czk": 739829,
+ "others_hist_czk": 84350,
  "fx_realized_czk": {
-  "Patria|USD": 12853,
-  "IBKR|USD": -8361,
+  "Patria|USD": 12448,
+  "IBKR|USD": -8510,
   "IBKR|EUR": 0,
   "IBKR|GBP": 0
  },
- "fx_unrealized_cash_czk": -4403,
- "residual_czk": -14126,
+ "fx_unrealized_cash_czk": -25155,
+ "residual_czk": -14533,
  "currency_ledger": {
   "Patria|CZK": {
    "q": 0.42,
@@ -17,14 +17,14 @@
    "avg": 1.0
   },
   "Patria|USD": {
-   "q": 17.85,
-   "czk": 444.07,
-   "avg": 24.8776
+   "q": 5594.45,
+   "czk": 139341.3,
+   "avg": 24.9071
   },
   "Patria|EUR": {
    "q": 546.87,
-   "czk": 17218.01,
-   "avg": 31.4849
+   "czk": 17233.67,
+   "avg": 31.5136
   },
   "IBKR|CZK": {
    "q": 9.81,
@@ -42,8 +42,8 @@
    "avg": null
   },
   "IBKR|EUR": {
-   "q": 5012.01,
-   "czk": 121944.21,
+   "q": 5390.61,
+   "czk": 131155.7,
    "avg": 24.3304
   },
   "IBKR|SEK": {
@@ -58,18 +58,18 @@
   },
   "IBKR|DKK": {
    "q": 754.45,
-   "czk": 2441.02,
-   "avg": 3.2355
+   "czk": 2442.91,
+   "avg": 3.238
   }
  },
  "stock_ledger": {
   "Patria|CSPX": {
    "q": 30.0,
-   "czk_cost": 290451.48
+   "czk_cost": 290451.56
   },
   "Patria|PYPL": {
    "q": 150.0,
-   "czk_cost": 195268.87
+   "czk_cost": 195442.86
   },
   "Patria|VOW3": {
    "q": 18.0,
@@ -89,7 +89,7 @@
   },
   "IBKR|MSFT": {
    "q": 15.0,
-   "czk_cost": 132972.91
+   "czk_cost": 133010.78
   },
   "IBKR|SOFI": {
    "q": 650.0,
@@ -97,11 +97,11 @@
   },
   "IBKR|ASML": {
    "q": 6.0,
-   "czk_cost": 98122.76
+   "czk_cost": 98123.23
   },
   "IBKR|BABA": {
    "q": 80.0,
-   "czk_cost": 227263.72
+   "czk_cost": 227291.23
   },
   "IBKR|EEFT": {
    "q": 120.0,
@@ -111,21 +111,17 @@
    "q": 100.0,
    "czk_cost": 135096.64
   },
-  "IBKR|BOSS": {
-   "q": 100.0,
-   "czk_cost": 299898.2
-  },
   "IBKR|NU": {
    "q": 1000.0,
-   "czk_cost": 310689.37
+   "czk_cost": 310734.41
   },
   "IBKR|EVO": {
    "q": 80.0,
-   "czk_cost": 112482.37
+   "czk_cost": 112482.39
   },
   "IBKR|WIZZ": {
    "q": 600.0,
-   "czk_cost": 204202.81
+   "czk_cost": 204271.59
   },
   "IBKR|WIX": {
    "q": 50.0,
@@ -145,7 +141,7 @@
   },
   "IBKR|VOW3": {
    "q": 36.0,
-   "czk_cost": 83278.54
+   "czk_cost": 83376.94
   },
   "IBKR|PFE 21NOV25 24 P": {
    "q": 2.0,
@@ -153,7 +149,7 @@
   },
   "IBKR|KSPI": {
    "q": 75.0,
-   "czk_cost": 121813.13
+   "czk_cost": 121957.12
   },
   "IBKR|JD": {
    "q": 200.0,
@@ -181,7 +177,7 @@
   },
   "Patria|AMZN": {
    "q": 30.0,
-   "czk_cost": 166276.11
+   "czk_cost": 166427.37
   },
   "IBKR|UBER": {
    "q": 65.0,
@@ -191,13 +187,13 @@
    "q": 1500.0,
    "czk_cost": 113549.74
   },
-  "Patria|NU": {
-   "q": 400.0,
-   "czk_cost": 103318.11
-  },
   "Patria|KWEB": {
    "q": 175.0,
-   "czk_cost": 101228.42
+   "czk_cost": 101230.01
+  },
+  "IBKR|4GLD": {
+   "q": 30.0,
+   "czk_cost": 82830.41
   }
  },
  "shortfalls": {

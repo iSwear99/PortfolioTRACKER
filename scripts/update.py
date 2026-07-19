@@ -67,7 +67,7 @@ def fetch_prices(seed):
     return prices, fetched, failed
 
 # ---------- Yahoo Finance záloha ----------
-YAHOO = {'BOSS': ('BOSS.DE', 1), 'P911': ('P911.DE', 1), 'NOV': ('NOV.DE', 1),
+YAHOO = {'4GLD': ('4GLD.DE', 1), 'BOSS': ('BOSS.DE', 1), 'P911': ('P911.DE', 1), 'NOV': ('NOV.DE', 1),
          'VOW3': ('VOW3.DE', 1), 'CSPX': ('CSPX.L', 1), 'WIZZ': ('WIZZ.L', 100),
          'EVO': ('EVO.ST', 1)}
 
