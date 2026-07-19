@@ -41,6 +41,37 @@ def fetch_cnb_fx(old_fx):
         print(f'[WARN] ČNB nedostupná ({e}).', file=sys.stderr)
     return fx, src
 
+def fetch_cnb_prev(old_fx):
+    """Předchozí ČNB fixing (předposlední vyhlášený den) — pro denní změnu s kurzem.
+    Na přelomu roku dotáhne i loňský soubor. Když se nepodaří, vrátí old_fx
+    (kurzová složka denní změny pak vyjde ~0)."""
+    prev = dict(old_fx)
+    try:
+        yr = datetime.now(timezone.utc).astimezone(PRAGUE or timezone.utc).year
+        days = []                                          # [(datum, {code: rate})] chronologicky
+        for y in (yr - 1, yr):                             # loni + letos (kvůli přelomu roku)
+            try:
+                txt = http_get('https://www.cnb.cz/cs/financni-trhy/devizovy-trh/'
+                               f'kurzy-devizoveho-trhu/kurzy-devizoveho-trhu/rok.txt?rok={y}')
+                lines = [l for l in txt.strip().split('\n') if '|' in l]
+                if len(lines) < 2: continue
+                cols = [(float(h.split(' ')[0]), h.split(' ')[1]) for h in lines[0].split('|')[1:]]
+                for ln in lines[1:]:                       # každý rok s vlastní hlavičkou
+                    parts = ln.split('|')
+                    if len(parts) != len(cols) + 1: continue
+                    rec = {'CZK': 1.0}
+                    for (qty, code), val in zip(cols, parts[1:]):
+                        try: rec[code] = round(float(val.replace(',', '.')) / qty, 4)
+                        except ValueError: pass
+                    days.append((parts[0], rec))
+            except Exception:
+                pass
+        if len(days) >= 2:
+            prev.update(days[-2][1])                       # předposlední vyhlášený den
+    except Exception as e:
+        print(f'[WARN] ČNB předchozí fixing nedostupný ({e}).', file=sys.stderr)
+    return prev
+
 def fetch_prices(seed):
     key = os.environ.get('TWELVE_DATA_KEY', '').strip()
     prices = {t: dict(v) for t, v in seed.items()}
@@ -96,14 +127,38 @@ def fetch_yahoo(prices, failed):
             print(f'[WARN] Yahoo {t} ({sym}): {e}', file=sys.stderr)
     return recovered
 
-def compute(static, prices, fx):
+def fetch_prev_close(positions):
+    """Předchozí close (Yahoo chartPreviousClose) pro tickery pozic — pro denní změnu."""
+    out = {}
+    for i, tk in enumerate(sorted({pos['ticker'] for pos in positions})):
+        sym, div = YAHOO.get(tk, (tk, 1))
+        if i: time.sleep(1.3)
+        try:
+            res = json.loads(http_get(
+                f'https://query1.finance.yahoo.com/v8/finance/chart/{urllib.parse.quote(sym)}'
+                '?range=5d&interval=1d'))['chart']['result'][0]
+            pc = res['meta'].get('previousClose')          # skutečný včerejší close
+            if not pc:                                      # fallback: předposlední denní close z řady
+                cl = [c for c in (res['indicators']['quote'][0].get('close') or []) if c is not None]
+                pc = cl[-2] if len(cl) >= 2 else None
+            if pc and pc > 0: out[tk] = round(float(pc) / div, 4)
+        except Exception as e:
+            print(f'[WARN] prev-close {tk} ({sym}): {e}', file=sys.stderr)
+    return out
+
+def compute(static, prices, fx, prev_px, fx_prev):
     positions = []
     for pos in static['positions']:
         px = prices[pos['ticker']]['px']; r = fx[pos['ccy']]
         mv = pos['qty'] * px * r
         pl = pos['qty'] * (px - pos['avg']) * r
+        # denní změna (varianta C): dnešní hodnota − včerejší hodnota téže pozice,
+        # cena vs. předchozí close, každý konec svým ČNB fixingem (mid, bez poplatku)
+        pc = prev_px.get(pos['ticker']); rp = fx_prev.get(pos['ccy'], r)
+        dch = round(pos['qty'] * (px * r - pc * rp)) if pc else None
         positions.append(dict(pos, price=px, mv=round(mv), pl=round(pl),
-                              plpct=round((px - pos['avg']) / pos['avg'] * 100, 1) if pos['avg'] else 0))
+                              plpct=round((px - pos['avg']) / pos['avg'] * 100, 1) if pos['avg'] else 0,
+                              dch=dch))
     cash = [dict(c, czk=round(c['bal'] * fx[c['ccy']])) for c in static['cash']]
     mv = sum(x['mv'] for x in positions); csh = sum(x['czk'] for x in cash)
     nav = mv + csh; dep = static['deposits']
@@ -131,10 +186,12 @@ def main():
     fxold = jload(p('data', 'fx.json'))['fx']
 
     fx, fx_src = fetch_cnb_fx(fxold)
+    fx_prev = fetch_cnb_prev(fxold)
     prices, ok, failed = fetch_prices(seed)
     rec = fetch_yahoo(prices, failed)
+    prev_px = fetch_prev_close(static['positions'])
 
-    positions, cash, meta = compute(static, prices, fx)
+    positions, cash, meta = compute(static, prices, fx, prev_px, fx_prev)
     tz = PRAGUE or timezone.utc
     now = datetime.now(timezone.utc).astimezone(tz).strftime('%Y-%m-%dT%H:%M')
     meta['asof'] = now
@@ -147,7 +204,7 @@ def main():
 
     hist = jload(p('data', 'nav_history.json'))
     hist.append(dict(ts=now, nav=meta['nav'], mv=meta['mv'], cash=meta['cash']))
-    hist = hist[-1500:]
+    hist = hist[-3000:]
 
     jsave(p('data', 'prices.json'), prices)
     jsave(p('data', 'fx.json'), dict(fx=fx, src=fx_src))

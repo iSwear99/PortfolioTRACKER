@@ -2,8 +2,15 @@
 <html lang="cs">
 <head>
 <meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
 <title>Portfolio — IBKR + Patria</title>
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="48x48" href="favicon.png">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-title" content="Portfolio">
+<meta name="theme-color" content="#0A0D13">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
@@ -19,7 +26,7 @@
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{margin:0;background:var(--ink);color:var(--tx);font-family:var(--body);
+body{margin:0;padding-top:env(safe-area-inset-top);background:var(--ink);color:var(--tx);font-family:var(--body);
   font-size:14px;line-height:1.5;-webkit-font-smoothing:antialiased;
   background-image:radial-gradient(1200px 600px at 80% -10%,rgba(224,177,94,.06),transparent 60%);}
 .wrap{max-width:1240px;margin:0 auto;padding:28px 22px 80px}
@@ -177,6 +184,7 @@ tbody tr.open .caret{transform:rotate(90deg);border-left-color:var(--gold)}
       <th data-s="avg">Ø nákup</th>
       <th data-s="price">Cena</th>
       <th data-s="mv">Hodnota CZK</th>
+      <th data-s="dch">Denní změna</th>
       <th data-s="pl">Nereal. P/L</th>
       <th data-s="plpct">P/L %</th>
       <th class="hidesm">Váha</th>
@@ -375,7 +383,9 @@ let posSort={k:'ticker',dir:1};
 const posB=document.getElementById('posB');
 document.getElementById('poscount').textContent=D.positions.length+' titulů · '+CZK(D.meta.mv);
 function renderPos(){
-  const arr=[...D.positions].sort((a,b)=>(a[posSort.k]>b[posSort.k]?1:-1)*posSort.dir);
+  const arr=[...D.positions].sort((a,b)=>{
+    const x=a[posSort.k]??-Infinity,y=b[posSort.k]??-Infinity;   // null (chybějící dch) vždy dole
+    return (x>y?1:x<y?-1:0)*posSort.dir;});
   posB.innerHTML='';
   arr.forEach((p,i)=>{
     const w=p.mv/D.meta.mv*100;
@@ -385,6 +395,7 @@ function renderPos(){
       <td class="num mut">${fmt(p.avg,2)} ${p.ccy}</td>
       <td class="num">${fmt(p.price,2)} ${p.ccy}</td>
       <td class="num">${CZK(p.mv)}</td>
+      <td class="num ${cls(p.dch)}">${p.dch==null?'·':SIGN(p.dch)}</td>
       <td class="num ${cls(p.pl)}">${SIGN(p.pl)}</td>
       <td class="num ${cls(p.pl)}">${(p.plpct>0?'+':'')+fmt(p.plpct,1)} %</td>
       <td class="hidesm"><span class="bar"><i style="width:${Math.min(w*3,100)}%;background:${p.broker==='IBKR'?BLUE:GOLD}"></i></span> <span class="num tny mut">${fmt(w,1)}%</span></td>`;
@@ -396,7 +407,7 @@ function renderPos(){
         <td class="num">${fmt(Math.abs(t.qty),0)}</td>
         <td class="num">${fmt(t.price,2)} ${t.ccy}</td>
         <td class="num mut">${fmt(t.fee,2)}</td></tr>`;}).join('');
-    ex.innerHTML=`<td colspan="8"><div class="expbox"><table><thead><tr><th class="l">Datum</th><th class="l">Směr</th><th>Ks</th><th>Cena</th><th>Poplatek</th></tr></thead><tbody>${rows||'<tr><td class="mut">Žádné obchody</td></tr>'}</tbody></table></div></td>`;
+    ex.innerHTML=`<td colspan="9"><div class="expbox"><table><thead><tr><th class="l">Datum</th><th class="l">Směr</th><th>Ks</th><th>Cena</th><th>Poplatek</th></tr></thead><tbody>${rows||'<tr><td class="mut">Žádné obchody</td></tr>'}</tbody></table></div></td>`;
     tr.addEventListener('click',()=>{const open=ex.style.display==='none';ex.style.display=open?'':'none';tr.classList.toggle('open',open);});
     posB.appendChild(tr); posB.appendChild(ex);
   });
@@ -415,7 +426,6 @@ cashB.innerHTML+=`<tr><td class="l mut">Σ</td><td></td><td></td><td class="num"
 // trades
 let trSort={k:'date',dir:-1};
 const trB=document.getElementById('trB');
-document.getElementById('trcount').textContent=D.trades.length+' záznamů';
 function renderTr(){
   const q=document.getElementById('fq').value.trim().toUpperCase();
   const fb=document.getElementById('fbroker').value, ft=document.getElementById('ftype').value;
