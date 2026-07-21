@@ -203,14 +203,19 @@ def main():
     meta['price_note'] = note
 
     hist = jload(p('data', 'nav_history.json'))
-    hist.append(dict(ts=now, nav=meta['nav'], mv=meta['mv'], cash=meta['cash']))
-    hist = hist[-3000:]
+    cashccy = {}
+    for c in static['cash']:
+        cashccy[c['ccy']] = round(cashccy.get(c['ccy'], 0) + c['bal'], 2)
+    hist.append(dict(ts=now, nav=meta['nav'], mv=meta['mv'], cash=meta['cash'],
+                     px={t: v['px'] for t, v in prices.items()},
+                     fx=dict(fx), cashccy=cashccy))
+    hist = hist[-1500:]
 
     jsave(p('data', 'prices.json'), prices)
     jsave(p('data', 'fx.json'), dict(fx=fx, src=fx_src))
     jsave(p('data', 'nav_history.json'), hist)
 
-    payload = dict(meta=meta, history=hist, positions=positions, cash=cash,
+    payload = dict(meta=meta, fx=fx, history=hist, positions=positions, cash=cash,
                    trades=static['trades'], others=static['others'], flows=static['flows'])
 
     tpl = open(p('docs', 'template.html'), encoding='utf-8').read()

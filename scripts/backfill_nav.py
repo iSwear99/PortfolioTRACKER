@@ -199,12 +199,36 @@ for D in targets:
     hist.append({'ts': D + 'T17:00', 'nav': round(tot), 'mv': round(mv), 'cash': round(csh)})
     added += 1
 hist.sort(key=lambda x: x['ts'])
+
+# ---------- obohacení záznamů o px / fx / cashccy (pro hybatele období) ----------
+# Rekonstrukce k datu záznamu: px = ceny držených titulů (Yahoo, jinak interpolace
+# obchodů = approx), fx = historický ČNB fixing k datu, cashccy = hotovost po měnách.
+# Naměřené nav/px hodnoty se nikdy nepřepisují — jen se doplňuje, co chybí.
+enriched = 0
+for rec in hist:
+    if 'px' in rec and 'fx' in rec and 'cashccy' in rec: continue
+    D = rec['ts'][:10]
+    held = hold_asof(D)
+    if 'px' not in rec:
+        rec['px'] = {tk: round(pr, 4) for tk in held
+                     if (pr := price(tk, D)) is not None}
+    cash = cash_asof(D)
+    ccys = {c for (_, c) in cash} | {ccy_of[t] for t in held} | {'CZK'}
+    rec.setdefault('fx', {c: round(fxrate(c, D), 4) for c in sorted(ccys)})
+    if 'cashccy' not in rec:
+        agg = {}
+        for (_, c), bal in cash.items():
+            agg[c] = round(agg.get(c, 0) + bal, 2)
+        rec['cashccy'] = agg
+    enriched += 1
+
 hist = hist[-3000:]
 jsave('nav_history.json', hist)
 
 # kontrolní výpisy proti známým bodům
 def rec_nav(D): return round(nav_asof(D)[0])
-print(f'\nDoplněno {added} nových dnů | nav_history má nyní {len(hist)} bodů')
+print(f'\nDoplněno {added} nových dnů, obohaceno {enriched} záznamů (px/fx/cashccy) '
+      f'| nav_history má nyní {len(hist)} bodů')
 print('Ověření rekonstrukce vůči známým bodům:')
 for D, real in [('2026-07-03', 4413157), ('2026-07-18', 4475291)]:
     print(f'  {D}: rekonstrukce {rec_nav(D):,} vs naměřeno {real:,}')

@@ -60,6 +60,11 @@ h1{font-family:var(--disp);font-weight:600;font-size:26px;letter-spacing:-.02em;
 .seg button.on{background:var(--gold);color:#1a1305;font-weight:600}
 .seg button:not(.on):hover{color:var(--tx)}
 .pnote{font-size:12px;color:var(--dim);font-family:var(--mono)}
+.movers{font-family:var(--mono);font-size:11px;color:var(--mut);margin:-6px 0 24px;line-height:1.9}
+.movers b{color:var(--tx);font-weight:500}
+.movers .mv{white-space:nowrap;overflow-x:auto}
+.movers .ctrl{font-size:10.5px;color:var(--dim)}
+.movers .zwarn{color:#E8924A}
 /* layout */
 .grid{display:grid;gap:16px}
 .g2{grid-template-columns:1fr 1fr}
@@ -166,6 +171,8 @@ tbody tr.open .caret{transform:rotate(90deg);border-left-color:var(--gold)}
     <div class="nav24sub num" id="nav7sub"></div>
   </div>
 </div>
+
+<div class="movers" id="movers" title="Změna z pohybu ceny při aktuálním kurzu; nezahrnuje vliv FX a obchodů v období."></div>
 
 <div class="card" style="margin-bottom:16px">
   <h2><span class="n">YTD</span>Výkonnost od začátku roku</h2>
@@ -279,9 +286,73 @@ function periodChange(p){
   const chg=cur.nav-ref.nav-flows;
   return {chg,pct:chg/(ref.nav||1)*100,since:ref.ts.slice(0,10)};
 }
+// hybatelé období — TOP 5 zisků / TOP 5 ztrát za období, CZK, agregace přes brokery
+// + rekonciliace: Σ cenové efekty + FX efekt + zbytek = Δ NAV období (dopočtem)
+const moversEl=document.getElementById('movers');
+function ctrlLine(X,Y,Z,W){
+  const warn=Math.abs(Z)>0.1*Math.abs(W);
+  return '<div class="mv ctrl">Σ tituly '+SIGN(X)+' · FX '+(Y==null?'—':SIGN(Y))
+    +' · ostatní <span'+(warn?' class="zwarn"':'')+'>'+SIGN(Z)+'</span> = Δ NAV '+SIGN(W)+'</div>';
+}
+function renderMovers(p){
+  const agg={};                                    // ticker -> {qty, ccy, px_now, pl}
+  D.positions.forEach(x=>{const a=agg[x.ticker]??(agg[x.ticker]={qty:0,ccy:x.ccy,px:x.price,pl:0});
+    a.qty+=x.qty; a.pl+=x.pl;});
+  let deltas, ctrl='';
+  if(p==='all'){
+    deltas=Object.entries(agg).map(([t,a])=>[t,a.pl]);   // nerealizovaný P/L — bez historie
+    const X=Math.round(deltas.reduce((s,x)=>s+x[1],0));
+    const W=Math.round(D.meta.gain);
+    ctrl=ctrlLine(X,null,W-X,W);                   // FX ref pro all-time neexistuje
+  }else{
+    const H=D.history||[];
+    if(!H.length){moversEl.innerHTML='';return;}
+    const cd=H[H.length-1].ts.slice(0,10);
+    const older=p==='day'?(d=>d<cd):p==='mtd'?(d=>d.slice(0,7)<cd.slice(0,7)):(d=>d.slice(0,4)<cd.slice(0,4));
+    let ref=null;
+    for(let i=H.length-1;i>=0;i--){if(older(H[i].ts.slice(0,10))){ref=H[i];break;}}
+    if(!ref||!ref.px){
+      moversEl.innerHTML='<span class="mut">hybatelé se začnou zobrazovat po nasbírání historie cen</span>';return;}
+    deltas=[]; let X=0;
+    for(const [t,a] of Object.entries(agg)){
+      const p0=ref.px[t];
+      if(p0==null)continue;                        // nová pozice bez referenční ceny
+      const d=a.qty*(a.px-p0)*((D.fx||{})[a.ccy]||1);
+      deltas.push([t,d]); X+=d;
+    }
+    let fxEff=null;                                // FX efekt: revalvace ref hodnot změnou kurzu
+    if(ref.fx){
+      fxEff=0;
+      for(const [t,a] of Object.entries(agg)){
+        const p0=ref.px[t]; if(p0==null)continue;
+        const f1=(D.fx||{})[a.ccy], f0=ref.fx[a.ccy];
+        if(f1!=null&&f0!=null)fxEff+=a.qty*p0*(f1-f0);
+      }
+      for(const [ccy,bal] of Object.entries(ref.cashccy||{})){
+        const f1=(D.fx||{})[ccy], f0=ref.fx[ccy];
+        if(f1!=null&&f0!=null)fxEff+=bal*(f1-f0);
+      }
+    }
+    const r=periodChange(p);
+    if(r){
+      const W=Math.round(r.chg), Xr=Math.round(X);
+      const Y=fxEff==null?null:Math.round(fxEff);
+      ctrl=ctrlLine(Xr,Y,W-Xr-(Y??0),W);           // Z dopočtem → X+Y+Z=W přesně
+    }
+  }
+  const nz=deltas.map(([t,v])=>[t,Math.round(v)]).filter(x=>x[1]!==0).sort((a,b)=>b[1]-a[1]);
+  const up=nz.filter(x=>x[1]>0).slice(0,5);
+  const dn=nz.filter(x=>x[1]<0).slice(-5).reverse();   // nejztrátovější první
+  let html='';
+  if(up.length)html+='<div class="mv">▲ '+up.map(([t,v])=>`<b>${t}</b> <span class="pos">${SIGN(v)}</span>`).join(' · ')+'</div>';
+  if(dn.length)html+='<div class="mv">▼ '+dn.map(([t,v])=>`<b>${t}</b> <span class="neg">${SIGN(v)}</span>`).join(' · ')+'</div>';
+  if(!html&&!ctrl){moversEl.innerHTML='<span class="mut">žádné pohyby v období</span>';return;}
+  moversEl.innerHTML=(html||'<div class="mv mut">žádné pohyby v období</div>')+ctrl;
+}
 const kgEl=document.getElementById('k_gain'),kgpEl=document.getElementById('k_gainpct');
 const kgLab=kgEl.parentElement.querySelector('.lab');
 function setPeriod(p){
+  renderMovers(p);
   const pn=document.getElementById('pnote');
   if(p==='all'){
     kgLab.textContent='Celkový zisk';
