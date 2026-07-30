@@ -1,6 +1,6 @@
 {
  "4GLD": {
-  "px": 113.36,
+  "px": 114.18,
   "q": "4GLD",
   "exchange": "XETR"
  },
@@ -17,21 +17,21 @@
   "q": "BABA"
  },
  "BOSS": {
-  "px": 37.95,
+  "px": 37.99,
   "q": "BOSS",
   "exchange": "XETR"
  },
  "BYDDY": {
-  "px": 11.86,
+  "px": 11.85,
   "q": "BYDDY"
  },
  "CSPX": {
-  "px": 793.8,
+  "px": 793.359,
   "q": "CSPX",
   "exchange": "LSE"
  },
  "DIDIY": {
-  "px": 3.44,
+  "px": 3.43,
   "q": "DIDIY"
  },
  "EEFT": {
@@ -39,7 +39,7 @@
   "q": "EEFT"
  },
  "EVO": {
-  "px": 751.2,
+  "px": 748.0,
   "q": "EVO",
   "exchange": "OMX"
  },
@@ -68,7 +68,7 @@
   "q": "NICE"
  },
  "NOV": {
-  "px": 45.26,
+  "px": 44.445,
   "q": "NOV",
   "exchange": "XETR",
   "verify": true
@@ -78,7 +78,7 @@
   "q": "NU"
  },
  "P911": {
-  "px": 44.2,
+  "px": 44.23,
   "q": "P911",
   "exchange": "XETR"
  },
@@ -87,11 +87,11 @@
   "q": "PYPL"
  },
  "SOFI": {
-  "px": 15.235,
+  "px": 15.25,
   "q": "SOFI"
  },
  "TTD": {
-  "px": 19.08,
+  "px": 19.0788,
   "q": "TTD"
  },
  "UBER": {
@@ -104,7 +104,7 @@
   "exchange": "XETR"
  },
  "WIZZ": {
-  "px": 10.4,
+  "px": 10.7,
   "q": "WIZZ",
   "exchange": "LSE",
   "divide": 100
