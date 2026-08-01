@@ -22,7 +22,7 @@
   "exchange": "XETR"
  },
  "BYDDY": {
-  "px": 11.92,
+  "px": 11.91,
   "q": "BYDDY"
  },
  "CSPX": {
@@ -44,7 +44,7 @@
   "exchange": "OMX"
  },
  "GRAB": {
-  "px": 3.5,
+  "px": 3.505,
   "q": "GRAB"
  },
  "JD": {
@@ -87,7 +87,7 @@
   "q": "PYPL"
  },
  "SOFI": {
-  "px": 16.3099,
+  "px": 16.31,
   "q": "SOFI"
  },
  "TTD": {
