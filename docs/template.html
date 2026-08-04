@@ -152,7 +152,7 @@ tbody tr.open .caret{transform:rotate(90deg);border-left-color:var(--gold)}
 <div class="periods">
   <div class="seg" id="seg">
     <button data-p="day">Day</button>
-    <button data-p="mtd">MTD</button>
+    <button data-p="7d">7D</button>
     <button data-p="ytd">YTD</button>
     <button data-p="all" class="on">All-time</button>
   </div>
@@ -175,7 +175,7 @@ tbody tr.open .caret{transform:rotate(90deg);border-left-color:var(--gold)}
 <div class="movers" id="movers" title="Změna z pohybu ceny při aktuálním kurzu; nezahrnuje vliv FX a obchodů v období."></div>
 
 <div class="card" style="margin-bottom:16px">
-  <h2><span class="n">YTD</span>Výkonnost od začátku roku</h2>
+  <h2><span class="n" id="perfBadge">ALL</span><span id="perfTitle">Výkonnost za celou historii</span></h2>
   <div class="cap" id="ytdCap">Kumulativní zhodnocení očištěné o vklady a výběry</div>
   <div class="chwrap"><canvas id="ytd"></canvas></div>
 </div>
@@ -187,11 +187,11 @@ tbody tr.open .caret{transform:rotate(90deg);border-left-color:var(--gold)}
   <table id="posT">
     <thead><tr>
       <th class="l" data-s="ticker">Ticker</th>
+      <th data-s="dch">Denní změna</th>
       <th data-s="qty">Ks</th>
       <th data-s="avg">Ø nákup</th>
       <th data-s="price">Cena</th>
       <th data-s="mv">Hodnota CZK</th>
-      <th data-s="dch">Denní změna</th>
       <th data-s="pl">Nereal. P/L</th>
       <th data-s="plpct">P/L %</th>
       <th class="hidesm">Váha</th>
@@ -272,14 +272,21 @@ const kgp=document.getElementById('k_gainpct'); kgp.textContent=(D.meta.gainpct>
 document.getElementById('k_irr').textContent=(D.meta.irr>0?'+':'')+fmt(D.meta.irr,1)+' %';
 document.getElementById('k_dep').textContent=CZK(D.meta.deposits);
 
-// period toggle — Day/MTD/YTD z historie NAV, All-time z toků
+// period toggle — Day/7D/YTD z historie NAV, All-time z toků
+function refBefore(p,cd){                        // predikát: datum je referenční (před obdobím)
+  if(p==='day')return d=>d<cd;
+  if(p==='7d'){const t=new Date(cd+'T00:00:00');t.setDate(t.getDate()-7);
+    const tgt=t.getFullYear()+'-'+String(t.getMonth()+1).padStart(2,'0')+'-'+String(t.getDate()).padStart(2,'0');
+    return d=>d<=tgt;}
+  if(p==='ytd')return d=>d.slice(0,4)<cd.slice(0,4);
+  return null;
+}
 function periodChange(p){
   const H=D.history||[]; if(H.length<1)return null;
   const cur=H[H.length-1]; const cd=cur.ts.slice(0,10);
+  const pred=refBefore(p,cd); if(!pred)return null;
   let ref=null;
-  if(p==='day'){for(let i=H.length-1;i>=0;i--){if(H[i].ts.slice(0,10)<cd){ref=H[i];break;}}}
-  if(p==='mtd'){const m=cd.slice(0,7);for(let i=H.length-1;i>=0;i--){if(H[i].ts.slice(0,7)<m){ref=H[i];break;}}}
-  if(p==='ytd'){const y=cd.slice(0,4);for(let i=H.length-1;i>=0;i--){if(H[i].ts.slice(0,4)<y){ref=H[i];break;}}}
+  for(let i=H.length-1;i>=0;i--){if(pred(H[i].ts.slice(0,10))){ref=H[i];break;}}
   if(!ref)return null;
   // očištěno o vklady/výběry mezi ref a teď
   const flows=(D.flows||[]).filter(f=>f.date>ref.ts.slice(0,10)&&f.date<=cd).reduce((a,f)=>a+f.amt,0);
@@ -308,7 +315,7 @@ function renderMovers(p){
     const H=D.history||[];
     if(!H.length){moversEl.innerHTML='';return;}
     const cd=H[H.length-1].ts.slice(0,10);
-    const older=p==='day'?(d=>d<cd):p==='mtd'?(d=>d.slice(0,7)<cd.slice(0,7)):(d=>d.slice(0,4)<cd.slice(0,4));
+    const older=refBefore(p,cd);
     let ref=null;
     for(let i=H.length-1;i>=0;i--){if(older(H[i].ts.slice(0,10))){ref=H[i];break;}}
     if(!ref||!ref.px){
@@ -353,6 +360,7 @@ const kgEl=document.getElementById('k_gain'),kgpEl=document.getElementById('k_ga
 const kgLab=kgEl.parentElement.querySelector('.lab');
 function setPeriod(p){
   renderMovers(p);
+  renderPerfChart(p);
   const pn=document.getElementById('pnote');
   if(p==='all'){
     kgLab.textContent='Celkový zisk';
@@ -362,7 +370,7 @@ function setPeriod(p){
     return;
   }
   const r=periodChange(p);
-  const names={day:'Denní změna',mtd:'Od začátku měsíce',ytd:'Od začátku roku'};
+  const names={day:'Denní změna','7d':'Změna za 7 dní',ytd:'Od začátku roku'};
   kgLab.textContent=names[p];
   if(!r){kgEl.textContent='—';kgEl.className='val num mut';
     kgpEl.textContent='zatím málo historie';kgpEl.className='sub num mut';
@@ -402,52 +410,57 @@ document.getElementById('seg').addEventListener('click',e=>{
   fill('nav7val','nav7sub',change(24*7));
 })();
 
-// YTD výkonnost — osa vždy 1.1. → den aktualizace; zhodnocení očištěné o vklady/výběry
-(()=>{
+// graf výkonnosti — přepíná se dle zvoleného období (Day/7D/YTD/All-time);
+// kumulativní zhodnocení od reference období, očištěné o vklady/výběry
+var perfChart;   // var bez inicializátoru — setPeriod('all') při startu běží dřív a chart už přiřadil
+function renderPerfChart(p){
   const H=D.history||[];
-  const cd=(H.length?H[H.length-1].ts:D.meta.asof).slice(0,10);
-  const year=+cd.slice(0,4);
-  const inYear=H.filter(h=>+h.ts.slice(0,4)===year);
   const cap=document.getElementById('ytdCap');
-  const doy=s=>{const[y,m,dd]=s.split('-').map(Number);return Math.round((Date.UTC(y,m-1,dd)-Date.UTC(year,0,1))/86400000);};
-  const dlabel=n=>{const dt=new Date(Date.UTC(year,0,1)+n*86400000);return dt.getUTCDate()+'.'+(dt.getUTCMonth()+1)+'.';};
-  const maxDoy=doy(cd);
-  if(inYear.length<1){
-    cap.textContent='Zatím není žádný záznam NAV pro rok '+year+' — křivka se doplní každou aktualizací.';
-    return;
+  const names={day:['D','Výkonnost za poslední den'],'7d':['7D','Výkonnost za posledních 7 dní'],
+               ytd:['YTD','Výkonnost od začátku roku'],all:['ALL','Výkonnost za celou historii']};
+  document.getElementById('perfBadge').textContent=names[p][0];
+  document.getElementById('perfTitle').textContent=names[p][1];
+  if(perfChart){perfChart.destroy();perfChart=null;}
+  if(H.length<2){cap.textContent='Zatím málo historie NAV — křivka se doplní každou aktualizací.';return;}
+  const cd=H[H.length-1].ts.slice(0,10);
+  let baseIdx=0, fallback=false;
+  if(p!=='all'){
+    const pred=refBefore(p,cd); let idx=-1;
+    for(let i=H.length-1;i>=0;i--){if(pred(H[i].ts.slice(0,10))){idx=i;break;}}
+    if(idx>=0)baseIdx=idx; else fallback=true;                 // málo historie → od prvního záznamu
   }
-  // referenční NAV: poslední bod z loňska (přelom roku), jinak první letošní bod
-  let base=null;
-  for(let i=H.length-1;i>=0;i--){if(+H[i].ts.slice(0,4)<year){base=H[i];break;}}
-  const anchoredNY=!!base;
-  if(!base) base=inYear[0];
-  const baseNav=base.nav, baseDate=base.ts.slice(0,10);
-  const pts=[];
-  // ukotvi křivku na 0 % k 1.1., pokud máme referenci z loňska
-  if(anchoredNY) pts.push({x:0,y:0});
-  inYear.forEach(h=>{
+  const base=H[baseIdx], series=H.slice(baseIdx), bd=base.ts.slice(0,10);
+  if(series.length<2){cap.textContent='Zatím málo historie NAV pro zvolené období.';return;}
+  const pt=s=>Date.parse(s.length<=16?s+':00':s);
+  const t0=pt(base.ts);
+  const pts=series.map(h=>{
     const d=h.ts.slice(0,10);
-    const flows=(D.flows||[]).filter(f=>f.date>baseDate&&f.date<=d).reduce((a,f)=>a+f.amt,0);
-    pts.push({x:doy(d),y:(h.nav-baseNav-flows)/(baseNav||1)*100});
+    const flows=(D.flows||[]).filter(f=>f.date>bd&&f.date<=d).reduce((a,f)=>a+f.amt,0);
+    return {x:(pt(h.ts)-t0)/86400000,y:(h.nav-base.nav-flows)/(base.nav||1)*100};
   });
-  const last=pts[pts.length-1].y;
-  cap.textContent='Od 1.1.'+year+' do '+cd.split('-').reverse().join('.')+' · očištěno o vklady a výběry · '
-    +(last>0?'+':'')+fmt(last,2)+' % YTD'+(anchoredNY?'':' (od prvního záznamu '+baseDate.split('-').reverse().join('.')+')');
+  const span=pts[pts.length-1].x, last=pts[pts.length-1].y;
+  const lab=v=>{const dt=new Date(t0+v*86400000);
+    if(span>500)return (dt.getMonth()+1)+'/'+String(dt.getFullYear()).slice(2);
+    if(span<=3)return dt.getDate()+'.'+(dt.getMonth()+1)+'. '+String(dt.getHours()).padStart(2,'0')+':'+String(dt.getMinutes()).padStart(2,'0');
+    return dt.getDate()+'.'+(dt.getMonth()+1)+'.';};
+  const startLab=(p==='ytd'&&!fallback)?'1.1.'+cd.slice(0,4):bd.split('-').reverse().join('.');
+  cap.textContent='Od '+startLab+' do '+cd.split('-').reverse().join('.')+' · očištěno o vklady a výběry · '
+    +(last>0?'+':'')+fmt(last,2)+' %'+(fallback?' (od prvního záznamu)':'');
   const col=last>=0?JADE:CORAL;
   const cv=document.getElementById('ytd');
   const g=cv.getContext('2d').createLinearGradient(0,0,0,230);
   g.addColorStop(0,(last>=0?'rgba(86,179,137,.28)':'rgba(226,112,106,.28)'));
   g.addColorStop(1,'rgba(20,26,36,0)');
-  new Chart(cv,{type:'line',
+  perfChart=new Chart(cv,{type:'line',
     data:{datasets:[{data:pts,borderColor:col,backgroundColor:g,fill:true,
       borderWidth:2,tension:.25,pointRadius:pts.length>60?0:3,pointBackgroundColor:col,pointHoverRadius:5}]},
     options:{responsive:true,maintainAspectRatio:false,parsing:false,
       plugins:{legend:{display:false},tooltip:{callbacks:{
-        title:c=>dlabel(c[0].parsed.x),label:c=>(c.parsed.y>0?'+':'')+fmt(c.parsed.y,2)+' %'}}},
-      scales:{x:{type:'linear',min:0,max:maxDoy,grid:{display:false},
-        ticks:{color:MUT,font:{family:'JetBrains Mono',size:10},maxRotation:0,autoSkip:true,maxTicksLimit:12,callback:v=>dlabel(v)}},
+        title:c=>lab(c[0].parsed.x),label:c=>(c.parsed.y>0?'+':'')+fmt(c.parsed.y,2)+' %'}}},
+      scales:{x:{type:'linear',min:0,max:span,grid:{display:false},
+        ticks:{color:MUT,font:{family:'JetBrains Mono',size:10},maxRotation:0,autoSkip:true,maxTicksLimit:12,callback:v=>lab(v)}},
         y:{grid:{color:'rgba(44,56,74,.5)'},ticks:{color:MUT,font:{family:'JetBrains Mono',size:10},callback:v=>(v>0?'+':'')+v+'%'}}}}});
-})();
+}
 
 // positions table
 let posSort={k:'ticker',dir:1};
@@ -462,11 +475,11 @@ function renderPos(){
     const w=p.mv/D.meta.mv*100;
     const tr=document.createElement('tr'); tr.className='click';
     tr.innerHTML=`<td><span class="caret"></span><span class="tk">${p.ticker}</span><span class="brk ${p.broker==='IBKR'?'ib':'pt'}">${p.broker}</span></td>
+      <td class="num ${cls(p.dch)}">${p.dch==null?'·':SIGN(p.dch)}</td>
       <td class="num">${fmt(p.qty,0)}</td>
       <td class="num mut">${fmt(p.avg,2)} ${p.ccy}</td>
       <td class="num">${fmt(p.price,2)} ${p.ccy}</td>
       <td class="num">${CZK(p.mv)}</td>
-      <td class="num ${cls(p.dch)}">${p.dch==null?'·':SIGN(p.dch)}</td>
       <td class="num ${cls(p.pl)}">${SIGN(p.pl)}</td>
       <td class="num ${cls(p.pl)}">${(p.plpct>0?'+':'')+fmt(p.plpct,1)} %</td>
       <td class="hidesm"><span class="bar"><i style="width:${Math.min(w*3,100)}%;background:${p.broker==='IBKR'?BLUE:GOLD}"></i></span> <span class="num tny mut">${fmt(w,1)}%</span></td>`;
