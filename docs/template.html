@@ -65,6 +65,21 @@ h1{font-family:var(--disp);font-weight:600;font-size:26px;letter-spacing:-.02em;
 .movers .mv{white-space:nowrap;overflow-x:auto}
 .movers .ctrl{font-size:10.5px;color:var(--dim)}
 .movers .zwarn{color:#E8924A}
+/* breaking news */
+.breaking{background:linear-gradient(180deg,var(--panel),var(--panel2));border:1px solid var(--line);
+  border-left:3px solid var(--coral);border-radius:10px;padding:12px 16px;margin-bottom:14px}
+.bhead{display:flex;align-items:center;gap:8px;font-family:var(--mono);font-size:10px;
+  letter-spacing:.12em;color:var(--coral);margin-bottom:7px}
+.bdot{width:7px;height:7px;border-radius:50%;background:var(--coral);flex:none;
+  animation:bpulse 1.6s ease-in-out infinite}
+@keyframes bpulse{0%,100%{opacity:1}50%{opacity:.25}}
+.brow{font-size:12px;line-height:1.75;color:var(--tx)}
+.brow .btk{font-family:var(--mono);font-weight:600}
+.bsrc{color:var(--dim);font-family:var(--mono);font-size:10.5px}
+.movers .nws{cursor:pointer;border-bottom:1px dotted var(--gold)}
+.movers .nws.dnn{border-bottom-color:var(--coral)}
+.mnews{display:none;background:var(--panel2);border:1px solid var(--line2);border-radius:8px;
+  padding:9px 12px;margin:6px 0;font-size:11.5px;line-height:1.75;color:var(--tx);white-space:normal}
 /* layout */
 .grid{display:grid;gap:16px}
 .g2{grid-template-columns:1fr 1fr}
@@ -149,10 +164,16 @@ tbody tr.open .caret{transform:rotate(90deg);border-left-color:var(--gold)}
   <div class="kpi"><div class="lab">Vložený kapitál</div><div class="val num" id="k_dep"></div><div class="sub">čistý (vklady − výběry)</div></div>
 </div>
 
+<div class="breaking" id="breaking" style="display:none">
+  <div class="bhead"><span class="bdot"></span>BREAKING — pohyby dne</div>
+  <div id="breakingB"></div>
+</div>
+
 <div class="periods">
   <div class="seg" id="seg">
     <button data-p="day">Day</button>
     <button data-p="7d">7D</button>
+    <button data-p="30d">30D</button>
     <button data-p="ytd">YTD</button>
     <button data-p="all" class="on">All-time</button>
   </div>
@@ -272,10 +293,24 @@ const kgp=document.getElementById('k_gainpct'); kgp.textContent=(D.meta.gainpct>
 document.getElementById('k_irr').textContent=(D.meta.irr>0?'+':'')+fmt(D.meta.irr,1)+' %';
 document.getElementById('k_dep').textContent=CZK(D.meta.deposits);
 
+// Breaking strip — jen zprávy k datu posledního snapshotu
+(()=>{
+  const N=D.news||[], H=D.history||[];
+  if(!N.length||!H.length)return;
+  const cd=H[H.length-1].ts.slice(0,10);
+  const rows=N.filter(n=>n.date===cd);
+  if(!rows.length)return;
+  document.getElementById('breakingB').innerHTML=rows.map(n=>
+    `<div class="brow"><span class="btk">${n.ticker}</span> <span class="num ${cls(n.chg_pct)}">${(n.chg_pct>0?'+':'')+fmt(n.chg_pct,1)} %</span> — ${n.text} <span class="bsrc">${n.source?n.source+(n.source_time?' · '+n.source_time:''):''}</span></div>`).join('');
+  document.getElementById('breaking').style.display='';
+})();
+
 // period toggle — Day/7D/YTD z historie NAV, All-time z toků
 function refBefore(p,cd){                        // predikát: datum je referenční (před obdobím)
   if(p==='day')return d=>d<cd;
-  if(p==='7d'){const t=new Date(cd+'T00:00:00');t.setDate(t.getDate()-7);
+  if(p==='7d'||p==='30d'){                       // klouzavé okno N dní zpět
+    const n=p==='7d'?7:30;
+    const t=new Date(cd+'T00:00:00');t.setDate(t.getDate()-n);
     const tgt=t.getFullYear()+'-'+String(t.getMonth()+1).padStart(2,'0')+'-'+String(t.getDate()).padStart(2,'0');
     return d=>d<=tgt;}
   if(p==='ytd')return d=>d.slice(0,4)<cd.slice(0,4);
@@ -296,18 +331,42 @@ function periodChange(p){
 // hybatelé období — TOP 5 zisků / TOP 5 ztrát za období, CZK, agregace přes brokery
 // + rekonciliace: Σ cenové efekty + FX efekt + zbytek = Δ NAV období (dopočtem)
 const moversEl=document.getElementById('movers');
+let mvNews={}, mvOpen=null;                       // news mapa aktivního období + rozbalený ticker
+function newsMap(p,cd,refDate){
+  const m={};
+  (D.news||[]).forEach(n=>{
+    let hit=false;
+    if(p==='all')hit=true;
+    else if(p==='day')hit=n.date===cd;
+    else hit=refDate?(n.date>refDate&&n.date<=cd):false;
+    if(hit)(m[n.ticker]=m[n.ticker]||[]).push(n);
+  });
+  return m;
+}
+moversEl.addEventListener('click',e=>{            // klikem rozbalit/sbalit panel s news
+  const b=e.target.closest('.nws'); if(!b)return;
+  const panel=document.getElementById('movernews'); if(!panel)return;
+  const t=b.dataset.t;
+  if(mvOpen===t){panel.style.display='none';mvOpen=null;return;}
+  const items=mvNews[t]||[];
+  panel.innerHTML=items.map(n=>
+    `<div><span class="btk">${n.ticker}</span> <span class="mut">${n.date.split('-').reverse().join('.')}</span> <span class="num ${cls(n.chg_pct)}">${(n.chg_pct>0?'+':'')+fmt(n.chg_pct,1)} %</span> — ${n.text} <span class="bsrc">${n.source?n.source+(n.source_time?' · '+n.source_time:''):''}</span></div>`).join('');
+  panel.style.display='block'; mvOpen=t;
+});
 function ctrlLine(X,Y,Z,W){
   const warn=Math.abs(Z)>0.1*Math.abs(W);
   return '<div class="mv ctrl">Σ tituly '+SIGN(X)+' · FX '+(Y==null?'—':SIGN(Y))
     +' · ostatní <span'+(warn?' class="zwarn"':'')+'>'+SIGN(Z)+'</span> = Δ NAV '+SIGN(W)+'</div>';
 }
 function renderMovers(p){
+  mvNews={}; mvOpen=null;                          // reset news stavu při přepnutí období
   const agg={};                                    // ticker -> {qty, ccy, px_now, pl}
   D.positions.forEach(x=>{const a=agg[x.ticker]??(agg[x.ticker]={qty:0,ccy:x.ccy,px:x.price,pl:0});
     a.qty+=x.qty; a.pl+=x.pl;});
   let deltas, ctrl='';
   if(p==='all'){
     deltas=Object.entries(agg).map(([t,a])=>[t,a.pl]);   // nerealizovaný P/L — bez historie
+    mvNews=newsMap('all',null,null);
     const X=Math.round(deltas.reduce((s,x)=>s+x[1],0));
     const W=Math.round(D.meta.gain);
     ctrl=ctrlLine(X,null,W-X,W);                   // FX ref pro all-time neexistuje
@@ -320,6 +379,7 @@ function renderMovers(p){
     for(let i=H.length-1;i>=0;i--){if(older(H[i].ts.slice(0,10))){ref=H[i];break;}}
     if(!ref||!ref.px){
       moversEl.innerHTML='<span class="mut">hybatelé se začnou zobrazovat po nasbírání historie cen</span>';return;}
+    mvNews=newsMap(p,cd,ref.ts.slice(0,10));
     deltas=[]; let X=0;
     for(const [t,a] of Object.entries(agg)){
       const p0=ref.px[t];
@@ -350,11 +410,13 @@ function renderMovers(p){
   const nz=deltas.map(([t,v])=>[t,Math.round(v)]).filter(x=>x[1]!==0).sort((a,b)=>b[1]-a[1]);
   const up=nz.filter(x=>x[1]>0).slice(0,5);
   const dn=nz.filter(x=>x[1]<0).slice(-5).reverse();   // nejztrátovější první
+  const tk=(t,neg)=>mvNews[t]?`<b class="nws${neg?' dnn':''}" data-t="${t}">${t}</b>`:`<b>${t}</b>`;
   let html='';
-  if(up.length)html+='<div class="mv">▲ '+up.map(([t,v])=>`<b>${t}</b> <span class="pos">${SIGN(v)}</span>`).join(' · ')+'</div>';
-  if(dn.length)html+='<div class="mv">▼ '+dn.map(([t,v])=>`<b>${t}</b> <span class="neg">${SIGN(v)}</span>`).join(' · ')+'</div>';
+  if(up.length)html+='<div class="mv">▲ '+up.map(([t,v])=>tk(t,false)+` <span class="pos">${SIGN(v)}</span>`).join(' · ')+'</div>';
+  if(dn.length)html+='<div class="mv">▼ '+dn.map(([t,v])=>tk(t,true)+` <span class="neg">${SIGN(v)}</span>`).join(' · ')+'</div>';
   if(!html&&!ctrl){moversEl.innerHTML='<span class="mut">žádné pohyby v období</span>';return;}
-  moversEl.innerHTML=(html||'<div class="mv mut">žádné pohyby v období</div>')+ctrl;
+  moversEl.innerHTML=(html||'<div class="mv mut">žádné pohyby v období</div>')
+    +'<div class="mnews" id="movernews"></div>'+ctrl;
 }
 const kgEl=document.getElementById('k_gain'),kgpEl=document.getElementById('k_gainpct');
 const kgLab=kgEl.parentElement.querySelector('.lab');
@@ -370,7 +432,7 @@ function setPeriod(p){
     return;
   }
   const r=periodChange(p);
-  const names={day:'Denní změna','7d':'Změna za 7 dní',ytd:'Od začátku roku'};
+  const names={day:'Denní změna','7d':'Změna za 7 dní','30d':'Změna za 30 dní',ytd:'Od začátku roku'};
   kgLab.textContent=names[p];
   if(!r){kgEl.textContent='—';kgEl.className='val num mut';
     kgpEl.textContent='zatím málo historie';kgpEl.className='sub num mut';
@@ -417,6 +479,7 @@ function renderPerfChart(p){
   const H=D.history||[];
   const cap=document.getElementById('ytdCap');
   const names={day:['D','Výkonnost za poslední den'],'7d':['7D','Výkonnost za posledních 7 dní'],
+               '30d':['30D','Výkonnost za posledních 30 dní'],
                ytd:['YTD','Výkonnost od začátku roku'],all:['ALL','Výkonnost za celou historii']};
   document.getElementById('perfBadge').textContent=names[p][0];
   document.getElementById('perfTitle').textContent=names[p][1];

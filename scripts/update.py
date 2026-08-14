@@ -203,6 +203,20 @@ def main():
     meta['price_note'] = note
 
     hist = jload(p('data', 'nav_history.json'))
+
+    # detekce pohybů >= 2,5 % vs poslední snapshot s cenami -> alerty pro news agenta
+    prev_snap = next((h['px'] for h in reversed(hist) if h.get('px')), None)
+    alerts = []
+    if prev_snap:
+        for t, cfg in prices.items():
+            p0 = prev_snap.get(t); p1 = cfg['px']
+            if p0 and p1 and p0 > 0:
+                chg = (p1 / p0 - 1) * 100
+                if abs(chg) >= 2.5:
+                    alerts.append(dict(ticker=t, chg_pct=round(chg, 2),
+                                       px_prev=p0, px_now=p1, ts=now))
+    jsave(p('data', 'alerts_pending.json'), alerts)   # vždy přepsat celý (staré zahodit)
+
     cashccy = {}
     for c in static['cash']:
         cashccy[c['ccy']] = round(cashccy.get(c['ccy'], 0) + c['bal'], 2)
@@ -215,8 +229,12 @@ def main():
     jsave(p('data', 'fx.json'), dict(fx=fx, src=fx_src))
     jsave(p('data', 'nav_history.json'), hist)
 
+    news_path = p('data', 'news.json')
+    news = jload(news_path) if os.path.exists(news_path) else []
+
     payload = dict(meta=meta, fx=fx, history=hist, positions=positions, cash=cash,
-                   trades=static['trades'], others=static['others'], flows=static['flows'])
+                   trades=static['trades'], others=static['others'], flows=static['flows'],
+                   news=news)
 
     tpl = open(p('docs', 'template.html'), encoding='utf-8').read()
     html = tpl.replace('__DATA__', json.dumps(payload, ensure_ascii=False))

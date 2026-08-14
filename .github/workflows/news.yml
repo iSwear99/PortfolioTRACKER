@@ -1,0 +1,59 @@
+name: Breaking news
+
+on:
+  workflow_run:
+    workflows: ["Aktualizace portfolia"]
+    types: [completed]
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update
+  cancel-in-progress: false
+
+jobs:
+  news:
+    if: ${{ github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success' }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - name: Zkontrolovat čekající alerty
+        id: chk
+        run: |
+          if [ -s data/alerts_pending.json ] && python3 -c "import json,sys; sys.exit(0 if json.load(open('data/alerts_pending.json')) else 1)"; then
+            echo "has=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "has=false" >> "$GITHUB_OUTPUT"
+          fi
+      - uses: actions/setup-python@v5
+        if: steps.chk.outputs.has == 'true'
+        with:
+          python-version: '3.12'
+      - name: Git identita pro commit agenta
+        if: steps.chk.outputs.has == 'true'
+        run: |
+          git config user.name  "portfolio-news-bot"
+          git config user.email "actions@users.noreply.github.com"
+      - name: Vysvětlit pohyby (Claude)
+        if: steps.chk.outputs.has == 'true'
+        uses: anthropics/claude-code-action@v1
+        env:
+          TWELVE_DATA_KEY: ${{ secrets.TWELVE_DATA_KEY }}
+        with:
+          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          prompt: |
+            Přečti data/alerts_pending.json. Pro každý titul vyhledej na webu dnešní
+            cenotvornou příčinu pohybu (výsledky, guidance, up/downgrade, M&A,
+            regulace, sektorová zpráva). Do data/news.json PŘIDEJ záznamy
+            {ticker, date, chg_pct, text, source, source_time}: text = JEDNA česká
+            věta, věcná, bez doporučení; source = název média. Pokud jasnou příčinu
+            nenajdeš, text = 'Bez zjevné zprávy — ' + nejpravděpodobnější tržní/
+            sektorový kontext, source = null. NIKDY si zdroj nevymýšlej. Starší
+            záznamy v news.json zachovej (historie), duplicitní ticker+date přepiš.
+            Vyprázdni alerts_pending.json (zapiš []), spusť python scripts/update.py,
+            commitni a pushni do main.
+          claude_args: --allowedTools "WebSearch,WebFetch,Bash(python*),Edit,Read,Write,Bash(git*)" --max-turns 25
