@@ -6,5 +6,45 @@
   "text": "Bez zjevné zprávy — pokračuje přeceňování akcie po výsledcích za 2Q 2026 z 28. července (EPS 1,38 USD nad konsensem 1,28 USD) a zvýšeném celoročním výhledu, na pozadí stále neuzavřené nabídky Stripe a Advent na 60,50 USD za akcii.",
   "source": null,
   "source_time": null
+ },
+ {
+  "ticker": "EEFT",
+  "date": "2026-08-17",
+  "chg_pct": -3.7,
+  "text": "Bez zjevné zprávy — akcie dál oslabuje po slabých výsledcích za 2Q 2026 z 30. července (tržby 1 108 mil. USD pod konsensem, meziroční pokles zisku) a následném snižování cílových cen k 94 USD, přičemž celý sektor převodů peněz zůstává pod tlakem digitální konkurence a zpřísněné migrační politiky v USA.",
+  "source": null,
+  "source_time": null
+ },
+ {
+  "ticker": "MSFT",
+  "date": "2026-08-17",
+  "chg_pct": -2.83,
+  "text": "Bez zjevné zprávy — jde nejspíš o výběr zisků po předchozím týdenním růstu o 18 % poté, co roční tržby Azure poprvé překročily 100 mld. USD, na pozadí celkově slabšího trhu kvůli napětí mezi USA a Íránem a výnosu 30letého dluhopisu na 5,31 %, nejvýše od června 2007.",
+  "source": null,
+  "source_time": null
+ },
+ {
+  "ticker": "NICE",
+  "date": "2026-08-17",
+  "chg_pct": -3.52,
+  "text": "Bez zjevné zprávy — pokračuje slabost softwarových titulů kvůli obavám z narušení jejich trhu umělou inteligencí, v případě NICE po výsledcích za 2Q 2026 z 5. srpna a snížení ratingu od Morgan Stanley na Equal Weight s cílovou cenou 111 USD.",
+  "source": null,
+  "source_time": null
+ },
+ {
+  "ticker": "NU",
+  "date": "2026-08-17",
+  "chg_pct": -2.69,
+  "text": "Bez zjevné zprávy — korekce po pátečním skoku o cca 10 % na pětiměsíční maximum díky rekordním výsledkům za 2Q 2026 (tržby +39 % na 5,9 mld. USD, čistý zisk 1,1 mld. USD), k čemuž se přidal tlak rostoucích výnosů amerických dluhopisů na rozvíjející se trhy.",
+  "source": null,
+  "source_time": null
+ },
+ {
+  "ticker": "TTD",
+  "date": "2026-08-17",
+  "chg_pct": -5.06,
+  "text": "Akcie pokračovala v prodejní vlně po výsledcích za 2Q 2026, kdy tržby 715,1 mil. USD i upravený zisk 0,34 USD na akcii zaostaly za konsensem a výhled tržeb na 3Q ve výši 650 mil. USD výrazně minul očekávaných 807 mil. USD, což spustilo vlnu snižování cílových cen na Wall Street.",
+  "source": "Benzinga",
+  "source_time": "2026-08-17"
  }
 ]
