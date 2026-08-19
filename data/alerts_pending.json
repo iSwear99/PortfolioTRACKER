@@ -1,9 +1,37 @@
 [
  {
-  "ticker": "DIDIY",
-  "chg_pct": -7.44,
-  "px_prev": 4.03,
-  "px_now": 3.73,
-  "ts": "2026-08-19T09:46"
+  "ticker": "ASML",
+  "chg_pct": -2.52,
+  "px_prev": 1802.98,
+  "px_now": 1757.46,
+  "ts": "2026-08-19T20:37"
+ },
+ {
+  "ticker": "KSPI",
+  "chg_pct": 2.63,
+  "px_prev": 97.98,
+  "px_now": 100.56,
+  "ts": "2026-08-19T20:37"
+ },
+ {
+  "ticker": "SOFI",
+  "chg_pct": 4.05,
+  "px_prev": 17.66,
+  "px_now": 18.375,
+  "ts": "2026-08-19T20:37"
+ },
+ {
+  "ticker": "UBER",
+  "chg_pct": 5.23,
+  "px_prev": 74.69,
+  "px_now": 78.6,
+  "ts": "2026-08-19T20:37"
+ },
+ {
+  "ticker": "VOW3",
+  "chg_pct": 2.52,
+  "px_prev": 73.0,
+  "px_now": 74.84,
+  "ts": "2026-08-19T20:37"
  }
 ]

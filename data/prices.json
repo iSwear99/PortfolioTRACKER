@@ -1,23 +1,23 @@
 {
  "4GLD": {
-  "px": 120.85,
+  "px": 123.69,
   "q": "4GLD",
   "exchange": "XETR"
  },
  "AMZN": {
-  "px": 259.48,
+  "px": 264.2,
   "q": "AMZN"
  },
  "ASML": {
-  "px": 1802.98,
+  "px": 1757.46,
   "q": "ASML"
  },
  "BABA": {
-  "px": 128.18,
+  "px": 128.695,
   "q": "BABA"
  },
  "BOSS": {
-  "px": 37.89,
+  "px": 37.85,
   "q": "BOSS",
   "exchange": "XETR"
  },
@@ -26,7 +26,7 @@
   "q": "BYDDY"
  },
  "CSPX": {
-  "px": 829.51,
+  "px": 832.79,
   "q": "CSPX",
   "exchange": "LSE"
  },
@@ -35,82 +35,82 @@
   "q": "DIDIY"
  },
  "EEFT": {
-  "px": 69.21,
+  "px": 69.02,
   "q": "EEFT"
  },
  "EVO": {
-  "px": 774.0,
+  "px": 781.8,
   "q": "EVO",
   "exchange": "OMX"
  },
  "GRAB": {
-  "px": 3.44,
+  "px": 3.525,
   "q": "GRAB"
  },
  "JD": {
-  "px": 28.82,
+  "px": 29.29,
   "q": "JD"
  },
  "KSPI": {
-  "px": 97.98,
+  "px": 100.56,
   "q": "KSPI"
  },
  "KWEB": {
-  "px": 26.79,
+  "px": 27.2,
   "q": "KWEB"
  },
  "MSFT": {
-  "px": 481.93,
+  "px": 484.0,
   "q": "MSFT"
  },
  "NICE": {
-  "px": 99.57,
+  "px": 100.12,
   "q": "NICE"
  },
  "NOV": {
-  "px": 39.235,
+  "px": 39.91,
   "q": "NOV",
   "exchange": "XETR",
   "verify": true
  },
  "NU": {
-  "px": 14.355,
+  "px": 14.485,
   "q": "NU"
  },
  "P911": {
-  "px": 44.31,
+  "px": 44.65,
   "q": "P911",
   "exchange": "XETR"
  },
  "PYPL": {
-  "px": 60.43,
+  "px": 60.995,
   "q": "PYPL"
  },
  "SOFI": {
-  "px": 17.66,
+  "px": 18.375,
   "q": "SOFI"
  },
  "TTD": {
-  "px": 13.42,
+  "px": 13.63,
   "q": "TTD"
  },
  "UBER": {
-  "px": 74.69,
+  "px": 78.6,
   "q": "UBER"
  },
  "VOW3": {
-  "px": 73.0,
+  "px": 74.84,
   "q": "VOW3",
   "exchange": "XETR"
  },
  "WIZZ": {
-  "px": 10.48,
+  "px": 10.51,
   "q": "WIZZ",
   "exchange": "LSE",
   "divide": 100
  },
  "WIX": {
-  "px": 77.2575,
+  "px": 77.86,
   "q": "WIX"
  }
 }
