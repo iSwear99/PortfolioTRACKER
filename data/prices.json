@@ -22,7 +22,7 @@
   "exchange": "XETR"
  },
  "BYDDY": {
-  "px": 11.77,
+  "px": 11.78,
   "q": "BYDDY"
  },
  "CSPX": {
@@ -31,11 +31,11 @@
   "exchange": "LSE"
  },
  "DIDIY": {
-  "px": 3.87,
+  "px": 3.85,
   "q": "DIDIY"
  },
  "EEFT": {
-  "px": 70.095,
+  "px": 70.07,
   "q": "EEFT"
  },
  "EVO": {
@@ -44,7 +44,7 @@
   "exchange": "OMX"
  },
  "GRAB": {
-  "px": 3.48,
+  "px": 3.47,
   "q": "GRAB"
  },
  "JD": {
@@ -95,7 +95,7 @@
   "q": "TTD"
  },
  "UBER": {
-  "px": 78.795,
+  "px": 78.8,
   "q": "UBER"
  },
  "VOW3": {
