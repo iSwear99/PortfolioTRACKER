@@ -1,9 +1,16 @@
 [
  {
-  "ticker": "BYDDY",
-  "chg_pct": 2.76,
-  "px_prev": 11.58,
-  "px_now": 11.9,
-  "ts": "2026-08-26T09:55"
+  "ticker": "NOV",
+  "chg_pct": -2.75,
+  "px_prev": 41.75,
+  "px_now": 40.6,
+  "ts": "2026-08-26T21:50"
+ },
+ {
+  "ticker": "WIX",
+  "chg_pct": -4.91,
+  "px_prev": 86.1,
+  "px_now": 81.87,
+  "ts": "2026-08-26T21:50"
  }
 ]
