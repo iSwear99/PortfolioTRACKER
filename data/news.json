@@ -46,5 +46,93 @@
   "text": "Akcie pokračovala v prodejní vlně po výsledcích za 2Q 2026, kdy tržby 715,1 mil. USD i upravený zisk 0,34 USD na akcii zaostaly za konsensem a výhled tržeb na 3Q ve výši 650 mil. USD výrazně minul očekávaných 807 mil. USD, což spustilo vlnu snižování cílových cen na Wall Street.",
   "source": "Benzinga",
   "source_time": "2026-08-17"
+ },
+ {
+  "ticker": "BABA",
+  "date": "2026-08-27",
+  "chg_pct": -4.21,
+  "text": "Bez zjevné zprávy — čínské spotřebitelské internetové akcie klesaly bez ověřeného katalyzátoru, zatímco americký trh rostl a kapitál rotoval do AI titulů po výsledcích Nvidie (Baidu +4 %, PDD −3 %), na pozadí doznívajícího tlaku z umístění nových akcií za 10,2 mld. USD z 24. srpna a propadu čtvrtletního zisku o 75 % kvůli investicím do AI.",
+  "source": null,
+  "source_time": null
+ },
+ {
+  "ticker": "DIDIY",
+  "date": "2026-08-27",
+  "chg_pct": 4.35,
+  "text": "Bez zjevné zprávy — ADR patrně těží z pokračujícího přeceňování po výsledcích za 2Q 2026 (čistý zisk 866 mil. CNY proti loňské ztrátě 2 485 mil. CNY) a z očekávání přesunu listingu do Hongkongu, přestože čínské internetové akcie jako celek ve stejný den oslabovaly.",
+  "source": null,
+  "source_time": null
+ },
+ {
+  "ticker": "EEFT",
+  "date": "2026-08-27",
+  "chg_pct": -2.56,
+  "text": "Bez zjevné zprávy — akcie dál klesá v návaznosti na slabé výsledky za 2Q 2026 (EPS 1,68 USD proti 2,31 USD před rokem, čistý zisk −21 %) a následné snižování cílových cen k 94 USD, přičemž sektor převodů peněz zůstává pod tlakem makra a zpřísněné migrační politiky v USA.",
+  "source": null,
+  "source_time": null
+ },
+ {
+  "ticker": "KSPI",
+  "date": "2026-08-27",
+  "chg_pct": -3.01,
+  "text": "Bez zjevné zprávy — kazašský fintech oslabuje spolu s dalšími tituly rozvíjejících se trhů v den, kdy americké indexy táhly hlavně AI akcie po výsledcích Nvidie, a to navzdory výsledkům z 10. srpna (tržby +15 %) a zvýšení cílové ceny Wolfe Research na 115 USD; krátké pozice v akcii se do poloviny srpna zvýšily o 78 %.",
+  "source": null,
+  "source_time": null
+ },
+ {
+  "ticker": "NOV",
+  "date": "2026-08-27",
+  "chg_pct": -2.98,
+  "text": "Bez zjevné zprávy — ropné služby oslabily spolu s cenou ropy, která 27. srpna klesla zhruba o 1 % (Brent na 86,9 USD, WTI na 81,4 USD) poté, co americké sankce vůči Íránu dopadly mírněji, než trh čekal, a jednání o obnovení průjezdu Hormuzským průlivem zmírnila obavy z výpadku dodávek.",
+  "source": null,
+  "source_time": null
+ },
+ {
+  "ticker": "NU",
+  "date": "2026-08-27",
+  "chg_pct": -2.54,
+  "text": "Bez zjevné zprávy — brazilská Nubank klesá v rámci širšího odlivu z latinskoamerických fintechů a rozvíjejících se trhů, zatímco kapitál směřoval do amerických AI titulů po výsledcích Nvidie; akcie je letos dolů zhruba o 30 % i přes zisk nad 1 mld. USD a růst tržeb o 39 % ve 2Q 2026.",
+  "source": null,
+  "source_time": null
+ },
+ {
+  "ticker": "P911",
+  "date": "2026-08-27",
+  "chg_pct": 4.55,
+  "text": "Bez zjevné zprávy — akcie rostla v příznivém sentimentu kolem německých automobilek a indexu MDAX a v návaznosti na optimističtější komentáře analytiků po pololetních výsledcích (konsenzuální cílová cena kolem 45,7 EUR), aniž by k pohybu vyšla nová firemní zpráva.",
+  "source": null,
+  "source_time": null
+ },
+ {
+  "ticker": "TTD",
+  "date": "2026-08-27",
+  "chg_pct": 3.22,
+  "text": "Bez zjevné zprávy — jde patrně o technický odraz od 52týdenního minima 12,83 USD po letošním propadu akcie zhruba o 65 %, který následoval po srpnových výsledcích za 2Q a výhledu na 3Q s meziročním poklesem tržeb o 12 %.",
+  "source": null,
+  "source_time": null
+ },
+ {
+  "ticker": "UBER",
+  "date": "2026-08-27",
+  "chg_pct": -2.61,
+  "text": "Bez zjevné zprávy — akcie pokračuje v korekci zhruba 20 % pod historickým maximem na pozadí obav z konkurence v robotaxi poté, co Waymo oznámilo ukončení exkluzivity v Austinu a Atlantě od roku 2028 a Nevada 20. srpna povolila placené robotaxi služby také Tesle a Waymu.",
+  "source": null,
+  "source_time": null
+ },
+ {
+  "ticker": "VOW3",
+  "date": "2026-08-27",
+  "chg_pct": 3.56,
+  "text": "Bez zjevné zprávy — preferenční akcie VW rostla v pozitivním sentimentu kolem německých automobilek, přičemž trh dál oceňuje ohlášené snižování nákladů a plán snížit podíl v Tratonu na 75 % plus jednu akcii (prodávaný balík má hodnotu kolem 16,6 mld. EUR).",
+  "source": null,
+  "source_time": null
+ },
+ {
+  "ticker": "WIX",
+  "date": "2026-08-27",
+  "chg_pct": 5.15,
+  "text": "Bez zjevné zprávy — akcie pokračuje v přeceňování po výsledcích za 2Q 2026 (upravený EPS 1,59 USD, tržby 563,1 mil. USD) a po spuštění agentní AI platformy Symphony z 11. srpna, které vyvolalo vlnu zvyšování cílových cen (Benchmark 24. srpna na 110 USD z 90 USD).",
+  "source": null,
+  "source_time": null
  }
 ]
