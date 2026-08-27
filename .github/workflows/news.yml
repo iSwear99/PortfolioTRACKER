@@ -57,4 +57,4 @@ jobs:
             záznamy v news.json zachovej (historie), duplicitní ticker+date přepiš.
             Vyprázdni alerts_pending.json (zapiš []), spusť python scripts/update.py,
             commitni a pushni do main.
-          claude_args: --allowedTools "WebSearch,WebFetch,Bash(python*),Edit,Read,Write,Bash(git*)" --max-turns 25 --verbose
+          claude_args: --allowedTools "WebSearch,WebFetch,Bash(python*),Edit,Read,Write,Bash(git*)" --max-turns 60 --model claude-opus-5 --verbose
