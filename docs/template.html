@@ -124,6 +124,11 @@ tbody tr.click:hover{background:rgba(224,177,94,.05)}
 .nav24lab{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--mut)}
 .nav24val{font-size:24px;font-weight:600;letter-spacing:-.01em}
 .nav24sub{margin-left:auto;font-size:12.5px;color:var(--mut)}
+/* uzamčený první sloupec (ticker) v tabulce pozic při horizontálním scrollu */
+#posT>thead th:first-child,#posT>tbody tr.click td:first-child{
+  position:sticky;left:0;z-index:2;background:var(--panel);
+  box-shadow:6px 0 8px -6px rgba(0,0,0,.55)}
+#posT>tbody tr.click:hover td:first-child{background:#1B2230}
 .caret{display:inline-block;width:0;height:0;border-left:5px solid var(--mut);
   border-top:4px solid transparent;border-bottom:4px solid transparent;
   margin-right:9px;transition:transform .15s;vertical-align:middle}
@@ -171,11 +176,11 @@ tbody tr.open .caret{transform:rotate(90deg);border-left-color:var(--gold)}
 
 <div class="periods">
   <div class="seg" id="seg">
-    <button data-p="day">Day</button>
+    <button data-p="day" class="on">Day</button>
     <button data-p="7d">7D</button>
     <button data-p="30d">30D</button>
     <button data-p="ytd">YTD</button>
-    <button data-p="all" class="on">All-time</button>
+    <button data-p="all">All-time</button>
   </div>
   <span class="pnote" id="pnote"></span>
 </div>
@@ -445,7 +450,7 @@ function setPeriod(p){
   kgpEl.textContent=(r.pct>0?'+':'')+fmt(r.pct,2)+' %'; kgpEl.className='sub num '+cls(r.chg);
   pn.textContent='vs '+r.since.split('-').reverse().join('.')+', očištěno o vklady a výběry';
 }
-setPeriod('all');
+setPeriod('day');
 document.getElementById('seg').addEventListener('click',e=>{
   const b=e.target.closest('button'); if(!b)return;
   [...e.currentTarget.children].forEach(x=>x.classList.remove('on')); b.classList.add('on');
