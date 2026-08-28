@@ -2,8 +2,9 @@ name: Aktualizace portfolia
 
 on:
   schedule:
-    - cron: '0 7 * * *'
-    - cron: '0 18 * * *'
+    - cron: '20 7 * * *'    # ~9:20 Prahy (léto) — ráno, EU otevření
+    - cron: '20 18 * * *'   # ~20:20 Prahy — večer, průběh US seance
+    - cron: '20 21 * * *'   # ~23:20 Prahy — po US závěru, denní uzávěrka
   workflow_dispatch: {}
 
 permissions:

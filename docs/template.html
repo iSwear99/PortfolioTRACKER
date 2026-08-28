@@ -165,7 +165,7 @@ tbody tr.open .caret{transform:rotate(90deg);border-left-color:var(--gold)}
 </div>
 
 <div class="breaking" id="breaking" style="display:none">
-  <div class="bhead"><span class="bdot"></span>BREAKING — pohyby dne</div>
+  <div class="bhead"><span class="bdot"></span>BREAKING — pohyby posledních 24 h</div>
   <div id="breakingB"></div>
 </div>
 
@@ -293,15 +293,19 @@ const kgp=document.getElementById('k_gainpct'); kgp.textContent=(D.meta.gainpct>
 document.getElementById('k_irr').textContent=(D.meta.irr>0?'+':'')+fmt(D.meta.irr,1)+' %';
 document.getElementById('k_dep').textContent=CZK(D.meta.deposits);
 
-// Breaking strip — jen zprávy k datu posledního snapshotu
+// Breaking strip — zprávy za posledních ~24 h (datum snapshotu a den před ním)
 (()=>{
   const N=D.news||[], H=D.history||[];
   if(!N.length||!H.length)return;
   const cd=H[H.length-1].ts.slice(0,10);
-  const rows=N.filter(n=>n.date===cd);
+  const t=new Date(cd+'T00:00:00');t.setDate(t.getDate()-1);
+  const cutoff=t.getFullYear()+'-'+String(t.getMonth()+1).padStart(2,'0')+'-'+String(t.getDate()).padStart(2,'0');
+  const rows=N.filter(n=>n.date>=cutoff).sort((a,b)=>a.date<b.date?1:-1);
   if(!rows.length)return;
-  document.getElementById('breakingB').innerHTML=rows.map(n=>
-    `<div class="brow"><span class="btk">${n.ticker}</span> <span class="num ${cls(n.chg_pct)}">${(n.chg_pct>0?'+':'')+fmt(n.chg_pct,1)} %</span> — ${n.text} <span class="bsrc">${n.source?n.source+(n.source_time?' · '+n.source_time:''):''}</span></div>`).join('');
+  document.getElementById('breakingB').innerHTML=rows.map(n=>{
+    const dl=n.date.slice(8,10).replace(/^0/,'')+'.'+n.date.slice(5,7).replace(/^0/,'')+'.';
+    const src=[dl,n.source,n.source_time].filter(Boolean).join(' · ');
+    return `<div class="brow"><span class="btk">${n.ticker}</span> <span class="num ${cls(n.chg_pct)}">${(n.chg_pct>0?'+':'')+fmt(n.chg_pct,1)} %</span> — ${n.text} <span class="bsrc">${src}</span></div>`;}).join('');
   document.getElementById('breaking').style.display='';
 })();
 
