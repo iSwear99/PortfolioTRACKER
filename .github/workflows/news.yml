@@ -47,14 +47,18 @@ jobs:
         with:
           claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
           prompt: |
-            Přečti data/alerts_pending.json. Pro každý titul vyhledej na webu dnešní
+            Přečti data/alerts_pending.json. Pro každý titul vyhledej na webu
             cenotvornou příčinu pohybu (výsledky, guidance, up/downgrade, M&A,
-            regulace, sektorová zpráva). Do data/news.json PŘIDEJ záznamy
-            {ticker, date, chg_pct, text, source, source_time}: text = JEDNA česká
-            věta, věcná, bez doporučení; source = název média. Pokud jasnou příčinu
-            nenajdeš, text = 'Bez zjevné zprávy — ' + nejpravděpodobnější tržní/
-            sektorový kontext, source = null. NIKDY si zdroj nevymýšlej. Starší
-            záznamy v news.json zachovej (historie), duplicitní ticker+date přepiš.
-            Vyprázdni alerts_pending.json (zapiš []), spusť python scripts/update.py,
+            regulace, korporátní akce, sektorová zpráva). Do data/news.json PŘIDEJ
+            záznamy {ticker, date, chg_pct, text, source, source_time}: text = JEDNA
+            česká věta, věcná, bez doporučení. Pokud pohyb souvisí s konkrétní
+            datovatelnou událostí — klidně i starší než dnešní (doznívající reakce
+            na výsledky, downgrade, regulaci apod.) — uveď ji jako příčinu a vyplň
+            source = název média a source_time. Prefix 'Bez zjevné zprávy — '
+            + nejpravděpodobnější tržní/sektorový kontext se source = null použij
+            JEN tehdy, když k pohybu žádná konkrétní ověřitelná událost neexistuje.
+            NIKDY si zdroj ani událost nevymýšlej. Starší záznamy v news.json
+            zachovej (historie), duplicitní ticker+date přepiš. Vyprázdni
+            alerts_pending.json (zapiš []), spusť python scripts/update.py,
             commitni a pushni do main.
           claude_args: --allowedTools "WebSearch,WebFetch,Bash(python*),Edit,Read,Write,Bash(git*)" --max-turns 60 --model claude-opus-5 --verbose
