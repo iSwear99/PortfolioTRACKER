@@ -105,7 +105,10 @@ def fetch_prices(seed):
 # ---------- Yahoo Finance záloha ----------
 YAHOO = {'BOSS': ('BOSS.DE', 1), 'P911': ('P911.DE', 1), 'NOV': ('NOV.DE', 1),
          'VOW3': ('VOW3.DE', 1), 'CSPX': ('CSPX.L', 1), 'WIZZ': ('WIZZ.L', 100),
-         'EVO': ('EVO.ST', 1), '4GLD': ('4GLD.DE', 1)}
+         'EVO': ('EVO.ST', 1), '4GLD': ('4GLD.DE', 1), 'BTC': ('BTC-USD', 1)}
+
+# práh pro breaking-news alert v % (výchozí 2.5; krypto se hýbe běžně, proto výš)
+ALERT_TH = {'BTC': 5.0}
 
 def fetch_yahoo(prices, failed):
     recovered = []
@@ -212,7 +215,7 @@ def main():
             p0 = prev_snap.get(t); p1 = cfg['px']
             if p0 and p1 and p0 > 0:
                 chg = (p1 / p0 - 1) * 100
-                if abs(chg) >= 2.5:
+                if abs(chg) >= ALERT_TH.get(t, 2.5):
                     alerts.append(dict(ticker=t, chg_pct=round(chg, 2),
                                        px_prev=p0, px_now=p1, ts=now))
     jsave(p('data', 'alerts_pending.json'), alerts)   # vždy přepsat celý (staré zahodit)

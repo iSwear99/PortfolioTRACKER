@@ -1,6 +1,6 @@
 {
  "asof_base": "2026-07-03",
- "deposits": 3665001,
+ "deposits": 3865001,
  "positions": [
   {
    "ticker": "ASML",
@@ -211,6 +211,13 @@
    "ccy": "USD",
    "qty": 9,
    "avg": 353.3
+  },
+  {
+   "ticker": "BTC",
+   "broker": "Anycoin",
+   "ccy": "USD",
+   "qty": 0.10949898,
+   "avg": 87376.87
   }
  ],
  "cash": [
@@ -255,32 +262,38 @@
    "ccy": "USD",
    "bal": 5605.85,
    "czk": 377
+  },
+  {
+   "broker": "Anycoin",
+   "ccy": "CZK",
+   "bal": 204.0,
+   "czk": 204
   }
  ],
  "breakdown_hist": [
   [
    "Nerealizovaný P/L (hist.)",
-   281804
+   206072
   ],
   [
    "Realizovaný P/L (hist.)",
-   680515
+   681203
   ],
   [
    "Ostatní (div./daně/úroky/popl.)",
-   81659
+   81696
   ],
   [
    "FX realizovaný",
-   13715
+   13569
   ],
   [
    "FX nerealizovaný",
-   -20672
+   -20678
   ],
   [
    "Aproximace metody",
-   -14556
+   -14570
   ]
  ],
  "fees": [
@@ -457,8 +470,8 @@
    "mult": 1,
    "fee": -14.95,
    "rpl": 1030.92,
-   "rplczk": 11226,
-   "kurz_hist": 20.735
+   "rplczk": 11263,
+   "kurz_hist": 20.741
   },
   {
    "date": "2023-06-28",
@@ -514,7 +527,7 @@
    "fee": -14.9,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 20.735
+   "kurz_hist": 20.741
   },
   {
    "date": "2023-08-08",
@@ -542,7 +555,7 @@
    "fee": -14.9,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 21.6503
+   "kurz_hist": 21.6531
   },
   {
    "date": "2023-08-14",
@@ -556,7 +569,7 @@
    "fee": -14.9,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 21.6503
+   "kurz_hist": 21.6531
   },
   {
    "date": "2023-08-17",
@@ -570,7 +583,7 @@
    "fee": -14.9,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 21.6503
+   "kurz_hist": 21.6531
   },
   {
    "date": "2023-08-25",
@@ -584,7 +597,7 @@
    "fee": -14.9,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 21.6503
+   "kurz_hist": 21.6531
   },
   {
    "date": "2023-09-12",
@@ -598,7 +611,7 @@
    "fee": -14.9,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 22.9581
+   "kurz_hist": 22.9586
   },
   {
    "date": "2023-11-03",
@@ -611,8 +624,8 @@
    "mult": 1,
    "fee": -14.92,
    "rpl": 95.25,
-   "rplczk": 110,
-   "kurz_hist": 22.026
+   "rplczk": 124,
+   "kurz_hist": 22.0324
   },
   {
    "date": "2023-11-21",
@@ -626,7 +639,7 @@
    "fee": -16.9,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 24.3666
+   "kurz_hist": 24.3736
   },
   {
    "date": "2023-12-15",
@@ -640,7 +653,7 @@
    "fee": -14.9,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 22.5404
+   "kurz_hist": 22.5425
   },
   {
    "date": "2023-12-18",
@@ -653,8 +666,8 @@
    "mult": 1,
    "fee": -14.92,
    "rpl": 288.6,
-   "rplczk": 4766,
-   "kurz_hist": 22.5404
+   "rplczk": 4771,
+   "kurz_hist": 22.5425
   },
   {
    "date": "2024-01-04",
@@ -668,7 +681,7 @@
    "fee": -14.9,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 22.5404
+   "kurz_hist": 22.5425
   },
   {
    "date": "2024-01-22",
@@ -682,7 +695,7 @@
    "fee": -14.9,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 22.7114
+   "kurz_hist": 22.7129
   },
   {
    "date": "2024-01-22",
@@ -723,8 +736,8 @@
    "mult": 1,
    "fee": -14.92,
    "rpl": 864.9,
-   "rplczk": 15301,
-   "kurz_hist": 20.735
+   "rplczk": 15315,
+   "kurz_hist": 20.741
   },
   {
    "date": "2024-02-08",
@@ -752,7 +765,7 @@
    "fee": -18.18,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 20.735
+   "kurz_hist": 20.741
   },
   {
    "date": "2024-02-23",
@@ -766,7 +779,7 @@
    "fee": -14.9,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 23.1858
+   "kurz_hist": 23.1869
   },
   {
    "date": "2024-02-26",
@@ -821,8 +834,8 @@
    "mult": 1,
    "fee": -14.92,
    "rpl": 246.3,
-   "rplczk": -709,
-   "kurz_hist": 20.735
+   "rplczk": -695,
+   "kurz_hist": 20.741
   },
   {
    "date": "2024-04-03",
@@ -836,7 +849,7 @@
    "fee": -16.9,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 22.9061
+   "kurz_hist": 22.9126
   },
   {
    "date": "2024-04-05",
@@ -990,7 +1003,7 @@
    "fee": 0,
    "rpl": 0.0,
    "rplczk": -1959,
-   "kurz_hist": 24.14
+   "kurz_hist": 24.15
   },
   {
    "date": "2024-06-14",
@@ -1017,8 +1030,8 @@
    "mult": 1,
    "fee": -14.98,
    "rpl": 646.5,
-   "rplczk": 21615,
-   "kurz_hist": 24.391
+   "rplczk": 21628,
+   "kurz_hist": 24.3981
   },
   {
    "date": "2024-07-23",
@@ -1116,7 +1129,7 @@
    "fee": -1.03862,
    "rpl": 271.063965,
    "rplczk": 5369,
-   "kurz_hist": 22.6075
+   "kurz_hist": 22.6076
   },
   {
    "date": "2024-09-26",
@@ -1129,8 +1142,8 @@
    "mult": 1,
    "fee": -15.1,
    "rpl": 1713.56,
-   "rplczk": 28040,
-   "kurz_hist": 20.735
+   "rplczk": 28070,
+   "kurz_hist": 20.741
   },
   {
    "date": "2024-09-30",
@@ -1158,7 +1171,7 @@
    "fee": -4.0,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 22.6075
+   "kurz_hist": 22.6076
   },
   {
    "date": "2024-10-11",
@@ -1172,7 +1185,7 @@
    "fee": -1.0072,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 22.6075
+   "kurz_hist": 22.6076
   },
   {
    "date": "2024-10-11",
@@ -1186,7 +1199,7 @@
    "fee": -1.006,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 22.6075
+   "kurz_hist": 22.6076
   },
   {
    "date": "2024-10-15",
@@ -1200,7 +1213,7 @@
    "fee": -1.000288,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 22.6075
+   "kurz_hist": 22.6076
   },
   {
    "date": "2024-10-17",
@@ -1311,8 +1324,8 @@
    "mult": 1,
    "fee": -16.9,
    "rpl": -23.25,
-   "rplczk": 1285,
-   "kurz_hist": 24.14
+   "rplczk": 1286,
+   "kurz_hist": 24.15
   },
   {
    "date": "2024-11-13",
@@ -1353,8 +1366,8 @@
    "mult": 1,
    "fee": -15.0,
    "rpl": -1082.15,
-   "rplczk": -27190,
-   "kurz_hist": 20.735
+   "rplczk": -27186,
+   "kurz_hist": 20.741
   },
   {
    "date": "2024-11-19",
@@ -1367,8 +1380,8 @@
    "mult": 1,
    "fee": -1.060336958,
    "rpl": 520.042463,
-   "rplczk": 9183,
-   "kurz_hist": 20.7367
+   "rplczk": 9192,
+   "kurz_hist": 20.7427
   },
   {
    "date": "2024-11-20",
@@ -1396,7 +1409,7 @@
    "fee": -1.0072,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 22.8051
+   "kurz_hist": 22.8073
   },
   {
    "date": "2024-11-22",
@@ -1451,8 +1464,8 @@
    "mult": 1,
    "fee": -3.0,
    "rpl": 876.0,
-   "rplczk": 17706,
-   "kurz_hist": 24.14
+   "rplczk": 17747,
+   "kurz_hist": 24.15
   },
   {
    "date": "2024-12-09",
@@ -1465,8 +1478,8 @@
    "mult": 1,
    "fee": -4.0,
    "rpl": -156.0,
-   "rplczk": -12804,
-   "kurz_hist": 20.735
+   "rplczk": -12781,
+   "kurz_hist": 20.741
   },
   {
    "date": "2024-12-10",
@@ -1480,7 +1493,7 @@
    "fee": -1.0144,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 20.7356
+   "kurz_hist": 20.7416
   },
   {
    "date": "2024-12-12",
@@ -1493,8 +1506,8 @@
    "mult": 1,
    "fee": -14.97,
    "rpl": 359.97,
-   "rplczk": 4449,
-   "kurz_hist": 20.735
+   "rplczk": 4460,
+   "kurz_hist": 20.741
   },
   {
    "date": "2024-12-24",
@@ -1508,7 +1521,7 @@
    "fee": -1.0096,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 21.5219
+   "kurz_hist": 21.529
   },
   {
    "date": "2024-12-27",
@@ -1522,7 +1535,7 @@
    "fee": -49.0,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 2.0982
+   "kurz_hist": 2.0991
   },
   {
    "date": "2025-01-03",
@@ -1606,7 +1619,7 @@
    "fee": -4.000446343,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 24.4459
+   "kurz_hist": 24.446
   },
   {
    "date": "2025-02-04",
@@ -1620,7 +1633,7 @@
    "fee": -14.9,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 20.735
+   "kurz_hist": 20.741
   },
   {
    "date": "2025-02-05",
@@ -1634,7 +1647,7 @@
    "fee": -1.0014,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 24.1061
+   "kurz_hist": 24.1062
   },
   {
    "date": "2025-02-13",
@@ -1648,7 +1661,7 @@
    "fee": -16.9,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 22.8697
+   "kurz_hist": 22.8767
   },
   {
    "date": "2025-02-21",
@@ -1661,8 +1674,8 @@
    "mult": 1,
    "fee": -1.1203192,
    "rpl": 1877.079681,
-   "rplczk": 33767,
-   "kurz_hist": 20.7614
+   "rplczk": 33792,
+   "kurz_hist": 20.7674
   },
   {
    "date": "2025-02-21",
@@ -1676,7 +1689,7 @@
    "fee": -1.0092,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 20.7613
+   "kurz_hist": 20.7673
   },
   {
    "date": "2025-02-26",
@@ -1703,8 +1716,8 @@
    "mult": 1,
    "fee": -17.72,
    "rpl": 1060.25,
-   "rplczk": 21984,
-   "kurz_hist": 20.735
+   "rplczk": 21991,
+   "kurz_hist": 20.741
   },
   {
    "date": "2025-03-03",
@@ -1718,7 +1731,7 @@
    "fee": -1.00056,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 21.698
+   "kurz_hist": 21.7034
   },
   {
    "date": "2025-03-03",
@@ -1731,8 +1744,8 @@
    "mult": 1,
    "fee": -4.0,
    "rpl": 93.241678,
-   "rplczk": -6709,
-   "kurz_hist": 21.698
+   "rplczk": -6687,
+   "kurz_hist": 21.7034
   },
   {
    "date": "2025-03-03",
@@ -1746,7 +1759,7 @@
    "fee": -4.000445165,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 21.6961
+   "kurz_hist": 21.7015
   },
   {
    "date": "2025-03-04",
@@ -1760,7 +1773,7 @@
    "fee": -1.000414,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 21.697
+   "kurz_hist": 21.7024
   },
   {
    "date": "2025-03-04",
@@ -1773,8 +1786,8 @@
    "mult": 1,
    "fee": -1.1396125,
    "rpl": 185.353187,
-   "rplczk": -87,
-   "kurz_hist": 21.697
+   "rplczk": -74,
+   "kurz_hist": 21.7024
   },
   {
    "date": "2025-03-10",
@@ -1787,8 +1800,8 @@
    "mult": 1,
    "fee": -2.660416,
    "rpl": 234.869584,
-   "rplczk": 2330,
-   "kurz_hist": 21.697
+   "rplczk": 2344,
+   "kurz_hist": 21.7024
   },
   {
    "date": "2025-03-11",
@@ -1802,7 +1815,7 @@
    "fee": -1.2615,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 21.697
+   "kurz_hist": 21.7024
   },
   {
    "date": "2025-03-13",
@@ -1816,7 +1829,7 @@
    "fee": -1.007,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 21.697
+   "kurz_hist": 21.7024
   },
   {
    "date": "2025-03-19",
@@ -1829,8 +1842,8 @@
    "mult": 1,
    "fee": -1.083915912,
    "rpl": 864.883216,
-   "rplczk": 17223,
-   "kurz_hist": 21.697
+   "rplczk": 17238,
+   "kurz_hist": 21.7024
   },
   {
    "date": "2025-03-20",
@@ -1844,7 +1857,7 @@
    "fee": -49.0,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 2.1444
+   "kurz_hist": 2.1449
   },
   {
    "date": "2025-03-20",
@@ -1857,8 +1870,8 @@
    "mult": 1,
    "fee": -4.0,
    "rpl": 922.269998,
-   "rplczk": 12011,
-   "kurz_hist": 21.697
+   "rplczk": 12032,
+   "kurz_hist": 21.7025
   },
   {
    "date": "2025-03-20",
@@ -1871,8 +1884,8 @@
    "mult": 1,
    "fee": -4.0,
    "rpl": -212.719337,
-   "rplczk": -11258,
-   "kurz_hist": 21.697
+   "rplczk": -11238,
+   "kurz_hist": 21.7025
   },
   {
    "date": "2025-03-21",
@@ -1886,7 +1899,7 @@
    "fee": -4.000368,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 21.697
+   "kurz_hist": 21.7025
   },
   {
    "date": "2025-04-08",
@@ -1900,7 +1913,7 @@
    "fee": -1.00092,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 21.697
+   "kurz_hist": 21.7025
   },
   {
    "date": "2025-04-16",
@@ -1914,7 +1927,7 @@
    "fee": -3.0,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 24.9323
+   "kurz_hist": 24.9334
   },
   {
    "date": "2025-04-16",
@@ -1928,7 +1941,7 @@
    "fee": -1.000023,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 21.697
+   "kurz_hist": 21.7025
   },
   {
    "date": "2025-04-16",
@@ -1942,7 +1955,7 @@
    "fee": -1.0069,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 21.697
+   "kurz_hist": 21.7025
   },
   {
    "date": "2025-04-16",
@@ -1956,7 +1969,7 @@
    "fee": -7.43,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 20.735
+   "kurz_hist": 20.741
   },
   {
    "date": "2025-04-25",
@@ -1969,8 +1982,8 @@
    "mult": 1,
    "fee": -1.15048525,
    "rpl": 454.099492,
-   "rplczk": 9899,
-   "kurz_hist": 21.697
+   "rplczk": 9902,
+   "kurz_hist": 21.7025
   },
   {
    "date": "2025-04-25",
@@ -1984,7 +1997,7 @@
    "fee": -1.000525,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 21.697
+   "kurz_hist": 21.7025
   },
   {
    "date": "2025-05-21",
@@ -1997,8 +2010,8 @@
    "mult": 1,
    "fee": -1.01855,
    "rpl": 995.57945,
-   "rplczk": 16403,
-   "kurz_hist": 21.697
+   "rplczk": 16429,
+   "kurz_hist": 21.7025
   },
   {
    "date": "2025-05-22",
@@ -2012,7 +2025,7 @@
    "fee": -1.001288,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 21.697
+   "kurz_hist": 21.7025
   },
   {
    "date": "2025-05-22",
@@ -2026,7 +2039,7 @@
    "fee": -4.133168,
    "rpl": 7.866464,
    "rplczk": 347,
-   "kurz_hist": 21.697
+   "kurz_hist": 21.7025
   },
   {
    "date": "2025-06-30",
@@ -2039,8 +2052,8 @@
    "mult": 1,
    "fee": -1.01272,
    "rpl": 2508.18496,
-   "rplczk": 44097,
-   "kurz_hist": 21.697
+   "rplczk": 44134,
+   "kurz_hist": 21.7025
   },
   {
    "date": "2025-07-07",
@@ -2054,7 +2067,7 @@
    "fee": -1.00066,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 21.697
+   "kurz_hist": 21.7025
   },
   {
    "date": "2025-07-10",
@@ -2068,7 +2081,7 @@
    "fee": -1.00162,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 21.697
+   "kurz_hist": 21.7025
   },
   {
    "date": "2025-07-11",
@@ -2082,7 +2095,7 @@
    "fee": -3.0,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 29.38
+   "kurz_hist": 29.3874
   },
   {
    "date": "2025-07-24",
@@ -2095,8 +2108,8 @@
    "mult": 1,
    "fee": -6.4,
    "rpl": 179.7,
-   "rplczk": 3029,
-   "kurz_hist": 20.735
+   "rplczk": 3031,
+   "kurz_hist": 20.741
   },
   {
    "date": "2025-07-24",
@@ -2109,8 +2122,8 @@
    "mult": 1,
    "fee": -16.89,
    "rpl": 272.48,
-   "rplczk": 4143,
-   "kurz_hist": 20.735
+   "rplczk": 4148,
+   "kurz_hist": 20.741
   },
   {
    "date": "2025-07-25",
@@ -2124,7 +2137,7 @@
    "fee": -1.004725,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 21.4788
+   "kurz_hist": 21.484
   },
   {
    "date": "2025-07-29",
@@ -2137,8 +2150,8 @@
    "mult": 1,
    "fee": -1.29825,
    "rpl": 3054.22525,
-   "rplczk": 60659,
-   "kurz_hist": 20.735
+   "rplczk": 60679,
+   "kurz_hist": 20.741
   },
   {
    "date": "2025-07-30",
@@ -2151,8 +2164,8 @@
    "mult": 1,
    "fee": -1.297,
    "rpl": 986.3601,
-   "rplczk": 15653,
-   "kurz_hist": 20.735
+   "rplczk": 15666,
+   "kurz_hist": 20.741
   },
   {
    "date": "2025-08-06",
@@ -2166,7 +2179,7 @@
    "fee": -3.0,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 24.0154
+   "kurz_hist": 24.0225
   },
   {
    "date": "2025-08-12",
@@ -2180,7 +2193,7 @@
    "fee": -1.001053,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 20.735
+   "kurz_hist": 20.741
   },
   {
    "date": "2025-08-13",
@@ -2193,8 +2206,8 @@
    "mult": 1,
    "fee": -3.0,
    "rpl": 954.0,
-   "rplczk": 23222,
-   "kurz_hist": 28.157
+   "rplczk": 23268,
+   "kurz_hist": 28.174
   },
   {
    "date": "2025-08-13",
@@ -2207,8 +2220,8 @@
    "mult": 1,
    "fee": -49.0,
    "rpl": -693.545455,
-   "rplczk": 343,
-   "kurz_hist": 2.1801
+   "rplczk": 341,
+   "kurz_hist": 2.1807
   },
   {
    "date": "2025-08-13",
@@ -2221,8 +2234,8 @@
    "mult": 1,
    "fee": -1.0047,
    "rpl": 811.864326,
-   "rplczk": 12756,
-   "kurz_hist": 20.735
+   "rplczk": 12763,
+   "kurz_hist": 20.741
   },
   {
    "date": "2025-08-14",
@@ -2236,7 +2249,7 @@
    "fee": -1.7500945,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 20.735
+   "kurz_hist": 20.741
   },
   {
    "date": "2025-08-19",
@@ -2250,7 +2263,7 @@
    "fee": -1.12995,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 20.8322
+   "kurz_hist": 20.8447
   },
   {
    "date": "2025-09-11",
@@ -2263,8 +2276,8 @@
    "mult": 1,
    "fee": -2.0772,
    "rpl": 2604.0566,
-   "rplczk": 46947,
-   "kurz_hist": 20.735
+   "rplczk": 46974,
+   "kurz_hist": 20.741
   },
   {
    "date": "2025-09-11",
@@ -2277,8 +2290,8 @@
    "mult": 1,
    "fee": -1.007332,
    "rpl": 1744.141615,
-   "rplczk": 36308,
-   "kurz_hist": 20.751
+   "rplczk": 36318,
+   "kurz_hist": 20.757
   },
   {
    "date": "2025-09-15",
@@ -2292,7 +2305,7 @@
    "fee": -3.0,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 28.2103
+   "kurz_hist": 28.2227
   },
   {
    "date": "2025-09-16",
@@ -2305,8 +2318,8 @@
    "mult": 1,
    "fee": -1.0094,
    "rpl": 1572.391912,
-   "rplczk": 26428,
-   "kurz_hist": 20.751
+   "rplczk": 26451,
+   "kurz_hist": 20.757
   },
   {
    "date": "2025-09-16",
@@ -2319,8 +2332,8 @@
    "mult": 100,
    "fee": -1.05344,
    "rpl": 0.0,
-   "rplczk": 3362,
-   "kurz_hist": 20.751
+   "rplczk": 3363,
+   "kurz_hist": 20.757
   },
   {
    "date": "2025-09-16",
@@ -2333,8 +2346,8 @@
    "mult": 100,
    "fee": -1.40688,
    "rpl": 0.0,
-   "rplczk": 4026,
-   "kurz_hist": 20.751
+   "rplczk": 4027,
+   "kurz_hist": 20.757
   },
   {
    "date": "2025-09-18",
@@ -2348,7 +2361,7 @@
    "fee": -1.00088,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 20.751
+   "kurz_hist": 20.757
   },
   {
    "date": "2025-09-23",
@@ -2362,7 +2375,7 @@
    "fee": -3.0,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 24.4919
+   "kurz_hist": 24.4989
   },
   {
    "date": "2025-09-23",
@@ -2376,7 +2389,7 @@
    "fee": -3.0,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 24.4919
+   "kurz_hist": 24.4989
   },
   {
    "date": "2025-09-23",
@@ -2389,8 +2402,8 @@
    "mult": 1,
    "fee": -1.0141,
    "rpl": 1572.2323,
-   "rplczk": 19443,
-   "kurz_hist": 20.751
+   "rplczk": 19477,
+   "kurz_hist": 20.757
   },
   {
    "date": "2025-09-24",
@@ -2403,8 +2416,8 @@
    "mult": 1,
    "fee": -1.00658,
    "rpl": 2825.629874,
-   "rplczk": 47529,
-   "kurz_hist": 20.751
+   "rplczk": 47557,
+   "kurz_hist": 20.757
   },
   {
    "date": "2025-09-25",
@@ -2417,8 +2430,8 @@
    "mult": 100,
    "fee": -0.84688,
    "rpl": 0.0,
-   "rplczk": 4233,
-   "kurz_hist": 20.751
+   "rplczk": 4234,
+   "kurz_hist": 20.757
   },
   {
    "date": "2025-10-10",
@@ -2432,7 +2445,7 @@
    "fee": -1.00044,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 20.751
+   "kurz_hist": 20.757
   },
   {
    "date": "2025-10-10",
@@ -2446,7 +2459,7 @@
    "fee": -1.00165,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 20.751
+   "kurz_hist": 20.757
   },
   {
    "date": "2025-10-16",
@@ -2474,7 +2487,7 @@
    "fee": -1.000033,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 20.751
+   "kurz_hist": 20.757
   },
   {
    "date": "2025-10-17",
@@ -2488,7 +2501,7 @@
    "fee": 0.0,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 20.751
+   "kurz_hist": 20.757
   },
   {
    "date": "2025-10-17",
@@ -2515,8 +2528,8 @@
    "mult": 100,
    "fee": -1.04869,
    "rpl": 0.0,
-   "rplczk": 7118,
-   "kurz_hist": 20.751
+   "rplczk": 7120,
+   "kurz_hist": 20.757
   },
   {
    "date": "2025-10-17",
@@ -2544,7 +2557,7 @@
    "fee": -1.0011,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 20.842
+   "kurz_hist": 20.8447
   },
   {
    "date": "2025-10-27",
@@ -2558,7 +2571,7 @@
    "fee": -1.0011,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 20.842
+   "kurz_hist": 20.8447
   },
   {
    "date": "2025-10-27",
@@ -2572,7 +2585,7 @@
    "fee": -1.00088,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 20.842
+   "kurz_hist": 20.8447
   },
   {
    "date": "2025-10-28",
@@ -2603,6 +2616,90 @@
    "kurz_hist": 20.9227
   },
   {
+   "date": "2025-10-29",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.02005313,
+   "price": 2408402,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2025-10-30",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00042331,
+   "price": 2362335,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2025-10-31",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00042591,
+   "price": 2347914,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2025-11-01",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00042552,
+   "price": 2350066,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2025-11-02",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00042201,
+   "price": 2369612,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2025-11-03",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00043398,
+   "price": 2304254,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
    "date": "2025-11-04",
    "broker": "IBKR",
    "ticker": "CONd",
@@ -2613,8 +2710,36 @@
    "mult": 1,
    "fee": -3.0,
    "rpl": 519.6,
-   "rplczk": 11492,
-   "kurz_hist": 24.14
+   "rplczk": 11507,
+   "kurz_hist": 24.15
+  },
+  {
+   "date": "2025-11-04",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00044623,
+   "price": 2240997,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2025-11-05",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00045341,
+   "price": 2205509,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
   },
   {
    "date": "2025-11-06",
@@ -2628,7 +2753,63 @@
    "fee": -3.0,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 24.1553
+   "kurz_hist": 24.1646
+  },
+  {
+   "date": "2025-11-06",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00045088,
+   "price": 2217885,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2025-11-07",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00045731,
+   "price": 2186700,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2025-11-08",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00045822,
+   "price": 2182358,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2025-11-09",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00046137,
+   "price": 2167458,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
   },
   {
    "date": "2025-11-10",
@@ -2643,6 +2824,20 @@
    "rpl": 0.0,
    "rplczk": 0,
    "kurz_hist": 24.2988
+  },
+  {
+   "date": "2025-11-10",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00044019,
+   "price": 2271746,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
   },
   {
    "date": "2025-11-11",
@@ -2670,7 +2865,7 @@
    "fee": -49.0,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 2.1921
+   "kurz_hist": 2.1926
   },
   {
    "date": "2025-11-11",
@@ -2683,8 +2878,50 @@
    "mult": 1,
    "fee": -1.0376,
    "rpl": 346.5507,
-   "rplczk": -823,
-   "kurz_hist": 21.3726
+   "rplczk": -828,
+   "kurz_hist": 21.3729
+  },
+  {
+   "date": "2025-11-11",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00044495,
+   "price": 2247444,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2025-11-12",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00045418,
+   "price": 2201770,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2025-11-13",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00045465,
+   "price": 2199494,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
   },
   {
    "date": "2025-11-14",
@@ -2698,7 +2935,7 @@
    "fee": 0.0,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 21.2843
+   "kurz_hist": 21.2854
   },
   {
    "date": "2025-11-14",
@@ -2715,6 +2952,104 @@
    "kurz_hist": null
   },
   {
+   "date": "2025-11-14",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00048609,
+   "price": 2057232,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2025-11-15",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00049178,
+   "price": 2033430,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2025-11-16",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.0004934,
+   "price": 2026753,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2025-11-17",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.0004959,
+   "price": 2016536,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2025-11-18",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.000528,
+   "price": 1893939,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2025-11-19",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.0005183,
+   "price": 1929385,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2025-11-20",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00051079,
+   "price": 1957752,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
    "date": "2025-11-21",
    "broker": "IBKR",
    "ticker": "PFE 21NOV25 24 P",
@@ -2727,6 +3062,76 @@
    "rpl": 203.15312,
    "rplczk": 0,
    "kurz_hist": null
+  },
+  {
+   "date": "2025-11-21",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00054893,
+   "price": 1821726,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2025-11-22",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00110419,
+   "price": 1811282,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2025-11-23",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00108959,
+   "price": 1835553,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2025-11-24",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00107579,
+   "price": 1859099,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2025-11-25",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00106809,
+   "price": 1872501,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
   },
   {
    "date": "2025-11-26",
@@ -2757,6 +3162,20 @@
    "kurz_hist": 20.8803
   },
   {
+   "date": "2025-11-26",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00107582,
+   "price": 1859047,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
    "date": "2025-11-27",
    "broker": "Patria",
    "ticker": "BAYN",
@@ -2767,8 +3186,330 @@
    "mult": 1,
    "fee": -9.03,
    "rpl": -162.45,
-   "rplczk": -4270,
-   "kurz_hist": 24.14
+   "rplczk": -4267,
+   "kurz_hist": 24.15
+  },
+  {
+   "date": "2025-11-27",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.0010337,
+   "price": 1934797,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2025-11-28",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00103195,
+   "price": 1938078,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2025-11-29",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00104082,
+   "price": 1921562,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2025-11-30",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00103731,
+   "price": 1928064,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2025-12-01",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00109406,
+   "price": 1828053,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2025-12-02",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00108448,
+   "price": 1844202,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2025-12-03",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00101435,
+   "price": 1971706,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2025-12-04",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00102107,
+   "price": 1958730,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2025-12-05",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00102726,
+   "price": 1946927,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2025-12-10",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00025423,
+   "price": 1966723,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2025-12-11",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00026228,
+   "price": 1906360,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2025-12-12",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00025779,
+   "price": 1939563,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2025-12-13",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00026368,
+   "price": 1896238,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2025-12-14",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00026353,
+   "price": 1897317,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2025-12-15",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00026466,
+   "price": 1889216,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2025-12-16",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00027473,
+   "price": 1819969,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2025-12-17",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00027299,
+   "price": 1831569,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2025-12-18",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00027368,
+   "price": 1826951,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2025-12-19",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00026995,
+   "price": 1852195,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2025-12-20",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00026818,
+   "price": 1864419,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2025-12-21",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.0002687,
+   "price": 1860811,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2025-12-22",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00026656,
+   "price": 1875750,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2025-12-23",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00027235,
+   "price": 1835873,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
   },
   {
    "date": "2025-12-24",
@@ -2785,6 +3526,34 @@
    "kurz_hist": 20.6005
   },
   {
+   "date": "2025-12-24",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00027464,
+   "price": 1820565,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2025-12-25",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00027194,
+   "price": 1838641,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
    "date": "2025-12-26",
    "broker": "IBKR",
    "ticker": "BYDDY",
@@ -2795,7 +3564,7 @@
    "mult": 1,
    "fee": -2.583,
    "rpl": -1000.583128,
-   "rplczk": -21576,
+   "rplczk": -21619,
    "kurz_hist": 20.5902
   },
   {
@@ -2823,7 +3592,7 @@
    "mult": 1,
    "fee": -1.01992,
    "rpl": -1693.374505,
-   "rplczk": -47511,
+   "rplczk": -47541,
    "kurz_hist": 20.5902
   },
   {
@@ -2851,7 +3620,7 @@
    "mult": 1,
    "fee": -1.0249,
    "rpl": -563.82944,
-   "rplczk": -15860,
+   "rplczk": -15885,
    "kurz_hist": 20.5902
   },
   {
@@ -2879,7 +3648,7 @@
    "mult": 1,
    "fee": -1.00664,
    "rpl": -846.80752,
-   "rplczk": -18741,
+   "rplczk": -18756,
    "kurz_hist": 20.5902
   },
   {
@@ -2907,7 +3676,7 @@
    "mult": 1,
    "fee": -1.02988,
    "rpl": -1293.957329,
-   "rplczk": -39602,
+   "rplczk": -39627,
    "kurz_hist": 20.5902
   },
   {
@@ -2925,6 +3694,48 @@
    "kurz_hist": 20.5902
   },
   {
+   "date": "2025-12-26",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00026824,
+   "price": 1864002,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2025-12-27",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.0002732,
+   "price": 1830161,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2025-12-28",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00027251,
+   "price": 1834795,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
    "date": "2025-12-29",
    "broker": "IBKR",
    "ticker": "EVO",
@@ -2935,7 +3746,7 @@
    "mult": 1,
    "fee": -49.0,
    "rpl": -10408.254543,
-   "rplczk": -17364,
+   "rplczk": -17403,
    "kurz_hist": 2.2468
   },
   {
@@ -2953,6 +3764,314 @@
    "kurz_hist": 2.2468
   },
   {
+   "date": "2025-12-29",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00026658,
+   "price": 1875610,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2025-12-30",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00027295,
+   "price": 1831837,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2025-12-31",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00026935,
+   "price": 1856321,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-01-01",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00027329,
+   "price": 1829558,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-01-02",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00026892,
+   "price": 1859289,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-01-03",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00026512,
+   "price": 1885938,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-01-04",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00026131,
+   "price": 1913436,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-01-05",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00025713,
+   "price": 1944542,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-01-06",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00025442,
+   "price": 1965254,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-01-07",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.000257,
+   "price": 1945525,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-01-08",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00026357,
+   "price": 1897029,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-01-09",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00025926,
+   "price": 1928566,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-01-10",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00026068,
+   "price": 1918060,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-01-11",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.0002599,
+   "price": 1923817,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-01-12",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00025766,
+   "price": 1940542,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-01-13",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00025655,
+   "price": 1948938,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-01-14",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00024927,
+   "price": 2005857,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-01-15",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00024562,
+   "price": 2035665,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-01-16",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00024558,
+   "price": 2035996,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-01-17",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00024671,
+   "price": 2026671,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-01-18",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00024662,
+   "price": 2027411,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-01-19",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00025434,
+   "price": 1965872,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
    "date": "2026-01-20",
    "broker": "IBKR",
    "ticker": "S",
@@ -2967,6 +4086,48 @@
    "kurz_hist": 20.7504
   },
   {
+   "date": "2026-01-20",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00026015,
+   "price": 1921968,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-01-21",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00026477,
+   "price": 1888431,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-01-22",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00026267,
+   "price": 1903529,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
    "date": "2026-01-23",
    "broker": "IBKR",
    "ticker": "CSG",
@@ -2979,6 +4140,76 @@
    "rpl": 0.0,
    "rplczk": 0,
    "kurz_hist": 24.2822
+  },
+  {
+   "date": "2026-01-23",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00026594,
+   "price": 1880123,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-01-24",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00026796,
+   "price": 1865950,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-01-25",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00027039,
+   "price": 1849181,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-01-26",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00027382,
+   "price": 1826017,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-01-27",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.000273,
+   "price": 1831502,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
   },
   {
    "date": "2026-01-28",
@@ -3051,6 +4282,20 @@
    "kurz_hist": 20.2082
   },
   {
+   "date": "2026-01-28",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00027254,
+   "price": 1834593,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
    "date": "2026-01-29",
    "broker": "IBKR",
    "ticker": "175",
@@ -3065,6 +4310,62 @@
    "kurz_hist": 2.6082
   },
   {
+   "date": "2026-01-29",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00027494,
+   "price": 1818579,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-01-30",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00029176,
+   "price": 1713737,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-01-31",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00028628,
+   "price": 1746542,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-02-01",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00030575,
+   "price": 1635323,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
    "date": "2026-02-02",
    "broker": "IBKR",
    "ticker": "CSG",
@@ -3075,8 +4376,22 @@
    "mult": 1,
    "fee": -3.0,
    "rpl": -164.0,
-   "rplczk": -4276,
-   "kurz_hist": 24.14
+   "rplczk": -4245,
+   "kurz_hist": 24.15
+  },
+  {
+   "date": "2026-02-02",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.0003139,
+   "price": 1592864,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
   },
   {
    "date": "2026-02-03",
@@ -3089,7 +4404,7 @@
    "mult": 1,
    "fee": -2.5975,
    "rpl": 3389.3739,
-   "rplczk": 55999,
+   "rplczk": 55953,
    "kurz_hist": 20.3098
   },
   {
@@ -3121,6 +4436,20 @@
    "kurz_hist": 20.3098
   },
   {
+   "date": "2026-02-03",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00030428,
+   "price": 1643223,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
    "date": "2026-02-04",
    "broker": "IBKR",
    "ticker": "NU 06MAR26 17 P",
@@ -3145,8 +4474,22 @@
    "mult": 1,
    "fee": -14.43,
    "rpl": 1416.63,
-   "rplczk": 39827,
-   "kurz_hist": 24.5507
+   "rplczk": 39868,
+   "kurz_hist": 24.5609
+  },
+  {
+   "date": "2026-02-04",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00031217,
+   "price": 1601691,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
   },
   {
    "date": "2026-02-05",
@@ -3163,6 +4506,20 @@
    "kurz_hist": 20.3098
   },
   {
+   "date": "2026-02-05",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00033608,
+   "price": 1487741,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
    "date": "2026-02-06",
    "broker": "Patria",
    "ticker": "PYPL",
@@ -3174,7 +4531,49 @@
    "fee": -8.89,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 24.7035
+   "kurz_hist": 24.7127
+  },
+  {
+   "date": "2026-02-06",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00036843,
+   "price": 1357110,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-02-07",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00034724,
+   "price": 1439926,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-02-08",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00034539,
+   "price": 1447639,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
   },
   {
    "date": "2026-02-09",
@@ -3188,7 +4587,217 @@
    "fee": -12.2,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 20.922
+   "kurz_hist": 20.9306
+  },
+  {
+   "date": "2026-02-09",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00034073,
+   "price": 1467438,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-02-10",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00035107,
+   "price": 1424217,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-02-11",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00036193,
+   "price": 1381483,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-02-12",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00035844,
+   "price": 1394934,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-02-13",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00036236,
+   "price": 1379843,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-02-14",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00034871,
+   "price": 1433856,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-02-15",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00034113,
+   "price": 1465717,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-02-16",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.0003514,
+   "price": 1422880,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-02-17",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00035109,
+   "price": 1424136,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-02-18",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00035368,
+   "price": 1413707,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-02-19",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00035643,
+   "price": 1402800,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-02-20",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00035135,
+   "price": 1423082,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-02-21",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.000353,
+   "price": 1416431,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-02-22",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00035154,
+   "price": 1422313,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-02-23",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00036485,
+   "price": 1370426,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
   },
   {
    "date": "2026-02-24",
@@ -3201,8 +4810,120 @@
    "mult": 1,
    "fee": -92.632125,
    "rpl": -305.36367,
-   "rplczk": 295,
-   "kurz_hist": 2.6203
+   "rplczk": 350,
+   "kurz_hist": 2.6214
+  },
+  {
+   "date": "2026-02-24",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00037906,
+   "price": 1319052,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-02-25",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00036907,
+   "price": 1354757,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-02-26",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.0003519,
+   "price": 1420858,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-02-27",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00035396,
+   "price": 1412589,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-02-28",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00037876,
+   "price": 1320097,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-03-01",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00035826,
+   "price": 1395634,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-03-02",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.0003601,
+   "price": 1388503,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-03-03",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00034768,
+   "price": 1438104,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
   },
   {
    "date": "2026-03-04",
@@ -3216,7 +4937,7 @@
    "fee": 0.0,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 20.71
+   "kurz_hist": 20.7135
   },
   {
    "date": "2026-03-04",
@@ -3233,6 +4954,202 @@
    "kurz_hist": null
   },
   {
+   "date": "2026-03-04",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00034156,
+   "price": 1463872,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-03-05",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00032276,
+   "price": 1549139,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-03-06",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00033204,
+   "price": 1505843,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-03-07",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00034579,
+   "price": 1445964,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-03-08",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00034805,
+   "price": 1436575,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-03-09",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.0003462,
+   "price": 1444252,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-03-10",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00033504,
+   "price": 1492359,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-03-11",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00033507,
+   "price": 1492226,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-03-12",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00033578,
+   "price": 1489070,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-03-13",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00032423,
+   "price": 1542115,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-03-14",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00032476,
+   "price": 1539598,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-03-15",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00032088,
+   "price": 1558215,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-03-16",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00031191,
+   "price": 1603027,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-03-17",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00031169,
+   "price": 1604158,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
    "date": "2026-03-18",
    "broker": "IBKR",
    "ticker": "S",
@@ -3243,8 +5160,176 @@
    "mult": 1,
    "fee": -2.078,
    "rpl": 661.922,
-   "rplczk": 15999,
-   "kurz_hist": 20.735
+   "rplczk": 16034,
+   "kurz_hist": 20.741
+  },
+  {
+   "date": "2026-03-18",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00031426,
+   "price": 1591039,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-03-19",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00032697,
+   "price": 1529192,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-03-20",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00032971,
+   "price": 1516484,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-03-21",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00032833,
+   "price": 1522858,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-03-22",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00033552,
+   "price": 1490224,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-03-23",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00034186,
+   "price": 1462587,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-03-24",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00033125,
+   "price": 1509434,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-03-25",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.0003288,
+   "price": 1520681,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-03-26",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00033202,
+   "price": 1505933,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-03-27",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00033776,
+   "price": 1480341,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-03-28",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00034772,
+   "price": 1437939,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-03-29",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00034599,
+   "price": 1445128,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
   },
   {
    "date": "2026-03-30",
@@ -3258,7 +5343,7 @@
    "fee": -1.0,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 20.7872
+   "kurz_hist": 20.7936
   },
   {
    "date": "2026-03-30",
@@ -3272,7 +5357,301 @@
    "fee": -2.0,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 20.7872
+   "kurz_hist": 20.7936
+  },
+  {
+   "date": "2026-03-30",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00034235,
+   "price": 1460494,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-03-31",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00033932,
+   "price": 1473535,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-04-01",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00033907,
+   "price": 1474622,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-04-02",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00034694,
+   "price": 1441171,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-04-03",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00034725,
+   "price": 1439885,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-04-04",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00034538,
+   "price": 1447681,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-04-05",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.0003453,
+   "price": 1448016,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-04-06",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00033442,
+   "price": 1495126,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-04-07",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00033769,
+   "price": 1480648,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-04-08",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00032689,
+   "price": 1529567,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-04-09",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00033103,
+   "price": 1510437,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-04-10",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00032674,
+   "price": 1530269,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-04-11",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00032537,
+   "price": 1536712,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-04-12",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00032977,
+   "price": 1516208,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-04-13",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00033252,
+   "price": 1503669,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-04-14",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00031987,
+   "price": 1563135,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-04-15",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00032208,
+   "price": 1552409,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-04-16",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00031802,
+   "price": 1572228,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-04-17",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00031913,
+   "price": 1566760,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-04-18",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00030876,
+   "price": 1619381,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-04-19",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00031554,
+   "price": 1584585,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
   },
   {
    "date": "2026-04-20",
@@ -3286,7 +5665,21 @@
    "fee": -1.0,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 20.5095
+   "kurz_hist": 20.518
+  },
+  {
+   "date": "2026-04-20",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00032031,
+   "price": 1560988,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
   },
   {
    "date": "2026-04-21",
@@ -3299,8 +5692,204 @@
    "mult": 1,
    "fee": -2.1991692,
    "rpl": 777.800831,
-   "rplczk": 15949,
-   "kurz_hist": 20.735
+   "rplczk": 15951,
+   "kurz_hist": 20.741
+  },
+  {
+   "date": "2026-04-21",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00031473,
+   "price": 1588663,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-04-22",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00030517,
+   "price": 1638431,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-04-23",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00030326,
+   "price": 1648750,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-04-24",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00030245,
+   "price": 1653166,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-04-25",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00030503,
+   "price": 1639183,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-04-26",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00030273,
+   "price": 1651637,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-04-27",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00030394,
+   "price": 1645062,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-04-28",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00030756,
+   "price": 1625699,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-04-29",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00030603,
+   "price": 1633827,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-04-30",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00031102,
+   "price": 1607614,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-05-01",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00030707,
+   "price": 1628293,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-05-02",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00030272,
+   "price": 1651691,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-05-03",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.0003027,
+   "price": 1651800,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-05-04",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00029625,
+   "price": 1687764,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
   },
   {
    "date": "2026-05-05",
@@ -3314,7 +5903,147 @@
    "fee": -7.5045,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 20.735
+   "kurz_hist": 20.741
+  },
+  {
+   "date": "2026-05-05",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00029123,
+   "price": 1716856,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-05-06",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00029151,
+   "price": 1715207,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-05-07",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00029281,
+   "price": 1707592,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-05-08",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00029871,
+   "price": 1673864,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-05-09",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00029672,
+   "price": 1685090,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-05-10",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.0002955,
+   "price": 1692047,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-05-11",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00029425,
+   "price": 1699235,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-05-12",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00029296,
+   "price": 1706718,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-05-13",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00029325,
+   "price": 1705030,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-05-14",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.0002961,
+   "price": 1688619,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
   },
   {
    "date": "2026-05-15",
@@ -3328,7 +6057,105 @@
    "fee": -10.2,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 21.2299
+   "kurz_hist": 21.23
+  },
+  {
+   "date": "2026-05-15",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00029308,
+   "price": 1706019,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-05-16",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.0002973,
+   "price": 1681803,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-05-17",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00030044,
+   "price": 1664226,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-05-18",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00030534,
+   "price": 1637519,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-05-19",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00030666,
+   "price": 1630470,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-05-20",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00030428,
+   "price": 1643223,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-05-21",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00030227,
+   "price": 1654150,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
   },
   {
    "date": "2026-05-26",
@@ -3342,7 +6169,7 @@
    "fee": -12.43,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 21.1544
+   "kurz_hist": 21.1545
   },
   {
    "date": "2026-06-26",
@@ -3355,8 +6182,78 @@
    "mult": 1,
    "fee": -3.0,
    "rpl": 146.25,
-   "rplczk": 3610,
-   "kurz_hist": 24.14
+   "rplczk": 3615,
+   "kurz_hist": 24.15
+  },
+  {
+   "date": "2026-07-10",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.0003619,
+   "price": 1381597,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-07-11",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00036105,
+   "price": 1384850,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-07-12",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00036218,
+   "price": 1380529,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-07-13",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00037047,
+   "price": 1349637,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-07-14",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00036884,
+   "price": 1355601,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
   },
   {
    "date": "2026-07-15",
@@ -3369,8 +6266,8 @@
    "mult": 1,
    "fee": 0,
    "rpl": -262.0,
-   "rplczk": -5748,
-   "kurz_hist": 24.14
+   "rplczk": -5739,
+   "kurz_hist": 24.15
   },
   {
    "date": "2026-07-15",
@@ -3384,7 +6281,7 @@
    "fee": 0,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 24.14
+   "kurz_hist": 24.15
   },
   {
    "date": "2026-07-15",
@@ -3397,8 +6294,470 @@
    "mult": 1,
    "fee": 0,
    "rpl": 724.0,
-   "rplczk": 33052,
-   "kurz_hist": 24.3941
+   "rplczk": 33091,
+   "kurz_hist": 24.4012
+  },
+  {
+   "date": "2026-07-15",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00035752,
+   "price": 1398523,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-07-16",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00035857,
+   "price": 1394428,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-07-17",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00036987,
+   "price": 1351826,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-07-18",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00036318,
+   "price": 1376728,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-07-19",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00035891,
+   "price": 1393107,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-07-20",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00036231,
+   "price": 1380034,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-07-21",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00035318,
+   "price": 1415709,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-07-22",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00035164,
+   "price": 1421909,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-07-23",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00035424,
+   "price": 1411472,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-07-24",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00035451,
+   "price": 1410397,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-07-25",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00036215,
+   "price": 1380643,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-07-26",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00035982,
+   "price": 1389584,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-07-27",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.0003553,
+   "price": 1407261,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-07-28",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00036478,
+   "price": 1370689,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-07-29",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00036279,
+   "price": 1378208,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-07-30",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00036398,
+   "price": 1373702,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-07-31",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00036397,
+   "price": 1373740,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-08-01",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00037176,
+   "price": 1344954,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-08-02",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00036919,
+   "price": 1354316,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-08-03",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00037338,
+   "price": 1339118,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-08-04",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00036685,
+   "price": 1362955,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-08-05",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.000365,
+   "price": 1369863,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-08-06",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00036241,
+   "price": 1379653,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-08-07",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00036365,
+   "price": 1374948,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-08-08",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00036055,
+   "price": 1386770,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-08-09",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00036126,
+   "price": 1384045,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-08-10",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00036014,
+   "price": 1388349,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-08-11",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00036572,
+   "price": 1367166,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-08-12",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00036684,
+   "price": 1362992,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-08-13",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00036619,
+   "price": 1365411,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-08-14",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00036998,
+   "price": 1351424,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-08-15",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00037279,
+   "price": 1341238,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
+  },
+  {
+   "date": "2026-08-16",
+   "broker": "Anycoin",
+   "ticker": "BTC",
+   "typ": "Crypto",
+   "ccy": "CZK",
+   "qty": 0.00037279,
+   "price": 1341238,
+   "mult": 1,
+   "fee": 0,
+   "rpl": 0.0,
+   "rplczk": 0,
+   "kurz_hist": 1.0
   },
   {
    "date": "2026-08-26",
@@ -3411,8 +6770,8 @@
    "mult": 1,
    "fee": 0,
    "rpl": 1090.77,
-   "rplczk": 22574,
-   "kurz_hist": 20.735
+   "rplczk": 22581,
+   "kurz_hist": 20.741
   },
   {
    "date": "2026-08-26",
@@ -3425,8 +6784,8 @@
    "mult": 1,
    "fee": 0,
    "rpl": 222.14,
-   "rplczk": 8516,
-   "kurz_hist": 20.735
+   "rplczk": 8553,
+   "kurz_hist": 20.741
   },
   {
    "date": "2026-08-26",
@@ -3440,7 +6799,7 @@
    "fee": 0,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 20.735
+   "kurz_hist": 20.741
   },
   {
    "date": "2026-08-26",
@@ -3454,7 +6813,7 @@
    "fee": 0,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 20.735
+   "kurz_hist": 20.741
   }
  ],
  "others": [
@@ -3915,7 +7274,7 @@
    "desc": "VANGUARD TOTAL STOCK MKT ETF - US9229087690",
    "ccy": "USD",
    "amt": 8.27,
-   "czk": 171
+   "czk": 172
   },
   {
    "date": "2023-07-03",
@@ -4050,7 +7409,7 @@
    "desc": "VANGUARD TOTAL STOCK MKT ETF - US9229087690",
    "ccy": "USD",
    "amt": 7.98,
-   "czk": 165
+   "czk": 166
   },
   {
    "date": "2023-10-03",
@@ -4320,7 +7679,7 @@
    "desc": "CVS - US1266501006",
    "ccy": "USD",
    "amt": 33.25,
-   "czk": 689
+   "czk": 690
   },
   {
    "date": "2024-02-05",
@@ -4500,7 +7859,7 @@
    "desc": "CVS - US1266501006",
    "ccy": "USD",
    "amt": 43.23,
-   "czk": 1054
+   "czk": 1055
   },
   {
    "date": "2024-05-02",
@@ -4554,7 +7913,7 @@
    "desc": "Bayer AG - DE000BAY0017",
    "ccy": "EUR",
    "amt": 4.95,
-   "czk": 119
+   "czk": 120
   },
   {
    "date": "2024-05-03",
@@ -4617,7 +7976,7 @@
    "desc": "VOLKSWAGEN - DE0007664039 - 26,375%",
    "ccy": "EUR",
    "amt": -43.01,
-   "czk": -1038
+   "czk": -1039
   },
   {
    "date": "2024-06-04",
@@ -4626,7 +7985,7 @@
    "desc": "VOLKSWAGEN - DE0007664039",
    "ccy": "EUR",
    "amt": 163.08,
-   "czk": 3937
+   "czk": 3938
   },
   {
    "date": "2024-06-04",
@@ -4680,7 +8039,7 @@
    "desc": "Alibaba Grp Sp ADS - US01609W1027",
    "ccy": "USD",
    "amt": 42.9,
-   "czk": 1046
+   "czk": 1047
   },
   {
    "date": "2024-07-12",
@@ -4698,7 +8057,7 @@
    "desc": "Alibaba Grp Sp ADS - US01609W1027",
    "ccy": "USD",
    "amt": 65.0,
-   "czk": 1585
+   "czk": 1586
   },
   {
    "date": "2024-07-22",
@@ -4779,7 +8138,7 @@
    "desc": "AT&T - US00206R1023",
    "ccy": "USD",
    "amt": 41.63,
-   "czk": 1015
+   "czk": 1016
   },
   {
    "date": "2024-08-01",
@@ -4797,7 +8156,7 @@
    "desc": "CVS - US1266501006",
    "ccy": "USD",
    "amt": 43.23,
-   "czk": 1054
+   "czk": 1055
   },
   {
    "date": "2024-08-02",
@@ -4914,7 +8273,7 @@
    "desc": "MSFT(US5949181045) Cash Dividend USD 0.75 per Share (Ordinary Dividend",
    "ccy": "USD",
    "amt": 3.75,
-   "czk": 82
+   "czk": 83
   },
   {
    "date": "2024-09-12",
@@ -5094,7 +8453,7 @@
    "desc": "CVS - US1266501006",
    "ccy": "USD",
    "amt": 43.23,
-   "czk": 896
+   "czk": 897
   },
   {
    "date": "2024-11-04",
@@ -5274,7 +8633,7 @@
    "desc": "HAL(US4062161017) Cash Dividend USD 0.17 per Share (Ordinary Dividend)",
    "ccy": "USD",
    "amt": 23.8,
-   "czk": 493
+   "czk": 494
   },
   {
    "date": "2024-12-26",
@@ -5355,7 +8714,7 @@
    "desc": "CVS(US1266501006) Cash Dividend USD 0.665 per Share (Ordinary Dividend",
    "ccy": "USD",
    "amt": 49.88,
-   "czk": 1034
+   "czk": 1035
   },
   {
    "date": "2025-02-03",
@@ -5472,7 +8831,7 @@
    "desc": "PFE(US7170811035) Cash Dividend USD 0.43 per Share (Ordinary Dividend)",
    "ccy": "USD",
    "amt": 64.5,
-   "czk": 1399
+   "czk": 1400
   },
   {
    "date": "2025-03-07",
@@ -5535,7 +8894,7 @@
    "desc": "GOOG(US02079K1079) Cash Dividend USD 0.20 per Share (Ordinary Dividend",
    "ccy": "USD",
    "amt": 5.0,
-   "czk": 108
+   "czk": 109
   },
   {
    "date": "2025-03-17",
@@ -5580,7 +8939,7 @@
    "desc": "HAL(US4062161017) Cash Dividend USD 0.17 per Share (Ordinary Dividend)",
    "ccy": "USD",
    "amt": 23.8,
-   "czk": 516
+   "czk": 517
   },
   {
    "date": "2025-03-26",
@@ -5643,7 +9002,7 @@
    "desc": "Bayer AG - DE000BAY0017",
    "ccy": "EUR",
    "amt": 4.95,
-   "czk": 119
+   "czk": 120
   },
   {
    "date": "2025-05-01",
@@ -5652,7 +9011,7 @@
    "desc": "CVS(US1266501006) Cash Dividend USD 0.665 per Share (Ordinary Dividend",
    "ccy": "USD",
    "amt": 49.88,
-   "czk": 1082
+   "czk": 1083
   },
   {
    "date": "2025-05-01",
@@ -5724,7 +9083,7 @@
    "desc": "EVO(SE0012673267) Cash Dividend EUR 2.80 per Share (Ordinary Dividend)",
    "ccy": "EUR",
    "amt": 196.0,
-   "czk": 4731
+   "czk": 4733
   },
   {
    "date": "2025-05-20",
@@ -5733,7 +9092,7 @@
    "desc": "EVO(SE0012673267) Cash Dividend EUR 2.80 per Share - SE Tax",
    "ccy": "EUR",
    "amt": -58.8,
-   "czk": -1419
+   "czk": -1420
   },
   {
    "date": "2025-05-21",
@@ -5751,7 +9110,7 @@
    "desc": "VOLKSWAGEN - DE0007664039",
    "ccy": "EUR",
    "amt": 114.48,
-   "czk": 2764
+   "czk": 2765
   },
   {
    "date": "2025-05-22",
@@ -5778,7 +9137,7 @@
    "desc": "P911(588392767) Cash Dividend EUR 1.49316331 per Share (Return of Capi",
    "ccy": "EUR",
    "amt": 149.32,
-   "czk": 3605
+   "czk": 3606
   },
   {
    "date": "2025-05-26",
@@ -5787,7 +9146,7 @@
    "desc": "P911(DE000PAG9113) Cash Dividend EUR 0.81683669 per Share (Ordinary Di",
    "ccy": "EUR",
    "amt": 81.68,
-   "czk": 1972
+   "czk": 1973
   },
   {
    "date": "2025-05-26",
@@ -5895,7 +9254,7 @@
    "desc": "HAL(US4062161017) Cash Dividend USD 0.17 per Share (Ordinary Dividend)",
    "ccy": "USD",
    "amt": 23.8,
-   "czk": 516
+   "czk": 517
   },
   {
    "date": "2025-06-25",
@@ -5967,7 +9326,7 @@
    "desc": "BABA(US01609W1027) Cash Dividend USD 1.05 per Share (Ordinary Dividend",
    "ccy": "USD",
    "amt": 42.0,
-   "czk": 911
+   "czk": 912
   },
   {
    "date": "2025-07-10",
@@ -5976,7 +9335,7 @@
    "desc": "BABA(US01609W1027) Cash Dividend USD 0.95 per Share (Bonus Dividend)",
    "ccy": "USD",
    "amt": 38.0,
-   "czk": 824
+   "czk": 825
   },
   {
    "date": "2025-07-23",
@@ -6003,7 +9362,7 @@
    "desc": "CVS(US1266501006) Cash Dividend USD 0.665 per Share (Ordinary Dividend",
    "ccy": "USD",
    "amt": 49.88,
-   "czk": 1034
+   "czk": 1035
   },
   {
    "date": "2025-08-01",
@@ -6660,7 +10019,7 @@
    "desc": "PYPL(US70450Y1038) Cash Dividend USD 0.14 per Share (Ordinary Dividend",
    "ccy": "USD",
    "amt": 38.5,
-   "czk": 798
+   "czk": 799
   },
   {
    "date": "2026-03-25",
@@ -6687,7 +10046,7 @@
    "desc": "PayPal Holdings-WI - US70450Y1038",
    "ccy": "USD",
    "amt": 21.0,
-   "czk": 435
+   "czk": 436
   },
   {
    "date": "2026-03-31",
@@ -6696,7 +10055,7 @@
    "desc": "NOV(DK0062498333) Cash Dividend DKK 7.95 per Share (Ordinary Dividend)",
    "ccy": "DKK",
    "amt": 1033.5,
-   "czk": 3338
+   "czk": 3339
   },
   {
    "date": "2026-03-31",
@@ -6705,7 +10064,7 @@
    "desc": "NOV(DK0062498333) Cash Dividend DKK 7.95 per Share - DK Tax",
    "ccy": "DKK",
    "amt": -279.05,
-   "czk": -901
+   "czk": -902
   },
   {
    "date": "2026-04-02",
@@ -6759,7 +10118,7 @@
    "desc": "KSPI(US48581R2058) Cash Dividend USD 1.791359 per Share (Ordinary Divi",
    "ccy": "USD",
    "amt": 134.35,
-   "czk": 2786
+   "czk": 2787
   },
   {
    "date": "2026-04-29",
@@ -6777,7 +10136,7 @@
    "desc": "JD(US47215P1066) Cash Dividend USD 1.00 per Share (Ordinary Dividend)",
    "ccy": "USD",
    "amt": 200.0,
-   "czk": 4147
+   "czk": 4148
   },
   {
    "date": "2026-05-05",
@@ -6885,7 +10244,7 @@
    "desc": "KSPI(US48581R2058) Cash Dividend USD 1.74266 per Share (Ordinary Divid",
    "ccy": "USD",
    "amt": 130.7,
-   "czk": 2710
+   "czk": 2711
   },
   {
    "date": "2026-06-19",
@@ -6912,7 +10271,7 @@
    "desc": "VOW3(DE0007664039) Cash Dividend EUR 5.26 per Share (Ordinary Dividend",
    "ccy": "EUR",
    "amt": 189.36,
-   "czk": 4571
+   "czk": 4573
   },
   {
    "date": "2026-06-23",
@@ -6939,7 +10298,7 @@
    "desc": "VOLKSWAGEN - DE0007664039",
    "ccy": "EUR",
    "amt": 94.68,
-   "czk": 2324
+   "czk": 2325
   },
   {
    "date": "2026-06-25",
@@ -6948,7 +10307,7 @@
    "desc": "PYPL(US70450Y1038) Cash Dividend USD 0.14 per Share (Ordinary Dividend",
    "ccy": "USD",
    "amt": 38.5,
-   "czk": 798
+   "czk": 799
   },
   {
    "date": "2026-06-25",
@@ -6975,7 +10334,7 @@
    "desc": "PayPal Holdings-WI - US70450Y1038",
    "ccy": "USD",
    "amt": 21.0,
-   "czk": 435
+   "czk": 436
   },
   {
    "date": "2026-06-26",
@@ -6984,7 +10343,7 @@
    "desc": "P911(DE000PAG9113) Cash Dividend EUR 1.01 per Share (Ordinary Dividend",
    "ccy": "EUR",
    "amt": 101.0,
-   "czk": 2438
+   "czk": 2439
   },
   {
    "date": "2026-06-26",
@@ -7131,6 +10490,16 @@
    "date": "2025-10-24",
    "broker": "IBKR",
    "amt": 800000
+  },
+  {
+   "date": "2025-10-29",
+   "broker": "Anycoin",
+   "amt": 100000
+  },
+  {
+   "date": "2025-12-09",
+   "broker": "Anycoin",
+   "amt": 100000
   },
   {
    "date": "2026-01-27",

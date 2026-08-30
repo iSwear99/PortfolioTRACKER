@@ -286,6 +286,7 @@ const CZK = n => (n<0?'−':'') + Math.abs(Math.round(n)).toLocaleString('cs-CZ'
 const SIGN = n => (n>0?'+':n<0?'−':'') + Math.abs(Math.round(n)).toLocaleString('cs-CZ');
 const cls = n => n>0?'pos':n<0?'neg':'mut';
 const fmt = (n,d=2) => n.toLocaleString('cs-CZ',{minimumFractionDigits:d,maximumFractionDigits:d});
+const QTY = n => {const a=Math.abs(n);return fmt(n,a>=1?0:(a>=0.01?4:6));};   // kusy vs zlomky (BTC)
 const GOLD='#E0B15E',JADE='#56B389',CORAL='#E27065',BLUE='#5B8DD9',MUT='#7C8AA0';
 
 // KPIs
@@ -548,7 +549,7 @@ function renderPos(){
     const tr=document.createElement('tr'); tr.className='click';
     tr.innerHTML=`<td><span class="caret"></span><span class="tk">${p.ticker}</span><span class="brk ${p.broker==='IBKR'?'ib':'pt'}">${p.broker}</span></td>
       <td class="num ${cls(p.dch)}">${p.dch==null?'·':SIGN(p.dch)}</td>
-      <td class="num">${fmt(p.qty,0)}</td>
+      <td class="num">${QTY(p.qty)}</td>
       <td class="num mut">${fmt(p.avg,2)} ${p.ccy}</td>
       <td class="num">${fmt(p.price,2)} ${p.ccy}</td>
       <td class="num">${CZK(p.mv)}</td>
@@ -560,7 +561,7 @@ function renderPos(){
     let rows=trades.map(t=>{const side=t.typ==='Adj'?'ADJ':(t.qty>0?'BUY':'SELL');
       return `<tr><td class="l num mut">${t.date.split('-').reverse().join('.')}</td>
         <td><span class="chip ${side.toLowerCase()}">${side}</span></td>
-        <td class="num">${fmt(Math.abs(t.qty),0)}</td>
+        <td class="num">${QTY(Math.abs(t.qty))}</td>
         <td class="num">${fmt(t.price,2)} ${t.ccy}</td>
         <td class="num mut">${fmt(t.fee,2)}</td></tr>`;}).join('');
     ex.innerHTML=`<td colspan="9"><div class="expbox"><table><thead><tr><th class="l">Datum</th><th class="l">Směr</th><th>Ks</th><th>Cena</th><th>Poplatek</th></tr></thead><tbody>${rows||'<tr><td class="mut">Žádné obchody</td></tr>'}</tbody></table></div></td>`;
@@ -597,7 +598,7 @@ function renderTr(){
     return `<tr><td class="l num mut">${t.date.split('-').reverse().join('.')}</td>
       <td class="l"><span class="tk" style="font-size:12.5px">${t.ticker}</span><span class="brk ${t.broker==='IBKR'?'ib':'pt'}">${t.broker}</span></td>
       <td><span class="chip ${side.toLowerCase()}">${side}</span></td>
-      <td class="num">${fmt(Math.abs(t.qty),0)}</td>
+      <td class="num">${QTY(Math.abs(t.qty))}</td>
       <td class="num">${fmt(t.price,2)} ${t.ccy}</td>
       <td class="num mut">${fmt(t.fee,2)}</td>
       <td class="num ${cls(t.rplczk)}">${t.rplczk?SIGN(t.rplczk):'·'}</td></tr>`;}).join('');
