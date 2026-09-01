@@ -26,7 +26,7 @@
   "exchange": "XETR"
  },
  "BTC": {
-  "px": 77264.0,
+  "px": 77295.95,
   "q": "BTC/USD"
  },
  "BYDDY": {
@@ -95,7 +95,7 @@
   "exchange": "XETR"
  },
  "PYPL": {
-  "px": 52.4,
+  "px": 52.425,
   "q": "PYPL"
  },
  "SOFI": {
