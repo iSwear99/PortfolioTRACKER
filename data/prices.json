@@ -1,6 +1,6 @@
 {
  "4GLD": {
-  "px": 121.14,
+  "px": 120.86,
   "q": "4GLD",
   "exchange": "XETR"
  },
@@ -21,12 +21,12 @@
   "q": "BABA"
  },
  "BOSS": {
-  "px": 38.98,
+  "px": 39.03,
   "q": "BOSS",
   "exchange": "XETR"
  },
  "BTC": {
-  "px": 77782.0,
+  "px": 78074.67,
   "q": "BTC/USD"
  },
  "BYDDY": {
@@ -34,7 +34,7 @@
   "q": "BYDDY"
  },
  "CSPX": {
-  "px": 823.89,
+  "px": 823.35,
   "q": "CSPX",
   "exchange": "LSE"
  },
@@ -43,11 +43,11 @@
   "q": "DIDIY"
  },
  "EEFT": {
-  "px": 69.46,
+  "px": 69.51,
   "q": "EEFT"
  },
  "EVO": {
-  "px": 826.6,
+  "px": 827.6,
   "q": "EVO",
   "exchange": "OMX"
  },
@@ -80,7 +80,7 @@
   "q": "NICE"
  },
  "NOV": {
-  "px": 39.125,
+  "px": 39.175,
   "q": "NOV",
   "exchange": "XETR",
   "verify": true
@@ -90,7 +90,7 @@
   "q": "NU"
  },
  "P911": {
-  "px": 44.17,
+  "px": 44.31,
   "q": "P911",
   "exchange": "XETR"
  },
@@ -103,11 +103,11 @@
   "q": "SOFI"
  },
  "TTD": {
-  "px": 13.725,
+  "px": 13.72,
   "q": "TTD"
  },
  "UBER": {
-  "px": 75.65,
+  "px": 75.63,
   "q": "UBER"
  },
  "VOW3": {
@@ -120,7 +120,7 @@
   "q": "WIX"
  },
  "WIZZ": {
-  "px": 10.75,
+  "px": 10.76,
   "q": "WIZZ",
   "exchange": "LSE",
   "divide": 100

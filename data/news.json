@@ -142,5 +142,13 @@
   "text": "ADR oslabilo v reakci na pololetní výsledky zveřejněné v pátek 28. srpna, podle nichž čistý zisk za 1H 2026 klesl meziročně o 20,5 % na 12,33 mld. CNY a tržby o 7,1 % na 344,82 mld. CNY kvůli cenové válce na domácím trhu, kde tržby v Číně propadly o 31 %; hongkongské akcie v pondělí odepsaly 5,8 % na 86,65 HKD.",
   "source": "Investing.com",
   "source_time": "2026-08-31"
+ },
+ {
+  "ticker": "P911",
+  "date": "2026-09-01",
+  "chg_pct": -2.73,
+  "text": "Bez zjevné zprávy — k pondělnímu poklesu nevyšla nová firemní zpráva; akcie klesala v obecném tlaku na německé automobilky, přičemž trh dál tráví prodej poradenské dcery MHP společnosti Tata Consultancy Services (podniková hodnota 320 mil. EUR, oznámeno 24. srpna) a slabé pololetí s dodávkami o 16 % nižšími a propadem v Číně o 32 %.",
+  "source": null,
+  "source_time": null
  }
 ]
