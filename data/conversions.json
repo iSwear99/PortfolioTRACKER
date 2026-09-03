@@ -1,3818 +1,3834 @@
 [
-{
-"date": "2022-02-25",
-"broker": "Patria",
-"base": "USD",
-"qty": 9600.0,
-"quote": "CZK",
-"proceeds": -216550.66
-},
-{
-"date": "2022-04-06",
-"broker": "Patria",
-"base": "USD",
-"qty": 5039.9,
-"quote": "CZK",
-"proceeds": -114541.13
-},
-{
-"date": "2022-04-21",
-"broker": "Patria",
-"base": "USD",
-"qty": 1.02,
-"quote": "CZK",
-"proceeds": -23.18
-},
-{
-"date": "2022-05-23",
-"broker": "Patria",
-"base": "USD",
-"qty": 1.35,
-"quote": "CZK",
-"proceeds": -31.82
-},
-{
-"date": "2022-06-01",
-"broker": "Patria",
-"base": "USD",
-"qty": 2084.9,
-"quote": "CZK",
-"proceeds": -48746.06
-},
-{
-"date": "2022-06-21",
-"broker": "Patria",
-"base": "USD",
-"qty": 1.39,
-"quote": "CZK",
-"proceeds": -33.02
-},
-{
-"date": "2023-02-23",
-"broker": "Patria",
-"base": "USD",
-"qty": 1371.62,
-"quote": "CZK",
-"proceeds": -31104.41
-},
-{
-"date": "2023-03-21",
-"broker": "Patria",
-"base": "USD",
-"qty": 2040.24,
-"quote": "CZK",
-"proceeds": -46222.27
-},
-{
-"date": "2023-06-01",
-"broker": "Patria",
-"base": "USD",
-"qty": 1323.73,
-"quote": "CZK",
-"proceeds": -29837.01
-},
-{
-"date": "2023-06-13",
-"broker": "Patria",
-"base": "USD",
-"qty": 649.8,
-"quote": "CZK",
-"proceeds": -14542.02
-},
-{
-"date": "2023-08-09",
-"broker": "Patria",
-"base": "EUR",
-"qty": 2094.82,
-"quote": "CZK",
-"proceeds": -51573.89
-},
-{
-"date": "2023-08-14",
-"broker": "Patria",
-"base": "USD",
-"qty": 4454.39,
-"quote": "CZK",
-"proceeds": -100000.0
-},
-{
-"date": "2023-09-13",
-"broker": "Patria",
-"base": "USD",
-"qty": 1769.32,
-"quote": "CZK",
-"proceeds": -41114.41
-},
-{
-"date": "2023-09-21",
-"broker": "Patria",
-"base": "EUR",
-"qty": 0.15,
-"quote": "CZK",
-"proceeds": -3.72
-},
-{
-"date": "2023-09-21",
-"broker": "Patria",
-"base": "USD",
-"qty": 2.44,
-"quote": "CZK",
-"proceeds": -56.85
-},
-{
-"date": "2023-10-23",
-"broker": "Patria",
-"base": "EUR",
-"qty": 0.2,
-"quote": "CZK",
-"proceeds": -5.0
-},
-{
-"date": "2023-11-21",
-"broker": "Patria",
-"base": "EUR",
-"qty": 0.2,
-"quote": "USD",
-"proceeds": -0.22
-},
-{
-"date": "2023-11-22",
-"broker": "Patria",
-"base": "EUR",
-"qty": 1555.23,
-"quote": "USD",
-"proceeds": -1720.5
-},
-{
-"date": "2023-12-15",
-"broker": "Patria",
-"base": "USD",
-"qty": 1128.55,
-"quote": "CZK",
-"proceeds": -25722.83
-},
-{
-"date": "2023-12-20",
-"broker": "Patria",
-"base": "CZK",
-"qty": 5.15,
-"quote": "USD",
-"proceeds": -0.23
-},
-{
-"date": "2023-12-21",
-"broker": "Patria",
-"base": "EUR",
-"qty": 0.24,
-"quote": "USD",
-"proceeds": -0.27
-},
-{
-"date": "2024-01-19",
-"broker": "Patria",
-"base": "CZK",
-"qty": 5.39,
-"quote": "USD",
-"proceeds": -0.24
-},
-{
-"date": "2024-01-23",
-"broker": "IBKR",
-"base": "USD",
-"qty": 2395.0,
-"quote": "CZK",
-"proceeds": -54986.805
-},
-{
-"date": "2024-01-23",
-"broker": "IBKR",
-"base": "USD",
-"qty": -2045.57,
-"quote": "HKD",
-"proceeds": 15999.9371475
-},
-{
-"date": "2024-01-23",
-"broker": "Patria",
-"base": "EUR",
-"qty": 0.36,
-"quote": "CZK",
-"proceeds": -9.06
-},
-{
-"date": "2024-01-23",
-"broker": "Patria",
-"base": "USD",
-"qty": 533.48,
-"quote": "CZK",
-"proceeds": -12315.2
-},
-{
-"date": "2024-02-08",
-"broker": "IBKR",
-"base": "USD",
-"qty": 2560.0,
-"quote": "CZK",
-"proceeds": -60000.0
-},
-{
-"date": "2024-02-21",
-"broker": "Patria",
-"base": "EUR",
-"qty": 0.36,
-"quote": "CZK",
-"proceeds": -9.28
-},
-{
-"date": "2024-02-26",
-"broker": "Patria",
-"base": "USD",
-"qty": 874.55,
-"quote": "CZK",
-"proceeds": -20752.35
-},
-{
-"date": "2024-03-07",
-"broker": "Patria",
-"base": "USD",
-"qty": 2011.09,
-"quote": "CZK",
-"proceeds": -47559.23
-},
-{
-"date": "2024-03-21",
-"broker": "Patria",
-"base": "EUR",
-"qty": 0.33,
-"quote": "USD",
-"proceeds": -0.37
-},
-{
-"date": "2024-04-04",
-"broker": "Patria",
-"base": "EUR",
-"qty": 43.44,
-"quote": "CZK",
-"proceeds": -1116.51
-},
-{
-"date": "2024-04-04",
-"broker": "Patria",
-"base": "EUR",
-"qty": 2018.91,
-"quote": "USD",
-"proceeds": -2224.09
-},
-{
-"date": "2024-04-08",
-"broker": "Patria",
-"base": "USD",
-"qty": 2204.9,
-"quote": "CZK",
-"proceeds": -52335.01
-},
-{
-"date": "2024-04-12",
-"broker": "Patria",
-"base": "USD",
-"qty": 1064.9,
-"quote": "CZK",
-"proceeds": -25674.53
-},
-{
-"date": "2024-04-23",
-"broker": "Patria",
-"base": "EUR",
-"qty": 0.35,
-"quote": "CZK",
-"proceeds": -8.99
-},
-{
-"date": "2024-04-23",
-"broker": "Patria",
-"base": "USD",
-"qty": 3.68,
-"quote": "CZK",
-"proceeds": -88.48
-},
-{
-"date": "2024-04-25",
-"broker": "Patria",
-"base": "EUR",
-"qty": 93.4,
-"quote": "CZK",
-"proceeds": -2392.62
-},
-{
-"date": "2024-05-23",
-"broker": "Patria",
-"base": "EUR",
-"qty": 1436.9,
-"quote": "CZK",
-"proceeds": -36071.81
-},
-{
-"date": "2024-05-30",
-"broker": "IBKR",
-"base": "USD",
-"qty": 50.0,
-"quote": "CZK",
-"proceeds": -1141.925
-},
-{
-"date": "2024-05-30",
-"broker": "IBKR",
-"base": "USD",
-"qty": -0.5325,
-"quote": "CZK",
-"proceeds": 12.153522739
-},
-{
-"date": "2024-05-31",
-"broker": "IBKR",
-"base": "USD",
-"qty": 3.0,
-"quote": "CZK",
-"proceeds": -68.34
-},
-{
-"date": "2024-05-31",
-"broker": "IBKR",
-"base": "USD",
-"qty": -0.5,
-"quote": "CZK",
-"proceeds": 11.374350895
-},
-{
-"date": "2024-05-31",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.49,
-"quote": "CZK",
-"proceeds": -11.153359709
-},
-{
-"date": "2024-05-31",
-"broker": "IBKR",
-"base": "USD",
-"qty": 2304.48,
-"quote": "HKD",
-"proceeds": -18016.655088
-},
-{
-"date": "2024-06-06",
-"broker": "IBKR",
-"base": "USD",
-"qty": 1.0,
-"quote": "CZK",
-"proceeds": -22.6285
-},
-{
-"date": "2024-06-06",
-"broker": "IBKR",
-"base": "USD",
-"qty": 2145.0,
-"quote": "CZK",
-"proceeds": -48538.1325
-},
-{
-"date": "2024-06-10",
-"broker": "IBKR",
-"base": "USD",
-"qty": 1.0,
-"quote": "CZK",
-"proceeds": -22.9355
-},
-{
-"date": "2024-06-10",
-"broker": "IBKR",
-"base": "USD",
-"qty": 2400.0,
-"quote": "CZK",
-"proceeds": -55045.2
-},
-{
-"date": "2024-06-10",
-"broker": "IBKR",
-"base": "USD",
-"qty": -0.2,
-"quote": "CZK",
-"proceeds": 4.574649782
-},
-{
-"date": "2024-07-23",
-"broker": "IBKR",
-"base": "USD",
-"qty": 1.0,
-"quote": "CZK",
-"proceeds": -23.311
-},
-{
-"date": "2024-07-23",
-"broker": "IBKR",
-"base": "USD",
-"qty": 1424.0,
-"quote": "CZK",
-"proceeds": -33194.152
-},
-{
-"date": "2024-07-23",
-"broker": "IBKR",
-"base": "USD",
-"qty": 2.0,
-"quote": "CZK",
-"proceeds": -46.796
-},
-{
-"date": "2024-07-23",
-"broker": "IBKR",
-"base": "USD",
-"qty": -0.92571148,
-"quote": "CZK",
-"proceeds": 21.657031507
-},
-{
-"date": "2024-08-05",
-"broker": "IBKR",
-"base": "USD",
-"qty": 1485.0,
-"quote": "CZK",
-"proceeds": -34269.345
-},
-{
-"date": "2024-08-05",
-"broker": "IBKR",
-"base": "USD",
-"qty": -0.9,
-"quote": "CZK",
-"proceeds": 20.77566543
-},
-{
-"date": "2024-08-06",
-"broker": "IBKR",
-"base": "USD",
-"qty": 2192.0,
-"quote": "CZK",
-"proceeds": -50797.408
-},
-{
-"date": "2024-08-06",
-"broker": "IBKR",
-"base": "USD",
-"qty": 2026.0,
-"quote": "CZK",
-"proceeds": -46877.588
-},
-{
-"date": "2024-08-06",
-"broker": "IBKR",
-"base": "USD",
-"qty": -0.2,
-"quote": "CZK",
-"proceeds": 4.627725508
-},
-{
-"date": "2024-09-12",
-"broker": "Patria",
-"base": "CZK",
-"qty": 67325.75,
-"quote": "USD",
-"proceeds": -3000.22
-},
-{
-"date": "2024-09-23",
-"broker": "Patria",
-"base": "USD",
-"qty": 3.69,
-"quote": "CZK",
-"proceeds": -84.48
-},
-{
-"date": "2024-09-24",
-"broker": "IBKR",
-"base": "USD",
-"qty": 5305.27,
-"quote": "CZK",
-"proceeds": -119999.90213
-},
-{
-"date": "2024-10-17",
-"broker": "IBKR",
-"base": "USD",
-"qty": 2437.98,
-"quote": "CZK",
-"proceeds": -56853.6936
-},
-{
-"date": "2024-10-30",
-"broker": "IBKR",
-"base": "USD",
-"qty": 3508.05,
-"quote": "CZK",
-"proceeds": -82023.471075
-},
-{
-"date": "2024-10-30",
-"broker": "IBKR",
-"base": "USD",
-"qty": 1.0,
-"quote": "CZK",
-"proceeds": -23.382
-},
-{
-"date": "2024-10-30",
-"broker": "IBKR",
-"base": "USD",
-"qty": 3916.51,
-"quote": "CZK",
-"proceeds": -91564.08729
-},
-{
-"date": "2024-10-30",
-"broker": "IBKR",
-"base": "USD",
-"qty": 1.01,
-"quote": "CZK",
-"proceeds": -23.613295
-},
-{
-"date": "2024-10-30",
-"broker": "IBKR",
-"base": "USD",
-"qty": 4.0,
-"quote": "CZK",
-"proceeds": -93.512
-},
-{
-"date": "2024-10-30",
-"broker": "IBKR",
-"base": "USD",
-"qty": 1108.99,
-"quote": "CZK",
-"proceeds": -25925.413725
-},
-{
-"date": "2024-10-30",
-"broker": "IBKR",
-"base": "USD",
-"qty": -0.01,
-"quote": "CZK",
-"proceeds": 0.233714655
-},
-{
-"date": "2024-10-30",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.01,
-"quote": "CZK",
-"proceeds": -0.233850134
-},
-{
-"date": "2024-10-30",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.002228,
-"quote": "CZK",
-"proceeds": -0.052103945
-},
-{
-"date": "2024-11-01",
-"broker": "IBKR",
-"base": "USD",
-"qty": 4.0,
-"quote": "CZK",
-"proceeds": -93.322
-},
-{
-"date": "2024-11-01",
-"broker": "IBKR",
-"base": "USD",
-"qty": 1099.99,
-"quote": "CZK",
-"proceeds": -25660.016725
-},
-{
-"date": "2024-11-01",
-"broker": "IBKR",
-"base": "USD",
-"qty": 2072.5,
-"quote": "CZK",
-"proceeds": -48400.12875
-},
-{
-"date": "2024-11-01",
-"broker": "IBKR",
-"base": "USD",
-"qty": 1.0,
-"quote": "CZK",
-"proceeds": -23.3555
-},
-{
-"date": "2024-11-01",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.01,
-"quote": "CZK",
-"proceeds": -0.233960167
-},
-{
-"date": "2024-11-01",
-"broker": "IBKR",
-"base": "USD",
-"qty": -0.008,
-"quote": "CZK",
-"proceeds": 0.187061435
-},
-{
-"date": "2024-11-01",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.00108649,
-"quote": "CZK",
-"proceeds": -0.02542266
-},
-{
-"date": "2024-11-12",
-"broker": "IBKR",
-"base": "USD",
-"qty": 4166.92,
-"quote": "CZK",
-"proceeds": -99695.64446
-},
-{
-"date": "2024-11-12",
-"broker": "IBKR",
-"base": "USD",
-"qty": 4.58,
-"quote": "CZK",
-"proceeds": -109.473277792
-},
-{
-"date": "2024-11-12",
-"broker": "IBKR",
-"base": "USD",
-"qty": -4.5764,
-"quote": "CZK",
-"proceeds": 109.322960803
-},
-{
-"date": "2024-11-13",
-"broker": "IBKR",
-"base": "USD",
-"qty": 1.0,
-"quote": "CZK",
-"proceeds": -23.8865
-},
-{
-"date": "2024-11-13",
-"broker": "IBKR",
-"base": "USD",
-"qty": 1395.0,
-"quote": "CZK",
-"proceeds": -33320.97
-},
-{
-"date": "2024-11-13",
-"broker": "IBKR",
-"base": "USD",
-"qty": 1347.04,
-"quote": "CZK",
-"proceeds": -32256.89336
-},
-{
-"date": "2024-11-13",
-"broker": "IBKR",
-"base": "USD",
-"qty": 1.0,
-"quote": "CZK",
-"proceeds": -23.947
-},
-{
-"date": "2024-11-13",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.000816,
-"quote": "CZK",
-"proceeds": -0.019534839
-},
-{
-"date": "2024-11-19",
-"broker": "IBKR",
-"base": "USD",
-"qty": 1.06,
-"quote": "CZK",
-"proceeds": -25.37216
-},
-{
-"date": "2024-11-19",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.00033696,
-"quote": "CZK",
-"proceeds": -0.00804425
-},
-{
-"date": "2024-11-19",
-"broker": "Patria",
-"base": "CZK",
-"qty": 200000.0,
-"quote": "USD",
-"proceeds": -8494.39
-},
-{
-"date": "2024-11-20",
-"broker": "IBKR",
-"base": "EUR",
-"qty": 2967.0,
-"quote": "CZK",
-"proceeds": -75087.3525
-},
-{
-"date": "2024-11-20",
-"broker": "IBKR",
-"base": "EUR",
-"qty": 3.0,
-"quote": "CZK",
-"proceeds": -75.9195
-},
-{
-"date": "2024-11-20",
-"broker": "IBKR",
-"base": "EUR",
-"qty": -1.0,
-"quote": "CZK",
-"proceeds": 25.2764148
-},
-{
-"date": "2024-11-20",
-"broker": "IBKR",
-"base": "USD",
-"qty": 2350.83,
-"quote": "CZK",
-"proceeds": -56506.90071
-},
-{
-"date": "2024-11-20",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0072,
-"quote": "CZK",
-"proceeds": -0.172718562
-},
-{
-"date": "2024-11-22",
-"broker": "IBKR",
-"base": "EUR",
-"qty": 864.0,
-"quote": "CZK",
-"proceeds": -21933.072
-},
-{
-"date": "2024-11-22",
-"broker": "IBKR",
-"base": "EUR",
-"qty": 3.0,
-"quote": "CZK",
-"proceeds": -76.152
-},
-{
-"date": "2024-11-22",
-"broker": "IBKR",
-"base": "EUR",
-"qty": -0.9,
-"quote": "CZK",
-"proceeds": 22.80995496
-},
-{
-"date": "2024-11-29",
-"broker": "IBKR",
-"base": "EUR",
-"qty": 3.0,
-"quote": "CZK",
-"proceeds": -75.7605
-},
-{
-"date": "2024-11-29",
-"broker": "IBKR",
-"base": "EUR",
-"qty": 3217.0,
-"quote": "CZK",
-"proceeds": -81246.9435
-},
-{
-"date": "2024-12-02",
-"broker": "IBKR",
-"base": "USD",
-"qty": 987.59,
-"quote": "CZK",
-"proceeds": -23770.30371
-},
-{
-"date": "2024-12-02",
-"broker": "IBKR",
-"base": "USD",
-"qty": 4.0,
-"quote": "CZK",
-"proceeds": -96.278
-},
-{
-"date": "2024-12-02",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.00069091,
-"quote": "CZK",
-"proceeds": -0.016615224
-},
-{
-"date": "2024-12-02",
-"broker": "IBKR",
-"base": "USD",
-"qty": 112.4,
-"quote": "HKD",
-"proceeds": -874.9778
-},
-{
-"date": "2024-12-09",
-"broker": "IBKR",
-"base": "EUR",
-"qty": 3.0,
-"quote": "HKD",
-"proceeds": -24.6669
-},
-{
-"date": "2024-12-09",
-"broker": "IBKR",
-"base": "USD",
-"qty": 4.0,
-"quote": "HKD",
-"proceeds": -31.109
-},
-{
-"date": "2024-12-10",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0044,
-"quote": "CZK",
-"proceeds": -0.104875282
-},
-{
-"date": "2024-12-10",
-"broker": "IBKR",
-"base": "USD",
-"qty": 1.01,
-"quote": "HKD",
-"proceeds": -7.855679
-},
-{
-"date": "2024-12-24",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.000615,
-"quote": "CZK",
-"proceeds": -0.01488855
-},
-{
-"date": "2024-12-24",
-"broker": "IBKR",
-"base": "EUR",
-"qty": -623.73,
-"quote": "USD",
-"proceeds": 648.0866565
-},
-{
-"date": "2024-12-24",
-"broker": "IBKR",
-"base": "EUR",
-"qty": -0.83,
-"quote": "USD",
-"proceeds": 0.8623285
-},
-{
-"date": "2024-12-27",
-"broker": "IBKR",
-"base": "USD",
-"qty": -0.001259,
-"quote": "CZK",
-"proceeds": 0.03043647
-},
-{
-"date": "2024-12-27",
-"broker": "IBKR",
-"base": "USD",
-"qty": -0.36189468,
-"quote": "CZK",
-"proceeds": 8.747896686
-},
-{
-"date": "2024-12-27",
-"broker": "IBKR",
-"base": "EUR",
-"qty": -4.26,
-"quote": "SEK",
-"proceeds": 49.013856
-},
-{
-"date": "2024-12-27",
-"broker": "IBKR",
-"base": "EUR",
-"qty": -2885.91,
-"quote": "SEK",
-"proceeds": 33203.9818005
-},
-{
-"date": "2024-12-27",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.001259,
-"quote": "SEK",
-"proceeds": -0.013856004
-},
-{
-"date": "2024-12-27",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.36189468,
-"quote": "SEK",
-"proceeds": -3.9818005
-},
-{
-"date": "2025-01-03",
-"broker": "IBKR",
-"base": "USD",
-"qty": 1102.57,
-"quote": "CZK",
-"proceeds": -27013.516285
-},
-{
-"date": "2025-01-03",
-"broker": "IBKR",
-"base": "USD",
-"qty": 1103.99,
-"quote": "CZK",
-"proceeds": -26987.03555
-},
-{
-"date": "2025-01-03",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.00045134,
-"quote": "CZK",
-"proceeds": -0.011019563
-},
-{
-"date": "2025-01-06",
-"broker": "IBKR",
-"base": "USD",
-"qty": 852.3,
-"quote": "CZK",
-"proceeds": -20704.49775
-},
-{
-"date": "2025-01-06",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.00035,
-"quote": "CZK",
-"proceeds": -0.008476853
-},
-{
-"date": "2025-01-08",
-"broker": "IBKR",
-"base": "USD",
-"qty": 2992.99,
-"quote": "CZK",
-"proceeds": -73128.921866
-},
-{
-"date": "2025-01-08",
-"broker": "IBKR",
-"base": "USD",
-"qty": 4.0,
-"quote": "CZK",
-"proceeds": -97.7356
-},
-{
-"date": "2025-01-08",
-"broker": "IBKR",
-"base": "USD",
-"qty": 1.0,
-"quote": "CZK",
-"proceeds": -24.4194
-},
-{
-"date": "2025-01-08",
-"broker": "IBKR",
-"base": "USD",
-"qty": 2033.56,
-"quote": "CZK",
-"proceeds": -49657.908352
-},
-{
-"date": "2025-01-08",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0092,
-"quote": "CZK",
-"proceeds": -0.224019726
-},
-{
-"date": "2025-01-08",
-"broker": "IBKR",
-"base": "USD",
-"qty": -0.01,
-"quote": "CZK",
-"proceeds": 0.243346974
-},
-{
-"date": "2025-02-03",
-"broker": "IBKR",
-"base": "USD",
-"qty": 4.0,
-"quote": "CZK",
-"proceeds": -97.8424
-},
-{
-"date": "2025-02-03",
-"broker": "IBKR",
-"base": "USD",
-"qty": 1099.99,
-"quote": "CZK",
-"proceeds": -26905.095406
-},
-{
-"date": "2025-02-05",
-"broker": "IBKR",
-"base": "USD",
-"qty": 4270.61,
-"quote": "CZK",
-"proceeds": -103090.817156
-},
-{
-"date": "2025-02-05",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.00184634,
-"quote": "CZK",
-"proceeds": -0.044699134
-},
-{
-"date": "2025-02-14",
-"broker": "Patria",
-"base": "EUR",
-"qty": 1333.61,
-"quote": "USD",
-"proceeds": -1418.29
-},
-{
-"date": "2025-02-21",
-"broker": "Patria",
-"base": "EUR",
-"qty": 0.68,
-"quote": "USD",
-"proceeds": -0.72
-},
-{
-"date": "2025-02-26",
-"broker": "Patria",
-"base": "CZK",
-"qty": 17560.83,
-"quote": "USD",
-"proceeds": -750.0
-},
-{
-"date": "2025-03-03",
-"broker": "IBKR",
-"base": "USD",
-"qty": 514.26,
-"quote": "CZK",
-"proceeds": -12305.059002
-},
-{
-"date": "2025-03-03",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.00197066,
-"quote": "CZK",
-"proceeds": -0.047000753
-},
-{
-"date": "2025-03-03",
-"broker": "IBKR",
-"base": "EUR",
-"qty": -407.76,
-"quote": "USD",
-"proceeds": 427.3610232
-},
-{
-"date": "2025-03-03",
-"broker": "IBKR",
-"base": "EUR",
-"qty": -0.01,
-"quote": "USD",
-"proceeds": 0.0104651
-},
-{
-"date": "2025-03-03",
-"broker": "IBKR",
-"base": "EUR",
-"qty": -3.82,
-"quote": "USD",
-"proceeds": 4.0070654
-},
-{
-"date": "2025-03-04",
-"broker": "IBKR",
-"base": "USD",
-"qty": -0.0050311,
-"quote": "CZK",
-"proceeds": 0.118708212
-},
-{
-"date": "2025-03-04",
-"broker": "IBKR",
-"base": "EUR",
-"qty": -1.08,
-"quote": "USD",
-"proceeds": 1.1352528
-},
-{
-"date": "2025-03-04",
-"broker": "IBKR",
-"base": "EUR",
-"qty": -0.96,
-"quote": "USD",
-"proceeds": 1.0098048
-},
-{
-"date": "2025-03-20",
-"broker": "IBKR",
-"base": "USD",
-"qty": -0.01836573,
-"quote": "CZK",
-"proceeds": 0.423262573
-},
-{
-"date": "2025-03-20",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.01666195,
-"quote": "CZK",
-"proceeds": -0.384082204
-},
-{
-"date": "2025-03-20",
-"broker": "IBKR",
-"base": "USD",
-"qty": -2360.11,
-"quote": "SEK",
-"proceeds": 23879.8525921
-},
-{
-"date": "2025-03-20",
-"broker": "IBKR",
-"base": "USD",
-"qty": -4.86,
-"quote": "SEK",
-"proceeds": 49.1861646
-},
-{
-"date": "2025-03-20",
-"broker": "IBKR",
-"base": "USD",
-"qty": -0.67,
-"quote": "SEK",
-"proceeds": 6.7785977
-},
-{
-"date": "2025-03-20",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.01836573,
-"quote": "SEK",
-"proceeds": -0.186164597
-},
-{
-"date": "2025-03-20",
-"broker": "IBKR",
-"base": "USD",
-"qty": -0.01666195,
-"quote": "SEK",
-"proceeds": 0.168810204
-},
-{
-"date": "2025-03-21",
-"broker": "Patria",
-"base": "EUR",
-"qty": 0.66,
-"quote": "USD",
-"proceeds": -0.73
-},
-{
-"date": "2025-04-16",
-"broker": "IBKR",
-"base": "EUR",
-"qty": 1362.0,
-"quote": "CZK",
-"proceeds": -34093.0392
-},
-{
-"date": "2025-04-16",
-"broker": "IBKR",
-"base": "EUR",
-"qty": -0.49,
-"quote": "CZK",
-"proceeds": 12.257101766
-},
-{
-"date": "2025-04-23",
-"broker": "Patria",
-"base": "EUR",
-"qty": 0.81,
-"quote": "USD",
-"proceeds": -0.94
-},
-{
-"date": "2025-06-29",
-"broker": "IBKR",
-"base": "USD",
-"qty": -9023.68,
-"quote": "CZK",
-"proceeds": 189999.898976
-},
-{
-"date": "2025-07-11",
-"broker": "IBKR",
-"base": "GBP",
-"qty": 3.0,
-"quote": "CZK",
-"proceeds": -85.8171
-},
-{
-"date": "2025-07-11",
-"broker": "IBKR",
-"base": "GBP",
-"qty": 3114.0,
-"quote": "USD",
-"proceeds": -4216.85424
-},
-{
-"date": "2025-07-25",
-"broker": "IBKR",
-"base": "USD",
-"qty": 276.67,
-"quote": "CZK",
-"proceeds": -5791.090438
-},
-{
-"date": "2025-07-25",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.00352156,
-"quote": "CZK",
-"proceeds": -0.073681068
-},
-{
-"date": "2025-07-25",
-"broker": "IBKR",
-"base": "EUR",
-"qty": -0.03,
-"quote": "USD",
-"proceeds": 0.0351873
-},
-{
-"date": "2025-07-25",
-"broker": "IBKR",
-"base": "EUR",
-"qty": -210.83,
-"quote": "USD",
-"proceeds": 247.2846153
-},
-{
-"date": "2025-07-25",
-"broker": "Patria",
-"base": "CZK",
-"qty": 70000.0,
-"quote": "USD",
-"proceeds": -3401.26
-},
-{
-"date": "2025-07-29",
-"broker": "IBKR",
-"base": "USD",
-"qty": -0.0045835,
-"quote": "CZK",
-"proceeds": 0.097659373
-},
-{
-"date": "2025-07-29",
-"broker": "IBKR",
-"base": "EUR",
-"qty": -1.13,
-"quote": "USD",
-"proceeds": 1.3028335
-},
-{
-"date": "2025-08-06",
-"broker": "IBKR",
-"base": "EUR",
-"qty": -0.01,
-"quote": "CZK",
-"proceeds": 0.245616293
-},
-{
-"date": "2025-08-06",
-"broker": "IBKR",
-"base": "EUR",
-"qty": 3916.34,
-"quote": "USD",
-"proceeds": -4535.12172
-},
-{
-"date": "2025-08-13",
-"broker": "IBKR",
-"base": "GBP",
-"qty": -0.01,
-"quote": "CZK",
-"proceeds": 0.283533102
-},
-{
-"date": "2025-08-13",
-"broker": "IBKR",
-"base": "USD",
-"qty": -0.00811951,
-"quote": "CZK",
-"proceeds": 0.169599755
-},
-{
-"date": "2025-08-13",
-"broker": "IBKR",
-"base": "GBP",
-"qty": 3.01,
-"quote": "HKD",
-"proceeds": -32.0081594
-},
-{
-"date": "2025-08-13",
-"broker": "IBKR",
-"base": "USD",
-"qty": -5.16,
-"quote": "SEK",
-"proceeds": 49.077534
-},
-{
-"date": "2025-08-13",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.00811951,
-"quote": "SEK",
-"proceeds": -0.077534002
-},
-{
-"date": "2025-08-19",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0073927,
-"quote": "CZK",
-"proceeds": -0.155282931
-},
-{
-"date": "2025-08-19",
-"broker": "IBKR",
-"base": "GBP",
-"qty": -2229.46,
-"quote": "USD",
-"proceeds": 3013.2712522
-},
-{
-"date": "2025-08-19",
-"broker": "IBKR",
-"base": "GBP",
-"qty": -0.23,
-"quote": "USD",
-"proceeds": 0.3108726
-},
-{
-"date": "2025-09-11",
-"broker": "IBKR",
-"base": "USD",
-"qty": -4.978673,
-"quote": "CZK",
-"proceeds": 103.295572741
-},
-{
-"date": "2025-09-11",
-"broker": "IBKR",
-"base": "GBP",
-"qty": -0.75,
-"quote": "USD",
-"proceeds": 1.013205
-},
-{
-"date": "2025-09-15",
-"broker": "IBKR",
-"base": "GBP",
-"qty": -0.01,
-"quote": "CZK",
-"proceeds": 0.281025667
-},
-{
-"date": "2025-09-15",
-"broker": "IBKR",
-"base": "GBP",
-"qty": 2020.45,
-"quote": "USD",
-"proceeds": -2751.4690145
-},
-{
-"date": "2025-09-23",
-"broker": "IBKR",
-"base": "EUR",
-"qty": 3.0,
-"quote": "CZK",
-"proceeds": -72.78
-},
-{
-"date": "2025-09-23",
-"broker": "IBKR",
-"base": "EUR",
-"qty": 3333.6,
-"quote": "USD",
-"proceeds": -3935.181516
-},
-{
-"date": "2025-09-23",
-"broker": "IBKR",
-"base": "EUR",
-"qty": 3.0,
-"quote": "USD",
-"proceeds": -3.53994
-},
-{
-"date": "2025-09-23",
-"broker": "IBKR",
-"base": "EUR",
-"qty": 3398.4,
-"quote": "USD",
-"proceeds": -4010.485824
-},
-{
-"date": "2025-10-16",
-"broker": "IBKR",
-"base": "GBP",
-"qty": 4.0,
-"quote": "CZK",
-"proceeds": -112.1444
-},
-{
-"date": "2025-10-16",
-"broker": "IBKR",
-"base": "GBP",
-"qty": 1656.0,
-"quote": "CZK",
-"proceeds": -46424.304
-},
-{
-"date": "2025-10-16",
-"broker": "IBKR",
-"base": "GBP",
-"qty": -1.0,
-"quote": "CZK",
-"proceeds": 27.91683795
-},
-{
-"date": "2025-10-27",
-"broker": "IBKR",
-"base": "USD",
-"qty": 278.26,
-"quote": "CZK",
-"proceeds": -5817.637472
-},
-{
-"date": "2025-10-27",
-"broker": "IBKR",
-"base": "USD",
-"qty": 4154.5,
-"quote": "CZK",
-"proceeds": -86904.6619
-},
-{
-"date": "2025-10-27",
-"broker": "IBKR",
-"base": "USD",
-"qty": 1715.75,
-"quote": "CZK",
-"proceeds": -35885.9407
-},
-{
-"date": "2025-10-27",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0013475,
-"quote": "CZK",
-"proceeds": -0.028153438
-},
-{
-"date": "2025-10-28",
-"broker": "IBKR",
-"base": "EUR",
-"qty": 3.0,
-"quote": "CZK",
-"proceeds": -72.9822
-},
-{
-"date": "2025-10-28",
-"broker": "IBKR",
-"base": "EUR",
-"qty": 3852.0,
-"quote": "CZK",
-"proceeds": -93716.4636
-},
-{
-"date": "2025-10-28",
-"broker": "IBKR",
-"base": "EUR",
-"qty": -0.225,
-"quote": "CZK",
-"proceeds": 5.46945867
-},
-{
-"date": "2025-10-28",
-"broker": "IBKR",
-"base": "USD",
-"qty": 1.0,
-"quote": "CZK",
-"proceeds": -20.9231
-},
-{
-"date": "2025-10-28",
-"broker": "IBKR",
-"base": "USD",
-"qty": 3057.6,
-"quote": "CZK",
-"proceeds": -63973.24752
-},
-{
-"date": "2025-10-28",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.00088,
-"quote": "CZK",
-"proceeds": -0.018370931
-},
-{
-"date": "2025-11-04",
-"broker": "IBKR",
-"base": "EUR",
-"qty": 3.0,
-"quote": "CZK",
-"proceeds": -73.0716
-},
-{
-"date": "2025-11-06",
-"broker": "IBKR",
-"base": "EUR",
-"qty": 307.0,
-"quote": "CZK",
-"proceeds": -7475.8798
-},
-{
-"date": "2025-11-10",
-"broker": "IBKR",
-"base": "EUR",
-"qty": 1799.0,
-"quote": "CZK",
-"proceeds": -43713.5412
-},
-{
-"date": "2025-11-10",
-"broker": "IBKR",
-"base": "EUR",
-"qty": 3.0,
-"quote": "CZK",
-"proceeds": -72.8922
-},
-{
-"date": "2025-11-10",
-"broker": "IBKR",
-"base": "EUR",
-"qty": -0.8,
-"quote": "CZK",
-"proceeds": 19.4261704
-},
-{
-"date": "2025-11-11",
-"broker": "IBKR",
-"base": "GBP",
-"qty": 1520.0,
-"quote": "CZK",
-"proceeds": -41909.136
-},
-{
-"date": "2025-11-11",
-"broker": "IBKR",
-"base": "GBP",
-"qty": 3.0,
-"quote": "CZK",
-"proceeds": -82.719
-},
-{
-"date": "2025-11-11",
-"broker": "IBKR",
-"base": "GBP",
-"qty": -0.5,
-"quote": "CZK",
-"proceeds": 13.76836825
-},
-{
-"date": "2025-11-11",
-"broker": "IBKR",
-"base": "USD",
-"qty": 366.21,
-"quote": "CZK",
-"proceeds": -7697.880684
-},
-{
-"date": "2025-11-11",
-"broker": "IBKR",
-"base": "USD",
-"qty": -0.00551186,
-"quote": "CZK",
-"proceeds": 0.115439571
-},
-{
-"date": "2025-11-11",
-"broker": "IBKR",
-"base": "USD",
-"qty": -0.04,
-"quote": "SEK",
-"proceeds": 0.3804016
-},
-{
-"date": "2025-11-11",
-"broker": "IBKR",
-"base": "USD",
-"qty": -366.21,
-"quote": "SEK",
-"proceeds": 3482.6717484
-},
-{
-"date": "2025-11-11",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.00551186,
-"quote": "SEK",
-"proceeds": -0.052149998
-},
-{
-"date": "2025-11-16",
-"broker": "IBKR",
-"base": "USD",
-"qty": 883.18,
-"quote": "CZK",
-"proceeds": -18425.872658
-},
-{
-"date": "2025-11-17",
-"broker": "IBKR",
-"base": "USD",
-"qty": -0.0024,
-"quote": "CZK",
-"proceeds": 0.050019509
-},
-{
-"date": "2025-11-24",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.87,
-"quote": "CZK",
-"proceeds": -18.239637
-},
-{
-"date": "2025-11-26",
-"broker": "IBKR",
-"base": "USD",
-"qty": 1.0,
-"quote": "CZK",
-"proceeds": -20.851
-},
-{
-"date": "2025-11-26",
-"broker": "IBKR",
-"base": "USD",
-"qty": 4797.0,
-"quote": "CZK",
-"proceeds": -100018.8891
-},
-{
-"date": "2025-11-26",
-"broker": "IBKR",
-"base": "USD",
-"qty": 1.0,
-"quote": "CZK",
-"proceeds": -20.9105
-},
-{
-"date": "2025-11-26",
-"broker": "IBKR",
-"base": "USD",
-"qty": 4800.0,
-"quote": "CZK",
-"proceeds": -100369.44
-},
-{
-"date": "2025-11-26",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.00176,
-"quote": "CZK",
-"proceeds": -0.036679891
-},
-{
-"date": "2025-12-24",
-"broker": "IBKR",
-"base": "USD",
-"qty": 2232.35,
-"quote": "CZK",
-"proceeds": -45983.28471
-},
-{
-"date": "2025-12-26",
-"broker": "IBKR",
-"base": "USD",
-"qty": 2.58,
-"quote": "CZK",
-"proceeds": -53.129682
-},
-{
-"date": "2025-12-26",
-"broker": "IBKR",
-"base": "USD",
-"qty": 2.5,
-"quote": "CZK",
-"proceeds": -51.482
-},
-{
-"date": "2025-12-26",
-"broker": "IBKR",
-"base": "USD",
-"qty": 5.0,
-"quote": "CZK",
-"proceeds": -102.9575
-},
-{
-"date": "2025-12-26",
-"broker": "IBKR",
-"base": "USD",
-"qty": 1.02,
-"quote": "CZK",
-"proceeds": -21.005064
-},
-{
-"date": "2025-12-26",
-"broker": "IBKR",
-"base": "USD",
-"qty": 1.0,
-"quote": "CZK",
-"proceeds": -20.5932
-},
-{
-"date": "2025-12-26",
-"broker": "IBKR",
-"base": "USD",
-"qty": 5.2,
-"quote": "CZK",
-"proceeds": -107.07788
-},
-{
-"date": "2025-12-26",
-"broker": "IBKR",
-"base": "USD",
-"qty": 1.03,
-"quote": "CZK",
-"proceeds": -21.209657
-},
-{
-"date": "2025-12-26",
-"broker": "IBKR",
-"base": "USD",
-"qty": 1196.83,
-"quote": "CZK",
-"proceeds": -24643.92653
-},
-{
-"date": "2025-12-26",
-"broker": "IBKR",
-"base": "USD",
-"qty": 1.0,
-"quote": "CZK",
-"proceeds": -20.5923
-},
-{
-"date": "2025-12-26",
-"broker": "IBKR",
-"base": "USD",
-"qty": 1.0,
-"quote": "CZK",
-"proceeds": -20.5931
-},
-{
-"date": "2025-12-26",
-"broker": "IBKR",
-"base": "USD",
-"qty": 7.54,
-"quote": "CZK",
-"proceeds": -155.256894
-},
-{
-"date": "2025-12-26",
-"broker": "IBKR",
-"base": "USD",
-"qty": 1.0,
-"quote": "CZK",
-"proceeds": -20.5926
-},
-{
-"date": "2025-12-26",
-"broker": "IBKR",
-"base": "USD",
-"qty": 1.03,
-"quote": "CZK",
-"proceeds": -21.207597
-},
-{
-"date": "2025-12-26",
-"broker": "IBKR",
-"base": "USD",
-"qty": 1464.99,
-"quote": "CZK",
-"proceeds": -30162.972108
-},
-{
-"date": "2025-12-26",
-"broker": "IBKR",
-"base": "USD",
-"qty": 1.0,
-"quote": "CZK",
-"proceeds": -20.5905
-},
-{
-"date": "2025-12-26",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.00434,
-"quote": "CZK",
-"proceeds": -0.089403183
-},
-{
-"date": "2025-12-26",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.001,
-"quote": "CZK",
-"proceeds": -0.020598586
-},
-{
-"date": "2025-12-29",
-"broker": "IBKR",
-"base": "USD",
-"qty": 5.35,
-"quote": "CZK",
-"proceeds": -110.09765
-},
-{
-"date": "2025-12-29",
-"broker": "IBKR",
-"base": "USD",
-"qty": 5.34,
-"quote": "CZK",
-"proceeds": -109.96662
-},
-{
-"date": "2025-12-29",
-"broker": "IBKR",
-"base": "USD",
-"qty": 43.64,
-"quote": "CZK",
-"proceeds": -898.608696
-},
-{
-"date": "2025-12-29",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.01,
-"quote": "CZK",
-"proceeds": -0.205914
-},
-{
-"date": "2025-12-29",
-"broker": "IBKR",
-"base": "USD",
-"qty": -0.00516729,
-"quote": "CZK",
-"proceeds": 0.106493109
-},
-{
-"date": "2025-12-29",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.00035581,
-"quote": "CZK",
-"proceeds": -0.007335785
-},
-{
-"date": "2025-12-29",
-"broker": "IBKR",
-"base": "USD",
-"qty": -5.35,
-"quote": "SEK",
-"proceeds": 49.0476765
-},
-{
-"date": "2025-12-29",
-"broker": "IBKR",
-"base": "USD",
-"qty": -5.34,
-"quote": "SEK",
-"proceeds": 48.9490566
-},
-{
-"date": "2025-12-29",
-"broker": "IBKR",
-"base": "USD",
-"qty": -43.64,
-"quote": "SEK",
-"proceeds": 399.9557996
-},
-{
-"date": "2025-12-29",
-"broker": "IBKR",
-"base": "USD",
-"qty": -0.01,
-"quote": "SEK",
-"proceeds": 0.0916489
-},
-{
-"date": "2025-12-29",
-"broker": "IBKR",
-"base": "USD",
-"qty": -0.00035581,
-"quote": "SEK",
-"proceeds": 0.003266894
-},
-{
-"date": "2025-12-29",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.00516729,
-"quote": "SEK",
-"proceeds": -0.047448504
-},
-{
-"date": "2026-01-14",
-"broker": "IBKR",
-"base": "USD",
-"qty": 1.6,
-"quote": "CZK",
-"proceeds": -33.29312
-},
-{
-"date": "2026-01-14",
-"broker": "IBKR",
-"base": "USD",
-"qty": 3.76,
-"quote": "CZK",
-"proceeds": -78.193712
-},
-{
-"date": "2026-01-14",
-"broker": "IBKR",
-"base": "USD",
-"qty": -0.01,
-"quote": "CZK",
-"proceeds": 0.208141353
-},
-{
-"date": "2026-01-20",
-"broker": "IBKR",
-"base": "USD",
-"qty": 2.0,
-"quote": "CZK",
-"proceeds": -41.501
-},
-{
-"date": "2026-01-20",
-"broker": "IBKR",
-"base": "USD",
-"qty": 5580.0,
-"quote": "CZK",
-"proceeds": -115787.232
-},
-{
-"date": "2026-01-23",
-"broker": "IBKR",
-"base": "EUR",
-"qty": 3.0,
-"quote": "CZK",
-"proceeds": -72.8349
-},
-{
-"date": "2026-01-23",
-"broker": "IBKR",
-"base": "EUR",
-"qty": 3250.0,
-"quote": "CZK",
-"proceeds": -78917.475
-},
-{
-"date": "2026-01-28",
-"broker": "IBKR",
-"base": "USD",
-"qty": 1.0,
-"quote": "CZK",
-"proceeds": -20.1513
-},
-{
-"date": "2026-01-28",
-"broker": "IBKR",
-"base": "USD",
-"qty": 4864.5,
-"quote": "CZK",
-"proceeds": -98025.5124
-},
-{
-"date": "2026-01-28",
-"broker": "IBKR",
-"base": "USD",
-"qty": 4146.89,
-"quote": "CZK",
-"proceeds": -83649.821013
-},
-{
-"date": "2026-01-28",
-"broker": "IBKR",
-"base": "USD",
-"qty": 1.0,
-"quote": "CZK",
-"proceeds": -20.1718
-},
-{
-"date": "2026-01-28",
-"broker": "IBKR",
-"base": "USD",
-"qty": 5130.0,
-"quote": "CZK",
-"proceeds": -103701.411
-},
-{
-"date": "2026-01-28",
-"broker": "IBKR",
-"base": "USD",
-"qty": 1.0,
-"quote": "CZK",
-"proceeds": -20.2148
-},
-{
-"date": "2026-01-28",
-"broker": "IBKR",
-"base": "USD",
-"qty": 5.0,
-"quote": "CZK",
-"proceeds": -101.4395
-},
-{
-"date": "2026-01-28",
-"broker": "IBKR",
-"base": "USD",
-"qty": 4950.0,
-"quote": "CZK",
-"proceeds": -100424.61
-},
-{
-"date": "2026-01-28",
-"broker": "IBKR",
-"base": "USD",
-"qty": 2.07,
-"quote": "CZK",
-"proceeds": -42.096348
-},
-{
-"date": "2026-01-28",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.008,
-"quote": "CZK",
-"proceeds": -0.162610692
-},
-{
-"date": "2026-01-29",
-"broker": "IBKR",
-"base": "USD",
-"qty": 6351.52,
-"quote": "CZK",
-"proceeds": -129599.58984
-},
-{
-"date": "2026-01-29",
-"broker": "IBKR",
-"base": "USD",
-"qty": -6351.51,
-"quote": "HKD",
-"proceeds": 49570.8044007
-},
-{
-"date": "2026-01-29",
-"broker": "IBKR",
-"base": "USD",
-"qty": -0.3,
-"quote": "HKD",
-"proceeds": 2.341212
-},
-{
-"date": "2026-01-30",
-"broker": "IBKR",
-"base": "USD",
-"qty": -0.00873534,
-"quote": "CZK",
-"proceeds": 0.179292121
-},
-{
-"date": "2026-01-30",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.00873534,
-"quote": "HKD",
-"proceeds": -0.068263801
-},
-{
-"date": "2026-02-02",
-"broker": "IBKR",
-"base": "EUR",
-"qty": 3.0,
-"quote": "CZK",
-"proceeds": -72.9912
-},
-{
-"date": "2026-02-09",
-"broker": "Patria",
-"base": "USD",
-"qty": 2274.29,
-"quote": "EUR",
-"proceeds": -1947.14
-},
-{
-"date": "2026-02-10",
-"broker": "Patria",
-"base": "USD",
-"qty": 6209.3,
-"quote": "EUR",
-"proceeds": -5291.53
-},
-{
-"date": "2026-02-18",
-"broker": "Patria",
-"base": "USD",
-"qty": 3.55,
-"quote": "EUR",
-"proceeds": -3.05
-},
-{
-"date": "2026-02-24",
-"broker": "IBKR",
-"base": "USD",
-"qty": -0.00764867,
-"quote": "CZK",
-"proceeds": 0.157357857
-},
-{
-"date": "2026-02-24",
-"broker": "IBKR",
-"base": "EUR",
-"qty": -4.37,
-"quote": "HKD",
-"proceeds": 40.2598486
-},
-{
-"date": "2026-02-24",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.00764867,
-"quote": "HKD",
-"proceeds": -0.059848596
-},
-{
-"date": "2026-03-04",
-"broker": "IBKR",
-"base": "USD",
-"qty": 4035.19,
-"quote": "CZK",
-"proceeds": -84703.076809
-},
-{
-"date": "2026-03-04",
-"broker": "IBKR",
-"base": "USD",
-"qty": 3439.0,
-"quote": "HKD",
-"proceeds": -26904.74138
-},
-{
-"date": "2026-03-05",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0002,
-"quote": "CZK",
-"proceeds": -0.004201816
-},
-{
-"date": "2026-03-18",
-"broker": "Patria",
-"base": "USD",
-"qty": 5.02,
-"quote": "EUR",
-"proceeds": -4.42
-},
-{
-"date": "2026-03-30",
-"broker": "IBKR",
-"base": "USD",
-"qty": -0.0017725,
-"quote": "CZK",
-"proceeds": 0.037952288
-},
-{
-"date": "2026-03-30",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.19,
-"quote": "HKD",
-"proceeds": -1.4894518
-},
-{
-"date": "2026-03-30",
-"broker": "IBKR",
-"base": "EUR",
-"qty": -899.55,
-"quote": "USD",
-"proceeds": 1029.9397725
-},
-{
-"date": "2026-04-14",
-"broker": "IBKR",
-"base": "USD",
-"qty": 20.0,
-"quote": "HKD",
-"proceeds": -156.7312
-},
-{
-"date": "2026-04-20",
-"broker": "IBKR",
-"base": "USD",
-"qty": -0.3043988,
-"quote": "CZK",
-"proceeds": 6.271240828
-},
-{
-"date": "2026-04-20",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0029707,
-"quote": "CZK",
-"proceeds": -0.061230071
-},
-{
-"date": "2026-04-20",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": -2.1e-08
-},
-{
-"date": "2026-04-20",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": 2.1e-08
-},
-{
-"date": "2026-04-20",
-"broker": "IBKR",
-"base": "USD",
-"qty": 1.0,
-"quote": "HKD",
-"proceeds": -7.83334
-},
-{
-"date": "2026-04-20",
-"broker": "IBKR",
-"base": "USD",
-"qty": 2952.13,
-"quote": "HKD",
-"proceeds": -23124.3885456
-},
-{
-"date": "2026-04-20",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.3043988,
-"quote": "HKD",
-"proceeds": -2.383957606
-},
-{
-"date": "2026-04-20",
-"broker": "IBKR",
-"base": "EUR",
-"qty": -1767.99,
-"quote": "USD",
-"proceeds": 2083.2049371
-},
-{
-"date": "2026-04-20",
-"broker": "IBKR",
-"base": "EUR",
-"qty": -0.18,
-"quote": "USD",
-"proceeds": 0.2120922
-},
-{
-"date": "2026-04-21",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": -2.1e-08
-},
-{
-"date": "2026-04-21",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": -2.1e-08
-},
-{
-"date": "2026-04-21",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0024054,
-"quote": "CZK",
-"proceeds": -0.04983637
-},
-{
-"date": "2026-04-21",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": -2.1e-08
-},
-{
-"date": "2026-04-21",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": 2.1e-08
-},
-{
-"date": "2026-04-21",
-"broker": "IBKR",
-"base": "EUR",
-"qty": -1.87,
-"quote": "USD",
-"proceeds": 2.1967638
-},
-{
-"date": "2026-04-22",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": -2.1e-08
-},
-{
-"date": "2026-04-22",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": -2.1e-08
-},
-{
-"date": "2026-04-22",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": 2.1e-08
-},
-{
-"date": "2026-04-23",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": -2.1e-08
-},
-{
-"date": "2026-04-23",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": -2.1e-08
-},
-{
-"date": "2026-04-23",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": 2.1e-08
-},
-{
-"date": "2026-04-24",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": -2.1e-08
-},
-{
-"date": "2026-04-24",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": -2.1e-08
-},
-{
-"date": "2026-04-24",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": 2.1e-08
-},
-{
-"date": "2026-04-27",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": -2.1e-08
-},
-{
-"date": "2026-04-27",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": -2.1e-08
-},
-{
-"date": "2026-04-27",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": 2.1e-08
-},
-{
-"date": "2026-04-28",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": -2.1e-08
-},
-{
-"date": "2026-04-28",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": -2.1e-08
-},
-{
-"date": "2026-04-28",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": 2.1e-08
-},
-{
-"date": "2026-04-29",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": -2.1e-08
-},
-{
-"date": "2026-04-29",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": -2.1e-08
-},
-{
-"date": "2026-04-29",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": 2.1e-08
-},
-{
-"date": "2026-04-30",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": -2.1e-08
-},
-{
-"date": "2026-04-30",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": -2.1e-08
-},
-{
-"date": "2026-04-30",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": 2.1e-08
-},
-{
-"date": "2026-05-01",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": -2.1e-08
-},
-{
-"date": "2026-05-01",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": -2.1e-08
-},
-{
-"date": "2026-05-01",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": -2.1e-08
-},
-{
-"date": "2026-05-01",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": -2.1e-08
-},
-{
-"date": "2026-05-01",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": -2.1e-08
-},
-{
-"date": "2026-05-01",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": 2.1e-08
-},
-{
-"date": "2026-05-04",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": -2.1e-08
-},
-{
-"date": "2026-05-04",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": -2.1e-08
-},
-{
-"date": "2026-05-04",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": 2.1e-08
-},
-{
-"date": "2026-05-05",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": -2.1e-08
-},
-{
-"date": "2026-05-05",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": -2.1e-08
-},
-{
-"date": "2026-05-05",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": -2.1e-08
-},
-{
-"date": "2026-05-05",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": 2.1e-08
-},
-{
-"date": "2026-05-06",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": -2.1e-08
-},
-{
-"date": "2026-05-06",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": -2.1e-08
-},
-{
-"date": "2026-05-06",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": 2.1e-08
-},
-{
-"date": "2026-05-07",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": -2.1e-08
-},
-{
-"date": "2026-05-07",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": -2.1e-08
-},
-{
-"date": "2026-05-07",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": 2.1e-08
-},
-{
-"date": "2026-05-08",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": -2.1e-08
-},
-{
-"date": "2026-05-08",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": -2.1e-08
-},
-{
-"date": "2026-05-08",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": -2.1e-08
-},
-{
-"date": "2026-05-08",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": -2.1e-08
-},
-{
-"date": "2026-05-08",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": -2.1e-08
-},
-{
-"date": "2026-05-08",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": 2.1e-08
-},
-{
-"date": "2026-05-11",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": -2.1e-08
-},
-{
-"date": "2026-05-11",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": -2.1e-08
-},
-{
-"date": "2026-05-11",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": 2.1e-08
-},
-{
-"date": "2026-05-12",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": -2.1e-08
-},
-{
-"date": "2026-05-12",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": -2.1e-08
-},
-{
-"date": "2026-05-12",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": 2.1e-08
-},
-{
-"date": "2026-05-13",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": -2.1e-08
-},
-{
-"date": "2026-05-13",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": -2.1e-08
-},
-{
-"date": "2026-05-13",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": 2.1e-08
-},
-{
-"date": "2026-05-14",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": -2.1e-08
-},
-{
-"date": "2026-05-14",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": -2.1e-08
-},
-{
-"date": "2026-05-14",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": 2.1e-08
-},
-{
-"date": "2026-05-15",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": -2.1e-08
-},
-{
-"date": "2026-05-15",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": -2.1e-08
-},
-{
-"date": "2026-05-15",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": 2.1e-08
-},
-{
-"date": "2026-05-18",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": -2.1e-08
-},
-{
-"date": "2026-05-18",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": -2.1e-08
-},
-{
-"date": "2026-05-18",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": 2.1e-08
-},
-{
-"date": "2026-05-18",
-"broker": "Patria",
-"base": "USD",
-"qty": 5.08,
-"quote": "CZK",
-"proceeds": -107.79
-},
-{
-"date": "2026-05-18",
-"broker": "Patria",
-"base": "USD",
-"qty": 4861.31,
-"quote": "CZK",
-"proceeds": -103214.22
-},
-{
-"date": "2026-05-19",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": -2.1e-08
-},
-{
-"date": "2026-05-19",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": -2.1e-08
-},
-{
-"date": "2026-05-19",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": 2.1e-08
-},
-{
-"date": "2026-05-20",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": -2.1e-08
-},
-{
-"date": "2026-05-20",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": -2.1e-08
-},
-{
-"date": "2026-05-20",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": 2.1e-08
-},
-{
-"date": "2026-05-21",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": -2.1e-08
-},
-{
-"date": "2026-05-21",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": -2.1e-08
-},
-{
-"date": "2026-05-21",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": 2.1e-08
-},
-{
-"date": "2026-05-22",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": -2.1e-08
-},
-{
-"date": "2026-05-22",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": -2.1e-08
-},
-{
-"date": "2026-05-22",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": 2.1e-08
-},
-{
-"date": "2026-05-25",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": -2.1e-08
-},
-{
-"date": "2026-05-25",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": -2.1e-08
-},
-{
-"date": "2026-05-25",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": -2.1e-08
-},
-{
-"date": "2026-05-25",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": 2.1e-08
-},
-{
-"date": "2026-05-26",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": -2.1e-08
-},
-{
-"date": "2026-05-26",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": -2.1e-08
-},
-{
-"date": "2026-05-26",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": 2.1e-08
-},
-{
-"date": "2026-05-27",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": -2.1e-08
-},
-{
-"date": "2026-05-27",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": -2.1e-08
-},
-{
-"date": "2026-05-27",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": 2.1e-08
-},
-{
-"date": "2026-05-27",
-"broker": "Patria",
-"base": "USD",
-"qty": 63.94,
-"quote": "EUR",
-"proceeds": -55.73
-},
-{
-"date": "2026-05-27",
-"broker": "Patria",
-"base": "USD",
-"qty": 4715.49,
-"quote": "CZK",
-"proceeds": -99737.72
-},
-{
-"date": "2026-05-28",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": -2.1e-08
-},
-{
-"date": "2026-05-28",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": -2.1e-08
-},
-{
-"date": "2026-05-28",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": 2.1e-08
-},
-{
-"date": "2026-05-29",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": -2.1e-08
-},
-{
-"date": "2026-05-29",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": -2.1e-08
-},
-{
-"date": "2026-05-29",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": 2.1e-08
-},
-{
-"date": "2026-06-01",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": -2.1e-08
-},
-{
-"date": "2026-06-01",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": -2.1e-08
-},
-{
-"date": "2026-06-01",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": 2.1e-08
-},
-{
-"date": "2026-06-02",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": -2.1e-08
-},
-{
-"date": "2026-06-02",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": -2.1e-08
-},
-{
-"date": "2026-06-02",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": 2.1e-08
-},
-{
-"date": "2026-06-03",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": -2.1e-08
-},
-{
-"date": "2026-06-03",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": -2.1e-08
-},
-{
-"date": "2026-06-03",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": 2.1e-08
-},
-{
-"date": "2026-06-04",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": -2.1e-08
-},
-{
-"date": "2026-06-04",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": -2.1e-08
-},
-{
-"date": "2026-06-04",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": 2.1e-08
-},
-{
-"date": "2026-06-05",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": -2.1e-08
-},
-{
-"date": "2026-06-05",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": -2.1e-08
-},
-{
-"date": "2026-06-05",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": 2.1e-08
-},
-{
-"date": "2026-06-08",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": -2.1e-08
-},
-{
-"date": "2026-06-08",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": -2.1e-08
-},
-{
-"date": "2026-06-08",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": 2.1e-08
-},
-{
-"date": "2026-06-09",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": -2.1e-08
-},
-{
-"date": "2026-06-09",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": -2.1e-08
-},
-{
-"date": "2026-06-09",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": 2.1e-08
-},
-{
-"date": "2026-06-10",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": -2.1e-08
-},
-{
-"date": "2026-06-10",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": -2.1e-08
-},
-{
-"date": "2026-06-10",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": 2.1e-08
-},
-{
-"date": "2026-06-11",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": -2.1e-08
-},
-{
-"date": "2026-06-11",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": -2.1e-08
-},
-{
-"date": "2026-06-11",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": 2.1e-08
-},
-{
-"date": "2026-06-12",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": -2.1e-08
-},
-{
-"date": "2026-06-12",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": -2.1e-08
-},
-{
-"date": "2026-06-12",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": 2.1e-08
-},
-{
-"date": "2026-06-15",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": -2.1e-08
-},
-{
-"date": "2026-06-15",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": -2.1e-08
-},
-{
-"date": "2026-06-15",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": 2.1e-08
-},
-{
-"date": "2026-06-16",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": -2.1e-08
-},
-{
-"date": "2026-06-16",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": -2.1e-08
-},
-{
-"date": "2026-06-16",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": 2.1e-08
-},
-{
-"date": "2026-06-17",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": -2.1e-08
-},
-{
-"date": "2026-06-17",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": -2.1e-08
-},
-{
-"date": "2026-06-17",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": 2.1e-08
-},
-{
-"date": "2026-06-18",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": -2.1e-08
-},
-{
-"date": "2026-06-18",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": -2.1e-08
-},
-{
-"date": "2026-06-18",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": 2.1e-08
-},
-{
-"date": "2026-06-18",
-"broker": "Patria",
-"base": "USD",
-"qty": 5.84,
-"quote": "EUR",
-"proceeds": -5.15
-},
-{
-"date": "2026-06-19",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": -2.1e-08
-},
-{
-"date": "2026-06-19",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": -2.1e-08
-},
-{
-"date": "2026-06-19",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": -2.1e-08
-},
-{
-"date": "2026-06-19",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": -2.1e-08
-},
-{
-"date": "2026-06-19",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": -2.1e-08
-},
-{
-"date": "2026-06-19",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": 2.1e-08
-},
-{
-"date": "2026-06-22",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": -2.1e-08
-},
-{
-"date": "2026-06-22",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": -2.1e-08
-},
-{
-"date": "2026-06-22",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": 2.1e-08
-},
-{
-"date": "2026-06-23",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": -2.1e-08
-},
-{
-"date": "2026-06-23",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": -2.1e-08
-},
-{
-"date": "2026-06-23",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": 2.1e-08
-},
-{
-"date": "2026-06-24",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": -2.1e-08
-},
-{
-"date": "2026-06-24",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": -2.1e-08
-},
-{
-"date": "2026-06-24",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": 2.1e-08
-},
-{
-"date": "2026-06-25",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": -2.1e-08
-},
-{
-"date": "2026-06-25",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": -2.1e-08
-},
-{
-"date": "2026-06-25",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": 2.1e-08
-},
-{
-"date": "2026-06-26",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": -2.1e-08
-},
-{
-"date": "2026-06-26",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": -2.1e-08
-},
-{
-"date": "2026-06-26",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": -2.1e-08
-},
-{
-"date": "2026-06-26",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": -2.1e-08
-},
-{
-"date": "2026-06-26",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": -2.1e-08
-},
-{
-"date": "2026-06-26",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": -2.1e-08
-},
-{
-"date": "2026-06-26",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": 2.1e-08
-},
-{
-"date": "2026-06-29",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": -2.1e-08
-},
-{
-"date": "2026-06-29",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": -2.1e-08
-},
-{
-"date": "2026-06-29",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": -2.1e-08
-},
-{
-"date": "2026-06-29",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": 2.1e-08
-},
-{
-"date": "2026-06-30",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": -2.1e-08
-},
-{
-"date": "2026-06-30",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": -2.1e-08
-},
-{
-"date": "2026-06-30",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": 2.1e-08
-},
-{
-"date": "2026-07-01",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": -2.1e-08
-},
-{
-"date": "2026-07-01",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": -2.1e-08
-},
-{
-"date": "2026-07-01",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": 2.1e-08
-},
-{
-"date": "2026-07-02",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": -2.1e-08
-},
-{
-"date": "2026-07-02",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": -2.1e-08
-},
-{
-"date": "2026-07-02",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": 2.1e-08
-},
-{
-"date": "2026-07-03",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": -2.1e-08
-},
-{
-"date": "2026-07-03",
-"broker": "IBKR",
-"base": "USD",
-"qty": 0.0,
-"quote": "CZK",
-"proceeds": -2.1e-08
-}
+ {
+  "date": "2022-02-25",
+  "broker": "Patria",
+  "base": "USD",
+  "qty": 9600.0,
+  "quote": "CZK",
+  "proceeds": -216550.66
+ },
+ {
+  "date": "2022-04-06",
+  "broker": "Patria",
+  "base": "USD",
+  "qty": 5039.9,
+  "quote": "CZK",
+  "proceeds": -114541.13
+ },
+ {
+  "date": "2022-04-21",
+  "broker": "Patria",
+  "base": "USD",
+  "qty": 1.02,
+  "quote": "CZK",
+  "proceeds": -23.18
+ },
+ {
+  "date": "2022-05-23",
+  "broker": "Patria",
+  "base": "USD",
+  "qty": 1.35,
+  "quote": "CZK",
+  "proceeds": -31.82
+ },
+ {
+  "date": "2022-06-01",
+  "broker": "Patria",
+  "base": "USD",
+  "qty": 2084.9,
+  "quote": "CZK",
+  "proceeds": -48746.06
+ },
+ {
+  "date": "2022-06-21",
+  "broker": "Patria",
+  "base": "USD",
+  "qty": 1.39,
+  "quote": "CZK",
+  "proceeds": -33.02
+ },
+ {
+  "date": "2023-02-23",
+  "broker": "Patria",
+  "base": "USD",
+  "qty": 1371.62,
+  "quote": "CZK",
+  "proceeds": -31104.41
+ },
+ {
+  "date": "2023-03-21",
+  "broker": "Patria",
+  "base": "USD",
+  "qty": 2040.24,
+  "quote": "CZK",
+  "proceeds": -46222.27
+ },
+ {
+  "date": "2023-06-01",
+  "broker": "Patria",
+  "base": "USD",
+  "qty": 1323.73,
+  "quote": "CZK",
+  "proceeds": -29837.01
+ },
+ {
+  "date": "2023-06-13",
+  "broker": "Patria",
+  "base": "USD",
+  "qty": 649.8,
+  "quote": "CZK",
+  "proceeds": -14542.02
+ },
+ {
+  "date": "2023-08-09",
+  "broker": "Patria",
+  "base": "EUR",
+  "qty": 2094.82,
+  "quote": "CZK",
+  "proceeds": -51573.89
+ },
+ {
+  "date": "2023-08-14",
+  "broker": "Patria",
+  "base": "USD",
+  "qty": 4454.39,
+  "quote": "CZK",
+  "proceeds": -100000.0
+ },
+ {
+  "date": "2023-09-13",
+  "broker": "Patria",
+  "base": "USD",
+  "qty": 1769.32,
+  "quote": "CZK",
+  "proceeds": -41114.41
+ },
+ {
+  "date": "2023-09-21",
+  "broker": "Patria",
+  "base": "EUR",
+  "qty": 0.15,
+  "quote": "CZK",
+  "proceeds": -3.72
+ },
+ {
+  "date": "2023-09-21",
+  "broker": "Patria",
+  "base": "USD",
+  "qty": 2.44,
+  "quote": "CZK",
+  "proceeds": -56.85
+ },
+ {
+  "date": "2023-10-23",
+  "broker": "Patria",
+  "base": "EUR",
+  "qty": 0.2,
+  "quote": "CZK",
+  "proceeds": -5.0
+ },
+ {
+  "date": "2023-11-21",
+  "broker": "Patria",
+  "base": "EUR",
+  "qty": 0.2,
+  "quote": "USD",
+  "proceeds": -0.22
+ },
+ {
+  "date": "2023-11-22",
+  "broker": "Patria",
+  "base": "EUR",
+  "qty": 1555.23,
+  "quote": "USD",
+  "proceeds": -1720.5
+ },
+ {
+  "date": "2023-12-15",
+  "broker": "Patria",
+  "base": "USD",
+  "qty": 1128.55,
+  "quote": "CZK",
+  "proceeds": -25722.83
+ },
+ {
+  "date": "2023-12-20",
+  "broker": "Patria",
+  "base": "CZK",
+  "qty": 5.15,
+  "quote": "USD",
+  "proceeds": -0.23
+ },
+ {
+  "date": "2023-12-21",
+  "broker": "Patria",
+  "base": "EUR",
+  "qty": 0.24,
+  "quote": "USD",
+  "proceeds": -0.27
+ },
+ {
+  "date": "2024-01-19",
+  "broker": "Patria",
+  "base": "CZK",
+  "qty": 5.39,
+  "quote": "USD",
+  "proceeds": -0.24
+ },
+ {
+  "date": "2024-01-23",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 2395.0,
+  "quote": "CZK",
+  "proceeds": -54986.805
+ },
+ {
+  "date": "2024-01-23",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": -2045.57,
+  "quote": "HKD",
+  "proceeds": 15999.9371475
+ },
+ {
+  "date": "2024-01-23",
+  "broker": "Patria",
+  "base": "EUR",
+  "qty": 0.36,
+  "quote": "CZK",
+  "proceeds": -9.06
+ },
+ {
+  "date": "2024-01-23",
+  "broker": "Patria",
+  "base": "USD",
+  "qty": 533.48,
+  "quote": "CZK",
+  "proceeds": -12315.2
+ },
+ {
+  "date": "2024-02-08",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 2560.0,
+  "quote": "CZK",
+  "proceeds": -60000.0
+ },
+ {
+  "date": "2024-02-21",
+  "broker": "Patria",
+  "base": "EUR",
+  "qty": 0.36,
+  "quote": "CZK",
+  "proceeds": -9.28
+ },
+ {
+  "date": "2024-02-26",
+  "broker": "Patria",
+  "base": "USD",
+  "qty": 874.55,
+  "quote": "CZK",
+  "proceeds": -20752.35
+ },
+ {
+  "date": "2024-03-07",
+  "broker": "Patria",
+  "base": "USD",
+  "qty": 2011.09,
+  "quote": "CZK",
+  "proceeds": -47559.23
+ },
+ {
+  "date": "2024-03-21",
+  "broker": "Patria",
+  "base": "EUR",
+  "qty": 0.33,
+  "quote": "USD",
+  "proceeds": -0.37
+ },
+ {
+  "date": "2024-04-04",
+  "broker": "Patria",
+  "base": "EUR",
+  "qty": 43.44,
+  "quote": "CZK",
+  "proceeds": -1116.51
+ },
+ {
+  "date": "2024-04-04",
+  "broker": "Patria",
+  "base": "EUR",
+  "qty": 2018.91,
+  "quote": "USD",
+  "proceeds": -2224.09
+ },
+ {
+  "date": "2024-04-08",
+  "broker": "Patria",
+  "base": "USD",
+  "qty": 2204.9,
+  "quote": "CZK",
+  "proceeds": -52335.01
+ },
+ {
+  "date": "2024-04-12",
+  "broker": "Patria",
+  "base": "USD",
+  "qty": 1064.9,
+  "quote": "CZK",
+  "proceeds": -25674.53
+ },
+ {
+  "date": "2024-04-23",
+  "broker": "Patria",
+  "base": "EUR",
+  "qty": 0.35,
+  "quote": "CZK",
+  "proceeds": -8.99
+ },
+ {
+  "date": "2024-04-23",
+  "broker": "Patria",
+  "base": "USD",
+  "qty": 3.68,
+  "quote": "CZK",
+  "proceeds": -88.48
+ },
+ {
+  "date": "2024-04-25",
+  "broker": "Patria",
+  "base": "EUR",
+  "qty": 93.4,
+  "quote": "CZK",
+  "proceeds": -2392.62
+ },
+ {
+  "date": "2024-05-23",
+  "broker": "Patria",
+  "base": "EUR",
+  "qty": 1436.9,
+  "quote": "CZK",
+  "proceeds": -36071.81
+ },
+ {
+  "date": "2024-05-30",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 50.0,
+  "quote": "CZK",
+  "proceeds": -1141.925
+ },
+ {
+  "date": "2024-05-30",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": -0.5325,
+  "quote": "CZK",
+  "proceeds": 12.153522739
+ },
+ {
+  "date": "2024-05-31",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 3.0,
+  "quote": "CZK",
+  "proceeds": -68.34
+ },
+ {
+  "date": "2024-05-31",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": -0.5,
+  "quote": "CZK",
+  "proceeds": 11.374350895
+ },
+ {
+  "date": "2024-05-31",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.49,
+  "quote": "CZK",
+  "proceeds": -11.153359709
+ },
+ {
+  "date": "2024-05-31",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 2304.48,
+  "quote": "HKD",
+  "proceeds": -18016.655088
+ },
+ {
+  "date": "2024-06-06",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 1.0,
+  "quote": "CZK",
+  "proceeds": -22.6285
+ },
+ {
+  "date": "2024-06-06",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 2145.0,
+  "quote": "CZK",
+  "proceeds": -48538.1325
+ },
+ {
+  "date": "2024-06-10",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 1.0,
+  "quote": "CZK",
+  "proceeds": -22.9355
+ },
+ {
+  "date": "2024-06-10",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 2400.0,
+  "quote": "CZK",
+  "proceeds": -55045.2
+ },
+ {
+  "date": "2024-06-10",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": -0.2,
+  "quote": "CZK",
+  "proceeds": 4.574649782
+ },
+ {
+  "date": "2024-07-23",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 1.0,
+  "quote": "CZK",
+  "proceeds": -23.311
+ },
+ {
+  "date": "2024-07-23",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 1424.0,
+  "quote": "CZK",
+  "proceeds": -33194.152
+ },
+ {
+  "date": "2024-07-23",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 2.0,
+  "quote": "CZK",
+  "proceeds": -46.796
+ },
+ {
+  "date": "2024-07-23",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": -0.92571148,
+  "quote": "CZK",
+  "proceeds": 21.657031507
+ },
+ {
+  "date": "2024-08-05",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 1485.0,
+  "quote": "CZK",
+  "proceeds": -34269.345
+ },
+ {
+  "date": "2024-08-05",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": -0.9,
+  "quote": "CZK",
+  "proceeds": 20.77566543
+ },
+ {
+  "date": "2024-08-06",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 2192.0,
+  "quote": "CZK",
+  "proceeds": -50797.408
+ },
+ {
+  "date": "2024-08-06",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 2026.0,
+  "quote": "CZK",
+  "proceeds": -46877.588
+ },
+ {
+  "date": "2024-08-06",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": -0.2,
+  "quote": "CZK",
+  "proceeds": 4.627725508
+ },
+ {
+  "date": "2024-09-12",
+  "broker": "Patria",
+  "base": "CZK",
+  "qty": 67325.75,
+  "quote": "USD",
+  "proceeds": -3000.22
+ },
+ {
+  "date": "2024-09-23",
+  "broker": "Patria",
+  "base": "USD",
+  "qty": 3.69,
+  "quote": "CZK",
+  "proceeds": -84.48
+ },
+ {
+  "date": "2024-09-24",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 5305.27,
+  "quote": "CZK",
+  "proceeds": -119999.90213
+ },
+ {
+  "date": "2024-10-17",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 2437.98,
+  "quote": "CZK",
+  "proceeds": -56853.6936
+ },
+ {
+  "date": "2024-10-30",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 3508.05,
+  "quote": "CZK",
+  "proceeds": -82023.471075
+ },
+ {
+  "date": "2024-10-30",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 1.0,
+  "quote": "CZK",
+  "proceeds": -23.382
+ },
+ {
+  "date": "2024-10-30",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 3916.51,
+  "quote": "CZK",
+  "proceeds": -91564.08729
+ },
+ {
+  "date": "2024-10-30",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 1.01,
+  "quote": "CZK",
+  "proceeds": -23.613295
+ },
+ {
+  "date": "2024-10-30",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 4.0,
+  "quote": "CZK",
+  "proceeds": -93.512
+ },
+ {
+  "date": "2024-10-30",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 1108.99,
+  "quote": "CZK",
+  "proceeds": -25925.413725
+ },
+ {
+  "date": "2024-10-30",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": -0.01,
+  "quote": "CZK",
+  "proceeds": 0.233714655
+ },
+ {
+  "date": "2024-10-30",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.01,
+  "quote": "CZK",
+  "proceeds": -0.233850134
+ },
+ {
+  "date": "2024-10-30",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.002228,
+  "quote": "CZK",
+  "proceeds": -0.052103945
+ },
+ {
+  "date": "2024-11-01",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 4.0,
+  "quote": "CZK",
+  "proceeds": -93.322
+ },
+ {
+  "date": "2024-11-01",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 1099.99,
+  "quote": "CZK",
+  "proceeds": -25660.016725
+ },
+ {
+  "date": "2024-11-01",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 2072.5,
+  "quote": "CZK",
+  "proceeds": -48400.12875
+ },
+ {
+  "date": "2024-11-01",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 1.0,
+  "quote": "CZK",
+  "proceeds": -23.3555
+ },
+ {
+  "date": "2024-11-01",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.01,
+  "quote": "CZK",
+  "proceeds": -0.233960167
+ },
+ {
+  "date": "2024-11-01",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": -0.008,
+  "quote": "CZK",
+  "proceeds": 0.187061435
+ },
+ {
+  "date": "2024-11-01",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.00108649,
+  "quote": "CZK",
+  "proceeds": -0.02542266
+ },
+ {
+  "date": "2024-11-12",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 4166.92,
+  "quote": "CZK",
+  "proceeds": -99695.64446
+ },
+ {
+  "date": "2024-11-12",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 4.58,
+  "quote": "CZK",
+  "proceeds": -109.473277792
+ },
+ {
+  "date": "2024-11-12",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": -4.5764,
+  "quote": "CZK",
+  "proceeds": 109.322960803
+ },
+ {
+  "date": "2024-11-13",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 1.0,
+  "quote": "CZK",
+  "proceeds": -23.8865
+ },
+ {
+  "date": "2024-11-13",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 1395.0,
+  "quote": "CZK",
+  "proceeds": -33320.97
+ },
+ {
+  "date": "2024-11-13",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 1347.04,
+  "quote": "CZK",
+  "proceeds": -32256.89336
+ },
+ {
+  "date": "2024-11-13",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 1.0,
+  "quote": "CZK",
+  "proceeds": -23.947
+ },
+ {
+  "date": "2024-11-13",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.000816,
+  "quote": "CZK",
+  "proceeds": -0.019534839
+ },
+ {
+  "date": "2024-11-19",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 1.06,
+  "quote": "CZK",
+  "proceeds": -25.37216
+ },
+ {
+  "date": "2024-11-19",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.00033696,
+  "quote": "CZK",
+  "proceeds": -0.00804425
+ },
+ {
+  "date": "2024-11-19",
+  "broker": "Patria",
+  "base": "CZK",
+  "qty": 200000.0,
+  "quote": "USD",
+  "proceeds": -8494.39
+ },
+ {
+  "date": "2024-11-20",
+  "broker": "IBKR",
+  "base": "EUR",
+  "qty": 2967.0,
+  "quote": "CZK",
+  "proceeds": -75087.3525
+ },
+ {
+  "date": "2024-11-20",
+  "broker": "IBKR",
+  "base": "EUR",
+  "qty": 3.0,
+  "quote": "CZK",
+  "proceeds": -75.9195
+ },
+ {
+  "date": "2024-11-20",
+  "broker": "IBKR",
+  "base": "EUR",
+  "qty": -1.0,
+  "quote": "CZK",
+  "proceeds": 25.2764148
+ },
+ {
+  "date": "2024-11-20",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 2350.83,
+  "quote": "CZK",
+  "proceeds": -56506.90071
+ },
+ {
+  "date": "2024-11-20",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0072,
+  "quote": "CZK",
+  "proceeds": -0.172718562
+ },
+ {
+  "date": "2024-11-22",
+  "broker": "IBKR",
+  "base": "EUR",
+  "qty": 864.0,
+  "quote": "CZK",
+  "proceeds": -21933.072
+ },
+ {
+  "date": "2024-11-22",
+  "broker": "IBKR",
+  "base": "EUR",
+  "qty": 3.0,
+  "quote": "CZK",
+  "proceeds": -76.152
+ },
+ {
+  "date": "2024-11-22",
+  "broker": "IBKR",
+  "base": "EUR",
+  "qty": -0.9,
+  "quote": "CZK",
+  "proceeds": 22.80995496
+ },
+ {
+  "date": "2024-11-29",
+  "broker": "IBKR",
+  "base": "EUR",
+  "qty": 3.0,
+  "quote": "CZK",
+  "proceeds": -75.7605
+ },
+ {
+  "date": "2024-11-29",
+  "broker": "IBKR",
+  "base": "EUR",
+  "qty": 3217.0,
+  "quote": "CZK",
+  "proceeds": -81246.9435
+ },
+ {
+  "date": "2024-12-02",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 987.59,
+  "quote": "CZK",
+  "proceeds": -23770.30371
+ },
+ {
+  "date": "2024-12-02",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 4.0,
+  "quote": "CZK",
+  "proceeds": -96.278
+ },
+ {
+  "date": "2024-12-02",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.00069091,
+  "quote": "CZK",
+  "proceeds": -0.016615224
+ },
+ {
+  "date": "2024-12-02",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 112.4,
+  "quote": "HKD",
+  "proceeds": -874.9778
+ },
+ {
+  "date": "2024-12-09",
+  "broker": "IBKR",
+  "base": "EUR",
+  "qty": 3.0,
+  "quote": "HKD",
+  "proceeds": -24.6669
+ },
+ {
+  "date": "2024-12-09",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 4.0,
+  "quote": "HKD",
+  "proceeds": -31.109
+ },
+ {
+  "date": "2024-12-10",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0044,
+  "quote": "CZK",
+  "proceeds": -0.104875282
+ },
+ {
+  "date": "2024-12-10",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 1.01,
+  "quote": "HKD",
+  "proceeds": -7.855679
+ },
+ {
+  "date": "2024-12-24",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.000615,
+  "quote": "CZK",
+  "proceeds": -0.01488855
+ },
+ {
+  "date": "2024-12-24",
+  "broker": "IBKR",
+  "base": "EUR",
+  "qty": -623.73,
+  "quote": "USD",
+  "proceeds": 648.0866565
+ },
+ {
+  "date": "2024-12-24",
+  "broker": "IBKR",
+  "base": "EUR",
+  "qty": -0.83,
+  "quote": "USD",
+  "proceeds": 0.8623285
+ },
+ {
+  "date": "2024-12-27",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": -0.001259,
+  "quote": "CZK",
+  "proceeds": 0.03043647
+ },
+ {
+  "date": "2024-12-27",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": -0.36189468,
+  "quote": "CZK",
+  "proceeds": 8.747896686
+ },
+ {
+  "date": "2024-12-27",
+  "broker": "IBKR",
+  "base": "EUR",
+  "qty": -4.26,
+  "quote": "SEK",
+  "proceeds": 49.013856
+ },
+ {
+  "date": "2024-12-27",
+  "broker": "IBKR",
+  "base": "EUR",
+  "qty": -2885.91,
+  "quote": "SEK",
+  "proceeds": 33203.9818005
+ },
+ {
+  "date": "2024-12-27",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.001259,
+  "quote": "SEK",
+  "proceeds": -0.013856004
+ },
+ {
+  "date": "2024-12-27",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.36189468,
+  "quote": "SEK",
+  "proceeds": -3.9818005
+ },
+ {
+  "date": "2025-01-03",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 1102.57,
+  "quote": "CZK",
+  "proceeds": -27013.516285
+ },
+ {
+  "date": "2025-01-03",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 1103.99,
+  "quote": "CZK",
+  "proceeds": -26987.03555
+ },
+ {
+  "date": "2025-01-03",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.00045134,
+  "quote": "CZK",
+  "proceeds": -0.011019563
+ },
+ {
+  "date": "2025-01-06",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 852.3,
+  "quote": "CZK",
+  "proceeds": -20704.49775
+ },
+ {
+  "date": "2025-01-06",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.00035,
+  "quote": "CZK",
+  "proceeds": -0.008476853
+ },
+ {
+  "date": "2025-01-08",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 2992.99,
+  "quote": "CZK",
+  "proceeds": -73128.921866
+ },
+ {
+  "date": "2025-01-08",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 4.0,
+  "quote": "CZK",
+  "proceeds": -97.7356
+ },
+ {
+  "date": "2025-01-08",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 1.0,
+  "quote": "CZK",
+  "proceeds": -24.4194
+ },
+ {
+  "date": "2025-01-08",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 2033.56,
+  "quote": "CZK",
+  "proceeds": -49657.908352
+ },
+ {
+  "date": "2025-01-08",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0092,
+  "quote": "CZK",
+  "proceeds": -0.224019726
+ },
+ {
+  "date": "2025-01-08",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": -0.01,
+  "quote": "CZK",
+  "proceeds": 0.243346974
+ },
+ {
+  "date": "2025-02-03",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 4.0,
+  "quote": "CZK",
+  "proceeds": -97.8424
+ },
+ {
+  "date": "2025-02-03",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 1099.99,
+  "quote": "CZK",
+  "proceeds": -26905.095406
+ },
+ {
+  "date": "2025-02-05",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 4270.61,
+  "quote": "CZK",
+  "proceeds": -103090.817156
+ },
+ {
+  "date": "2025-02-05",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.00184634,
+  "quote": "CZK",
+  "proceeds": -0.044699134
+ },
+ {
+  "date": "2025-02-14",
+  "broker": "Patria",
+  "base": "EUR",
+  "qty": 1333.61,
+  "quote": "USD",
+  "proceeds": -1418.29
+ },
+ {
+  "date": "2025-02-21",
+  "broker": "Patria",
+  "base": "EUR",
+  "qty": 0.68,
+  "quote": "USD",
+  "proceeds": -0.72
+ },
+ {
+  "date": "2025-02-26",
+  "broker": "Patria",
+  "base": "CZK",
+  "qty": 17560.83,
+  "quote": "USD",
+  "proceeds": -750.0
+ },
+ {
+  "date": "2025-03-03",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 514.26,
+  "quote": "CZK",
+  "proceeds": -12305.059002
+ },
+ {
+  "date": "2025-03-03",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.00197066,
+  "quote": "CZK",
+  "proceeds": -0.047000753
+ },
+ {
+  "date": "2025-03-03",
+  "broker": "IBKR",
+  "base": "EUR",
+  "qty": -407.76,
+  "quote": "USD",
+  "proceeds": 427.3610232
+ },
+ {
+  "date": "2025-03-03",
+  "broker": "IBKR",
+  "base": "EUR",
+  "qty": -0.01,
+  "quote": "USD",
+  "proceeds": 0.0104651
+ },
+ {
+  "date": "2025-03-03",
+  "broker": "IBKR",
+  "base": "EUR",
+  "qty": -3.82,
+  "quote": "USD",
+  "proceeds": 4.0070654
+ },
+ {
+  "date": "2025-03-04",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": -0.0050311,
+  "quote": "CZK",
+  "proceeds": 0.118708212
+ },
+ {
+  "date": "2025-03-04",
+  "broker": "IBKR",
+  "base": "EUR",
+  "qty": -1.08,
+  "quote": "USD",
+  "proceeds": 1.1352528
+ },
+ {
+  "date": "2025-03-04",
+  "broker": "IBKR",
+  "base": "EUR",
+  "qty": -0.96,
+  "quote": "USD",
+  "proceeds": 1.0098048
+ },
+ {
+  "date": "2025-03-20",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": -0.01836573,
+  "quote": "CZK",
+  "proceeds": 0.423262573
+ },
+ {
+  "date": "2025-03-20",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.01666195,
+  "quote": "CZK",
+  "proceeds": -0.384082204
+ },
+ {
+  "date": "2025-03-20",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": -2360.11,
+  "quote": "SEK",
+  "proceeds": 23879.8525921
+ },
+ {
+  "date": "2025-03-20",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": -4.86,
+  "quote": "SEK",
+  "proceeds": 49.1861646
+ },
+ {
+  "date": "2025-03-20",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": -0.67,
+  "quote": "SEK",
+  "proceeds": 6.7785977
+ },
+ {
+  "date": "2025-03-20",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.01836573,
+  "quote": "SEK",
+  "proceeds": -0.186164597
+ },
+ {
+  "date": "2025-03-20",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": -0.01666195,
+  "quote": "SEK",
+  "proceeds": 0.168810204
+ },
+ {
+  "date": "2025-03-21",
+  "broker": "Patria",
+  "base": "EUR",
+  "qty": 0.66,
+  "quote": "USD",
+  "proceeds": -0.73
+ },
+ {
+  "date": "2025-04-16",
+  "broker": "IBKR",
+  "base": "EUR",
+  "qty": 1362.0,
+  "quote": "CZK",
+  "proceeds": -34093.0392
+ },
+ {
+  "date": "2025-04-16",
+  "broker": "IBKR",
+  "base": "EUR",
+  "qty": -0.49,
+  "quote": "CZK",
+  "proceeds": 12.257101766
+ },
+ {
+  "date": "2025-04-23",
+  "broker": "Patria",
+  "base": "EUR",
+  "qty": 0.81,
+  "quote": "USD",
+  "proceeds": -0.94
+ },
+ {
+  "date": "2025-06-29",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": -9023.68,
+  "quote": "CZK",
+  "proceeds": 189999.898976
+ },
+ {
+  "date": "2025-07-11",
+  "broker": "IBKR",
+  "base": "GBP",
+  "qty": 3.0,
+  "quote": "CZK",
+  "proceeds": -85.8171
+ },
+ {
+  "date": "2025-07-11",
+  "broker": "IBKR",
+  "base": "GBP",
+  "qty": 3114.0,
+  "quote": "USD",
+  "proceeds": -4216.85424
+ },
+ {
+  "date": "2025-07-25",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 276.67,
+  "quote": "CZK",
+  "proceeds": -5791.090438
+ },
+ {
+  "date": "2025-07-25",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.00352156,
+  "quote": "CZK",
+  "proceeds": -0.073681068
+ },
+ {
+  "date": "2025-07-25",
+  "broker": "IBKR",
+  "base": "EUR",
+  "qty": -0.03,
+  "quote": "USD",
+  "proceeds": 0.0351873
+ },
+ {
+  "date": "2025-07-25",
+  "broker": "IBKR",
+  "base": "EUR",
+  "qty": -210.83,
+  "quote": "USD",
+  "proceeds": 247.2846153
+ },
+ {
+  "date": "2025-07-25",
+  "broker": "Patria",
+  "base": "CZK",
+  "qty": 70000.0,
+  "quote": "USD",
+  "proceeds": -3401.26
+ },
+ {
+  "date": "2025-07-29",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": -0.0045835,
+  "quote": "CZK",
+  "proceeds": 0.097659373
+ },
+ {
+  "date": "2025-07-29",
+  "broker": "IBKR",
+  "base": "EUR",
+  "qty": -1.13,
+  "quote": "USD",
+  "proceeds": 1.3028335
+ },
+ {
+  "date": "2025-08-06",
+  "broker": "IBKR",
+  "base": "EUR",
+  "qty": -0.01,
+  "quote": "CZK",
+  "proceeds": 0.245616293
+ },
+ {
+  "date": "2025-08-06",
+  "broker": "IBKR",
+  "base": "EUR",
+  "qty": 3916.34,
+  "quote": "USD",
+  "proceeds": -4535.12172
+ },
+ {
+  "date": "2025-08-13",
+  "broker": "IBKR",
+  "base": "GBP",
+  "qty": -0.01,
+  "quote": "CZK",
+  "proceeds": 0.283533102
+ },
+ {
+  "date": "2025-08-13",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": -0.00811951,
+  "quote": "CZK",
+  "proceeds": 0.169599755
+ },
+ {
+  "date": "2025-08-13",
+  "broker": "IBKR",
+  "base": "GBP",
+  "qty": 3.01,
+  "quote": "HKD",
+  "proceeds": -32.0081594
+ },
+ {
+  "date": "2025-08-13",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": -5.16,
+  "quote": "SEK",
+  "proceeds": 49.077534
+ },
+ {
+  "date": "2025-08-13",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.00811951,
+  "quote": "SEK",
+  "proceeds": -0.077534002
+ },
+ {
+  "date": "2025-08-19",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0073927,
+  "quote": "CZK",
+  "proceeds": -0.155282931
+ },
+ {
+  "date": "2025-08-19",
+  "broker": "IBKR",
+  "base": "GBP",
+  "qty": -2229.46,
+  "quote": "USD",
+  "proceeds": 3013.2712522
+ },
+ {
+  "date": "2025-08-19",
+  "broker": "IBKR",
+  "base": "GBP",
+  "qty": -0.23,
+  "quote": "USD",
+  "proceeds": 0.3108726
+ },
+ {
+  "date": "2025-09-11",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": -4.978673,
+  "quote": "CZK",
+  "proceeds": 103.295572741
+ },
+ {
+  "date": "2025-09-11",
+  "broker": "IBKR",
+  "base": "GBP",
+  "qty": -0.75,
+  "quote": "USD",
+  "proceeds": 1.013205
+ },
+ {
+  "date": "2025-09-15",
+  "broker": "IBKR",
+  "base": "GBP",
+  "qty": -0.01,
+  "quote": "CZK",
+  "proceeds": 0.281025667
+ },
+ {
+  "date": "2025-09-15",
+  "broker": "IBKR",
+  "base": "GBP",
+  "qty": 2020.45,
+  "quote": "USD",
+  "proceeds": -2751.4690145
+ },
+ {
+  "date": "2025-09-23",
+  "broker": "IBKR",
+  "base": "EUR",
+  "qty": 3.0,
+  "quote": "CZK",
+  "proceeds": -72.78
+ },
+ {
+  "date": "2025-09-23",
+  "broker": "IBKR",
+  "base": "EUR",
+  "qty": 3333.6,
+  "quote": "USD",
+  "proceeds": -3935.181516
+ },
+ {
+  "date": "2025-09-23",
+  "broker": "IBKR",
+  "base": "EUR",
+  "qty": 3.0,
+  "quote": "USD",
+  "proceeds": -3.53994
+ },
+ {
+  "date": "2025-09-23",
+  "broker": "IBKR",
+  "base": "EUR",
+  "qty": 3398.4,
+  "quote": "USD",
+  "proceeds": -4010.485824
+ },
+ {
+  "date": "2025-10-16",
+  "broker": "IBKR",
+  "base": "GBP",
+  "qty": 4.0,
+  "quote": "CZK",
+  "proceeds": -112.1444
+ },
+ {
+  "date": "2025-10-16",
+  "broker": "IBKR",
+  "base": "GBP",
+  "qty": 1656.0,
+  "quote": "CZK",
+  "proceeds": -46424.304
+ },
+ {
+  "date": "2025-10-16",
+  "broker": "IBKR",
+  "base": "GBP",
+  "qty": -1.0,
+  "quote": "CZK",
+  "proceeds": 27.91683795
+ },
+ {
+  "date": "2025-10-27",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 278.26,
+  "quote": "CZK",
+  "proceeds": -5817.637472
+ },
+ {
+  "date": "2025-10-27",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 4154.5,
+  "quote": "CZK",
+  "proceeds": -86904.6619
+ },
+ {
+  "date": "2025-10-27",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 1715.75,
+  "quote": "CZK",
+  "proceeds": -35885.9407
+ },
+ {
+  "date": "2025-10-27",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0013475,
+  "quote": "CZK",
+  "proceeds": -0.028153438
+ },
+ {
+  "date": "2025-10-28",
+  "broker": "IBKR",
+  "base": "EUR",
+  "qty": 3.0,
+  "quote": "CZK",
+  "proceeds": -72.9822
+ },
+ {
+  "date": "2025-10-28",
+  "broker": "IBKR",
+  "base": "EUR",
+  "qty": 3852.0,
+  "quote": "CZK",
+  "proceeds": -93716.4636
+ },
+ {
+  "date": "2025-10-28",
+  "broker": "IBKR",
+  "base": "EUR",
+  "qty": -0.225,
+  "quote": "CZK",
+  "proceeds": 5.46945867
+ },
+ {
+  "date": "2025-10-28",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 1.0,
+  "quote": "CZK",
+  "proceeds": -20.9231
+ },
+ {
+  "date": "2025-10-28",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 3057.6,
+  "quote": "CZK",
+  "proceeds": -63973.24752
+ },
+ {
+  "date": "2025-10-28",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.00088,
+  "quote": "CZK",
+  "proceeds": -0.018370931
+ },
+ {
+  "date": "2025-11-04",
+  "broker": "IBKR",
+  "base": "EUR",
+  "qty": 3.0,
+  "quote": "CZK",
+  "proceeds": -73.0716
+ },
+ {
+  "date": "2025-11-06",
+  "broker": "IBKR",
+  "base": "EUR",
+  "qty": 307.0,
+  "quote": "CZK",
+  "proceeds": -7475.8798
+ },
+ {
+  "date": "2025-11-10",
+  "broker": "IBKR",
+  "base": "EUR",
+  "qty": 1799.0,
+  "quote": "CZK",
+  "proceeds": -43713.5412
+ },
+ {
+  "date": "2025-11-10",
+  "broker": "IBKR",
+  "base": "EUR",
+  "qty": 3.0,
+  "quote": "CZK",
+  "proceeds": -72.8922
+ },
+ {
+  "date": "2025-11-10",
+  "broker": "IBKR",
+  "base": "EUR",
+  "qty": -0.8,
+  "quote": "CZK",
+  "proceeds": 19.4261704
+ },
+ {
+  "date": "2025-11-11",
+  "broker": "IBKR",
+  "base": "GBP",
+  "qty": 1520.0,
+  "quote": "CZK",
+  "proceeds": -41909.136
+ },
+ {
+  "date": "2025-11-11",
+  "broker": "IBKR",
+  "base": "GBP",
+  "qty": 3.0,
+  "quote": "CZK",
+  "proceeds": -82.719
+ },
+ {
+  "date": "2025-11-11",
+  "broker": "IBKR",
+  "base": "GBP",
+  "qty": -0.5,
+  "quote": "CZK",
+  "proceeds": 13.76836825
+ },
+ {
+  "date": "2025-11-11",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 366.21,
+  "quote": "CZK",
+  "proceeds": -7697.880684
+ },
+ {
+  "date": "2025-11-11",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": -0.00551186,
+  "quote": "CZK",
+  "proceeds": 0.115439571
+ },
+ {
+  "date": "2025-11-11",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": -0.04,
+  "quote": "SEK",
+  "proceeds": 0.3804016
+ },
+ {
+  "date": "2025-11-11",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": -366.21,
+  "quote": "SEK",
+  "proceeds": 3482.6717484
+ },
+ {
+  "date": "2025-11-11",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.00551186,
+  "quote": "SEK",
+  "proceeds": -0.052149998
+ },
+ {
+  "date": "2025-11-16",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 883.18,
+  "quote": "CZK",
+  "proceeds": -18425.872658
+ },
+ {
+  "date": "2025-11-17",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": -0.0024,
+  "quote": "CZK",
+  "proceeds": 0.050019509
+ },
+ {
+  "date": "2025-11-24",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.87,
+  "quote": "CZK",
+  "proceeds": -18.239637
+ },
+ {
+  "date": "2025-11-26",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 1.0,
+  "quote": "CZK",
+  "proceeds": -20.851
+ },
+ {
+  "date": "2025-11-26",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 4797.0,
+  "quote": "CZK",
+  "proceeds": -100018.8891
+ },
+ {
+  "date": "2025-11-26",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 1.0,
+  "quote": "CZK",
+  "proceeds": -20.9105
+ },
+ {
+  "date": "2025-11-26",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 4800.0,
+  "quote": "CZK",
+  "proceeds": -100369.44
+ },
+ {
+  "date": "2025-11-26",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.00176,
+  "quote": "CZK",
+  "proceeds": -0.036679891
+ },
+ {
+  "date": "2025-12-24",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 2232.35,
+  "quote": "CZK",
+  "proceeds": -45983.28471
+ },
+ {
+  "date": "2025-12-26",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 2.58,
+  "quote": "CZK",
+  "proceeds": -53.129682
+ },
+ {
+  "date": "2025-12-26",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 2.5,
+  "quote": "CZK",
+  "proceeds": -51.482
+ },
+ {
+  "date": "2025-12-26",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 5.0,
+  "quote": "CZK",
+  "proceeds": -102.9575
+ },
+ {
+  "date": "2025-12-26",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 1.02,
+  "quote": "CZK",
+  "proceeds": -21.005064
+ },
+ {
+  "date": "2025-12-26",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 1.0,
+  "quote": "CZK",
+  "proceeds": -20.5932
+ },
+ {
+  "date": "2025-12-26",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 5.2,
+  "quote": "CZK",
+  "proceeds": -107.07788
+ },
+ {
+  "date": "2025-12-26",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 1.03,
+  "quote": "CZK",
+  "proceeds": -21.209657
+ },
+ {
+  "date": "2025-12-26",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 1196.83,
+  "quote": "CZK",
+  "proceeds": -24643.92653
+ },
+ {
+  "date": "2025-12-26",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 1.0,
+  "quote": "CZK",
+  "proceeds": -20.5923
+ },
+ {
+  "date": "2025-12-26",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 1.0,
+  "quote": "CZK",
+  "proceeds": -20.5931
+ },
+ {
+  "date": "2025-12-26",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 7.54,
+  "quote": "CZK",
+  "proceeds": -155.256894
+ },
+ {
+  "date": "2025-12-26",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 1.0,
+  "quote": "CZK",
+  "proceeds": -20.5926
+ },
+ {
+  "date": "2025-12-26",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 1.03,
+  "quote": "CZK",
+  "proceeds": -21.207597
+ },
+ {
+  "date": "2025-12-26",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 1464.99,
+  "quote": "CZK",
+  "proceeds": -30162.972108
+ },
+ {
+  "date": "2025-12-26",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 1.0,
+  "quote": "CZK",
+  "proceeds": -20.5905
+ },
+ {
+  "date": "2025-12-26",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.00434,
+  "quote": "CZK",
+  "proceeds": -0.089403183
+ },
+ {
+  "date": "2025-12-26",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.001,
+  "quote": "CZK",
+  "proceeds": -0.020598586
+ },
+ {
+  "date": "2025-12-29",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 5.35,
+  "quote": "CZK",
+  "proceeds": -110.09765
+ },
+ {
+  "date": "2025-12-29",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 5.34,
+  "quote": "CZK",
+  "proceeds": -109.96662
+ },
+ {
+  "date": "2025-12-29",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 43.64,
+  "quote": "CZK",
+  "proceeds": -898.608696
+ },
+ {
+  "date": "2025-12-29",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.01,
+  "quote": "CZK",
+  "proceeds": -0.205914
+ },
+ {
+  "date": "2025-12-29",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": -0.00516729,
+  "quote": "CZK",
+  "proceeds": 0.106493109
+ },
+ {
+  "date": "2025-12-29",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.00035581,
+  "quote": "CZK",
+  "proceeds": -0.007335785
+ },
+ {
+  "date": "2025-12-29",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": -5.35,
+  "quote": "SEK",
+  "proceeds": 49.0476765
+ },
+ {
+  "date": "2025-12-29",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": -5.34,
+  "quote": "SEK",
+  "proceeds": 48.9490566
+ },
+ {
+  "date": "2025-12-29",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": -43.64,
+  "quote": "SEK",
+  "proceeds": 399.9557996
+ },
+ {
+  "date": "2025-12-29",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": -0.01,
+  "quote": "SEK",
+  "proceeds": 0.0916489
+ },
+ {
+  "date": "2025-12-29",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": -0.00035581,
+  "quote": "SEK",
+  "proceeds": 0.003266894
+ },
+ {
+  "date": "2025-12-29",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.00516729,
+  "quote": "SEK",
+  "proceeds": -0.047448504
+ },
+ {
+  "date": "2026-01-14",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 1.6,
+  "quote": "CZK",
+  "proceeds": -33.29312
+ },
+ {
+  "date": "2026-01-14",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 3.76,
+  "quote": "CZK",
+  "proceeds": -78.193712
+ },
+ {
+  "date": "2026-01-14",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": -0.01,
+  "quote": "CZK",
+  "proceeds": 0.208141353
+ },
+ {
+  "date": "2026-01-20",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 2.0,
+  "quote": "CZK",
+  "proceeds": -41.501
+ },
+ {
+  "date": "2026-01-20",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 5580.0,
+  "quote": "CZK",
+  "proceeds": -115787.232
+ },
+ {
+  "date": "2026-01-23",
+  "broker": "IBKR",
+  "base": "EUR",
+  "qty": 3.0,
+  "quote": "CZK",
+  "proceeds": -72.8349
+ },
+ {
+  "date": "2026-01-23",
+  "broker": "IBKR",
+  "base": "EUR",
+  "qty": 3250.0,
+  "quote": "CZK",
+  "proceeds": -78917.475
+ },
+ {
+  "date": "2026-01-28",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 1.0,
+  "quote": "CZK",
+  "proceeds": -20.1513
+ },
+ {
+  "date": "2026-01-28",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 4864.5,
+  "quote": "CZK",
+  "proceeds": -98025.5124
+ },
+ {
+  "date": "2026-01-28",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 4146.89,
+  "quote": "CZK",
+  "proceeds": -83649.821013
+ },
+ {
+  "date": "2026-01-28",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 1.0,
+  "quote": "CZK",
+  "proceeds": -20.1718
+ },
+ {
+  "date": "2026-01-28",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 5130.0,
+  "quote": "CZK",
+  "proceeds": -103701.411
+ },
+ {
+  "date": "2026-01-28",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 1.0,
+  "quote": "CZK",
+  "proceeds": -20.2148
+ },
+ {
+  "date": "2026-01-28",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 5.0,
+  "quote": "CZK",
+  "proceeds": -101.4395
+ },
+ {
+  "date": "2026-01-28",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 4950.0,
+  "quote": "CZK",
+  "proceeds": -100424.61
+ },
+ {
+  "date": "2026-01-28",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 2.07,
+  "quote": "CZK",
+  "proceeds": -42.096348
+ },
+ {
+  "date": "2026-01-28",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.008,
+  "quote": "CZK",
+  "proceeds": -0.162610692
+ },
+ {
+  "date": "2026-01-29",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 6351.52,
+  "quote": "CZK",
+  "proceeds": -129599.58984
+ },
+ {
+  "date": "2026-01-29",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": -6351.51,
+  "quote": "HKD",
+  "proceeds": 49570.8044007
+ },
+ {
+  "date": "2026-01-29",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": -0.3,
+  "quote": "HKD",
+  "proceeds": 2.341212
+ },
+ {
+  "date": "2026-01-30",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": -0.00873534,
+  "quote": "CZK",
+  "proceeds": 0.179292121
+ },
+ {
+  "date": "2026-01-30",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.00873534,
+  "quote": "HKD",
+  "proceeds": -0.068263801
+ },
+ {
+  "date": "2026-02-02",
+  "broker": "IBKR",
+  "base": "EUR",
+  "qty": 3.0,
+  "quote": "CZK",
+  "proceeds": -72.9912
+ },
+ {
+  "date": "2026-02-09",
+  "broker": "Patria",
+  "base": "USD",
+  "qty": 2274.29,
+  "quote": "EUR",
+  "proceeds": -1947.14
+ },
+ {
+  "date": "2026-02-10",
+  "broker": "Patria",
+  "base": "USD",
+  "qty": 6209.3,
+  "quote": "EUR",
+  "proceeds": -5291.53
+ },
+ {
+  "date": "2026-02-18",
+  "broker": "Patria",
+  "base": "USD",
+  "qty": 3.55,
+  "quote": "EUR",
+  "proceeds": -3.05
+ },
+ {
+  "date": "2026-02-24",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": -0.00764867,
+  "quote": "CZK",
+  "proceeds": 0.157357857
+ },
+ {
+  "date": "2026-02-24",
+  "broker": "IBKR",
+  "base": "EUR",
+  "qty": -4.37,
+  "quote": "HKD",
+  "proceeds": 40.2598486
+ },
+ {
+  "date": "2026-02-24",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.00764867,
+  "quote": "HKD",
+  "proceeds": -0.059848596
+ },
+ {
+  "date": "2026-03-04",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 4035.19,
+  "quote": "CZK",
+  "proceeds": -84703.076809
+ },
+ {
+  "date": "2026-03-04",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 3439.0,
+  "quote": "HKD",
+  "proceeds": -26904.74138
+ },
+ {
+  "date": "2026-03-05",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0002,
+  "quote": "CZK",
+  "proceeds": -0.004201816
+ },
+ {
+  "date": "2026-03-18",
+  "broker": "Patria",
+  "base": "USD",
+  "qty": 5.02,
+  "quote": "EUR",
+  "proceeds": -4.42
+ },
+ {
+  "date": "2026-03-30",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": -0.0017725,
+  "quote": "CZK",
+  "proceeds": 0.037952288
+ },
+ {
+  "date": "2026-03-30",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.19,
+  "quote": "HKD",
+  "proceeds": -1.4894518
+ },
+ {
+  "date": "2026-03-30",
+  "broker": "IBKR",
+  "base": "EUR",
+  "qty": -899.55,
+  "quote": "USD",
+  "proceeds": 1029.9397725
+ },
+ {
+  "date": "2026-04-14",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 20.0,
+  "quote": "HKD",
+  "proceeds": -156.7312
+ },
+ {
+  "date": "2026-04-20",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": -0.3043988,
+  "quote": "CZK",
+  "proceeds": 6.271240828
+ },
+ {
+  "date": "2026-04-20",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0029707,
+  "quote": "CZK",
+  "proceeds": -0.061230071
+ },
+ {
+  "date": "2026-04-20",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": -2.1e-08
+ },
+ {
+  "date": "2026-04-20",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": 2.1e-08
+ },
+ {
+  "date": "2026-04-20",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 1.0,
+  "quote": "HKD",
+  "proceeds": -7.83334
+ },
+ {
+  "date": "2026-04-20",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 2952.13,
+  "quote": "HKD",
+  "proceeds": -23124.3885456
+ },
+ {
+  "date": "2026-04-20",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.3043988,
+  "quote": "HKD",
+  "proceeds": -2.383957606
+ },
+ {
+  "date": "2026-04-20",
+  "broker": "IBKR",
+  "base": "EUR",
+  "qty": -1767.99,
+  "quote": "USD",
+  "proceeds": 2083.2049371
+ },
+ {
+  "date": "2026-04-20",
+  "broker": "IBKR",
+  "base": "EUR",
+  "qty": -0.18,
+  "quote": "USD",
+  "proceeds": 0.2120922
+ },
+ {
+  "date": "2026-04-21",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": -2.1e-08
+ },
+ {
+  "date": "2026-04-21",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": -2.1e-08
+ },
+ {
+  "date": "2026-04-21",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0024054,
+  "quote": "CZK",
+  "proceeds": -0.04983637
+ },
+ {
+  "date": "2026-04-21",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": -2.1e-08
+ },
+ {
+  "date": "2026-04-21",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": 2.1e-08
+ },
+ {
+  "date": "2026-04-21",
+  "broker": "IBKR",
+  "base": "EUR",
+  "qty": -1.87,
+  "quote": "USD",
+  "proceeds": 2.1967638
+ },
+ {
+  "date": "2026-04-22",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": -2.1e-08
+ },
+ {
+  "date": "2026-04-22",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": -2.1e-08
+ },
+ {
+  "date": "2026-04-22",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": 2.1e-08
+ },
+ {
+  "date": "2026-04-23",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": -2.1e-08
+ },
+ {
+  "date": "2026-04-23",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": -2.1e-08
+ },
+ {
+  "date": "2026-04-23",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": 2.1e-08
+ },
+ {
+  "date": "2026-04-24",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": -2.1e-08
+ },
+ {
+  "date": "2026-04-24",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": -2.1e-08
+ },
+ {
+  "date": "2026-04-24",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": 2.1e-08
+ },
+ {
+  "date": "2026-04-27",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": -2.1e-08
+ },
+ {
+  "date": "2026-04-27",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": -2.1e-08
+ },
+ {
+  "date": "2026-04-27",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": 2.1e-08
+ },
+ {
+  "date": "2026-04-28",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": -2.1e-08
+ },
+ {
+  "date": "2026-04-28",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": -2.1e-08
+ },
+ {
+  "date": "2026-04-28",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": 2.1e-08
+ },
+ {
+  "date": "2026-04-29",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": -2.1e-08
+ },
+ {
+  "date": "2026-04-29",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": -2.1e-08
+ },
+ {
+  "date": "2026-04-29",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": 2.1e-08
+ },
+ {
+  "date": "2026-04-30",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": -2.1e-08
+ },
+ {
+  "date": "2026-04-30",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": -2.1e-08
+ },
+ {
+  "date": "2026-04-30",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": 2.1e-08
+ },
+ {
+  "date": "2026-05-01",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": -2.1e-08
+ },
+ {
+  "date": "2026-05-01",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": -2.1e-08
+ },
+ {
+  "date": "2026-05-01",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": -2.1e-08
+ },
+ {
+  "date": "2026-05-01",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": -2.1e-08
+ },
+ {
+  "date": "2026-05-01",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": -2.1e-08
+ },
+ {
+  "date": "2026-05-01",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": 2.1e-08
+ },
+ {
+  "date": "2026-05-04",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": -2.1e-08
+ },
+ {
+  "date": "2026-05-04",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": -2.1e-08
+ },
+ {
+  "date": "2026-05-04",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": 2.1e-08
+ },
+ {
+  "date": "2026-05-05",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": -2.1e-08
+ },
+ {
+  "date": "2026-05-05",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": -2.1e-08
+ },
+ {
+  "date": "2026-05-05",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": -2.1e-08
+ },
+ {
+  "date": "2026-05-05",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": 2.1e-08
+ },
+ {
+  "date": "2026-05-06",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": -2.1e-08
+ },
+ {
+  "date": "2026-05-06",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": -2.1e-08
+ },
+ {
+  "date": "2026-05-06",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": 2.1e-08
+ },
+ {
+  "date": "2026-05-07",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": -2.1e-08
+ },
+ {
+  "date": "2026-05-07",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": -2.1e-08
+ },
+ {
+  "date": "2026-05-07",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": 2.1e-08
+ },
+ {
+  "date": "2026-05-08",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": -2.1e-08
+ },
+ {
+  "date": "2026-05-08",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": -2.1e-08
+ },
+ {
+  "date": "2026-05-08",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": -2.1e-08
+ },
+ {
+  "date": "2026-05-08",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": -2.1e-08
+ },
+ {
+  "date": "2026-05-08",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": -2.1e-08
+ },
+ {
+  "date": "2026-05-08",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": 2.1e-08
+ },
+ {
+  "date": "2026-05-11",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": -2.1e-08
+ },
+ {
+  "date": "2026-05-11",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": -2.1e-08
+ },
+ {
+  "date": "2026-05-11",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": 2.1e-08
+ },
+ {
+  "date": "2026-05-12",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": -2.1e-08
+ },
+ {
+  "date": "2026-05-12",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": -2.1e-08
+ },
+ {
+  "date": "2026-05-12",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": 2.1e-08
+ },
+ {
+  "date": "2026-05-13",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": -2.1e-08
+ },
+ {
+  "date": "2026-05-13",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": -2.1e-08
+ },
+ {
+  "date": "2026-05-13",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": 2.1e-08
+ },
+ {
+  "date": "2026-05-14",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": -2.1e-08
+ },
+ {
+  "date": "2026-05-14",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": -2.1e-08
+ },
+ {
+  "date": "2026-05-14",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": 2.1e-08
+ },
+ {
+  "date": "2026-05-15",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": -2.1e-08
+ },
+ {
+  "date": "2026-05-15",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": -2.1e-08
+ },
+ {
+  "date": "2026-05-15",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": 2.1e-08
+ },
+ {
+  "date": "2026-05-18",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": -2.1e-08
+ },
+ {
+  "date": "2026-05-18",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": -2.1e-08
+ },
+ {
+  "date": "2026-05-18",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": 2.1e-08
+ },
+ {
+  "date": "2026-05-18",
+  "broker": "Patria",
+  "base": "USD",
+  "qty": 5.08,
+  "quote": "CZK",
+  "proceeds": -107.79
+ },
+ {
+  "date": "2026-05-18",
+  "broker": "Patria",
+  "base": "USD",
+  "qty": 4861.31,
+  "quote": "CZK",
+  "proceeds": -103214.22
+ },
+ {
+  "date": "2026-05-19",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": -2.1e-08
+ },
+ {
+  "date": "2026-05-19",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": -2.1e-08
+ },
+ {
+  "date": "2026-05-19",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": 2.1e-08
+ },
+ {
+  "date": "2026-05-20",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": -2.1e-08
+ },
+ {
+  "date": "2026-05-20",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": -2.1e-08
+ },
+ {
+  "date": "2026-05-20",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": 2.1e-08
+ },
+ {
+  "date": "2026-05-21",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": -2.1e-08
+ },
+ {
+  "date": "2026-05-21",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": -2.1e-08
+ },
+ {
+  "date": "2026-05-21",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": 2.1e-08
+ },
+ {
+  "date": "2026-05-22",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": -2.1e-08
+ },
+ {
+  "date": "2026-05-22",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": -2.1e-08
+ },
+ {
+  "date": "2026-05-22",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": 2.1e-08
+ },
+ {
+  "date": "2026-05-25",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": -2.1e-08
+ },
+ {
+  "date": "2026-05-25",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": -2.1e-08
+ },
+ {
+  "date": "2026-05-25",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": -2.1e-08
+ },
+ {
+  "date": "2026-05-25",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": 2.1e-08
+ },
+ {
+  "date": "2026-05-26",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": -2.1e-08
+ },
+ {
+  "date": "2026-05-26",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": -2.1e-08
+ },
+ {
+  "date": "2026-05-26",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": 2.1e-08
+ },
+ {
+  "date": "2026-05-27",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": -2.1e-08
+ },
+ {
+  "date": "2026-05-27",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": -2.1e-08
+ },
+ {
+  "date": "2026-05-27",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": 2.1e-08
+ },
+ {
+  "date": "2026-05-27",
+  "broker": "Patria",
+  "base": "USD",
+  "qty": 63.94,
+  "quote": "EUR",
+  "proceeds": -55.73
+ },
+ {
+  "date": "2026-05-27",
+  "broker": "Patria",
+  "base": "USD",
+  "qty": 4715.49,
+  "quote": "CZK",
+  "proceeds": -99737.72
+ },
+ {
+  "date": "2026-05-28",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": -2.1e-08
+ },
+ {
+  "date": "2026-05-28",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": -2.1e-08
+ },
+ {
+  "date": "2026-05-28",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": 2.1e-08
+ },
+ {
+  "date": "2026-05-29",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": -2.1e-08
+ },
+ {
+  "date": "2026-05-29",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": -2.1e-08
+ },
+ {
+  "date": "2026-05-29",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": 2.1e-08
+ },
+ {
+  "date": "2026-06-01",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": -2.1e-08
+ },
+ {
+  "date": "2026-06-01",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": -2.1e-08
+ },
+ {
+  "date": "2026-06-01",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": 2.1e-08
+ },
+ {
+  "date": "2026-06-02",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": -2.1e-08
+ },
+ {
+  "date": "2026-06-02",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": -2.1e-08
+ },
+ {
+  "date": "2026-06-02",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": 2.1e-08
+ },
+ {
+  "date": "2026-06-03",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": -2.1e-08
+ },
+ {
+  "date": "2026-06-03",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": -2.1e-08
+ },
+ {
+  "date": "2026-06-03",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": 2.1e-08
+ },
+ {
+  "date": "2026-06-04",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": -2.1e-08
+ },
+ {
+  "date": "2026-06-04",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": -2.1e-08
+ },
+ {
+  "date": "2026-06-04",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": 2.1e-08
+ },
+ {
+  "date": "2026-06-05",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": -2.1e-08
+ },
+ {
+  "date": "2026-06-05",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": -2.1e-08
+ },
+ {
+  "date": "2026-06-05",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": 2.1e-08
+ },
+ {
+  "date": "2026-06-08",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": -2.1e-08
+ },
+ {
+  "date": "2026-06-08",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": -2.1e-08
+ },
+ {
+  "date": "2026-06-08",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": 2.1e-08
+ },
+ {
+  "date": "2026-06-09",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": -2.1e-08
+ },
+ {
+  "date": "2026-06-09",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": -2.1e-08
+ },
+ {
+  "date": "2026-06-09",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": 2.1e-08
+ },
+ {
+  "date": "2026-06-10",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": -2.1e-08
+ },
+ {
+  "date": "2026-06-10",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": -2.1e-08
+ },
+ {
+  "date": "2026-06-10",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": 2.1e-08
+ },
+ {
+  "date": "2026-06-11",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": -2.1e-08
+ },
+ {
+  "date": "2026-06-11",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": -2.1e-08
+ },
+ {
+  "date": "2026-06-11",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": 2.1e-08
+ },
+ {
+  "date": "2026-06-12",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": -2.1e-08
+ },
+ {
+  "date": "2026-06-12",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": -2.1e-08
+ },
+ {
+  "date": "2026-06-12",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": 2.1e-08
+ },
+ {
+  "date": "2026-06-15",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": -2.1e-08
+ },
+ {
+  "date": "2026-06-15",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": -2.1e-08
+ },
+ {
+  "date": "2026-06-15",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": 2.1e-08
+ },
+ {
+  "date": "2026-06-16",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": -2.1e-08
+ },
+ {
+  "date": "2026-06-16",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": -2.1e-08
+ },
+ {
+  "date": "2026-06-16",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": 2.1e-08
+ },
+ {
+  "date": "2026-06-17",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": -2.1e-08
+ },
+ {
+  "date": "2026-06-17",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": -2.1e-08
+ },
+ {
+  "date": "2026-06-17",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": 2.1e-08
+ },
+ {
+  "date": "2026-06-18",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": -2.1e-08
+ },
+ {
+  "date": "2026-06-18",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": -2.1e-08
+ },
+ {
+  "date": "2026-06-18",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": 2.1e-08
+ },
+ {
+  "date": "2026-06-18",
+  "broker": "Patria",
+  "base": "USD",
+  "qty": 5.84,
+  "quote": "EUR",
+  "proceeds": -5.15
+ },
+ {
+  "date": "2026-06-19",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": -2.1e-08
+ },
+ {
+  "date": "2026-06-19",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": -2.1e-08
+ },
+ {
+  "date": "2026-06-19",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": -2.1e-08
+ },
+ {
+  "date": "2026-06-19",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": -2.1e-08
+ },
+ {
+  "date": "2026-06-19",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": -2.1e-08
+ },
+ {
+  "date": "2026-06-19",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": 2.1e-08
+ },
+ {
+  "date": "2026-06-22",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": -2.1e-08
+ },
+ {
+  "date": "2026-06-22",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": -2.1e-08
+ },
+ {
+  "date": "2026-06-22",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": 2.1e-08
+ },
+ {
+  "date": "2026-06-23",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": -2.1e-08
+ },
+ {
+  "date": "2026-06-23",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": -2.1e-08
+ },
+ {
+  "date": "2026-06-23",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": 2.1e-08
+ },
+ {
+  "date": "2026-06-24",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": -2.1e-08
+ },
+ {
+  "date": "2026-06-24",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": -2.1e-08
+ },
+ {
+  "date": "2026-06-24",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": 2.1e-08
+ },
+ {
+  "date": "2026-06-25",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": -2.1e-08
+ },
+ {
+  "date": "2026-06-25",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": -2.1e-08
+ },
+ {
+  "date": "2026-06-25",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": 2.1e-08
+ },
+ {
+  "date": "2026-06-26",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": -2.1e-08
+ },
+ {
+  "date": "2026-06-26",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": -2.1e-08
+ },
+ {
+  "date": "2026-06-26",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": -2.1e-08
+ },
+ {
+  "date": "2026-06-26",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": -2.1e-08
+ },
+ {
+  "date": "2026-06-26",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": -2.1e-08
+ },
+ {
+  "date": "2026-06-26",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": -2.1e-08
+ },
+ {
+  "date": "2026-06-26",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": 2.1e-08
+ },
+ {
+  "date": "2026-06-29",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": -2.1e-08
+ },
+ {
+  "date": "2026-06-29",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": -2.1e-08
+ },
+ {
+  "date": "2026-06-29",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": -2.1e-08
+ },
+ {
+  "date": "2026-06-29",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": 2.1e-08
+ },
+ {
+  "date": "2026-06-30",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": -2.1e-08
+ },
+ {
+  "date": "2026-06-30",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": -2.1e-08
+ },
+ {
+  "date": "2026-06-30",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": 2.1e-08
+ },
+ {
+  "date": "2026-07-01",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": -2.1e-08
+ },
+ {
+  "date": "2026-07-01",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": -2.1e-08
+ },
+ {
+  "date": "2026-07-01",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": 2.1e-08
+ },
+ {
+  "date": "2026-07-02",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": -2.1e-08
+ },
+ {
+  "date": "2026-07-02",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": -2.1e-08
+ },
+ {
+  "date": "2026-07-02",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": 2.1e-08
+ },
+ {
+  "date": "2026-07-03",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": -2.1e-08
+ },
+ {
+  "date": "2026-07-03",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.0,
+  "quote": "CZK",
+  "proceeds": -2.1e-08
+ },
+ {
+  "date": "2026-09-03",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 1847.61,
+  "quote": "EUR",
+  "proceeds": -1588.97
+ },
+ {
+  "date": "2026-09-03",
+  "broker": "IBKR",
+  "base": "USD",
+  "qty": 0.42,
+  "quote": "EUR",
+  "proceeds": -0.36
+ }
 ]
