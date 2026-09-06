@@ -150,5 +150,53 @@
   "text": "Bez zjevné zprávy — k pondělnímu poklesu nevyšla nová firemní zpráva; akcie klesala v obecném tlaku na německé automobilky, přičemž trh dál tráví prodej poradenské dcery MHP společnosti Tata Consultancy Services (podniková hodnota 320 mil. EUR, oznámeno 24. srpna) a slabé pololetí s dodávkami o 16 % nižšími a propadem v Číně o 32 %.",
   "source": null,
   "source_time": null
+ },
+ {
+  "ticker": "ASML",
+  "date": "2026-09-04",
+  "chg_pct": 4.12,
+  "text": "Akcie vyskočila po vlně analytického optimismu, když UBS potvrdila doporučení Buy a zvedla cílovou cenu na 2 350 EUR s odkazem na zvýšený celoroční výhled tržeb (43–45 mld. EUR) a pokračující poptávku po litografii pro AI čipy a paměti.",
+  "source": "Quiver Quantitative",
+  "source_time": "2026-09-04"
+ },
+ {
+  "ticker": "NICE",
+  "date": "2026-09-04",
+  "chg_pct": -2.67,
+  "text": "Bez zjevné zprávy — k pohybu nevyšla žádná firemní zpráva; akcie klesla spolu s růstovým softwarem poté, co srpnová data z trhu práce (162 tis. nových míst proti očekávaným 55 tis.) vyhnala výnosy vzhůru a zvedla tržní sázky na zvýšení sazeb Fedem v září na 58 %.",
+  "source": null,
+  "source_time": null
+ },
+ {
+  "ticker": "PYPL",
+  "date": "2026-09-04",
+  "chg_pct": -3.28,
+  "text": "Akcie oslabila poté, co PayPal podle Axios Pro pozastavil prodej venture portfolia za 0,9–1 mld. USD kvůli nabídkám kolem 60 centů za dolar, a téhož dne se objevilo další kolo propouštění navazující na neúspěšné převzetí konsorciem Stripe a Advent.",
+  "source": "Axios Pro / Seeking Alpha",
+  "source_time": "2026-09-04"
+ },
+ {
+  "ticker": "TTD",
+  "date": "2026-09-04",
+  "chg_pct": -4.21,
+  "text": "Akcie klesla až o 5,7 % poté, co The Trade Desk 3. září v podání u SEC oznámila reorganizaci se zrušením zhruba 15 % z asi 3 850 pracovních míst a restrukturalizačními náklady 39–51 mil. USD, aniž by vyčíslila očekávané úspory.",
+  "source": "The Motley Fool",
+  "source_time": "2026-09-04"
+ },
+ {
+  "ticker": "VOW3",
+  "date": "2026-09-04",
+  "chg_pct": 6.47,
+  "text": "Preferenční akcie prudce posílila poté, co dozorčí rada Volkswagenu ve čtvrtek večer jednomyslně schválila plán budoucnosti do roku 2030 zaměřený na efektivitu, jehož součástí je zrušení dalších zhruba 50 tisíc pracovních míst po celém světě do konce dekády.",
+  "source": "iROZHLAS",
+  "source_time": "2026-09-04"
+ },
+ {
+  "ticker": "WIX",
+  "date": "2026-09-04",
+  "chg_pct": -6.04,
+  "text": "Akcie klesla druhý den v řadě a smazala část srpnového růstu o 60 %, když se množila upozornění právních kanceláří na hromadnou žalobu investorů (Yappi v. Wix.com, N.D. Ill., rozhodné období 19. 2. 2025 až 12. 5. 2026) s termínem pro přihlášku vedoucího žalobce 22. září 2026.",
+  "source": "MarketBeat",
+  "source_time": "2026-09-04"
  }
 ]
