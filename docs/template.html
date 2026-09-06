@@ -124,11 +124,14 @@ tbody tr.click:hover{background:rgba(224,177,94,.05)}
 .nav24lab{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--mut)}
 .nav24val{font-size:24px;font-weight:600;letter-spacing:-.01em}
 .nav24sub{margin-left:auto;font-size:12.5px;color:var(--mut)}
+/* pozice: bez svislého scrollu (všechny řádky viditelné), jen vodorovný */
+.scroll.posfull{max-height:none;overflow-y:visible;overflow-x:auto}
 /* uzamčený první sloupec (ticker) v tabulce pozic při horizontálním scrollu */
-#posT>thead th:first-child,#posT>tbody tr.click td:first-child{
-  position:sticky;left:0;z-index:2;background:var(--panel);
+#posT>thead th:first-child,#posT>tbody>tr.click>td:first-child,#posT>tbody>tr.exp>td{
+  position:-webkit-sticky;position:sticky;left:0;z-index:2;background:var(--panel);}
+#posT>thead th:first-child,#posT>tbody>tr.click>td:first-child{
   box-shadow:6px 0 8px -6px rgba(0,0,0,.55)}
-#posT>tbody tr.click:hover td:first-child{background:#1B2230}
+#posT>tbody>tr.click:hover>td:first-child{background:#1B2230}
 .caret{display:inline-block;width:0;height:0;border-left:5px solid var(--mut);
   border-top:4px solid transparent;border-bottom:4px solid transparent;
   margin-right:9px;transition:transform .15s;vertical-align:middle}
@@ -209,7 +212,7 @@ tbody tr.open .caret{transform:rotate(90deg);border-left-color:var(--gold)}
 <div class="sec">
   <div class="sechead"><h3>Otevřené pozice</h3><span class="k" id="poscount"></span></div>
   <div class="card" style="padding:6px 8px">
-  <div class="scroll">
+  <div class="scroll posfull">
   <table id="posT">
     <thead><tr>
       <th class="l" data-s="ticker">Ticker</th>
@@ -428,11 +431,46 @@ function renderMovers(p){
   moversEl.innerHTML=(html||'<div class="mv mut">žádné pohyby v období</div>')
     +'<div class="mnews" id="movernews"></div>'+ctrl;
 }
+// IRR dle zvoleného období — money-weighted (XIRR), anualizováno
+function xirrJS(cf){                              // cf = [[YYYY-MM-DD, částka], ...]
+  const d0=Date.parse(cf[0][0]);
+  const npv=r=>cf.reduce((s,[d,a])=>s+a/Math.pow(1+r,(Date.parse(d)-d0)/86400000/365.25),0);
+  let lo=-0.9999,hi=50;
+  if(npv(lo)*npv(hi)>0)return null;
+  for(let i=0;i<200;i++){const mid=(lo+hi)/2;if(npv(lo)*npv(mid)<=0)hi=mid;else lo=mid;}
+  return (lo+hi)/2*100;
+}
+const kiEl=document.getElementById('k_irr');
+const kiSub=kiEl.parentElement.querySelector('.sub');
+function renderIRR(p){
+  if(p==='all'){
+    kiEl.textContent=(D.meta.irr>0?'+':'')+fmt(D.meta.irr,1)+' %';
+    kiEl.className='val num '+cls(D.meta.irr);
+    kiSub.textContent='money-weighted, od 02/2022';return;
+  }
+  const irrP=(p==='ytd')?'ytd':'30d';             // day/7d/30d -> okno 30 dní
+  const H=D.history||[];
+  if(!H.length){kiEl.textContent='—';kiSub.textContent='zatím málo historie';return;}
+  const cd=H[H.length-1].ts.slice(0,10);
+  const pred=refBefore(irrP,cd);
+  let ref=null;
+  for(let i=H.length-1;i>=0;i--){if(pred(H[i].ts.slice(0,10))){ref=H[i];break;}}
+  if(!ref){renderIRR.call(null,'all');return;}    // málo historie -> all-time
+  const cf=[[ref.ts.slice(0,10),-ref.nav]];
+  (D.flows||[]).forEach(f=>{if(f.date>ref.ts.slice(0,10)&&f.date<=cd)cf.push([f.date,-f.amt]);});
+  cf.push([cd,D.meta.nav]);
+  const v=xirrJS(cf);
+  if(v==null){kiEl.textContent='—';kiEl.className='val num mut';kiSub.textContent='IRR mimo rozsah';return;}
+  kiEl.textContent=(v>0?'+':'')+fmt(v,1)+' %';
+  kiEl.className='val num '+cls(v);
+  kiSub.textContent=(irrP==='ytd'?'od začátku roku':'za posledních 30 dní')+', p.a.';
+}
 const kgEl=document.getElementById('k_gain'),kgpEl=document.getElementById('k_gainpct');
 const kgLab=kgEl.parentElement.querySelector('.lab');
 function setPeriod(p){
   renderMovers(p);
   renderPerfChart(p);
+  renderIRR(p);
   const pn=document.getElementById('pnote');
   if(p==='all'){
     kgLab.textContent='Celkový zisk';
@@ -486,6 +524,9 @@ document.getElementById('seg').addEventListener('click',e=>{
 // kumulativní zhodnocení od reference období, očištěné o vklady/výběry
 var perfChart;   // var bez inicializátoru — setPeriod('all') při startu běží dřív a chart už přiřadil
 function renderPerfChart(p){
+  const card=document.getElementById('perfBadge').closest('.card');
+  if(p==='day'){card.style.display='none';if(perfChart){perfChart.destroy();perfChart=null;}return;}
+  card.style.display='';
   const H=D.history||[];
   const cap=document.getElementById('ytdCap');
   const names={day:['D','Výkonnost za poslední den'],'7d':['7D','Výkonnost za posledních 7 dní'],

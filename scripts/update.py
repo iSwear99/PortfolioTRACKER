@@ -131,20 +131,26 @@ def fetch_yahoo(prices, failed):
     return recovered
 
 def fetch_prev_close(positions):
-    """Předchozí close (Yahoo chartPreviousClose) pro tickery pozic — pro denní změnu."""
+    """Poslední DVĚ uzavřené denní close (svíčky přede dneškem) pro denní změnu:
+    včerejší close vs předvčerejší close. Dnešní rozpracovaná svíčka se ignoruje."""
     out = {}
+    tz = PRAGUE or timezone.utc
+    today = datetime.now(timezone.utc).astimezone(tz).strftime('%Y-%m-%d')
     for i, tk in enumerate(sorted({pos['ticker'] for pos in positions})):
         sym, div = YAHOO.get(tk, (tk, 1))
         if i: time.sleep(1.3)
         try:
             res = json.loads(http_get(
                 f'https://query1.finance.yahoo.com/v8/finance/chart/{urllib.parse.quote(sym)}'
-                '?range=5d&interval=1d'))['chart']['result'][0]
-            pc = res['meta'].get('previousClose')          # skutečný včerejší close
-            if not pc:                                      # fallback: předposlední denní close z řady
-                cl = [c for c in (res['indicators']['quote'][0].get('close') or []) if c is not None]
-                pc = cl[-2] if len(cl) >= 2 else None
-            if pc and pc > 0: out[tk] = round(float(pc) / div, 4)
+                '?range=10d&interval=1d'))['chart']['result'][0]
+            closes = []
+            for t_, c in zip(res.get('timestamp') or [],
+                             res['indicators']['quote'][0].get('close') or []):
+                if c is None: continue
+                d = datetime.fromtimestamp(t_, tz=timezone.utc).astimezone(tz).strftime('%Y-%m-%d')
+                if d < today: closes.append(float(c))
+            if len(closes) >= 2 and closes[-1] > 0 and closes[-2] > 0:
+                out[tk] = (round(closes[-1] / div, 4), round(closes[-2] / div, 4))
         except Exception as e:
             print(f'[WARN] prev-close {tk} ({sym}): {e}', file=sys.stderr)
     return out
@@ -155,10 +161,11 @@ def compute(static, prices, fx, prev_px, fx_prev):
         px = prices[pos['ticker']]['px']; r = fx[pos['ccy']]
         mv = pos['qty'] * px * r
         pl = pos['qty'] * (px - pos['avg']) * r
-        # denní změna (varianta C): dnešní hodnota − včerejší hodnota téže pozice,
-        # cena vs. předchozí close, každý konec svým ČNB fixingem (mid, bez poplatku)
-        pc = prev_px.get(pos['ticker']); rp = fx_prev.get(pos['ccy'], r)
-        dch = round(pos['qty'] * (px * r - pc * rp)) if pc else None
+        # denní změna (varianta C na uzavřených cenách): rozdíl posledních dvou
+        # uzavřených close — včerejší close × dnešní fixing − předvčerejší close
+        # × včerejší fixing (ČNB mid, bez poplatku)
+        pcs = prev_px.get(pos['ticker']); rp = fx_prev.get(pos['ccy'], r)
+        dch = round(pos['qty'] * (pcs[0] * r - pcs[1] * rp)) if pcs else None
         positions.append(dict(pos, price=px, mv=round(mv), pl=round(pl),
                               plpct=round((px - pos['avg']) / pos['avg'] * 100, 1) if pos['avg'] else 0,
                               dch=dch))
