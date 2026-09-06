@@ -114,7 +114,7 @@ tbody tr.click:hover{background:rgba(224,177,94,.05)}
 .chip.adj{color:var(--mut);background:rgba(124,138,160,.12)}
 .exp{background:var(--panel2)}
 .exp td{padding:0}
-.expbox{padding:6px 10px 12px}
+.expbox{padding:6px 10px 12px;max-height:320px;overflow-y:auto}
 .expbox table{font-size:12px}
 .expbox th{padding:6px 8px}
 .expbox td{padding:6px 8px}
@@ -579,33 +579,62 @@ function renderPerfChart(p){
 // positions table
 let posSort={k:'ticker',dir:1};
 const posB=document.getElementById('posB');
-document.getElementById('poscount').textContent=D.positions.length+' titulů · '+CZK(D.meta.mv);
+document.getElementById('poscount').textContent=new Set(D.positions.map(p=>p.ticker)).size
+  +' titulů ('+D.positions.length+' pozic) · '+CZK(D.meta.mv);
 function renderPos(){
-  const arr=[...D.positions].sort((a,b)=>{
+  // agregace přes brokery: jeden řádek per ticker
+  const groups={};
+  D.positions.forEach(p=>{
+    const g=groups[p.ticker]??(groups[p.ticker]={ticker:p.ticker,ccy:p.ccy,price:p.price,
+      qty:0,cost:0,mv:0,pl:0,dch:null,brokers:[]});
+    g.qty+=p.qty; g.cost+=p.qty*p.avg; g.mv+=p.mv; g.pl+=p.pl;
+    if(p.dch!=null)g.dch=(g.dch??0)+p.dch;
+    g.brokers.push(p);
+  });
+  const arr=Object.values(groups).map(g=>({...g,avg:g.cost/g.qty,
+    plpct:g.cost?(g.price-g.cost/g.qty)/(g.cost/g.qty)*100:0}));
+  arr.sort((a,b)=>{
     const x=a[posSort.k]??-Infinity,y=b[posSort.k]??-Infinity;   // null (chybějící dch) vždy dole
     return (x>y?1:x<y?-1:0)*posSort.dir;});
   posB.innerHTML='';
-  arr.forEach((p,i)=>{
-    const w=p.mv/D.meta.mv*100;
+  arr.forEach(g=>{
+    const w=g.mv/D.meta.mv*100;
+    const chips=g.brokers.map(b=>`<span class="brk ${b.broker==='IBKR'?'ib':'pt'}">${b.broker}</span>`).join('');
+    const barCol=g.brokers.length>1?GOLD:(g.brokers[0].broker==='IBKR'?BLUE:GOLD);
     const tr=document.createElement('tr'); tr.className='click';
-    tr.innerHTML=`<td><span class="caret"></span><span class="tk">${p.ticker}</span><span class="brk ${p.broker==='IBKR'?'ib':'pt'}">${p.broker}</span></td>
-      <td class="num ${cls(p.dch)}">${p.dch==null?'·':SIGN(p.dch)}</td>
-      <td class="num">${QTY(p.qty)}</td>
-      <td class="num mut">${fmt(p.avg,2)} ${p.ccy}</td>
-      <td class="num">${fmt(p.price,2)} ${p.ccy}</td>
-      <td class="num">${CZK(p.mv)}</td>
-      <td class="num ${cls(p.pl)}">${SIGN(p.pl)}</td>
-      <td class="num ${cls(p.pl)}">${(p.plpct>0?'+':'')+fmt(p.plpct,1)} %</td>
-      <td class="hidesm"><span class="bar"><i style="width:${Math.min(w*3,100)}%;background:${p.broker==='IBKR'?BLUE:GOLD}"></i></span> <span class="num tny mut">${fmt(w,1)}%</span></td>`;
+    tr.innerHTML=`<td><span class="caret"></span><span class="tk">${g.ticker}</span>${chips}</td>
+      <td class="num ${cls(g.dch)}">${g.dch==null?'·':SIGN(g.dch)}</td>
+      <td class="num">${QTY(g.qty)}</td>
+      <td class="num mut">${fmt(g.avg,2)} ${g.ccy}</td>
+      <td class="num">${fmt(g.price,2)} ${g.ccy}</td>
+      <td class="num">${CZK(g.mv)}</td>
+      <td class="num ${cls(g.pl)}">${SIGN(g.pl)}</td>
+      <td class="num ${cls(g.pl)}">${(g.plpct>0?'+':'')+fmt(g.plpct,1)} %</td>
+      <td class="hidesm"><span class="bar"><i style="width:${Math.min(w*3,100)}%;background:${barCol}"></i></span> <span class="num tny mut">${fmt(w,1)}%</span></td>`;
     const ex=document.createElement('tr'); ex.className='exp'; ex.style.display='none';
-    const trades=D.trades.filter(t=>t.ticker===p.ticker && t.broker===p.broker);
-    let rows=trades.map(t=>{const side=t.typ==='Adj'?'ADJ':(t.qty>0?'BUY':'SELL');
+    // rozpad per broker (jen u vícebrokerových titulů)
+    let inner='';
+    if(g.brokers.length>1){
+      inner+='<table style="margin-bottom:8px"><thead><tr><th class="l">Broker</th><th>Ks</th><th>Ø nákup</th><th>Hodnota CZK</th><th>Nereal. P/L</th><th>Denní změna</th></tr></thead><tbody>'
+        +g.brokers.map(b=>`<tr><td class="l"><span class="brk ${b.broker==='IBKR'?'ib':'pt'}">${b.broker}</span></td>
+          <td class="num">${QTY(b.qty)}</td>
+          <td class="num mut">${fmt(b.avg,2)} ${b.ccy}</td>
+          <td class="num">${CZK(b.mv)}</td>
+          <td class="num ${cls(b.pl)}">${SIGN(b.pl)}</td>
+          <td class="num ${cls(b.dch)}">${b.dch==null?'·':SIGN(b.dch)}</td></tr>`).join('')
+        +'</tbody></table>';
+    }
+    // historie obchodů tickeru (všichni brokeři, s chipem)
+    const trades=D.trades.filter(t=>String(t.ticker)===g.ticker);
+    const rows=trades.map(t=>{const side=t.typ==='Adj'?'ADJ':(t.qty>0?'BUY':'SELL');
       return `<tr><td class="l num mut">${t.date.split('-').reverse().join('.')}</td>
+        <td class="l"><span class="brk ${t.broker==='IBKR'?'ib':'pt'}">${t.broker}</span></td>
         <td><span class="chip ${side.toLowerCase()}">${side}</span></td>
         <td class="num">${QTY(Math.abs(t.qty))}</td>
         <td class="num">${fmt(t.price,2)} ${t.ccy}</td>
         <td class="num mut">${fmt(t.fee,2)}</td></tr>`;}).join('');
-    ex.innerHTML=`<td colspan="9"><div class="expbox"><table><thead><tr><th class="l">Datum</th><th class="l">Směr</th><th>Ks</th><th>Cena</th><th>Poplatek</th></tr></thead><tbody>${rows||'<tr><td class="mut">Žádné obchody</td></tr>'}</tbody></table></div></td>`;
+    inner+=`<table><thead><tr><th class="l">Datum</th><th class="l">Broker</th><th class="l">Směr</th><th>Ks</th><th>Cena</th><th>Poplatek</th></tr></thead><tbody>${rows||'<tr><td class="mut">Žádné obchody</td></tr>'}</tbody></table>`;
+    ex.innerHTML=`<td colspan="9"><div class="expbox">${inner}</div></td>`;
     tr.addEventListener('click',()=>{const open=ex.style.display==='none';ex.style.display=open?'':'none';tr.classList.toggle('open',open);});
     posB.appendChild(tr); posB.appendChild(ex);
   });
