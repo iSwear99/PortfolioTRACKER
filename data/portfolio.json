@@ -230,19 +230,19 @@
   {
    "broker": "IBKR",
    "ccy": "DKK",
-   "bal": 1110.0,
+   "bal": 1110.32,
    "czk": 2441
   },
   {
    "broker": "IBKR",
    "ccy": "EUR",
-   "bal": 3807.28,
+   "bal": 3799.81,
    "czk": 121205
   },
   {
    "broker": "IBKR",
    "ccy": "USD",
-   "bal": -107.37,
+   "bal": 0.02,
    "czk": 19252
   },
   {
@@ -254,13 +254,13 @@
   {
    "broker": "Patria",
    "ccy": "EUR",
-   "bal": 546.87,
+   "bal": 546.53,
    "czk": 13225
   },
   {
    "broker": "Patria",
    "ccy": "USD",
-   "bal": 5605.85,
+   "bal": 5592.93,
    "czk": 377
   },
   {
@@ -273,27 +273,27 @@
  "breakdown_hist": [
   [
    "Nerealizovaný P/L (hist.)",
-   248839
+   219017
   ],
   [
    "Realizovaný P/L (hist.)",
-   689742
+   686811
   ],
   [
    "Ostatní (div./daně/úroky/popl.)",
-   83043
+   84933
   ],
   [
    "FX realizovaný",
-   11046
+   11899
   ],
   [
    "FX nerealizovaný",
-   -23026
+   -20703
   ],
   [
    "Aproximace metody",
-   -12213
+   -14723
   ]
  ],
  "fees": [
@@ -415,7 +415,7 @@
    "fee": -14.9,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 22.6625
+   "kurz_hist": 22.6622
   },
   {
    "date": "2023-03-20",
@@ -470,8 +470,8 @@
    "mult": 1,
    "fee": -14.95,
    "rpl": 1030.92,
-   "rplczk": 11937,
-   "kurz_hist": 20.851
+   "rplczk": 11710,
+   "kurz_hist": 20.814
   },
   {
    "date": "2023-06-28",
@@ -527,7 +527,7 @@
    "fee": -14.9,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 20.851
+   "kurz_hist": 20.814
   },
   {
    "date": "2023-08-08",
@@ -555,7 +555,7 @@
    "fee": -14.9,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 21.7044
+   "kurz_hist": 21.6872
   },
   {
    "date": "2023-08-14",
@@ -569,7 +569,7 @@
    "fee": -14.9,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 21.7044
+   "kurz_hist": 21.6872
   },
   {
    "date": "2023-08-17",
@@ -583,7 +583,7 @@
    "fee": -14.9,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 21.7044
+   "kurz_hist": 21.6872
   },
   {
    "date": "2023-08-25",
@@ -597,7 +597,7 @@
    "fee": -14.9,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 21.7044
+   "kurz_hist": 21.6872
   },
   {
    "date": "2023-09-12",
@@ -611,7 +611,7 @@
    "fee": -14.9,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 22.9676
+   "kurz_hist": 22.9646
   },
   {
    "date": "2023-11-03",
@@ -624,8 +624,8 @@
    "mult": 1,
    "fee": -14.92,
    "rpl": 95.25,
-   "rplczk": 365,
-   "kurz_hist": 22.1492
+   "rplczk": 284,
+   "kurz_hist": 22.1099
   },
   {
    "date": "2023-11-21",
@@ -639,7 +639,7 @@
    "fee": -16.9,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 24.5029
+   "kurz_hist": 24.4594
   },
   {
    "date": "2023-12-15",
@@ -653,7 +653,7 @@
    "fee": -14.9,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 22.581
+   "kurz_hist": 22.568
   },
   {
    "date": "2023-12-18",
@@ -666,8 +666,8 @@
    "mult": 1,
    "fee": -14.92,
    "rpl": 288.6,
-   "rplczk": 4862,
-   "kurz_hist": 22.581
+   "rplczk": 4831,
+   "kurz_hist": 22.568
   },
   {
    "date": "2024-01-04",
@@ -681,7 +681,7 @@
    "fee": -14.9,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 22.581
+   "kurz_hist": 22.568
   },
   {
    "date": "2024-01-22",
@@ -695,7 +695,7 @@
    "fee": -14.9,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 22.7392
+   "kurz_hist": 22.7304
   },
   {
    "date": "2024-01-22",
@@ -736,8 +736,8 @@
    "mult": 1,
    "fee": -14.92,
    "rpl": 864.9,
-   "rplczk": 15559,
-   "kurz_hist": 20.851
+   "rplczk": 15477,
+   "kurz_hist": 20.814
   },
   {
    "date": "2024-02-08",
@@ -765,7 +765,7 @@
    "fee": -18.18,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 20.851
+   "kurz_hist": 20.814
   },
   {
    "date": "2024-02-23",
@@ -779,7 +779,7 @@
    "fee": -14.9,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 23.2068
+   "kurz_hist": 23.2001
   },
   {
    "date": "2024-02-26",
@@ -834,8 +834,8 @@
    "mult": 1,
    "fee": -14.92,
    "rpl": 246.3,
-   "rplczk": -449,
-   "kurz_hist": 20.851
+   "rplczk": -532,
+   "kurz_hist": 20.814
   },
   {
    "date": "2024-04-03",
@@ -849,7 +849,7 @@
    "fee": -16.9,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 23.0312
+   "kurz_hist": 22.9913
   },
   {
    "date": "2024-04-05",
@@ -891,7 +891,7 @@
    "fee": -16.9,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 25.6117
+   "kurz_hist": 25.6116
   },
   {
    "date": "2024-05-06",
@@ -933,7 +933,7 @@
    "fee": -16.9,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 25.1017
+   "kurz_hist": 25.1016
   },
   {
    "date": "2024-05-30",
@@ -961,7 +961,7 @@
    "fee": -2.5,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 22.9456
+   "kurz_hist": 22.9455
   },
   {
    "date": "2024-06-06",
@@ -1003,7 +1003,7 @@
    "fee": 0,
    "rpl": 0.0,
    "rplczk": -1959,
-   "kurz_hist": 24.215
+   "kurz_hist": 24.19
   },
   {
    "date": "2024-06-14",
@@ -1030,8 +1030,8 @@
    "mult": 1,
    "fee": -14.98,
    "rpl": 646.5,
-   "rplczk": 21879,
-   "kurz_hist": 24.5275
+   "rplczk": 21794,
+   "kurz_hist": 24.4839
   },
   {
    "date": "2024-07-23",
@@ -1129,7 +1129,7 @@
    "fee": -1.03862,
    "rpl": 271.063965,
    "rplczk": 5370,
-   "kurz_hist": 22.6082
+   "kurz_hist": 22.608
   },
   {
    "date": "2024-09-26",
@@ -1142,8 +1142,8 @@
    "mult": 1,
    "fee": -15.1,
    "rpl": 1713.56,
-   "rplczk": 28616,
-   "kurz_hist": 20.851
+   "rplczk": 28432,
+   "kurz_hist": 20.814
   },
   {
    "date": "2024-09-30",
@@ -1171,7 +1171,7 @@
    "fee": -4.0,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 22.6082
+   "kurz_hist": 22.608
   },
   {
    "date": "2024-10-11",
@@ -1185,7 +1185,7 @@
    "fee": -1.0072,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 22.6082
+   "kurz_hist": 22.608
   },
   {
    "date": "2024-10-11",
@@ -1199,7 +1199,7 @@
    "fee": -1.006,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 22.6082
+   "kurz_hist": 22.608
   },
   {
    "date": "2024-10-15",
@@ -1213,7 +1213,7 @@
    "fee": -1.000288,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 22.6082
+   "kurz_hist": 22.608
   },
   {
    "date": "2024-10-17",
@@ -1227,7 +1227,7 @@
    "fee": -1.00252,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 23.104
+   "kurz_hist": 23.1039
   },
   {
    "date": "2024-10-30",
@@ -1311,7 +1311,7 @@
    "fee": -1.0036,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 23.9214
+   "kurz_hist": 23.9213
   },
   {
    "date": "2024-11-12",
@@ -1324,8 +1324,8 @@
    "mult": 1,
    "fee": -16.9,
    "rpl": -23.25,
-   "rplczk": 1289,
-   "kurz_hist": 24.215
+   "rplczk": 1288,
+   "kurz_hist": 24.19
   },
   {
    "date": "2024-11-13",
@@ -1366,8 +1366,8 @@
    "mult": 1,
    "fee": -15.0,
    "rpl": -1082.15,
-   "rplczk": -27112,
-   "kurz_hist": 20.851
+   "rplczk": -27137,
+   "kurz_hist": 20.814
   },
   {
    "date": "2024-11-19",
@@ -1380,8 +1380,8 @@
    "mult": 1,
    "fee": -1.060336958,
    "rpl": 520.042463,
-   "rplczk": 9345,
-   "kurz_hist": 20.8526
+   "rplczk": 9293,
+   "kurz_hist": 20.8157
   },
   {
    "date": "2024-11-20",
@@ -1409,7 +1409,7 @@
    "fee": -1.0072,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 22.8483
+   "kurz_hist": 22.8345
   },
   {
    "date": "2024-11-22",
@@ -1464,8 +1464,8 @@
    "mult": 1,
    "fee": -3.0,
    "rpl": 876.0,
-   "rplczk": 18013,
-   "kurz_hist": 24.215
+   "rplczk": 17911,
+   "kurz_hist": 24.19
   },
   {
    "date": "2024-12-09",
@@ -1478,8 +1478,8 @@
    "mult": 1,
    "fee": -4.0,
    "rpl": -156.0,
-   "rplczk": -12367,
-   "kurz_hist": 20.851
+   "rplczk": -12506,
+   "kurz_hist": 20.814
   },
   {
    "date": "2024-12-10",
@@ -1493,7 +1493,7 @@
    "fee": -1.0144,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 20.8515
+   "kurz_hist": 20.8145
   },
   {
    "date": "2024-12-12",
@@ -1506,8 +1506,8 @@
    "mult": 1,
    "fee": -14.97,
    "rpl": 359.97,
-   "rplczk": 4645,
-   "kurz_hist": 20.851
+   "rplczk": 4583,
+   "kurz_hist": 20.814
   },
   {
    "date": "2024-12-24",
@@ -1521,7 +1521,7 @@
    "fee": -1.0096,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 21.624
+   "kurz_hist": 21.5911
   },
   {
    "date": "2024-12-27",
@@ -1535,7 +1535,7 @@
    "fee": -49.0,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 2.1047
+   "kurz_hist": 2.1026
   },
   {
    "date": "2025-01-03",
@@ -1549,7 +1549,7 @@
    "fee": -4.0,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 24.4403
+   "kurz_hist": 24.44
   },
   {
    "date": "2025-01-03",
@@ -1563,7 +1563,7 @@
    "fee": -4.000451338,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 24.4403
+   "kurz_hist": 24.44
   },
   {
    "date": "2025-01-06",
@@ -1619,7 +1619,7 @@
    "fee": -4.000446343,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 24.4464
+   "kurz_hist": 24.4462
   },
   {
    "date": "2025-02-04",
@@ -1633,7 +1633,7 @@
    "fee": -14.9,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 20.851
+   "kurz_hist": 20.814
   },
   {
    "date": "2025-02-05",
@@ -1647,7 +1647,7 @@
    "fee": -1.0014,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 24.1073
+   "kurz_hist": 24.1069
   },
   {
    "date": "2025-02-13",
@@ -1661,7 +1661,7 @@
    "fee": -16.9,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 22.99
+   "kurz_hist": 22.9515
   },
   {
    "date": "2025-02-21",
@@ -1674,8 +1674,8 @@
    "mult": 1,
    "fee": -1.1203192,
    "rpl": 1877.079681,
-   "rplczk": 34240,
-   "kurz_hist": 20.8775
+   "rplczk": 34089,
+   "kurz_hist": 20.8405
   },
   {
    "date": "2025-02-21",
@@ -1689,7 +1689,7 @@
    "fee": -1.0092,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 20.8775
+   "kurz_hist": 20.8404
   },
   {
    "date": "2025-02-26",
@@ -1716,8 +1716,8 @@
    "mult": 1,
    "fee": -17.72,
    "rpl": 1060.25,
-   "rplczk": 22107,
-   "kurz_hist": 20.851
+   "rplczk": 22068,
+   "kurz_hist": 20.814
   },
   {
    "date": "2025-03-03",
@@ -1731,7 +1731,7 @@
    "fee": -1.00056,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 21.7858
+   "kurz_hist": 21.7576
   },
   {
    "date": "2025-03-03",
@@ -1744,8 +1744,8 @@
    "mult": 1,
    "fee": -4.0,
    "rpl": 93.241678,
-   "rplczk": -6362,
-   "kurz_hist": 21.7858
+   "rplczk": -6473,
+   "kurz_hist": 21.7576
   },
   {
    "date": "2025-03-03",
@@ -1759,7 +1759,7 @@
    "fee": -4.000445165,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 21.7839
+   "kurz_hist": 21.7557
   },
   {
    "date": "2025-03-04",
@@ -1773,7 +1773,7 @@
    "fee": -1.000414,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 21.7848
+   "kurz_hist": 21.7567
   },
   {
    "date": "2025-03-04",
@@ -1786,8 +1786,8 @@
    "mult": 1,
    "fee": -1.1396125,
    "rpl": 185.353187,
-   "rplczk": 96,
-   "kurz_hist": 21.7848
+   "rplczk": 37,
+   "kurz_hist": 21.7567
   },
   {
    "date": "2025-03-10",
@@ -1800,8 +1800,8 @@
    "mult": 1,
    "fee": -2.660416,
    "rpl": 234.869584,
-   "rplczk": 2554,
-   "kurz_hist": 21.7848
+   "rplczk": 2482,
+   "kurz_hist": 21.7567
   },
   {
    "date": "2025-03-11",
@@ -1815,7 +1815,7 @@
    "fee": -1.2615,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 21.7848
+   "kurz_hist": 21.7567
   },
   {
    "date": "2025-03-13",
@@ -1829,7 +1829,7 @@
    "fee": -1.007,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 21.7848
+   "kurz_hist": 21.7567
   },
   {
    "date": "2025-03-19",
@@ -1842,8 +1842,8 @@
    "mult": 1,
    "fee": -1.083915912,
    "rpl": 864.883216,
-   "rplczk": 17474,
-   "kurz_hist": 21.7848
+   "rplczk": 17394,
+   "kurz_hist": 21.7567
   },
   {
    "date": "2025-03-20",
@@ -1857,7 +1857,7 @@
    "fee": -49.0,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 2.1531
+   "kurz_hist": 2.1503
   },
   {
    "date": "2025-03-20",
@@ -1870,8 +1870,8 @@
    "mult": 1,
    "fee": -4.0,
    "rpl": 922.269998,
-   "rplczk": 12356,
-   "kurz_hist": 21.7848
+   "rplczk": 12245,
+   "kurz_hist": 21.7567
   },
   {
    "date": "2025-03-20",
@@ -1884,8 +1884,8 @@
    "mult": 1,
    "fee": -4.0,
    "rpl": -212.719337,
-   "rplczk": -10938,
-   "kurz_hist": 21.7848
+   "rplczk": -11041,
+   "kurz_hist": 21.7567
   },
   {
    "date": "2025-03-21",
@@ -1899,7 +1899,7 @@
    "fee": -4.000368,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 21.7848
+   "kurz_hist": 21.7567
   },
   {
    "date": "2025-04-08",
@@ -1913,7 +1913,7 @@
    "fee": -1.00092,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 21.7848
+   "kurz_hist": 21.7567
   },
   {
    "date": "2025-04-16",
@@ -1927,7 +1927,7 @@
    "fee": -3.0,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 24.9407
+   "kurz_hist": 24.9379
   },
   {
    "date": "2025-04-16",
@@ -1941,7 +1941,7 @@
    "fee": -1.000023,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 21.7848
+   "kurz_hist": 21.7567
   },
   {
    "date": "2025-04-16",
@@ -1955,7 +1955,7 @@
    "fee": -1.0069,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 21.7848
+   "kurz_hist": 21.7567
   },
   {
    "date": "2025-04-16",
@@ -1969,7 +1969,7 @@
    "fee": -7.43,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 20.851
+   "kurz_hist": 20.814
   },
   {
    "date": "2025-04-25",
@@ -1982,8 +1982,8 @@
    "mult": 1,
    "fee": -1.15048525,
    "rpl": 454.099492,
-   "rplczk": 9939,
-   "kurz_hist": 21.7848
+   "rplczk": 9926,
+   "kurz_hist": 21.7567
   },
   {
    "date": "2025-04-25",
@@ -1997,7 +1997,7 @@
    "fee": -1.000525,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 21.7848
+   "kurz_hist": 21.7567
   },
   {
    "date": "2025-05-21",
@@ -2010,8 +2010,8 @@
    "mult": 1,
    "fee": -1.01855,
    "rpl": 995.57945,
-   "rplczk": 16826,
-   "kurz_hist": 21.7848
+   "rplczk": 16690,
+   "kurz_hist": 21.7567
   },
   {
    "date": "2025-05-22",
@@ -2025,7 +2025,7 @@
    "fee": -1.001288,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 21.7848
+   "kurz_hist": 21.7567
   },
   {
    "date": "2025-05-22",
@@ -2038,8 +2038,8 @@
    "mult": 1,
    "fee": -4.133168,
    "rpl": 7.866464,
-   "rplczk": 349,
-   "kurz_hist": 21.7848
+   "rplczk": 348,
+   "kurz_hist": 21.7567
   },
   {
    "date": "2025-06-30",
@@ -2052,8 +2052,8 @@
    "mult": 1,
    "fee": -1.01272,
    "rpl": 2508.18496,
-   "rplczk": 44692,
-   "kurz_hist": 21.7848
+   "rplczk": 44501,
+   "kurz_hist": 21.7567
   },
   {
    "date": "2025-07-07",
@@ -2067,7 +2067,7 @@
    "fee": -1.00066,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 21.7848
+   "kurz_hist": 21.7567
   },
   {
    "date": "2025-07-10",
@@ -2081,7 +2081,7 @@
    "fee": -1.00162,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 21.7848
+   "kurz_hist": 21.7567
   },
   {
    "date": "2025-07-11",
@@ -2095,7 +2095,7 @@
    "fee": -3.0,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 29.4988
+   "kurz_hist": 29.4607
   },
   {
    "date": "2025-07-24",
@@ -2108,8 +2108,8 @@
    "mult": 1,
    "fee": -6.4,
    "rpl": 179.7,
-   "rplczk": 3084,
-   "kurz_hist": 20.851
+   "rplczk": 3066,
+   "kurz_hist": 20.814
   },
   {
    "date": "2025-07-24",
@@ -2122,8 +2122,8 @@
    "mult": 1,
    "fee": -16.89,
    "rpl": 272.48,
-   "rplczk": 4251,
-   "kurz_hist": 20.851
+   "rplczk": 4217,
+   "kurz_hist": 20.814
   },
   {
    "date": "2025-07-25",
@@ -2137,7 +2137,7 @@
    "fee": -1.004725,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 21.5532
+   "kurz_hist": 21.5292
   },
   {
    "date": "2025-07-29",
@@ -2150,8 +2150,8 @@
    "mult": 1,
    "fee": -1.29825,
    "rpl": 3054.22525,
-   "rplczk": 61093,
-   "kurz_hist": 20.851
+   "rplczk": 60955,
+   "kurz_hist": 20.814
   },
   {
    "date": "2025-07-30",
@@ -2164,8 +2164,8 @@
    "mult": 1,
    "fee": -1.297,
    "rpl": 986.3601,
-   "rplczk": 15926,
-   "kurz_hist": 20.851
+   "rplczk": 15839,
+   "kurz_hist": 20.814
   },
   {
    "date": "2025-08-06",
@@ -2179,7 +2179,7 @@
    "fee": -3.0,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 24.1478
+   "kurz_hist": 24.1055
   },
   {
    "date": "2025-08-12",
@@ -2193,7 +2193,7 @@
    "fee": -1.001053,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 20.851
+   "kurz_hist": 20.814
   },
   {
    "date": "2025-08-13",
@@ -2206,8 +2206,8 @@
    "mult": 1,
    "fee": -3.0,
    "rpl": 954.0,
-   "rplczk": 22787,
-   "kurz_hist": 28.141
+   "rplczk": 22987,
+   "kurz_hist": 28.161
   },
   {
    "date": "2025-08-13",
@@ -2220,8 +2220,8 @@
    "mult": 1,
    "fee": -49.0,
    "rpl": -693.545455,
-   "rplczk": 417,
-   "kurz_hist": 2.1923
+   "rplczk": 394,
+   "kurz_hist": 2.1884
   },
   {
    "date": "2025-08-13",
@@ -2234,8 +2234,8 @@
    "mult": 1,
    "fee": -1.0047,
    "rpl": 811.864326,
-   "rplczk": 12972,
-   "kurz_hist": 20.851
+   "rplczk": 12903,
+   "kurz_hist": 20.814
   },
   {
    "date": "2025-08-14",
@@ -2249,7 +2249,7 @@
    "fee": -1.7500945,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 20.851
+   "kurz_hist": 20.814
   },
   {
    "date": "2025-08-19",
@@ -2263,7 +2263,7 @@
    "fee": -1.12995,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 20.8212
+   "kurz_hist": 20.8356
   },
   {
    "date": "2025-09-11",
@@ -2276,8 +2276,8 @@
    "mult": 1,
    "fee": -2.0772,
    "rpl": 2604.0566,
-   "rplczk": 47506,
-   "kurz_hist": 20.851
+   "rplczk": 47328,
+   "kurz_hist": 20.814
   },
   {
    "date": "2025-09-11",
@@ -2290,8 +2290,8 @@
    "mult": 1,
    "fee": -1.007332,
    "rpl": 1744.141615,
-   "rplczk": 36511,
-   "kurz_hist": 20.8671
+   "rplczk": 36446,
+   "kurz_hist": 20.83
   },
   {
    "date": "2025-09-15",
@@ -2305,7 +2305,7 @@
    "fee": -3.0,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 28.2853
+   "kurz_hist": 28.2685
   },
   {
    "date": "2025-09-16",
@@ -2318,8 +2318,8 @@
    "mult": 1,
    "fee": -1.0094,
    "rpl": 1572.391912,
-   "rplczk": 26926,
-   "kurz_hist": 20.8671
+   "rplczk": 26768,
+   "kurz_hist": 20.83
   },
   {
    "date": "2025-09-16",
@@ -2332,8 +2332,8 @@
    "mult": 100,
    "fee": -1.05344,
    "rpl": 0.0,
-   "rplczk": 3380,
-   "kurz_hist": 20.8671
+   "rplczk": 3374,
+   "kurz_hist": 20.83
   },
   {
    "date": "2025-09-16",
@@ -2346,8 +2346,8 @@
    "mult": 100,
    "fee": -1.40688,
    "rpl": 0.0,
-   "rplczk": 4048,
-   "kurz_hist": 20.8671
+   "rplczk": 4041,
+   "kurz_hist": 20.83
   },
   {
    "date": "2025-09-18",
@@ -2361,7 +2361,7 @@
    "fee": -1.00088,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 20.8671
+   "kurz_hist": 20.83
   },
   {
    "date": "2025-09-23",
@@ -2375,7 +2375,7 @@
    "fee": -3.0,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 24.6288
+   "kurz_hist": 24.5851
   },
   {
    "date": "2025-09-23",
@@ -2389,7 +2389,7 @@
    "fee": -3.0,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 24.6288
+   "kurz_hist": 24.5851
   },
   {
    "date": "2025-09-23",
@@ -2402,8 +2402,8 @@
    "mult": 1,
    "fee": -1.0141,
    "rpl": 1572.2323,
-   "rplczk": 20109,
-   "kurz_hist": 20.8671
+   "rplczk": 19896,
+   "kurz_hist": 20.83
   },
   {
    "date": "2025-09-24",
@@ -2416,8 +2416,8 @@
    "mult": 1,
    "fee": -1.00658,
    "rpl": 2825.629874,
-   "rplczk": 48101,
-   "kurz_hist": 20.8671
+   "rplczk": 47919,
+   "kurz_hist": 20.83
   },
   {
    "date": "2025-09-25",
@@ -2430,8 +2430,8 @@
    "mult": 100,
    "fee": -0.84688,
    "rpl": 0.0,
-   "rplczk": 4257,
-   "kurz_hist": 20.8671
+   "rplczk": 4249,
+   "kurz_hist": 20.83
   },
   {
    "date": "2025-10-10",
@@ -2445,7 +2445,7 @@
    "fee": -1.00044,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 20.8671
+   "kurz_hist": 20.83
   },
   {
    "date": "2025-10-10",
@@ -2459,7 +2459,7 @@
    "fee": -1.00165,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 20.8671
+   "kurz_hist": 20.83
   },
   {
    "date": "2025-10-16",
@@ -2487,7 +2487,7 @@
    "fee": -1.000033,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 20.8671
+   "kurz_hist": 20.83
   },
   {
    "date": "2025-10-17",
@@ -2501,7 +2501,7 @@
    "fee": 0.0,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 20.8671
+   "kurz_hist": 20.83
   },
   {
    "date": "2025-10-17",
@@ -2528,8 +2528,8 @@
    "mult": 100,
    "fee": -1.04869,
    "rpl": 0.0,
-   "rplczk": 7157,
-   "kurz_hist": 20.8671
+   "rplczk": 7145,
+   "kurz_hist": 20.83
   },
   {
    "date": "2025-10-17",
@@ -2557,7 +2557,7 @@
    "fee": -1.0011,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 20.8944
+   "kurz_hist": 20.8777
   },
   {
    "date": "2025-10-27",
@@ -2571,7 +2571,7 @@
    "fee": -1.0011,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 20.8944
+   "kurz_hist": 20.8777
   },
   {
    "date": "2025-10-27",
@@ -2585,7 +2585,7 @@
    "fee": -1.00088,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 20.8944
+   "kurz_hist": 20.8777
   },
   {
    "date": "2025-10-28",
@@ -2710,8 +2710,8 @@
    "mult": 1,
    "fee": -3.0,
    "rpl": 519.6,
-   "rplczk": 11321,
-   "kurz_hist": 24.215
+   "rplczk": 11371,
+   "kurz_hist": 24.19
   },
   {
    "date": "2025-11-04",
@@ -2753,7 +2753,7 @@
    "fee": -3.0,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 24.2249
+   "kurz_hist": 24.2017
   },
   {
    "date": "2025-11-06",
@@ -2865,7 +2865,7 @@
    "fee": -49.0,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 2.2022
+   "kurz_hist": 2.199
   },
   {
    "date": "2025-11-11",
@@ -2878,8 +2878,8 @@
    "mult": 1,
    "fee": -1.0376,
    "rpl": 346.5507,
-   "rplczk": -901,
-   "kurz_hist": 21.3796
+   "rplczk": -876,
+   "kurz_hist": 21.3773
   },
   {
    "date": "2025-11-11",
@@ -2935,7 +2935,7 @@
    "fee": 0.0,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 21.3064
+   "kurz_hist": 21.2993
   },
   {
    "date": "2025-11-14",
@@ -3186,8 +3186,8 @@
    "mult": 1,
    "fee": -9.03,
    "rpl": -162.45,
-   "rplczk": -4377,
-   "kurz_hist": 24.215
+   "rplczk": -4344,
+   "kurz_hist": 24.19
   },
   {
    "date": "2025-11-27",
@@ -3523,7 +3523,7 @@
    "fee": -1.0,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 20.602
+   "kurz_hist": 20.6015
   },
   {
    "date": "2025-12-24",
@@ -3564,8 +3564,8 @@
    "mult": 1,
    "fee": -2.583,
    "rpl": -1000.583128,
-   "rplczk": -22416,
-   "kurz_hist": 20.5903
+   "rplczk": -22148,
+   "kurz_hist": 20.5902
   },
   {
    "date": "2025-12-26",
@@ -3579,7 +3579,7 @@
    "fee": -2.5,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 20.5903
+   "kurz_hist": 20.5902
   },
   {
    "date": "2025-12-26",
@@ -3592,8 +3592,8 @@
    "mult": 1,
    "fee": -1.01992,
    "rpl": -1693.374505,
-   "rplczk": -48059,
-   "kurz_hist": 20.5903
+   "rplczk": -47884,
+   "kurz_hist": 20.5902
   },
   {
    "date": "2025-12-26",
@@ -3607,7 +3607,7 @@
    "fee": -1.0,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 20.5903
+   "kurz_hist": 20.5902
   },
   {
    "date": "2025-12-26",
@@ -3620,8 +3620,8 @@
    "mult": 1,
    "fee": -1.0249,
    "rpl": -563.82944,
-   "rplczk": -16344,
-   "kurz_hist": 20.5903
+   "rplczk": -16190,
+   "kurz_hist": 20.5902
   },
   {
    "date": "2025-12-26",
@@ -3635,7 +3635,7 @@
    "fee": -1.0,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 20.5903
+   "kurz_hist": 20.5902
   },
   {
    "date": "2025-12-26",
@@ -3648,8 +3648,8 @@
    "mult": 1,
    "fee": -1.00664,
    "rpl": -846.80752,
-   "rplczk": -19021,
-   "kurz_hist": 20.5903
+   "rplczk": -18932,
+   "kurz_hist": 20.5902
   },
   {
    "date": "2025-12-26",
@@ -3663,7 +3663,7 @@
    "fee": -1.0,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 20.5903
+   "kurz_hist": 20.5902
   },
   {
    "date": "2025-12-26",
@@ -3676,8 +3676,8 @@
    "mult": 1,
    "fee": -1.02988,
    "rpl": -1293.957329,
-   "rplczk": -40072,
-   "kurz_hist": 20.5903
+   "rplczk": -39922,
+   "kurz_hist": 20.5902
   },
   {
    "date": "2025-12-26",
@@ -3691,7 +3691,7 @@
    "fee": -1.0,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 20.5903
+   "kurz_hist": 20.5902
   },
   {
    "date": "2025-12-26",
@@ -3746,7 +3746,7 @@
    "mult": 1,
    "fee": -49.0,
    "rpl": -10408.254543,
-   "rplczk": -17862,
+   "rplczk": -17701,
    "kurz_hist": 2.2468
   },
   {
@@ -4376,8 +4376,8 @@
    "mult": 1,
    "fee": -3.0,
    "rpl": -164.0,
-   "rplczk": -4044,
-   "kurz_hist": 24.215
+   "rplczk": -4122,
+   "kurz_hist": 24.19
   },
   {
    "date": "2026-02-02",
@@ -4404,7 +4404,7 @@
    "mult": 1,
    "fee": -2.5975,
    "rpl": 3389.3739,
-   "rplczk": 55560,
+   "rplczk": 55684,
    "kurz_hist": 20.3098
   },
   {
@@ -4474,8 +4474,8 @@
    "mult": 1,
    "fee": -14.43,
    "rpl": 1416.63,
-   "rplczk": 39879,
-   "kurz_hist": 24.627
+   "rplczk": 39855,
+   "kurz_hist": 24.6015
   },
   {
    "date": "2026-02-04",
@@ -4531,7 +4531,7 @@
    "fee": -8.89,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 24.8021
+   "kurz_hist": 24.77
   },
   {
    "date": "2026-02-06",
@@ -4587,7 +4587,7 @@
    "fee": -12.2,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 20.987
+   "kurz_hist": 20.9653
   },
   {
    "date": "2026-02-09",
@@ -4810,8 +4810,8 @@
    "mult": 1,
    "fee": -92.632125,
    "rpl": -305.36367,
-   "rplczk": 704,
-   "kurz_hist": 2.6284
+   "rplczk": 568,
+   "kurz_hist": 2.6257
   },
   {
    "date": "2026-02-24",
@@ -4937,7 +4937,7 @@
    "fee": 0.0,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 20.7358
+   "kurz_hist": 20.7272
   },
   {
    "date": "2026-03-04",
@@ -5160,8 +5160,8 @@
    "mult": 1,
    "fee": -2.078,
    "rpl": 661.922,
-   "rplczk": 16674,
-   "kurz_hist": 20.851
+   "rplczk": 16459,
+   "kurz_hist": 20.814
   },
   {
    "date": "2026-03-18",
@@ -5343,7 +5343,7 @@
    "fee": -1.0,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 20.8956
+   "kurz_hist": 20.8609
   },
   {
    "date": "2026-03-30",
@@ -5357,7 +5357,7 @@
    "fee": -2.0,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 20.8956
+   "kurz_hist": 20.8609
   },
   {
    "date": "2026-03-30",
@@ -5665,7 +5665,7 @@
    "fee": -1.0,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 20.5732
+   "kurz_hist": 20.552
   },
   {
    "date": "2026-04-20",
@@ -5692,8 +5692,8 @@
    "mult": 1,
    "fee": -2.1991692,
    "rpl": 777.800831,
-   "rplczk": 16078,
-   "kurz_hist": 20.851
+   "rplczk": 16037,
+   "kurz_hist": 20.814
   },
   {
    "date": "2026-04-21",
@@ -5903,7 +5903,7 @@
    "fee": -7.5045,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 20.851
+   "kurz_hist": 20.814
   },
   {
    "date": "2026-05-05",
@@ -6057,7 +6057,7 @@
    "fee": -10.2,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 21.2304
+   "kurz_hist": 21.2302
   },
   {
    "date": "2026-05-15",
@@ -6169,7 +6169,7 @@
    "fee": -12.43,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 21.1553
+   "kurz_hist": 21.155
   },
   {
    "date": "2026-06-26",
@@ -6182,8 +6182,8 @@
    "mult": 1,
    "fee": -3.0,
    "rpl": 146.25,
-   "rplczk": 3645,
-   "kurz_hist": 24.215
+   "rplczk": 3633,
+   "kurz_hist": 24.19
   },
   {
    "date": "2026-07-10",
@@ -6264,10 +6264,10 @@
    "qty": -100.0,
    "price": 37.89,
    "mult": 1,
-   "fee": 0,
-   "rpl": -262.0,
-   "rplczk": -6000,
-   "kurz_hist": 24.215
+   "fee": -3.0,
+   "rpl": -265.0,
+   "rplczk": -5923,
+   "kurz_hist": 24.19
   },
   {
    "date": "2026-07-15",
@@ -6278,10 +6278,10 @@
    "qty": 30.0,
    "price": 113.48,
    "mult": 1,
-   "fee": 0,
+   "fee": -3.0,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 24.215
+   "kurz_hist": 24.19
   },
   {
    "date": "2026-07-15",
@@ -6294,8 +6294,8 @@
    "mult": 1,
    "fee": 0,
    "rpl": 724.0,
-   "rplczk": 33812,
-   "kurz_hist": 24.5306
+   "rplczk": 33570,
+   "kurz_hist": 24.4871
   },
   {
    "date": "2026-07-15",
@@ -6768,10 +6768,10 @@
    "qty": -35.0,
    "price": 107.9,
    "mult": 1,
-   "fee": 0,
-   "rpl": 1090.77,
-   "rplczk": 22701,
-   "kurz_hist": 20.851
+   "fee": -1.08,
+   "rpl": 1086.88,
+   "rplczk": 22660,
+   "kurz_hist": 20.814
   },
   {
    "date": "2026-08-26",
@@ -6782,10 +6782,10 @@
    "qty": -100.0,
    "price": 61.91068,
    "mult": 1,
-   "fee": 0,
-   "rpl": 222.14,
-   "rplczk": 9234,
-   "kurz_hist": 20.851
+   "fee": -1.15,
+   "rpl": 220.49,
+   "rplczk": 9005,
+   "kurz_hist": 20.814
   },
   {
    "date": "2026-08-26",
@@ -6796,10 +6796,10 @@
    "qty": 9.0,
    "price": 575.9,
    "mult": 1,
-   "fee": 0,
+   "fee": -1.0,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 20.851
+   "kurz_hist": 20.814
   },
   {
    "date": "2026-08-26",
@@ -6810,10 +6810,10 @@
    "qty": 9.0,
    "price": 353.3,
    "mult": 1,
-   "fee": 0,
+   "fee": -1.0,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 20.851
+   "kurz_hist": 20.814
   },
   {
    "date": "2026-09-03",
@@ -6827,7 +6827,7 @@
    "fee": -1.0,
    "rpl": 0.0,
    "rplczk": 0,
-   "kurz_hist": 20.8403
+   "kurz_hist": 20.8097
   }
  ],
  "others": [
@@ -6856,7 +6856,7 @@
    "desc": "",
    "ccy": "USD",
    "amt": 14.9,
-   "czk": 311
+   "czk": 310
   },
   {
    "date": "2022-04-22",
@@ -6919,7 +6919,7 @@
    "desc": "",
    "ccy": "USD",
    "amt": -1.45,
-   "czk": -36
+   "czk": -35
   },
   {
    "date": "2022-08-22",
@@ -7054,7 +7054,7 @@
    "desc": "",
    "ccy": "USD",
    "amt": -1.32,
-   "czk": -28
+   "czk": -27
   },
   {
    "date": "2022-12-28",
@@ -7477,7 +7477,7 @@
    "desc": "AT&T - US00206R1023",
    "ccy": "USD",
    "amt": 41.63,
-   "czk": 868
+   "czk": 866
   },
   {
    "date": "2023-11-01",
@@ -7486,7 +7486,7 @@
    "desc": "CVS - US1266501006 - 15,0083%",
    "ccy": "USD",
    "amt": -4.54,
-   "czk": -101
+   "czk": -100
   },
   {
    "date": "2023-11-01",
@@ -7495,7 +7495,7 @@
    "desc": "CVS - US1266501006",
    "ccy": "USD",
    "amt": 30.25,
-   "czk": 670
+   "czk": 669
   },
   {
    "date": "2023-11-03",
@@ -7675,7 +7675,7 @@
    "desc": "AT&T - US00206R1023",
    "ccy": "USD",
    "amt": 41.63,
-   "czk": 868
+   "czk": 866
   },
   {
    "date": "2024-02-01",
@@ -7693,7 +7693,7 @@
    "desc": "CVS - US1266501006",
    "ccy": "USD",
    "amt": 33.25,
-   "czk": 693
+   "czk": 692
   },
   {
    "date": "2024-02-05",
@@ -7855,7 +7855,7 @@
    "desc": "AT&T - US00206R1023",
    "ccy": "USD",
    "amt": 41.63,
-   "czk": 868
+   "czk": 866
   },
   {
    "date": "2024-05-01",
@@ -7873,7 +7873,7 @@
    "desc": "CVS - US1266501006",
    "ccy": "USD",
    "amt": 43.23,
-   "czk": 1060
+   "czk": 1058
   },
   {
    "date": "2024-05-02",
@@ -7963,7 +7963,7 @@
    "desc": "",
    "ccy": "USD",
    "amt": -3.65,
-   "czk": -90
+   "czk": -89
   },
   {
    "date": "2024-05-28",
@@ -7990,7 +7990,7 @@
    "desc": "VOLKSWAGEN - DE0007664039 - 26,375%",
    "ccy": "EUR",
    "amt": -43.01,
-   "czk": -1041
+   "czk": -1040
   },
   {
    "date": "2024-06-04",
@@ -7999,7 +7999,7 @@
    "desc": "VOLKSWAGEN - DE0007664039",
    "ccy": "EUR",
    "amt": 163.08,
-   "czk": 3949
+   "czk": 3945
   },
   {
    "date": "2024-06-04",
@@ -8035,7 +8035,7 @@
    "desc": "",
    "ccy": "USD",
    "amt": -3.9,
-   "czk": -96
+   "czk": -95
   },
   {
    "date": "2024-07-03",
@@ -8053,7 +8053,7 @@
    "desc": "Alibaba Grp Sp ADS - US01609W1027",
    "ccy": "USD",
    "amt": 42.9,
-   "czk": 1052
+   "czk": 1050
   },
   {
    "date": "2024-07-12",
@@ -8071,7 +8071,7 @@
    "desc": "Alibaba Grp Sp ADS - US01609W1027",
    "ccy": "USD",
    "amt": 65.0,
-   "czk": 1594
+   "czk": 1591
   },
   {
    "date": "2024-07-22",
@@ -8152,7 +8152,7 @@
    "desc": "AT&T - US00206R1023",
    "ccy": "USD",
    "amt": 41.63,
-   "czk": 1021
+   "czk": 1019
   },
   {
    "date": "2024-08-01",
@@ -8170,7 +8170,7 @@
    "desc": "CVS - US1266501006",
    "ccy": "USD",
    "amt": 43.23,
-   "czk": 1060
+   "czk": 1058
   },
   {
    "date": "2024-08-02",
@@ -8206,7 +8206,7 @@
    "desc": "BYDDY(US05606L1008) Cash Dividend USD 0.870454 per Share (Ordinary Div",
    "ccy": "USD",
    "amt": 34.82,
-   "czk": 726
+   "czk": 725
   },
   {
    "date": "2024-08-13",
@@ -8467,7 +8467,7 @@
    "desc": "CVS - US1266501006",
    "ccy": "USD",
    "amt": 43.23,
-   "czk": 901
+   "czk": 900
   },
   {
    "date": "2024-11-04",
@@ -8647,7 +8647,7 @@
    "desc": "HAL(US4062161017) Cash Dividend USD 0.17 per Share (Ordinary Dividend)",
    "ccy": "USD",
    "amt": 23.8,
-   "czk": 496
+   "czk": 495
   },
   {
    "date": "2024-12-26",
@@ -8728,7 +8728,7 @@
    "desc": "CVS(US1266501006) Cash Dividend USD 0.665 per Share (Ordinary Dividend",
    "ccy": "USD",
    "amt": 49.88,
-   "czk": 1040
+   "czk": 1038
   },
   {
    "date": "2025-02-03",
@@ -8818,7 +8818,7 @@
    "desc": "",
    "ccy": "USD",
    "amt": -3.19,
-   "czk": -67
+   "czk": -66
   },
   {
    "date": "2025-03-04",
@@ -8845,7 +8845,7 @@
    "desc": "PFE(US7170811035) Cash Dividend USD 0.43 per Share (Ordinary Dividend)",
    "ccy": "USD",
    "amt": 64.5,
-   "czk": 1405
+   "czk": 1403
   },
   {
    "date": "2025-03-07",
@@ -8872,7 +8872,7 @@
    "desc": "RYAAY(US7835132033) Cash Dividend USD 0.463438 per Share (Ordinary Div",
    "ccy": "USD",
    "amt": 40.56,
-   "czk": 884
+   "czk": 882
   },
   {
    "date": "2025-03-10",
@@ -8881,7 +8881,7 @@
    "desc": "RYAAY(US7835132033) Cash Dividend USD 0.463438 per Share - IE Tax",
    "ccy": "USD",
    "amt": -10.08,
-   "czk": -220
+   "czk": -219
   },
   {
    "date": "2025-03-13",
@@ -8944,7 +8944,7 @@
    "desc": "",
    "ccy": "USD",
    "amt": -3.05,
-   "czk": -64
+   "czk": -63
   },
   {
    "date": "2025-03-26",
@@ -9025,7 +9025,7 @@
    "desc": "CVS(US1266501006) Cash Dividend USD 0.665 per Share (Ordinary Dividend",
    "ccy": "USD",
    "amt": 49.88,
-   "czk": 1087
+   "czk": 1085
   },
   {
    "date": "2025-05-01",
@@ -9097,7 +9097,7 @@
    "desc": "EVO(SE0012673267) Cash Dividend EUR 2.80 per Share (Ordinary Dividend)",
    "ccy": "EUR",
    "amt": 196.0,
-   "czk": 4746
+   "czk": 4741
   },
   {
    "date": "2025-05-20",
@@ -9106,7 +9106,7 @@
    "desc": "EVO(SE0012673267) Cash Dividend EUR 2.80 per Share - SE Tax",
    "ccy": "EUR",
    "amt": -58.8,
-   "czk": -1424
+   "czk": -1422
   },
   {
    "date": "2025-05-21",
@@ -9115,7 +9115,7 @@
    "desc": "VOLKSWAGEN - DE0007664039 - 26,375%",
    "ccy": "EUR",
    "amt": -30.19,
-   "czk": -731
+   "czk": -730
   },
   {
    "date": "2025-05-21",
@@ -9124,7 +9124,7 @@
    "desc": "VOLKSWAGEN - DE0007664039",
    "ccy": "EUR",
    "amt": 114.48,
-   "czk": 2772
+   "czk": 2769
   },
   {
    "date": "2025-05-22",
@@ -9151,7 +9151,7 @@
    "desc": "P911(588392767) Cash Dividend EUR 1.49316331 per Share (Return of Capi",
    "ccy": "EUR",
    "amt": 149.32,
-   "czk": 3616
+   "czk": 3612
   },
   {
    "date": "2025-05-26",
@@ -9160,7 +9160,7 @@
    "desc": "P911(DE000PAG9113) Cash Dividend EUR 0.81683669 per Share (Ordinary Di",
    "ccy": "EUR",
    "amt": 81.68,
-   "czk": 1978
+   "czk": 1976
   },
   {
    "date": "2025-05-26",
@@ -9169,7 +9169,7 @@
    "desc": "P911(DE000PAG9113) Cash Dividend EUR 0.81683669 per Share - DE Tax",
    "ccy": "EUR",
    "amt": -21.54,
-   "czk": -522
+   "czk": -521
   },
   {
    "date": "2025-06-03",
@@ -9340,7 +9340,7 @@
    "desc": "BABA(US01609W1027) Cash Dividend USD 1.05 per Share (Ordinary Dividend",
    "ccy": "USD",
    "amt": 42.0,
-   "czk": 915
+   "czk": 914
   },
   {
    "date": "2025-07-10",
@@ -9349,7 +9349,7 @@
    "desc": "BABA(US01609W1027) Cash Dividend USD 0.95 per Share (Bonus Dividend)",
    "ccy": "USD",
    "amt": 38.0,
-   "czk": 828
+   "czk": 827
   },
   {
    "date": "2025-07-23",
@@ -9376,7 +9376,7 @@
    "desc": "CVS(US1266501006) Cash Dividend USD 0.665 per Share (Ordinary Dividend",
    "ccy": "USD",
    "amt": 49.88,
-   "czk": 1040
+   "czk": 1038
   },
   {
    "date": "2025-08-01",
@@ -9502,7 +9502,7 @@
    "desc": "",
    "ccy": "EUR",
    "amt": -0.93,
-   "czk": -23
+   "czk": -22
   },
   {
    "date": "2025-09-19",
@@ -9520,7 +9520,7 @@
    "desc": "HAL(US4062161017) Cash Dividend USD 0.17 per Share (Ordinary Dividend)",
    "ccy": "USD",
    "amt": 34.0,
-   "czk": 709
+   "czk": 708
   },
   {
    "date": "2025-09-24",
@@ -9583,7 +9583,7 @@
    "desc": "",
    "ccy": "USD",
    "amt": -3.43,
-   "czk": -72
+   "czk": -71
   },
   {
    "date": "2025-11-04",
@@ -9646,7 +9646,7 @@
    "desc": "ASML(USN070592100) Cash Dividend USD 1.864032 per Share (Ordinary Divi",
    "ccy": "USD",
    "amt": 11.19,
-   "czk": 330
+   "czk": 329
   },
   {
    "date": "2025-11-06",
@@ -9655,7 +9655,7 @@
    "desc": "ASML(USN070592100) Cash Dividend USD 1.864032 per Share - NL Tax",
    "ccy": "USD",
    "amt": -1.68,
-   "czk": -50
+   "czk": -49
   },
   {
    "date": "2025-11-20",
@@ -9754,7 +9754,7 @@
    "desc": "MSFT(US5949181045) Cash Dividend USD 0.91 per Share (Ordinary Dividend",
    "ccy": "USD",
    "amt": 9.1,
-   "czk": 190
+   "czk": 189
   },
   {
    "date": "2025-12-11",
@@ -9979,7 +9979,7 @@
    "desc": "MSFT(US5949181045) Cash Dividend USD 0.91 per Share (Ordinary Dividend",
    "ccy": "USD",
    "amt": 9.1,
-   "czk": 190
+   "czk": 189
   },
   {
    "date": "2026-03-12",
@@ -10033,7 +10033,7 @@
    "desc": "PYPL(US70450Y1038) Cash Dividend USD 0.14 per Share (Ordinary Dividend",
    "ccy": "USD",
    "amt": 38.5,
-   "czk": 803
+   "czk": 801
   },
   {
    "date": "2026-03-25",
@@ -10042,7 +10042,7 @@
    "desc": "PYPL(US70450Y1038) Cash Dividend USD 0.14 per Share - US Tax",
    "ccy": "USD",
    "amt": -5.78,
-   "czk": -121
+   "czk": -120
   },
   {
    "date": "2026-03-25",
@@ -10060,7 +10060,7 @@
    "desc": "PayPal Holdings-WI - US70450Y1038",
    "ccy": "USD",
    "amt": 21.0,
-   "czk": 438
+   "czk": 437
   },
   {
    "date": "2026-03-31",
@@ -10069,7 +10069,7 @@
    "desc": "NOV(DK0062498333) Cash Dividend DKK 7.95 per Share (Ordinary Dividend)",
    "ccy": "DKK",
    "amt": 1033.5,
-   "czk": 3349
+   "czk": 3344
   },
   {
    "date": "2026-03-31",
@@ -10078,7 +10078,7 @@
    "desc": "NOV(DK0062498333) Cash Dividend DKK 7.95 per Share - DK Tax",
    "ccy": "DKK",
    "amt": -279.05,
-   "czk": -904
+   "czk": -903
   },
   {
    "date": "2026-04-02",
@@ -10114,7 +10114,7 @@
    "desc": "",
    "ccy": "USD",
    "amt": -4.96,
-   "czk": -122
+   "czk": -121
   },
   {
    "date": "2026-04-22",
@@ -10132,7 +10132,7 @@
    "desc": "KSPI(US48581R2058) Cash Dividend USD 1.791359 per Share (Ordinary Divi",
    "ccy": "USD",
    "amt": 134.35,
-   "czk": 2801
+   "czk": 2796
   },
   {
    "date": "2026-04-29",
@@ -10150,7 +10150,7 @@
    "desc": "JD(US47215P1066) Cash Dividend USD 1.00 per Share (Ordinary Dividend)",
    "ccy": "USD",
    "amt": 200.0,
-   "czk": 4170
+   "czk": 4163
   },
   {
    "date": "2026-05-05",
@@ -10240,7 +10240,7 @@
    "desc": "MSFT(US5949181045) Cash Dividend USD 0.91 per Share (Ordinary Dividend",
    "ccy": "USD",
    "amt": 13.65,
-   "czk": 285
+   "czk": 284
   },
   {
    "date": "2026-06-11",
@@ -10258,7 +10258,7 @@
    "desc": "KSPI(US48581R2058) Cash Dividend USD 1.74266 per Share (Ordinary Divid",
    "ccy": "USD",
    "amt": 130.7,
-   "czk": 2725
+   "czk": 2720
   },
   {
    "date": "2026-06-19",
@@ -10285,7 +10285,7 @@
    "desc": "VOW3(DE0007664039) Cash Dividend EUR 5.26 per Share (Ordinary Dividend",
    "ccy": "EUR",
    "amt": 189.36,
-   "czk": 4585
+   "czk": 4581
   },
   {
    "date": "2026-06-23",
@@ -10294,7 +10294,7 @@
    "desc": "VOW3(DE0007664039) Cash Dividend EUR 5.26 per Share - DE Tax",
    "ccy": "EUR",
    "amt": -49.94,
-   "czk": -1209
+   "czk": -1208
   },
   {
    "date": "2026-06-23",
@@ -10303,7 +10303,7 @@
    "desc": "VOLKSWAGEN - DE0007664039 - 26,375%",
    "ccy": "EUR",
    "amt": -24.97,
-   "czk": -615
+   "czk": -614
   },
   {
    "date": "2026-06-23",
@@ -10312,7 +10312,7 @@
    "desc": "VOLKSWAGEN - DE0007664039",
    "ccy": "EUR",
    "amt": 94.68,
-   "czk": 2332
+   "czk": 2329
   },
   {
    "date": "2026-06-25",
@@ -10321,7 +10321,7 @@
    "desc": "PYPL(US70450Y1038) Cash Dividend USD 0.14 per Share (Ordinary Dividend",
    "ccy": "USD",
    "amt": 38.5,
-   "czk": 803
+   "czk": 801
   },
   {
    "date": "2026-06-25",
@@ -10330,7 +10330,7 @@
    "desc": "PYPL(US70450Y1038) Cash Dividend USD 0.14 per Share - US Tax",
    "ccy": "USD",
    "amt": -5.78,
-   "czk": -121
+   "czk": -120
   },
   {
    "date": "2026-06-25",
@@ -10348,7 +10348,7 @@
    "desc": "PayPal Holdings-WI - US70450Y1038",
    "ccy": "USD",
    "amt": 21.0,
-   "czk": 438
+   "czk": 437
   },
   {
    "date": "2026-06-26",
@@ -10357,7 +10357,7 @@
    "desc": "P911(DE000PAG9113) Cash Dividend EUR 1.01 per Share (Ordinary Dividend",
    "ccy": "EUR",
    "amt": 101.0,
-   "czk": 2446
+   "czk": 2443
   },
   {
    "date": "2026-06-26",
@@ -10366,16 +10366,142 @@
    "desc": "P911(DE000PAG9113) Cash Dividend EUR 1.01 per Share - DE Tax",
    "ccy": "EUR",
    "amt": -26.64,
-   "czk": -645
+   "czk": -644
+  },
+  {
+   "date": "2026-07-13",
+   "broker": "IBKR",
+   "typ": "Dividenda",
+   "desc": "BABA(01609W102) Cash Dividend USD 1.05 per Share (Ordinary Dividend)",
+   "ccy": "USD",
+   "amt": 84.0,
+   "czk": 1748
+  },
+  {
+   "date": "2026-07-13",
+   "broker": "IBKR",
+   "typ": "Poplatek",
+   "desc": "BABA(01609W102) Cash Dividend USD 1.05 per Share - FEE",
+   "ccy": "USD",
+   "amt": -1.6,
+   "czk": -33
+  },
+  {
+   "date": "2026-07-16",
+   "broker": "Patria",
+   "typ": "Poplatek",
+   "desc": "Poplatek trhu NU Rg-A",
+   "ccy": "USD",
+   "amt": -0.12,
+   "czk": -3
+  },
+  {
+   "date": "2026-07-17",
+   "broker": "Patria",
+   "typ": "Poplatek (evidence CP)",
+   "desc": "Poplatek - evidence CP",
+   "ccy": "USD",
+   "amt": -6.33,
+   "czk": -155
+  },
+  {
+   "date": "2026-07-17",
+   "broker": "Patria",
+   "typ": "Poplatek (evidence CP)",
+   "desc": "Poplatek - evidence CP",
+   "ccy": "EUR",
+   "amt": -0.18,
+   "czk": -4
+  },
+  {
+   "date": "2026-08-05",
+   "broker": "IBKR",
+   "typ": "Dividenda",
+   "desc": "ASML(USN070592100) Cash Dividend USD 2.137748 per Share (Ordinary Dividend)",
+   "ccy": "USD",
+   "amt": 12.82,
+   "czk": 267
+  },
+  {
+   "date": "2026-08-05",
+   "broker": "IBKR",
+   "typ": "Srážková daň",
+   "desc": "ASML(USN070592100) Cash Dividend USD 2.137748 per Share - NL Tax",
+   "ccy": "USD",
+   "amt": -1.92,
+   "czk": -40
+  },
+  {
+   "date": "2026-08-18",
+   "broker": "IBKR",
+   "typ": "Dividenda",
+   "desc": "NOV(DK0062498333) Cash Dividend DKK 3.75 per Share (Ordinary Dividend)",
+   "ccy": "DKK",
+   "amt": 487.5,
+   "czk": 1578
+  },
+  {
+   "date": "2026-08-18",
+   "broker": "IBKR",
+   "typ": "Srážková daň",
+   "desc": "NOV(DK0062498333) Cash Dividend DKK 3.75 per Share - DK Tax 27%",
+   "ccy": "DKK",
+   "amt": -131.63,
+   "czk": -426
+  },
+  {
+   "date": "2026-08-19",
+   "broker": "Patria",
+   "typ": "Poplatek (evidence CP)",
+   "desc": "Poplatek - evidence CP",
+   "ccy": "USD",
+   "amt": -6.47,
+   "czk": -158
+  },
+  {
+   "date": "2026-08-19",
+   "broker": "Patria",
+   "typ": "Poplatek (evidence CP)",
+   "desc": "Poplatek - evidence CP",
+   "ccy": "EUR",
+   "amt": -0.16,
+   "czk": -4
+  },
+  {
+   "date": "2026-08-20",
+   "broker": "IBKR",
+   "typ": "Dividenda",
+   "desc": "BYDDY(05606L100) Cash Dividend USD 0.052349 per Share (Ordinary Dividend)",
+   "ccy": "USD",
+   "amt": 26.17,
+   "czk": 545
+  },
+  {
+   "date": "2026-08-20",
+   "broker": "IBKR",
+   "typ": "Srážková daň",
+   "desc": "BYDDY(05606L100) Cash Dividend USD 0.052349 per Share - CN Tax 10%",
+   "ccy": "USD",
+   "amt": -2.62,
+   "czk": -55
+  },
+  {
+   "date": "2026-08-20",
+   "broker": "IBKR",
+   "typ": "Poplatek",
+   "desc": "BYDDY(05606L100) ADR Fee",
+   "ccy": "USD",
+   "amt": -5.23,
+   "czk": -109
   },
   {
    "date": "2026-09-03",
    "broker": "IBKR",
-   "typ": "Dividenda",
-   "desc": "dividenda — ověřit zdroj a částku z výpisu (NEPOTVRZENO)",
-   "ccy": "DKK",
-   "amt": 355.55,
-   "czk": 1152
+   "typ": "Poplatek",
+   "desc": "4GLD (Xetra-Gold) maintenance fee 0.03 EUR/den, 17.7.-3.9. (49 dní)",
+   "ccy": "EUR",
+   "amt": -1.47,
+   "czk": -36
   }
  ],
  "flows": [
