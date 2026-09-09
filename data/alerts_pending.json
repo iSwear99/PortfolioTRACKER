@@ -1,1 +1,51 @@
-[]
+[
+ {
+  "ticker": "BABA",
+  "chg_pct": -2.88,
+  "px_prev": 112.65,
+  "px_now": 109.41,
+  "ts": "2026-09-09T23:05"
+ },
+ {
+  "ticker": "BYDDY",
+  "chg_pct": -2.72,
+  "px_prev": 10.65,
+  "px_now": 10.36,
+  "ts": "2026-09-09T23:05"
+ },
+ {
+  "ticker": "GRAB",
+  "chg_pct": -6.16,
+  "px_prev": 3.245,
+  "px_now": 3.045,
+  "ts": "2026-09-09T23:05"
+ },
+ {
+  "ticker": "KSPI",
+  "chg_pct": -6.76,
+  "px_prev": 107.21,
+  "px_now": 99.96,
+  "ts": "2026-09-09T23:05"
+ },
+ {
+  "ticker": "META",
+  "chg_pct": 6.54,
+  "px_prev": 613.31,
+  "px_now": 653.415,
+  "ts": "2026-09-09T23:05"
+ },
+ {
+  "ticker": "SOFI",
+  "chg_pct": -3.69,
+  "px_prev": 18.01,
+  "px_now": 17.345,
+  "ts": "2026-09-09T23:05"
+ },
+ {
+  "ticker": "UBER",
+  "chg_pct": -2.8,
+  "px_prev": 73.145,
+  "px_now": 71.1,
+  "ts": "2026-09-09T23:05"
+ }
+]
