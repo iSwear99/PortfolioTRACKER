@@ -206,5 +206,45 @@
   "text": "Akcie oslabila spolu s evropskými aeroliniemi poté, co ropa Brent vyšplhala k 98–99 USD za barel, nejvýše od 23. července, když húsijské drony a rakety 8. září zasáhly saúdská energetická zařízení včetně rafinerie Jazan s kapacitou 400 tisíc barelů denně, což zvyšuje palivové náklady Wizz Air, jenž kvůli nim už ve čtvrtletí do června vykázal ztrátu 198 mil. EUR.",
   "source": "NPR",
   "source_time": "2026-09-08"
+ },
+ {
+  "ticker": "ASML",
+  "date": "2026-09-14",
+  "chg_pct": -5.36,
+  "text": "Akcie prudce klesla poté, co šéfové OpenAI a Anthropicu o víkendu vyzvali k dočasnému zpomalení vývoje pokročilých modelů AI, což srazilo celý sektor výrobců čipových zařízení, a Morgan Stanley zároveň snížila cílovou cenu z 1 930 na 1 700 EUR při ponechání doporučení Overweight.",
+  "source": "Investing.com",
+  "source_time": "2026-09-14"
+ },
+ {
+  "ticker": "AVGO",
+  "date": "2026-09-14",
+  "chg_pct": -3.86,
+  "text": "Broadcom oslabil spolu s celým polovodičovým sektorem po víkendových výzvách šéfů AI laboratoří ke zpomalení vývoje pokročilé umělé inteligence, k čemuž se přidaly výhrady k ocenění kolem 30násobku očekávaných zisků a pokračující prověřování licenční praxe VMware ze strany Evropské komise.",
+  "source": "Yahoo Finance",
+  "source_time": "2026-09-14"
+ },
+ {
+  "ticker": "NICE",
+  "date": "2026-09-14",
+  "chg_pct": 5.32,
+  "text": "Akcie posílila v rámci rotace z polovodičů do podnikového softwaru, kterou spustila víkendová esej šéfa Anthropicu Daria Amodeie o zpomalení vývoje AI: pomalejší nástup nových modelů snižuje riziko, že AI naruší byznys dodavatelů softwaru, a Wall Street ten den obchodovala dvojici long software / short čipy.",
+  "source": "Investing.com",
+  "source_time": "2026-09-14"
+ },
+ {
+  "ticker": "WIX",
+  "date": "2026-09-14",
+  "chg_pct": 6.53,
+  "text": "Akcie vyskočila v rámci rotace z polovodičů do softwarových titulů po víkendové výzvě šéfů AI laboratoří ke zpomalení vývoje pokročilé umělé inteligence, která nejvíce pomohla firmám vnímaným jako potenciální oběti disrupce generativní AI.",
+  "source": "Investing.com",
+  "source_time": "2026-09-14"
+ },
+ {
+  "ticker": "WIZZ",
+  "date": "2026-09-14",
+  "chg_pct": -6.35,
+  "text": "Akcie nízkonákladové aerolinky klesla poté, co Brent vyskočil nad 108 USD za barel na čtyřměsíční maximum kvůli útoku na obchodní plavidlo v Hormuzském průlivu a odstavení saúdského ropovodu East-West po zásahu drony, přičemž Wizz Air patří mezi evropskými dopravci k nejméně zajištěným proti ceně paliva.",
+  "source": "Euronews",
+  "source_time": "2026-09-14"
  }
 ]
