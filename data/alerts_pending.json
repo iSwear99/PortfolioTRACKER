@@ -1,9 +1,16 @@
 [
  {
-  "ticker": "WIZZ",
-  "chg_pct": -3.58,
-  "px_prev": 9.78,
-  "px_now": 9.43,
-  "ts": "2026-09-15T14:49"
+  "ticker": "GRAB",
+  "chg_pct": -3.49,
+  "px_prev": 3.01,
+  "px_now": 2.905,
+  "ts": "2026-09-15T23:33"
+ },
+ {
+  "ticker": "SOFI",
+  "chg_pct": -3.12,
+  "px_prev": 17.645,
+  "px_now": 17.095,
+  "ts": "2026-09-15T23:33"
  }
 ]
