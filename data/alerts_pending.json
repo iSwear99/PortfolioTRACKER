@@ -1,16 +1,51 @@
 [
  {
-  "ticker": "EVO",
-  "chg_pct": -2.53,
-  "px_prev": 900.0,
-  "px_now": 877.2,
-  "ts": "2026-09-18T14:21"
+  "ticker": "ASML",
+  "chg_pct": 3.14,
+  "px_prev": 1628.74,
+  "px_now": 1679.92,
+  "ts": "2026-09-18T23:03"
  },
  {
-  "ticker": "WIZZ",
-  "chg_pct": 2.79,
-  "px_prev": 9.85,
-  "px_now": 10.125,
-  "ts": "2026-09-18T14:21"
+  "ticker": "AVGO",
+  "chg_pct": 3.0,
+  "px_prev": 347.28,
+  "px_now": 357.69,
+  "ts": "2026-09-18T23:03"
+ },
+ {
+  "ticker": "BABA",
+  "chg_pct": 4.38,
+  "px_prev": 108.51,
+  "px_now": 113.26,
+  "ts": "2026-09-18T23:03"
+ },
+ {
+  "ticker": "DIDIY",
+  "chg_pct": 3.6,
+  "px_prev": 3.61,
+  "px_now": 3.74,
+  "ts": "2026-09-18T23:03"
+ },
+ {
+  "ticker": "EEFT",
+  "chg_pct": -2.67,
+  "px_prev": 67.81,
+  "px_now": 66.0,
+  "ts": "2026-09-18T23:03"
+ },
+ {
+  "ticker": "META",
+  "chg_pct": -2.52,
+  "px_prev": 682.7,
+  "px_now": 665.52,
+  "ts": "2026-09-18T23:03"
+ },
+ {
+  "ticker": "VOW3",
+  "chg_pct": -5.58,
+  "px_prev": 81.04,
+  "px_now": 76.52,
+  "ts": "2026-09-18T23:03"
  }
 ]
