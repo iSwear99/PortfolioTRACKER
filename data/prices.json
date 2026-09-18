@@ -26,7 +26,7 @@
   "exchange": "XETR"
  },
  "BTC": {
-  "px": 81110.01,
+  "px": 81097.99,
   "q": "BTC/USD"
  },
  "BYDDY": {
@@ -39,7 +39,7 @@
   "exchange": "LSE"
  },
  "DIDIY": {
-  "px": 3.74,
+  "px": 3.68,
   "q": "DIDIY"
  },
  "EEFT": {
@@ -60,7 +60,7 @@
   "q": "JD"
  },
  "KSPI": {
-  "px": 97.5,
+  "px": 97.53,
   "q": "KSPI"
  },
  "KWEB": {
