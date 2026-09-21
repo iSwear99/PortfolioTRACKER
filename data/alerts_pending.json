@@ -1,30 +1,30 @@
 [
  {
-  "ticker": "BTC",
-  "chg_pct": 5.21,
-  "px_prev": 81202.45,
-  "px_now": 85435.99,
-  "ts": "2026-09-21T16:24"
+  "ticker": "GRAB",
+  "chg_pct": 3.01,
+  "px_prev": 2.82,
+  "px_now": 2.905,
+  "ts": "2026-09-22T00:07"
  },
  {
   "ticker": "META",
-  "chg_pct": 7.03,
-  "px_prev": 665.52,
-  "px_now": 712.3,
-  "ts": "2026-09-21T16:24"
+  "chg_pct": 4.05,
+  "px_prev": 712.3,
+  "px_now": 741.13,
+  "ts": "2026-09-22T00:07"
  },
  {
-  "ticker": "NOV",
-  "chg_pct": -7.51,
-  "px_prev": 37.57,
-  "px_now": 34.75,
-  "ts": "2026-09-21T16:24"
+  "ticker": "NICE",
+  "chg_pct": 9.68,
+  "px_prev": 104.405,
+  "px_now": 114.51,
+  "ts": "2026-09-22T00:07"
  },
  {
-  "ticker": "P911",
-  "chg_pct": -2.72,
-  "px_prev": 45.99,
-  "px_now": 44.74,
-  "ts": "2026-09-21T16:24"
+  "ticker": "WIX",
+  "chg_pct": 4.73,
+  "px_prev": 79.68,
+  "px_now": 83.45,
+  "ts": "2026-09-22T00:07"
  }
 ]
