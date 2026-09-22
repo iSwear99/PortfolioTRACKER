@@ -26,11 +26,11 @@
   "exchange": "XETR"
  },
  "BTC": {
-  "px": 86628.31,
+  "px": 86354.61,
   "q": "BTC/USD"
  },
  "BYDDY": {
-  "px": 10.35,
+  "px": 10.36,
   "q": "BYDDY"
  },
  "CSPX": {
@@ -39,11 +39,11 @@
   "exchange": "LSE"
  },
  "DIDIY": {
-  "px": 3.68,
+  "px": 3.67,
   "q": "DIDIY"
  },
  "EEFT": {
-  "px": 66.1,
+  "px": 66.07,
   "q": "EEFT"
  },
  "EVO": {
