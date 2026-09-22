@@ -1,16 +1,30 @@
 [
  {
-  "ticker": "P911",
-  "chg_pct": 2.75,
-  "px_prev": 44.78,
-  "px_now": 46.01,
-  "ts": "2026-09-22T14:45"
+  "ticker": "GRAB",
+  "chg_pct": 8.95,
+  "px_prev": 2.905,
+  "px_now": 3.165,
+  "ts": "2026-09-22T23:31"
  },
  {
-  "ticker": "WIZZ",
-  "chg_pct": 4.14,
-  "px_prev": 10.14,
-  "px_now": 10.56,
-  "ts": "2026-09-22T14:45"
+  "ticker": "NICE",
+  "chg_pct": 3.37,
+  "px_prev": 114.51,
+  "px_now": 118.37,
+  "ts": "2026-09-22T23:31"
+ },
+ {
+  "ticker": "TTD",
+  "chg_pct": -5.12,
+  "px_prev": 13.88,
+  "px_now": 13.17,
+  "ts": "2026-09-22T23:31"
+ },
+ {
+  "ticker": "WIX",
+  "chg_pct": -4.03,
+  "px_prev": 83.45,
+  "px_now": 80.09,
+  "ts": "2026-09-22T23:31"
  }
 ]
