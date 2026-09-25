@@ -1,126 +1,126 @@
 {
  "4GLD": {
-  "px": 121.26,
+  "px": 120.86,
   "q": "4GLD",
   "exchange": "XETR"
  },
  "AMZN": {
-  "px": 249.35,
+  "px": 249.74,
   "q": "AMZN"
  },
  "ASML": {
-  "px": 1722.52,
+  "px": 1742.5,
   "q": "ASML"
  },
  "AVGO": {
-  "px": 350.27,
+  "px": 352.82,
   "q": "AVGO"
  },
  "BABA": {
-  "px": 110.62,
+  "px": 109.76,
   "q": "BABA"
  },
  "BOSS": {
-  "px": 38.3,
+  "px": 38.14,
   "q": "BOSS",
   "exchange": "XETR"
  },
  "BTC": {
-  "px": 84412.73,
+  "px": 83810.01,
   "q": "BTC/USD"
  },
  "BYDDY": {
-  "px": 10.08,
+  "px": 10.0,
   "q": "BYDDY"
  },
  "CSPX": {
-  "px": 833.58,
+  "px": 832.84,
   "q": "CSPX",
   "exchange": "LSE"
  },
  "DIDIY": {
-  "px": 3.62,
+  "px": 3.59,
   "q": "DIDIY"
  },
  "EEFT": {
-  "px": 64.37,
+  "px": 65.61,
   "q": "EEFT"
  },
  "EVO": {
-  "px": 827.2,
+  "px": 816.0,
   "q": "EVO",
   "exchange": "OMX"
  },
  "GRAB": {
-  "px": 3.115,
+  "px": 3.145,
   "q": "GRAB"
  },
  "JD": {
-  "px": 26.745,
+  "px": 26.495,
   "q": "JD"
  },
  "KSPI": {
-  "px": 92.75,
+  "px": 95.715,
   "q": "KSPI"
  },
  "KWEB": {
-  "px": 24.71,
+  "px": 24.59,
   "q": "KWEB"
  },
  "META": {
-  "px": 777.44,
+  "px": 751.9,
   "q": "META"
  },
  "MSFT": {
-  "px": 497.585,
+  "px": 516.1,
   "q": "MSFT"
  },
  "NICE": {
-  "px": 113.5,
+  "px": 112.83,
   "q": "NICE"
  },
  "NOV": {
-  "px": 33.94,
+  "px": 33.89,
   "q": "NOV",
   "exchange": "XETR",
   "verify": true
  },
  "NU": {
-  "px": 13.555,
+  "px": 13.575,
   "q": "NU"
  },
  "P911": {
-  "px": 45.37,
+  "px": 45.63,
   "q": "P911",
   "exchange": "XETR"
  },
  "PYPL": {
-  "px": 52.6,
+  "px": 55.04,
   "q": "PYPL"
  },
  "SOFI": {
-  "px": 16.8,
+  "px": 16.5699,
   "q": "SOFI"
  },
  "TTD": {
-  "px": 12.63,
+  "px": 12.6,
   "q": "TTD"
  },
  "UBER": {
-  "px": 69.175,
+  "px": 69.62,
   "q": "UBER"
  },
  "VOW3": {
-  "px": 70.82,
+  "px": 71.72,
   "q": "VOW3",
   "exchange": "XETR"
  },
  "WIX": {
-  "px": 77.525,
+  "px": 73.8,
   "q": "WIX"
  },
  "WIZZ": {
-  "px": 10.4957,
+  "px": 10.55,
   "q": "WIZZ",
   "exchange": "LSE",
   "divide": 100
