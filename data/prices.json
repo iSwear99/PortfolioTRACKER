@@ -1,40 +1,40 @@
 {
  "4GLD": {
-  "px": 116.71,
+  "px": 116.62,
   "q": "4GLD",
   "exchange": "XETR"
  },
  "AMZN": {
-  "px": 246.77,
+  "px": 246.26,
   "q": "AMZN"
  },
  "ASML": {
-  "px": 1750.305,
+  "px": 1771.41,
   "q": "ASML"
  },
  "AVGO": {
-  "px": 350.41,
+  "px": 349.57,
   "q": "AVGO"
  },
  "BABA": {
-  "px": 109.46,
+  "px": 108.805,
   "q": "BABA"
  },
  "BOSS": {
-  "px": 38.32,
+  "px": 38.39,
   "q": "BOSS",
   "exchange": "XETR"
  },
  "BTC": {
-  "px": 83304.01,
+  "px": 83500.01,
   "q": "BTC/USD"
  },
  "BYDDY": {
-  "px": 9.98,
+  "px": 9.88,
   "q": "BYDDY"
  },
  "CSPX": {
-  "px": 828.58,
+  "px": 828.66,
   "q": "CSPX",
   "exchange": "LSE"
  },
@@ -43,7 +43,7 @@
   "q": "DIDIY"
  },
  "EEFT": {
-  "px": 63.95,
+  "px": 64.94,
   "q": "EEFT"
  },
  "EVO": {
@@ -52,50 +52,50 @@
   "exchange": "OMX"
  },
  "GRAB": {
-  "px": 3.125,
+  "px": 3.095,
   "q": "GRAB"
  },
  "JD": {
-  "px": 26.705,
+  "px": 26.6,
   "q": "JD"
  },
  "KSPI": {
-  "px": 95.36,
+  "px": 95.85,
   "q": "KSPI"
  },
  "KWEB": {
-  "px": 24.74,
+  "px": 24.68,
   "q": "KWEB"
  },
  "META": {
-  "px": 720.76,
+  "px": 715.72,
   "q": "META"
  },
  "MSFT": {
-  "px": 509.345,
+  "px": 509.47,
   "q": "MSFT"
  },
  "NICE": {
-  "px": 110.545,
+  "px": 108.97,
   "q": "NICE"
  },
  "NOV": {
-  "px": 33.77,
+  "px": 33.775,
   "q": "NOV",
   "exchange": "XETR",
   "verify": true
  },
  "NU": {
-  "px": 12.445,
+  "px": 12.225,
   "q": "NU"
  },
  "P911": {
-  "px": 44.6,
+  "px": 44.59,
   "q": "P911",
   "exchange": "XETR"
  },
  "PYPL": {
-  "px": 54.015,
+  "px": 54.3,
   "q": "PYPL"
  },
  "SOFI": {
@@ -103,24 +103,24 @@
   "q": "SOFI"
  },
  "TTD": {
-  "px": 12.305,
+  "px": 12.345,
   "q": "TTD"
  },
  "UBER": {
-  "px": 68.43,
+  "px": 68.195,
   "q": "UBER"
  },
  "VOW3": {
-  "px": 71.72,
+  "px": 70.88,
   "q": "VOW3",
   "exchange": "XETR"
  },
  "WIX": {
-  "px": 71.68,
+  "px": 69.59,
   "q": "WIX"
  },
  "WIZZ": {
-  "px": 10.415,
+  "px": 10.39,
   "q": "WIZZ",
   "exchange": "LSE",
   "divide": 100
