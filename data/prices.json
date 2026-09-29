@@ -1,32 +1,32 @@
 {
  "4GLD": {
-  "px": 116.62,
+  "px": 117.97,
   "q": "4GLD",
   "exchange": "XETR"
  },
  "AMZN": {
-  "px": 246.26,
+  "px": 245.66,
   "q": "AMZN"
  },
  "ASML": {
-  "px": 1771.41,
+  "px": 1815.75,
   "q": "ASML"
  },
  "AVGO": {
-  "px": 349.57,
+  "px": 358.58,
   "q": "AVGO"
  },
  "BABA": {
-  "px": 108.805,
+  "px": 108.315,
   "q": "BABA"
  },
  "BOSS": {
-  "px": 38.39,
+  "px": 38.03,
   "q": "BOSS",
   "exchange": "XETR"
  },
  "BTC": {
-  "px": 83207.69,
+  "px": 83896.06,
   "q": "BTC/USD"
  },
  "BYDDY": {
@@ -34,7 +34,7 @@
   "q": "BYDDY"
  },
  "CSPX": {
-  "px": 828.66,
+  "px": 828.78,
   "q": "CSPX",
   "exchange": "LSE"
  },
@@ -43,71 +43,71 @@
   "q": "DIDIY"
  },
  "EEFT": {
-  "px": 64.94,
+  "px": 64.37,
   "q": "EEFT"
  },
  "EVO": {
-  "px": 795.6,
+  "px": 790.2,
   "q": "EVO",
   "exchange": "OMX"
  },
  "GRAB": {
-  "px": 3.095,
+  "px": 3.125,
   "q": "GRAB"
  },
  "JD": {
-  "px": 26.6,
+  "px": 26.28,
   "q": "JD"
  },
  "KSPI": {
-  "px": 95.85,
+  "px": 95.56,
   "q": "KSPI"
  },
  "KWEB": {
-  "px": 24.68,
+  "px": 24.415,
   "q": "KWEB"
  },
  "META": {
-  "px": 715.72,
+  "px": 722.19,
   "q": "META"
  },
  "MSFT": {
-  "px": 509.47,
+  "px": 504.58,
   "q": "MSFT"
  },
  "NICE": {
-  "px": 108.97,
+  "px": 108.55,
   "q": "NICE"
  },
  "NOV": {
-  "px": 33.775,
+  "px": 33.75,
   "q": "NOV",
   "exchange": "XETR",
   "verify": true
  },
  "NU": {
-  "px": 12.225,
+  "px": 12.455,
   "q": "NU"
  },
  "P911": {
-  "px": 44.59,
+  "px": 45.25,
   "q": "P911",
   "exchange": "XETR"
  },
  "PYPL": {
-  "px": 54.28,
+  "px": 54.05,
   "q": "PYPL"
  },
  "SOFI": {
-  "px": 15.93,
+  "px": 16.11,
   "q": "SOFI"
  },
  "TTD": {
-  "px": 12.345,
+  "px": 12.455,
   "q": "TTD"
  },
  "UBER": {
-  "px": 68.195,
+  "px": 69.475,
   "q": "UBER"
  },
  "VOW3": {
@@ -116,11 +116,11 @@
   "exchange": "XETR"
  },
  "WIX": {
-  "px": 69.59,
+  "px": 69.275,
   "q": "WIX"
  },
  "WIZZ": {
-  "px": 10.39,
+  "px": 10.66,
   "q": "WIZZ",
   "exchange": "LSE",
   "divide": 100
