@@ -1,9 +1,16 @@
 [
  {
-  "ticker": "ASML",
-  "chg_pct": 2.54,
-  "px_prev": 1808.72,
-  "px_now": 1854.66,
-  "ts": "2026-10-02T16:02"
+  "ticker": "BYDDY",
+  "chg_pct": -3.31,
+  "px_prev": 9.67,
+  "px_now": 9.35,
+  "ts": "2026-10-03T00:25"
+ },
+ {
+  "ticker": "NICE",
+  "chg_pct": -3.39,
+  "px_prev": 117.9,
+  "px_now": 113.9,
+  "ts": "2026-10-03T00:25"
  }
 ]
