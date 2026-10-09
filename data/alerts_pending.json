@@ -1,37 +1,16 @@
 [
  {
-  "ticker": "BABA",
-  "chg_pct": 4.19,
-  "px_prev": 105.72,
-  "px_now": 110.15,
-  "ts": "2026-10-09T16:31"
+  "ticker": "BYDDY",
+  "chg_pct": 3.77,
+  "px_prev": 9.29,
+  "px_now": 9.64,
+  "ts": "2026-10-10T00:49"
  },
  {
-  "ticker": "KWEB",
-  "chg_pct": 3.23,
-  "px_prev": 24.025,
-  "px_now": 24.8,
-  "ts": "2026-10-09T16:31"
- },
- {
-  "ticker": "NOV",
-  "chg_pct": 2.75,
-  "px_prev": 33.46,
-  "px_now": 34.38,
-  "ts": "2026-10-09T16:31"
- },
- {
-  "ticker": "P911",
-  "chg_pct": 2.69,
-  "px_prev": 40.96,
-  "px_now": 42.06,
-  "ts": "2026-10-09T16:31"
- },
- {
-  "ticker": "WIZZ",
-  "chg_pct": 3.09,
-  "px_prev": 10.04,
-  "px_now": 10.35,
-  "ts": "2026-10-09T16:31"
+  "ticker": "NU",
+  "chg_pct": 3.5,
+  "px_prev": 15.57,
+  "px_now": 16.115,
+  "ts": "2026-10-10T00:49"
  }
 ]
