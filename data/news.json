@@ -262,5 +262,29 @@
   "text": "Wizz Air zlepšil výhled tržeb na nabídnutý sedadlokilometr za 2Q na meziročně nezměněné z dřívějšího poklesu o nízké jednotky procent díky silnějšímu létu, oznámil snížení plánované kapacity ve druhém pololetí o 5 % kvůli geopolitice a kolísavým cenám paliv a představil cíle pro rok 2030 ve výši 10 mld. eur tržeb a 10% marže EBIT.",
   "source": "Investing.com",
   "source_time": "2026-09-17"
+ },
+ {
+  "ticker": "ASML",
+  "date": "2026-10-13",
+  "chg_pct": -2.73,
+  "text": "Akcie klesla spolu s celým polovodičovým sektorem, který srazily obavy z financování investic do umělé inteligence a pokrok čínské CXMT s novou architekturou paměťových čipů (SK Hynix v Asii ztratil přes 10 %, Samsung 7,4 %), přičemž u ASML se přidala opatrnost před výsledky za 3Q 2026 zveřejňovanými 14. října.",
+  "source": "CNBC",
+  "source_time": "2026-10-13"
+ },
+ {
+  "ticker": "META",
+  "date": "2026-10-13",
+  "chg_pct": 3.07,
+  "text": "Akcie posílila poté, co Pivotal Research zvýšila cílovou cenu ze 790 na 930 USD a ponechala doporučení Buy s odůvodněním, že návratnost investic Meta do umělé inteligence začíná být viditelná, a to v návaznosti na pondělní představení modelů Muse Wonder a Muse Wonder Full s placenými tarify za 20 a 100 USD měsíčně.",
+  "source": "Investing.com",
+  "source_time": "2026-10-13 09:56"
+ },
+ {
+  "ticker": "TTD",
+  "date": "2026-10-13",
+  "chg_pct": 3.98,
+  "text": "Bez zjevné zprávy — firma nevydala žádné oznámení a jde nejspíš o technický odraz od 52týdenního minima 11,62 USD po letošním propadu o zhruba 68 %, podpořený zlepšením ratingu od DA Davidson na Hold a zvýšením cílové ceny Evercore ISI ze 13 na 14 USD z počátku října, před mimořádnou valnou hromadou 19. října a výsledky za 3Q 5. listopadu.",
+  "source": null,
+  "source_time": null
  }
 ]
