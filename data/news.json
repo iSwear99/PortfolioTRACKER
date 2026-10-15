@@ -286,5 +286,69 @@
   "text": "Bez zjevné zprávy — firma nevydala žádné oznámení a jde nejspíš o technický odraz od 52týdenního minima 11,62 USD po letošním propadu o zhruba 68 %, podpořený zlepšením ratingu od DA Davidson na Hold a zvýšením cílové ceny Evercore ISI ze 13 na 14 USD z počátku října, před mimořádnou valnou hromadou 19. října a výsledky za 3Q 5. listopadu.",
   "source": null,
   "source_time": null
+ },
+ {
+  "ticker": "EEFT",
+  "date": "2026-10-15",
+  "chg_pct": 2.72,
+  "text": "Bez zjevné zprávy — akcie se odrazila od ročního minima 61,62 USD z 8. října spolu s celým trhem, když se výnos 10letého amerického dluhopisu po předchozím inflačním šoku snížil o 13 bazických bodů na 5,06 %, zatímco investoři vyčkávají na čtvrtletní výsledky plánované na 22. října.",
+  "source": null,
+  "source_time": null
+ },
+ {
+  "ticker": "GRAB",
+  "date": "2026-10-15",
+  "chg_pct": 3.44,
+  "text": "Akcie pokračovala v odrazu od tříletého minima, kam ji poslalo oznámení o akvizici 60% podílu v Atome Financial za 1,49 mld. USD v hotovosti, přičemž trh dál vyzdvihuje nákup 10,35 mil. akcií za 29,9 mil. USD generálním ředitelem Anthonym Tanem a 299 571 akcií prezidentem Alexanderem Hungatem, oznámený ve formuláři 4 k 21. září.",
+  "source": "Quiver Quantitative",
+  "source_time": "2026-09-21"
+ },
+ {
+  "ticker": "JD",
+  "date": "2026-10-15",
+  "chg_pct": 2.6,
+  "text": "Bez zjevné zprávy — ADR posílilo spolu s čínskými technologickými tituly v průběhu kampaně Dvojí 11, která na JD.com odstartovala 12. října rovnou prodejem zboží ze skladu, a to po předchozím prolomení 50denního klouzavého průměru směrem dolů a snížení cílové ceny od Bank of America na 37 USD při ponechání doporučení Buy.",
+  "source": null,
+  "source_time": null
+ },
+ {
+  "ticker": "NICE",
+  "date": "2026-10-15",
+  "chg_pct": 3.38,
+  "text": "Bez zjevné zprávy — ADR posílilo spolu se softwarovým sektorem, jemuž pomohl pokles výnosu 10letého amerického dluhopisu o 13 bazických bodů na 5,06 %, a pokračuje tak přeceňování po zvýšení doporučení od Oppenheimeru na Outperform s cílovou cenou 150 USD z 30. září a zařazení mezi lídry v IDC MarketScape pro agentní CCaaS platformy z 1. října.",
+  "source": null,
+  "source_time": null
+ },
+ {
+  "ticker": "SOFI",
+  "date": "2026-10-15",
+  "chg_pct": 5.95,
+  "text": "Akcie vyskočila až na 15,13 USD poté, co StoneX zahájil pokrytí s doporučením Buy a cílovou cenou 25 USD s odkazem na atraktivní ocenění, čímž se titul odrazil od ročního minima 13,86 USD, na které jej den předtím poslal silnější inflační report a růst výnosů dluhopisů.",
+  "source": "MarketBeat",
+  "source_time": "2026-10-15"
+ },
+ {
+  "ticker": "TTD",
+  "date": "2026-10-15",
+  "chg_pct": 7.58,
+  "text": "Akcie vyskočila poté, co UBS potvrdila doporučení Buy při snížené cílové ceně a společnost spustila formát Skydance Pause Ads na HBO Max a discovery+ v Itálii, zatímco prudký pokles výnosů dluhopisů přivedl kupce zpět k titulu, který je za poslední rok dolů o 75 % a 7. října se dotkl ročního minima 11,62 USD.",
+  "source": "Benzinga / Quiver Quantitative",
+  "source_time": "2026-10-15"
+ },
+ {
+  "ticker": "UBER",
+  "date": "2026-10-15",
+  "chg_pct": 2.8,
+  "text": "Bez zjevné zprávy — akcie se po předchozím 2,9% poklesu odrazila od ročního minima 65,41 USD zpět k 71,27 USD spolu s celým trhem při poklesu výnosu 10letého dluhopisu o 13 bazických bodů na 5,06 %, zatímco konsensus 50 analytiků zůstává Buy s průměrnou cílovou cenou kolem 101 USD.",
+  "source": null,
+  "source_time": null
+ },
+ {
+  "ticker": "WIX",
+  "date": "2026-10-15",
+  "chg_pct": 9.2,
+  "text": "Akcie prudce vyskočila poté, co Symphony by Wix integrovala platební peněženku Stripe pro AI agenty, která jim umožňuje provádět platby za malé podniky, a titul se tak dostal k 79,55 USD, stále o 45 % pod ročním maximem 145,54 USD z října 2025.",
+  "source": "StockStory",
+  "source_time": "2026-10-15"
  }
 ]
