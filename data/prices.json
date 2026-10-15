@@ -1,6 +1,6 @@
 {
  "4GLD": {
-  "px": 118.21,
+  "px": 119.02,
   "q": "4GLD",
   "exchange": "XETR"
  },
@@ -21,12 +21,12 @@
   "q": "BABA"
  },
  "BOSS": {
-  "px": 38.05,
+  "px": 38.08,
   "q": "BOSS",
   "exchange": "XETR"
  },
  "BTC": {
-  "px": 81586.59,
+  "px": 80943.1,
   "q": "BTC/USD"
  },
  "BYDDY": {
@@ -34,7 +34,7 @@
   "q": "BYDDY"
  },
  "CSPX": {
-  "px": 835.61,
+  "px": 830.4,
   "q": "CSPX",
   "exchange": "LSE"
  },
@@ -47,7 +47,7 @@
   "q": "EEFT"
  },
  "EVO": {
-  "px": 795.0,
+  "px": 799.8,
   "q": "EVO",
   "exchange": "OMX"
  },
@@ -56,11 +56,11 @@
   "q": "GRAB"
  },
  "JD": {
-  "px": 26.68,
+  "px": 26.685,
   "q": "JD"
  },
  "KSPI": {
-  "px": 94.965,
+  "px": 94.91,
   "q": "KSPI"
  },
  "KWEB": {
@@ -80,7 +80,7 @@
   "q": "NICE"
  },
  "NOV": {
-  "px": 34.37,
+  "px": 34.65,
   "q": "NOV",
   "exchange": "XETR",
   "verify": true
@@ -90,7 +90,7 @@
   "q": "NU"
  },
  "P911": {
-  "px": 41.38,
+  "px": 41.03,
   "q": "P911",
   "exchange": "XETR"
  },
@@ -120,7 +120,7 @@
   "q": "WIX"
  },
  "WIZZ": {
-  "px": 9.805,
+  "px": 9.83,
   "q": "WIZZ",
   "exchange": "LSE",
   "divide": 100
