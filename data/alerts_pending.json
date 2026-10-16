@@ -1,9 +1,51 @@
 [
  {
-  "ticker": "P911",
-  "chg_pct": 2.63,
-  "px_prev": 41.37,
-  "px_now": 42.46,
-  "ts": "2026-10-16T14:37"
+  "ticker": "AVGO",
+  "chg_pct": -4.49,
+  "px_prev": 344.27,
+  "px_now": 328.81,
+  "ts": "2026-10-16T23:26"
+ },
+ {
+  "ticker": "DIDIY",
+  "chg_pct": -2.93,
+  "px_prev": 3.41,
+  "px_now": 3.31,
+  "ts": "2026-10-16T23:26"
+ },
+ {
+  "ticker": "META",
+  "chg_pct": -3.69,
+  "px_prev": 736.49,
+  "px_now": 709.34,
+  "ts": "2026-10-16T23:26"
+ },
+ {
+  "ticker": "SOFI",
+  "chg_pct": -3.38,
+  "px_prev": 15.07,
+  "px_now": 14.56,
+  "ts": "2026-10-16T23:26"
+ },
+ {
+  "ticker": "TTD",
+  "chg_pct": -6.74,
+  "px_prev": 13.1143,
+  "px_now": 12.23,
+  "ts": "2026-10-16T23:26"
+ },
+ {
+  "ticker": "VOW3",
+  "chg_pct": 2.78,
+  "px_prev": 66.82,
+  "px_now": 68.68,
+  "ts": "2026-10-16T23:26"
+ },
+ {
+  "ticker": "WIX",
+  "chg_pct": -7.65,
+  "px_prev": 81.16,
+  "px_now": 74.95,
+  "ts": "2026-10-16T23:26"
  }
 ]
