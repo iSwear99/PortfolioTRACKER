@@ -1,16 +1,16 @@
 [
  {
-  "ticker": "AMZN",
-  "chg_pct": 4.23,
-  "px_prev": 249.94,
-  "px_now": 260.52,
-  "ts": "2026-10-19T16:50"
+  "ticker": "DIDIY",
+  "chg_pct": -2.74,
+  "px_prev": 3.28,
+  "px_now": 3.19,
+  "ts": "2026-10-20T00:32"
  },
  {
-  "ticker": "AVGO",
-  "chg_pct": 2.62,
-  "px_prev": 328.81,
-  "px_now": 337.44,
-  "ts": "2026-10-19T16:50"
+  "ticker": "WIX",
+  "chg_pct": 3.18,
+  "px_prev": 74.59,
+  "px_now": 76.96,
+  "ts": "2026-10-20T00:32"
  }
 ]
