@@ -350,5 +350,37 @@
   "text": "Akcie prudce vyskočila poté, co Symphony by Wix integrovala platební peněženku Stripe pro AI agenty, která jim umožňuje provádět platby za malé podniky, a titul se tak dostal k 79,55 USD, stále o 45 % pod ročním maximem 145,54 USD z října 2025.",
   "source": "StockStory",
   "source_time": "2026-10-15"
+ },
+ {
+  "ticker": "BYDDY",
+  "date": "2026-10-23",
+  "chg_pct": 4.0,
+  "text": "Akcie se přidala k široké obnově čínských výrobců elektromobilů a baterií (CATL, Nio, XPeng, Li Auto) tažené očekáváním exportní vlny na konci roku, k čemuž přispělo spuštění prodeje nového modelu Seagull v cenách 65 900–99 900 RMB a představení vlajkového sedanu Great Han, zatímco trh vyhlíží výsledky za devět měsíců 29. října.",
+  "source": "ad-hoc-news.de / boerse-global",
+  "source_time": "2026-10-23"
+ },
+ {
+  "ticker": "NICE",
+  "date": "2026-10-23",
+  "chg_pct": 3.49,
+  "text": "Titul uzavřel na 121,18 USD v doznívající reakci na zařazení mezi lídry Gartner Magic Quadrant pro Contact Center as a Service z 21. října, kde byl umístěn nejdále v ose Completeness of Vision, což navázalo na zvýšení ratingu od Oppenheimeru na Outperform s cílovou cenou 150 USD z 30. září.",
+  "source": "Business Wire / Simply Wall St",
+  "source_time": "2026-10-21"
+ },
+ {
+  "ticker": "NU",
+  "date": "2026-10-23",
+  "chg_pct": 2.92,
+  "text": "Akcie uzavřela nad 15 USD při pokračujícím zvyšování cílových cen, kdy JPMorgan posunul cíl z 20 na 23 USD při ratingu Overweight a UBS z 18,20 na 20,50 USD při ratingu Buy, a to na pozadí risk-on rallye brazilských finančních titulů po prvním kole prezidentských voleb, které snížilo rizikovou přirážku země.",
+  "source": "StocksToTrade",
+  "source_time": "2026-10-23"
+ },
+ {
+  "ticker": "UBER",
+  "date": "2026-10-23",
+  "chg_pct": -3.47,
+  "text": "Akcie oslabila poté, co The Information informoval o předběžných jednáních o prodeji Instacartu, o nějž mají zájem Uber i DoorDash, při odhadované hodnotě transakce 16–17 mld. USD; Instacart v reakci vyskočil o 9 %, DoorDash klesl o více než 4 %.",
+  "source": "The Information / Reuters",
+  "source_time": "2026-10-23"
  }
 ]
