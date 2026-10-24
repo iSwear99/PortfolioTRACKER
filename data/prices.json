@@ -26,7 +26,7 @@
   "exchange": "XETR"
  },
  "BTC": {
-  "px": 80613.71,
+  "px": 80521.99,
   "q": "BTC/USD"
  },
  "BYDDY": {
@@ -52,11 +52,11 @@
   "exchange": "OMX"
  },
  "GRAB": {
-  "px": 2.79,
+  "px": 2.795,
   "q": "GRAB"
  },
  "JD": {
-  "px": 25.35,
+  "px": 25.36,
   "q": "JD"
  },
  "KSPI": {
