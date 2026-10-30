@@ -1,32 +1,32 @@
 {
  "4GLD": {
-  "px": 115.6,
+  "px": 112.8,
   "q": "4GLD",
   "exchange": "XETR"
  },
  "AMZN": {
-  "px": 244.23,
+  "px": 236.15,
   "q": "AMZN"
  },
  "ASML": {
-  "px": 1675.6999,
+  "px": 1594.91,
   "q": "ASML"
  },
  "AVGO": {
-  "px": 345.05,
+  "px": 328.13,
   "q": "AVGO"
  },
  "BABA": {
-  "px": 99.515,
+  "px": 98.25,
   "q": "BABA"
  },
  "BOSS": {
-  "px": 38.53,
+  "px": 38.64,
   "q": "BOSS",
   "exchange": "XETR"
  },
  "BTC": {
-  "px": 77091.28,
+  "px": 76947.82,
   "q": "BTC/USD"
  },
  "BYDDY": {
@@ -34,80 +34,80 @@
   "q": "BYDDY"
  },
  "CSPX": {
-  "px": 832.6,
+  "px": 822.88,
   "q": "CSPX",
   "exchange": "LSE"
  },
  "DIDIY": {
-  "px": 3.06,
+  "px": 3.03,
   "q": "DIDIY"
  },
  "EEFT": {
-  "px": 62.28,
+  "px": 62.0,
   "q": "EEFT"
  },
  "EVO": {
-  "px": 827.4,
+  "px": 824.2,
   "q": "EVO",
   "exchange": "OMX"
  },
  "GRAB": {
-  "px": 2.755,
+  "px": 2.7,
   "q": "GRAB"
  },
  "JD": {
-  "px": 25.63,
+  "px": 25.565,
   "q": "JD"
  },
  "KSPI": {
-  "px": 94.71,
+  "px": 93.14,
   "q": "KSPI"
  },
  "KWEB": {
-  "px": 22.8,
+  "px": 22.745,
   "q": "KWEB"
  },
  "META": {
-  "px": 624.545,
+  "px": 617.775,
   "q": "META"
  },
  "MSFT": {
-  "px": 530.43,
+  "px": 520.27,
   "q": "MSFT"
  },
  "NICE": {
-  "px": 114.87,
+  "px": 114.8,
   "q": "NICE"
  },
  "NOV": {
-  "px": 34.77,
+  "px": 35.6,
   "q": "NOV",
   "exchange": "XETR",
   "verify": true
  },
  "NU": {
-  "px": 12.055,
+  "px": 11.69,
   "q": "NU"
  },
  "P911": {
-  "px": 46.12,
+  "px": 46.4,
   "q": "P911",
   "exchange": "XETR"
  },
  "PYPL": {
-  "px": 56.965,
+  "px": 56.62,
   "q": "PYPL"
  },
  "SOFI": {
-  "px": 17.61,
+  "px": 16.905,
   "q": "SOFI"
  },
  "TTD": {
-  "px": 13.065,
+  "px": 12.855,
   "q": "TTD"
  },
  "UBER": {
-  "px": 65.735,
+  "px": 64.99,
   "q": "UBER"
  },
  "VOW3": {
@@ -116,11 +116,11 @@
   "exchange": "XETR"
  },
  "WIX": {
-  "px": 77.975,
+  "px": 77.63,
   "q": "WIX"
  },
  "WIZZ": {
-  "px": 9.99,
+  "px": 9.825,
   "q": "WIZZ",
   "exchange": "LSE",
   "divide": 100
