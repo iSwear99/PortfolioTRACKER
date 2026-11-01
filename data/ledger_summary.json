@@ -1,6 +1,6 @@
 {
- "basis_hist_czk": 4431775,
- "realized_hist_czk": 757756,
+ "basis_hist_czk": 4420212,
+ "realized_hist_czk": 772777,
  "others_hist_czk": 86543,
  "fx_realized_czk": {
   "Patria|USD": 2048,
@@ -19,7 +19,7 @@
   "IBKR|HKD": -6
  },
  "fx_writeoff_total_czk": 44466,
- "residual_czk": -13646,
+ "residual_czk": -13719,
  "currency_ledger": {
   "Patria|CZK": {
    "q": 0.42,
@@ -42,8 +42,8 @@
    "avg": 1.0
   },
   "IBKR|USD": {
-   "q": 0.01,
-   "czk": 0.24,
+   "q": 1215.33,
+   "czk": 26511.23,
    "avg": 21.814
   },
   "IBKR|HKD": {
@@ -91,8 +91,8 @@
    "czk_cost": 51157.82
   },
   "IBKR|BYDDY": {
-   "q": 500.0,
-   "czk_cost": 128900.88
+   "q": 950.0,
+   "czk_cost": 230401.43
   },
   "Patria|KWEB": {
    "q": 175.0,
@@ -213,10 +213,6 @@
   "IBKR|4GLD": {
    "q": 30.0,
    "czk_cost": 82931.18
-  },
-  "IBKR|META": {
-   "q": 9.0,
-   "czk_cost": 113064.14
   },
   "IBKR|AVGO": {
    "q": 9.0,

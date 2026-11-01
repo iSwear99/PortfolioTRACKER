@@ -27,8 +27,8 @@
    "ticker": "BYDDY",
    "broker": "IBKR",
    "ccy": "USD",
-   "qty": 500,
-   "avg": 12.525
+   "qty": 950,
+   "avg": 11.49
   },
   {
    "ticker": "DIDIY",
@@ -199,13 +199,6 @@
    "avg": 115.44
   },
   {
-   "ticker": "META",
-   "broker": "IBKR",
-   "ccy": "USD",
-   "qty": 9,
-   "avg": 575.9
-  },
-  {
    "ticker": "AVGO",
    "broker": "IBKR",
    "ccy": "USD",
@@ -224,60 +217,52 @@
   {
    "broker": "IBKR",
    "ccy": "CZK",
-   "bal": 8.13,
-   "czk": 8
+   "bal": 8.13
   },
   {
    "broker": "IBKR",
    "ccy": "DKK",
-   "bal": 1110.32,
-   "czk": 2441
+   "bal": 1110.32
   },
   {
    "broker": "IBKR",
    "ccy": "EUR",
-   "bal": 3799.81,
-   "czk": 121205
+   "bal": 3799.81
   },
   {
    "broker": "IBKR",
    "ccy": "USD",
-   "bal": 0.02,
-   "czk": 19252
+   "bal": 1215.34
   },
   {
    "broker": "Patria",
    "ccy": "CZK",
-   "bal": 0.42,
-   "czk": 0
+   "bal": 0.42
   },
   {
    "broker": "Patria",
    "ccy": "EUR",
-   "bal": 546.53,
-   "czk": 13225
+   "bal": 546.53
   },
   {
    "broker": "Patria",
    "ccy": "USD",
-   "bal": 5592.93,
-   "czk": 377
+   "bal": 5592.93
   },
   {
    "broker": "Anycoin",
    "ccy": "CZK",
-   "bal": 204.0,
-   "czk": 204
+   "bal": 204.0
   }
  ],
  "breakdown_hist": [
   [
    "Nerealizovaný P/L (hist.)",
-   -1915
+   -26287
   ],
   [
    "Realizovaný P/L (hist.)",
-   757756
+   772777
   ],
   [
    "Ostatní (div./daně/úroky/popl.)",
@@ -293,7 +278,7 @@
   ],
   [
    "Aproximace metody",
-   -13646
+   -13719
   ]
  ],
  "fees": [
@@ -6828,6 +6813,34 @@
    "rpl": 0.0,
    "rplczk": 0,
    "kurz_hist": 21.4568
+  },
+  {
+   "date": "2026-09-14",
+   "broker": "IBKR",
+   "ticker": "META",
+   "typ": "Stock",
+   "ccy": "USD",
+   "qty": -9,
+   "price": 652.41,
+   "mult": 1,
+   "fee": -1.12,
+   "rpl": 686.47,
+   "rplczk": 15021,
+   "kurz_hist": 21.814
+  },
+  {
+   "date": "2026-09-17",
+   "broker": "IBKR",
+   "ticker": "BYDDY",
+   "typ": "Stock",
+   "ccy": "USD",
+   "qty": 450,
+   "price": 10.34,
+   "mult": 1,
+   "fee": -2.25,
+   "rpl": 0,
+   "rplczk": 0,
+   "kurz_hist": 21.814
   }
  ],
  "others": [
