@@ -137,8 +137,10 @@ def fetch_yahoo(prices, failed):
 
 def fetch_prev_close(positions):
     """Poslední DVĚ uzavřené denní close (svíčky přede dneškem) pro denní změnu:
-    včerejší close vs předvčerejší close. Dnešní rozpracovaná svíčka se ignoruje."""
-    out = {}
+    včerejší close vs předvčerejší close. Dnešní rozpracovaná svíčka se ignoruje.
+    Zároveň vrací denní close za ~3 měsíce (vč. dnešní rozehrané) pro grafy
+    tickerů 7D/30D v rozbaleném řádku pozice."""
+    out, series = {}, {}
     tz = PRAGUE or timezone.utc
     today = datetime.now(timezone.utc).astimezone(tz).strftime('%Y-%m-%d')
     for i, tk in enumerate(sorted({pos['ticker'] for pos in positions})):
@@ -147,18 +149,20 @@ def fetch_prev_close(positions):
         try:
             res = json.loads(http_get(
                 f'https://query1.finance.yahoo.com/v8/finance/chart/{urllib.parse.quote(sym)}'
-                '?range=10d&interval=1d'))['chart']['result'][0]
-            closes = []
+                '?range=3mo&interval=1d'))['chart']['result'][0]
+            closes, ser = [], []
             for t_, c in zip(res.get('timestamp') or [],
                              res['indicators']['quote'][0].get('close') or []):
                 if c is None: continue
                 d = datetime.fromtimestamp(t_, tz=timezone.utc).astimezone(tz).strftime('%Y-%m-%d')
                 if d < today: closes.append(float(c))
+                if c > 0: ser.append([d, round(float(c) / div, 4)])
             if len(closes) >= 2 and closes[-1] > 0 and closes[-2] > 0:
                 out[tk] = (round(closes[-1] / div, 4), round(closes[-2] / div, 4))
+            if ser: series[tk] = ser[-70:]
         except Exception as e:
             print(f'[WARN] prev-close {tk} ({sym}): {e}', file=sys.stderr)
-    return out
+    return out, series
 
 def compute(static, prices, fx, prev_px, fx_prev):
     positions = []
@@ -220,7 +224,9 @@ def main():
     fx_prev = fetch_cnb_prev(fxold)
     prices, ok, failed = fetch_prices(seed)
     rec = fetch_yahoo(prices, failed)
-    prev_px = fetch_prev_close(static['positions'])
+    prev_px, series = fetch_prev_close(static['positions'])
+    if series: jsave(p('data', 'series.json'), series)          # při výpadku Yahoo ponechat minulé
+    elif os.path.exists(p('data', 'series.json')): series = jload(p('data', 'series.json'))
 
     positions, cash, meta = compute(static, prices, fx, prev_px, fx_prev)
     tz = PRAGUE or timezone.utc
@@ -267,7 +273,7 @@ def main():
 
     payload = dict(meta=meta, fx=fx, history=hist, positions=positions, cash=cash,
                    trades=static['trades'], others=static['others'], flows=static['flows'],
-                   news=news)
+                   news=news, series=series)
 
     tpl = open(p('docs', 'template.html'), encoding='utf-8').read()
     html = tpl.replace('__DATA__', json.dumps(payload, ensure_ascii=False))

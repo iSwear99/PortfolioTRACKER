@@ -114,6 +114,7 @@ tbody tr.click:hover{background:rgba(224,177,94,.05)}
 .chip.adj{color:var(--mut);background:rgba(124,138,160,.12)}
 .exp{background:var(--panel2)}
 .exp td{padding:0}
+.tkcap{font-size:11.5px;color:var(--mut);margin:2px 0 4px}.tkchart{position:relative;height:130px;margin-bottom:10px}
 .expbox{padding:6px 10px 12px;max-height:320px;overflow-y:auto}
 .expbox table{font-size:12px}
 .expbox th{padding:6px 8px}
@@ -290,6 +291,7 @@ const CZK = n => (n<0?'−':'') + Math.abs(Math.round(n)).toLocaleString('cs-CZ'
 const SIGN = n => (n>0?'+':n<0?'−':'') + Math.abs(Math.round(n)).toLocaleString('cs-CZ');
 const cls = n => n>0?'pos':n<0?'neg':'mut';
 const BRK = b => b==='IBKR'?'ib':b==='Patria'?'pt':'ac';   // třída chipu brokera
+let curPeriod='day'; const tkCharts={}, tkOpen=new Set();     // grafy tickerů v rozbalených řádcích
 const fmt = (n,d=2) => n.toLocaleString('cs-CZ',{minimumFractionDigits:d,maximumFractionDigits:d});
 const QTY = n => {const a=Math.abs(n);return fmt(n,a>=1?0:(a>=0.01?4:6));};   // kusy vs zlomky (BTC)
 const GOLD='#E0B15E',JADE='#56B389',CORAL='#E27065',BLUE='#5B8DD9',MUT='#7C8AA0';
@@ -526,10 +528,12 @@ function renderNavBox(p){
   sub.textContent=(r.pct>0?'+':'')+fmt(r.pct,2)+' %  ·  vs '+r.since.split('-').reverse().join('.')+', očištěno o toky';
 }
 function setPeriod(p){
+  curPeriod=p;
   renderMovers(p);
   renderPerfChart(p);
   renderIRR(p);
   renderNavBox(p);
+  tkOpen.forEach(renderTickerChart);
   const pn=document.getElementById('pnote');
   if(p==='all'){
     pn.textContent='Od založení účtů (02/2022). IRR '+(D.meta.irr>0?'+':'')+fmt(D.meta.irr,1)+' % p.a.';
@@ -622,7 +626,38 @@ let posSort={k:'ticker',dir:1};
 const posB=document.getElementById('posB');
 document.getElementById('poscount').textContent=new Set(D.positions.map(p=>p.ticker)).size
   +' titulů ('+D.positions.length+' pozic) · '+CZK(D.meta.mv);
+// graf ceny tickeru v rozbaleném řádku — denní close z Yahoo (data/series.json), okno dle globálního přepínače
+function renderTickerChart(t){
+  const wrap=document.getElementById('tcw_'+t), cap=document.getElementById('tcap_'+t); if(!wrap)return;
+  if(tkCharts[t]){tkCharts[t].destroy();delete tkCharts[t];}
+  const S=(D.series||{})[t]||[], p=curPeriod;
+  if((p!=='7d'&&p!=='30d')||S.length<2){
+    wrap.style.display='none';
+    cap.textContent=S.length<2?'Graf ceny: zatím bez dat':'Graf ceny se zobrazuje při volbě 7D nebo 30D';return;}
+  const cd=D.meta.asof.slice(0,10), n=p==='7d'?7:30;
+  const tt=new Date(cd+'T00:00:00');tt.setDate(tt.getDate()-n);
+  const tgt=tt.getFullYear()+'-'+String(tt.getMonth()+1).padStart(2,'0')+'-'+String(tt.getDate()).padStart(2,'0');
+  const pts=S.filter(x=>x[0]>=tgt);
+  if(pts.length<2){wrap.style.display='none';cap.textContent='Graf ceny: málo dat pro zvolené období';return;}
+  wrap.style.display='';
+  const ccy=(D.positions.find(x=>x.ticker===t)||{}).ccy||'';
+  const chg=(pts[pts.length-1][1]/pts[0][1]-1)*100, col=chg>=0?JADE:CORAL;
+  const dl=d=>d.slice(8,10)+'.'+d.slice(5,7)+'.';
+  cap.innerHTML='Cena za '+(p==='7d'?'7 dní':'30 dní')+' · '+dl(pts[0][0])+' – '+dl(pts[pts.length-1][0])
+    +' · <span class="num '+cls(chg)+'">'+(chg>0?'+':'')+fmt(chg,2)+' %</span> · denní close, '+ccy;
+  tkCharts[t]=new Chart(document.getElementById('tc_'+t),{type:'line',
+    data:{labels:pts.map(x=>x[0]),datasets:[{data:pts.map(x=>x[1]),borderColor:col,borderWidth:1.5,
+      pointRadius:pts.length>40?0:2,pointBackgroundColor:col,pointHoverRadius:4,tension:.2,fill:false}]},
+    options:{responsive:true,maintainAspectRatio:false,animation:false,
+      plugins:{legend:{display:false},tooltip:{callbacks:{
+        title:c=>c[0].label.split('-').reverse().join('.'),label:c=>fmt(c.parsed.y,2)+' '+ccy}}},
+      scales:{x:{grid:{display:false},ticks:{color:MUT,font:{family:'JetBrains Mono',size:9},maxRotation:0,autoSkip:true,maxTicksLimit:6,
+          callback:function(v){return dl(this.getLabelForValue(v));}}},
+        y:{grid:{color:'rgba(44,56,74,.5)'},ticks:{color:MUT,font:{family:'JetBrains Mono',size:9},maxTicksLimit:4,
+          callback:v=>fmt(v,v>=100?0:2)}}}}});
+}
 function renderPos(){
+  tkOpen.clear(); Object.keys(tkCharts).forEach(t=>{tkCharts[t].destroy();delete tkCharts[t];});   // nové řádky = zavřené
   // agregace přes brokery: jeden řádek per ticker
   const groups={};
   D.positions.forEach(p=>{
@@ -653,8 +688,8 @@ function renderPos(){
       <td class="num ${cls(g.pl)}">${(g.plpct>0?'+':'')+fmt(g.plpct,1)} %</td>
       <td class="hidesm"><span class="bar"><i style="width:${Math.min(w*3,100)}%;background:${barCol}"></i></span> <span class="num tny mut">${fmt(w,1)}%</span></td>`;
     const ex=document.createElement('tr'); ex.className='exp'; ex.style.display='none';
-    // rozpad per broker (jen u vícebrokerových titulů)
-    let inner='';
+    // graf ceny (7D/30D dle globálního přepínače) + rozpad per broker (jen u vícebrokerových titulů)
+    let inner=`<div class="tkcap" id="tcap_${g.ticker}"></div><div class="tkchart" id="tcw_${g.ticker}"><canvas id="tc_${g.ticker}"></canvas></div>`;
     if(g.brokers.length>1){
       inner+='<table style="margin-bottom:8px"><thead><tr><th class="l">Broker</th><th>Ks</th><th>Ø nákup</th><th>Hodnota CZK</th><th>Nereal. P/L</th><th>Denní změna</th></tr></thead><tbody>'
         +g.brokers.map(b=>`<tr><td class="l"><span class="brk ${BRK(b.broker)}">${b.broker}</span></td>
@@ -676,7 +711,9 @@ function renderPos(){
         <td class="num mut">${fmt(t.fee,2)}</td></tr>`;}).join('');
     inner+=`<table><thead><tr><th class="l">Datum</th><th class="l">Broker</th><th class="l">Směr</th><th>Ks</th><th>Cena</th><th>Poplatek</th></tr></thead><tbody>${rows||'<tr><td class="mut">Žádné obchody</td></tr>'}</tbody></table>`;
     ex.innerHTML=`<td colspan="9"><div class="expbox">${inner}</div></td>`;
-    tr.addEventListener('click',()=>{const open=ex.style.display==='none';ex.style.display=open?'':'none';tr.classList.toggle('open',open);});
+    tr.addEventListener('click',()=>{const open=ex.style.display==='none';ex.style.display=open?'':'none';tr.classList.toggle('open',open);
+      if(open){tkOpen.add(g.ticker);renderTickerChart(g.ticker);}
+      else{tkOpen.delete(g.ticker);if(tkCharts[g.ticker]){tkCharts[g.ticker].destroy();delete tkCharts[g.ticker];}}});
     posB.appendChild(tr); posB.appendChild(ex);
   });
 }
