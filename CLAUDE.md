@@ -1,8 +1,9 @@
 # Pravidla projektu — portfolio tracker
 
 Repozitář automaticky publikuje investiční tracker (docs/index.html přes
-GitHub Pages). Data v CZK bázi, dva brokeři: IBKR (U13354925) a Patria
-(22636233). Jazyk komunikace i commitů: čeština.
+GitHub Pages). Data v CZK bázi, tři účty: IBKR, Patria a Anycoin (BTC,
+obchody s typ Crypto v CZK, pozice vedená v USD). Jazyk komunikace i commitů:
+čeština. Čísla účtů do repa nepatří (veřejný repozitář).
 
 ## Struktura dat
 

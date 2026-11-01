@@ -78,8 +78,12 @@ def fetch_prices(seed):
     fetched, failed = [], []
     if not key:
         return prices, fetched, list(prices)
-    for i, (t, cfg) in enumerate(prices.items()):
-        if i: time.sleep(8.5)
+    waited429, first = False, True
+    for t, cfg in prices.items():
+        if t in YAHOO:                      # TD tyto tituly trvale nezná (404) → rovnou Yahoo
+            failed.append(t); continue
+        if not first: time.sleep(8.5)      # free tier: 8 požadavků/min
+        first = False
         for attempt in (1, 2):
             try:
                 params = {'symbol': cfg['q'], 'apikey': key}
@@ -87,7 +91,8 @@ def fetch_prices(seed):
                 raw = json.loads(http_get('https://api.twelvedata.com/price?'
                                           + urllib.parse.urlencode(params)))
                 if isinstance(raw, dict) and raw.get('code') == 429:
-                    if attempt == 1: time.sleep(61); continue
+                    if attempt == 1 and not waited429:   # jednou za běh počkat, pak rovnou Yahoo
+                        waited429 = True; time.sleep(61); continue
                     raise RuntimeError('rate limit')
                 px = float(raw['price'])
                 if cfg.get('divide'): px /= cfg['divide']
@@ -176,6 +181,22 @@ def compute(static, prices, fx, prev_px, fx_prev):
                                  deposits=dep, gain=round(nav - dep),
                                  gainpct=round((nav - dep) / dep * 100, 1))
 
+def thin_history(hist, today):
+    """Ředění historie NAV (idempotentní): posledních 120 dní vše (3–5 bodů/den),
+    starší dny roku 2026+ jeden bod/den (poslední snapshot), roky před 2026 jen
+    poslední bod měsíce. Tvrdý ořez by po čase smazal backfill 2022–2025."""
+    from datetime import date, timedelta
+    y, m, d = map(int, today.split('-'))
+    cut = (date(y, m, d) - timedelta(days=120)).isoformat()
+    keep, recent = {}, []
+    for h in hist:                                   # hist je chronologicky
+        ds = h['ts'][:10]
+        if ds >= cut: recent.append(h); continue
+        keep[ds if ds >= '2026-01-01' else ds[:7]] = h
+    out = list(keep.values()) + recent
+    out.sort(key=lambda h: h['ts'])
+    return out
+
 def xirr(flows, nav, asof):
     from datetime import date
     def d(s): y, m, dd = map(int, s.split('-')); return date(y, m, dd)
@@ -216,9 +237,11 @@ def main():
 
     # detekce pohybů >= 2,5 % vs poslední snapshot s cenami -> alerty pro news agenta
     prev_snap = next((h['px'] for h in reversed(hist) if h.get('px')), None)
+    held = {pos['ticker'] for pos in static['positions']}
     alerts = []
     if prev_snap:
         for t, cfg in prices.items():
+            if t not in held: continue                    # prodané tituly news agenta nezajímají
             p0 = prev_snap.get(t); p1 = cfg['px']
             if p0 and p1 and p0 > 0:
                 chg = (p1 / p0 - 1) * 100
@@ -233,7 +256,7 @@ def main():
     hist.append(dict(ts=now, nav=meta['nav'], mv=meta['mv'], cash=meta['cash'],
                      px={t: v['px'] for t, v in prices.items()},
                      fx=dict(fx), cashccy=cashccy))
-    hist = hist[-1500:]
+    hist = thin_history(hist, now[:10])
 
     jsave(p('data', 'prices.json'), prices)
     jsave(p('data', 'fx.json'), dict(fx=fx, src=fx_src))

@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
-<title>Portfolio — IBKR + Patria</title>
+<title>Portfolio — IBKR + Patria + Anycoin</title>
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="48x48" href="favicon.png">
 <link rel="manifest" href="manifest.webmanifest">
@@ -107,7 +107,7 @@ tbody tr.click:hover{background:rgba(224,177,94,.05)}
 .tk{font-family:var(--disp);font-weight:600;font-size:13.5px}
 .brk{font-family:var(--mono);font-size:10.5px;color:var(--mut);border:1px solid var(--line2);
   border-radius:4px;padding:1px 6px;margin-left:8px}
-.brk.ib{color:var(--blue)} .brk.pt{color:var(--gold)}
+.brk.ib{color:var(--blue)} .brk.pt{color:var(--gold)} .brk.ac{color:var(--jade)}
 .chip{font-family:var(--mono);font-size:10px;padding:1px 6px;border-radius:4px}
 .chip.buy{color:var(--jade);background:rgba(86,179,137,.12)}
 .chip.sell{color:var(--coral);background:rgba(226,112,106,.12)}
@@ -158,8 +158,9 @@ tbody tr.open .caret{transform:rotate(90deg);border-left-color:var(--gold)}
   <div>
     <div class="brandrow"><h1>Portfolio</h1><span class="asof" id="asof"></span></div>
     <div class="badges">
-      <span class="badge">IBKR <b>U13354925</b></span>
-      <span class="badge">Patria <b>22636233</b></span>
+      <span class="badge">IBKR</span>
+      <span class="badge">Patria</span>
+      <span class="badge">Anycoin <b>BTC</b></span>
       <span class="badge">báze <b>CZK</b></span>
     </div>
   </div>
@@ -201,7 +202,7 @@ tbody tr.open .caret{transform:rotate(90deg);border-left-color:var(--gold)}
   </div>
 </div>
 
-<div class="movers" id="movers" title="Změna z pohybu ceny při aktuálním kurzu; nezahrnuje vliv FX a obchodů v období."></div>
+<div class="movers" id="movers" title="Cenový efekt titulů při aktuálním kurzu. Kontrolní řádek dopočítává FX efekt a zbytek (obchody, dividendy, poplatky) tak, aby součet dal Δ NAV období."></div>
 
 <div class="card" style="margin-bottom:16px">
   <h2><span class="n" id="perfBadge">ALL</span><span id="perfTitle">Výkonnost za celou historii</span></h2>
@@ -243,7 +244,7 @@ tbody tr.open .caret{transform:rotate(90deg);border-left-color:var(--gold)}
   <div class="sechead"><h3>Historie obchodů</h3><span class="k" id="trcount"></span></div>
   <div class="filters">
     <input id="fq" placeholder="Hledat ticker…" style="min-width:160px"/>
-    <select id="fbroker"><option value="">Všichni brokeři</option><option>IBKR</option><option>Patria</option></select>
+    <select id="fbroker"><option value="">Všichni brokeři</option><option>IBKR</option><option>Patria</option><option>Anycoin</option></select>
     <select id="ftype"><option value="">Nákup i prodej</option><option value="BUY">Jen nákupy</option><option value="SELL">Jen prodeje</option></select>
   </div>
   <div class="card" style="padding:6px 8px">
@@ -288,6 +289,7 @@ const D = __DATA__;
 const CZK = n => (n<0?'−':'') + Math.abs(Math.round(n)).toLocaleString('cs-CZ') + ' Kč';
 const SIGN = n => (n>0?'+':n<0?'−':'') + Math.abs(Math.round(n)).toLocaleString('cs-CZ');
 const cls = n => n>0?'pos':n<0?'neg':'mut';
+const BRK = b => b==='IBKR'?'ib':b==='Patria'?'pt':'ac';   // třída chipu brokera
 const fmt = (n,d=2) => n.toLocaleString('cs-CZ',{minimumFractionDigits:d,maximumFractionDigits:d});
 const QTY = n => {const a=Math.abs(n);return fmt(n,a>=1?0:(a>=0.01?4:6));};   // kusy vs zlomky (BTC)
 const GOLD='#E0B15E',JADE='#56B389',CORAL='#E27065',BLUE='#5B8DD9',MUT='#7C8AA0';
@@ -638,7 +640,7 @@ function renderPos(){
   posB.innerHTML='';
   arr.forEach(g=>{
     const w=g.mv/D.meta.mv*100;
-    const chips=g.brokers.map(b=>`<span class="brk ${b.broker==='IBKR'?'ib':'pt'}">${b.broker}</span>`).join('');
+    const chips=g.brokers.map(b=>`<span class="brk ${BRK(b.broker)}">${b.broker}</span>`).join('');
     const barCol=g.brokers.length>1?GOLD:(g.brokers[0].broker==='IBKR'?BLUE:GOLD);
     const tr=document.createElement('tr'); tr.className='click';
     tr.innerHTML=`<td><span class="caret"></span><span class="tk">${g.ticker}</span>${chips}</td>
@@ -655,7 +657,7 @@ function renderPos(){
     let inner='';
     if(g.brokers.length>1){
       inner+='<table style="margin-bottom:8px"><thead><tr><th class="l">Broker</th><th>Ks</th><th>Ø nákup</th><th>Hodnota CZK</th><th>Nereal. P/L</th><th>Denní změna</th></tr></thead><tbody>'
-        +g.brokers.map(b=>`<tr><td class="l"><span class="brk ${b.broker==='IBKR'?'ib':'pt'}">${b.broker}</span></td>
+        +g.brokers.map(b=>`<tr><td class="l"><span class="brk ${BRK(b.broker)}">${b.broker}</span></td>
           <td class="num">${QTY(b.qty)}</td>
           <td class="num mut">${fmt(b.avg,2)} ${b.ccy}</td>
           <td class="num">${CZK(b.mv)}</td>
@@ -667,7 +669,7 @@ function renderPos(){
     const trades=D.trades.filter(t=>String(t.ticker)===g.ticker);
     const rows=trades.map(t=>{const side=t.typ==='Adj'?'ADJ':(t.qty>0?'BUY':'SELL');
       return `<tr><td class="l num mut">${t.date.split('-').reverse().join('.')}</td>
-        <td class="l"><span class="brk ${t.broker==='IBKR'?'ib':'pt'}">${t.broker}</span></td>
+        <td class="l"><span class="brk ${BRK(t.broker)}">${t.broker}</span></td>
         <td><span class="chip ${side.toLowerCase()}">${side}</span></td>
         <td class="num">${QTY(Math.abs(t.qty))}</td>
         <td class="num">${fmt(t.price,2)} ${t.ccy}</td>
@@ -685,7 +687,7 @@ renderPos();
 
 // cash
 const cashB=document.getElementById('cashB');
-D.cash.forEach(c=>{cashB.innerHTML+=`<tr><td class="l"><span class="brk ${c.broker==='IBKR'?'ib':'pt'}">${c.broker}</span></td>
+D.cash.forEach(c=>{cashB.innerHTML+=`<tr><td class="l"><span class="brk ${BRK(c.broker)}">${c.broker}</span></td>
   <td class="l num">${c.ccy}</td><td class="num">${fmt(c.bal,2)}</td><td class="num">${CZK(c.czk)}</td></tr>`;});
 cashB.innerHTML+=`<tr><td class="l mut">Σ</td><td></td><td></td><td class="num" style="color:var(--gold)">${CZK(D.meta.cash)}</td></tr>`;
 
@@ -705,7 +707,7 @@ function renderTr(){
   const total=arr.length; arr=arr.slice(0,10);
   trB.innerHTML=arr.map(t=>{const side=t.typ==='Adj'?'ADJ':(t.qty>0?'BUY':'SELL');
     return `<tr><td class="l num mut">${t.date.split('-').reverse().join('.')}</td>
-      <td class="l"><span class="tk" style="font-size:12.5px">${t.ticker}</span><span class="brk ${t.broker==='IBKR'?'ib':'pt'}">${t.broker}</span></td>
+      <td class="l"><span class="tk" style="font-size:12.5px">${t.ticker}</span><span class="brk ${BRK(t.broker)}">${t.broker}</span></td>
       <td><span class="chip ${side.toLowerCase()}">${side}</span></td>
       <td class="num">${QTY(Math.abs(t.qty))}</td>
       <td class="num">${fmt(t.price,2)} ${t.ccy}</td>
@@ -733,7 +735,7 @@ oB.innerHTML=[...D.others].sort((a,b)=>a.date<b.date?1:-1).map(o=>
 
 document.getElementById('foot').innerHTML=
   'Aktualizováno '+D.meta.asof.replace('T',' ')+' · '+(D.meta.price_note||'')+' · '+(D.meta.fx_src||'')+'.<br>'+
-  'Ceny: Twelve Data (free tier, zpožděná data). Kurzy: ČNB denní fixing. Automatická aktualizace 2× denně (GitHub Actions).<br>'+
+  'Ceny: Twelve Data + Yahoo Finance (zpožděná data). Kurzy: ČNB denní fixing. Automatická aktualizace 3× denně (GitHub Actions), breaking news přes Claude agenta.<br>'+
   'Historické CZK rozklady metodou skutečných měnových konverzí; realizovaný P/L Patria metodou průměrných nákladů.';
 </script>
 </body>

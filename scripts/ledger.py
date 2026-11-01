@@ -251,7 +251,7 @@ def run():
     warn = []
     for c in port['cash']:
         led = cur.get((c['broker'], c['ccy']), {'q': 0})['q']
-        if abs(led - c['bal']) > max(2, abs(c['bal']) * 0.02):
+        if abs(led - c['bal']) > max(2, abs(c['bal']) * 0.002):   # 0,2 % — dřívějších 2 % propustilo −107 USD
             warn.append(f"{c['broker']} {c['ccy']}: ledger {led:.2f} vs cash {c['bal']:.2f}")
     for pos in port['positions']:
         led = stk.get((pos['broker'], pos['ticker']), {'q': 0})['q']

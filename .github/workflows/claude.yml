@@ -12,16 +12,29 @@ permissions:
   pull-requests: write
   id-token: write
 
+concurrency:
+  group: update
+  cancel-in-progress: false
+
 jobs:
   claude:
     if: contains(github.event.comment.body || github.event.issue.body, '@claude')
     runs-on: ubuntu-latest
+    timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - name: Git identita pro commit agenta
+        run: |
+          git config user.name  "portfolio-bot"
+          git config user.email "actions@users.noreply.github.com"
       - uses: anthropics/claude-code-action@v1
+        env:
+          TWELVE_DATA_KEY: ${{ secrets.TWELVE_DATA_KEY }}
         with:
-          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
-          claude_args: "--allowedTools Bash(python*),Edit,Read,Write"
+          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          claude_args: --allowedTools "Bash(python*),Bash(git*),Edit,Read,Write" --max-turns 40 --model claude-opus-5
