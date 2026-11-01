@@ -114,7 +114,7 @@ tbody tr.click:hover{background:rgba(224,177,94,.05)}
 .chip.adj{color:var(--mut);background:rgba(124,138,160,.12)}
 .exp{background:var(--panel2)}
 .exp td{padding:0}
-.tkcap{font-size:11.5px;color:var(--mut);margin:2px 0 4px}.tkchart{position:relative;height:130px;margin-bottom:10px}
+.tkcap{font-size:11.5px;color:var(--mut);margin:2px 0 4px}.tkchart{position:relative;height:170px;margin-bottom:10px}
 .expbox{padding:6px 10px 12px;max-height:320px;overflow-y:auto}
 .expbox table{font-size:12px}
 .expbox th{padding:6px 8px}
@@ -626,14 +626,25 @@ let posSort={k:'ticker',dir:1};
 const posB=document.getElementById('posB');
 document.getElementById('poscount').textContent=new Set(D.positions.map(p=>p.ticker)).size
   +' titulů ('+D.positions.length+' pozic) · '+CZK(D.meta.mv);
-// graf ceny tickeru v rozbaleném řádku — denní close z Yahoo (data/series.json), okno dle globálního přepínače
+// graf ceny tickeru v rozbaleném řádku — denní svíčky OHLC + objem (data/series.json),
+// okno dle globálního přepínače; cenová osa vpravo, referenční linka poslední close
+const lastCloseLine={id:'lastClose',afterDatasetsDraw(ch,_,o){
+  const y=ch.scales.y, x=ch.scales.x, v=o.value; if(v==null)return;
+  const py=y.getPixelForValue(v), ctx=ch.ctx; ctx.save();
+  ctx.setLineDash([3,3]); ctx.strokeStyle=o.color; ctx.lineWidth=1;
+  ctx.beginPath(); ctx.moveTo(x.left,py); ctx.lineTo(x.right,py); ctx.stroke();
+  ctx.setLineDash([]); const txt=o.label, w=ctx.measureText(txt).width+8;
+  ctx.fillStyle=o.color; ctx.fillRect(x.right+2,py-7,w,14);
+  ctx.fillStyle='#0A0D13'; ctx.font='600 9px JetBrains Mono'; ctx.textBaseline='middle'; ctx.fillText(txt,x.right+6,py+0.5);
+  ctx.restore();}};
+Chart.register(lastCloseLine);
 function renderTickerChart(t){
   const wrap=document.getElementById('tcw_'+t), cap=document.getElementById('tcap_'+t); if(!wrap)return;
   if(tkCharts[t]){tkCharts[t].destroy();delete tkCharts[t];}
   const S=(D.series||{})[t]||[], p=curPeriod;
-  if((p!=='7d'&&p!=='30d')||S.length<2){
+  if((p!=='7d'&&p!=='30d')||S.length<2||S[0].length<6){
     wrap.style.display='none';
-    cap.textContent=S.length<2?'Graf ceny: zatím bez dat':'Graf ceny se zobrazuje při volbě 7D nebo 30D';return;}
+    cap.textContent=(S.length<2||S[0].length<6)?'Graf ceny: zatím bez dat':'Graf ceny se zobrazuje při volbě 7D nebo 30D';return;}
   const cd=D.meta.asof.slice(0,10), n=p==='7d'?7:30;
   const tt=new Date(cd+'T00:00:00');tt.setDate(tt.getDate()-n);
   const tgt=tt.getFullYear()+'-'+String(tt.getMonth()+1).padStart(2,'0')+'-'+String(tt.getDate()).padStart(2,'0');
@@ -641,20 +652,41 @@ function renderTickerChart(t){
   if(pts.length<2){wrap.style.display='none';cap.textContent='Graf ceny: málo dat pro zvolené období';return;}
   wrap.style.display='';
   const ccy=(D.positions.find(x=>x.ticker===t)||{}).ccy||'';
-  const chg=(pts[pts.length-1][1]/pts[0][1]-1)*100, col=chg>=0?JADE:CORAL;
+  const last=pts[pts.length-1], first=pts[0];
+  const chg=(last[4]/first[4]-1)*100;
+  const up=x=>x[4]>=x[1], colOf=x=>up(x)?JADE:CORAL;
   const dl=d=>d.slice(8,10)+'.'+d.slice(5,7)+'.';
-  cap.innerHTML='Cena za '+(p==='7d'?'7 dní':'30 dní')+' · '+dl(pts[0][0])+' – '+dl(pts[pts.length-1][0])
-    +' · <span class="num '+cls(chg)+'">'+(chg>0?'+':'')+fmt(chg,2)+' %</span> · denní close, '+ccy;
-  tkCharts[t]=new Chart(document.getElementById('tc_'+t),{type:'line',
-    data:{labels:pts.map(x=>x[0]),datasets:[{data:pts.map(x=>x[1]),borderColor:col,borderWidth:1.5,
-      pointRadius:pts.length>40?0:2,pointBackgroundColor:col,pointHoverRadius:4,tension:.2,fill:false}]},
-    options:{responsive:true,maintainAspectRatio:false,animation:false,
-      plugins:{legend:{display:false},tooltip:{callbacks:{
-        title:c=>c[0].label.split('-').reverse().join('.'),label:c=>fmt(c.parsed.y,2)+' '+ccy}}},
-      scales:{x:{grid:{display:false},ticks:{color:MUT,font:{family:'JetBrains Mono',size:9},maxRotation:0,autoSkip:true,maxTicksLimit:6,
+  const dec=last[4]>=100?2:(last[4]>=1?2:4);
+  const vol=v=>v>=1e9?fmt(v/1e9,2)+' mld':v>=1e6?fmt(v/1e6,2)+' M':v>=1e3?fmt(v/1e3,1)+' k':fmt(v,0);
+  cap.innerHTML='<span class="num">'+(p==='7d'?'7D':'30D')+'</span> · '+dl(first[0])+' – '+dl(last[0])
+    +' · <span class="num '+cls(chg)+'">'+(chg>0?'+':'')+fmt(chg,2)+' %</span>'
+    +' · <span class="mut">O</span> <span class="num">'+fmt(last[1],dec)+'</span> <span class="mut">H</span> <span class="num">'+fmt(last[2],dec)+'</span>'
+    +' <span class="mut">L</span> <span class="num">'+fmt(last[3],dec)+'</span> <span class="mut">C</span> <span class="num">'+fmt(last[4],dec)+'</span>'
+    +' <span class="mut">Vol</span> <span class="num">'+vol(last[5])+'</span> · '+ccy+', denní svíčky';
+  const maxV=Math.max(...pts.map(x=>x[5]),1);
+  const lo=Math.min(...pts.map(x=>x[3])), hi=Math.max(...pts.map(x=>x[2])), rg=(hi-lo)||lo*0.02;   // cenová osa z rozsahu svíček, dole prostor pro objem
+  const cols=pts.map(colOf);
+  tkCharts[t]=new Chart(document.getElementById('tc_'+t),{type:'bar',
+    data:{labels:pts.map(x=>x[0]),datasets:[
+      {label:'wick',data:pts.map(x=>[x[3],x[2]]),backgroundColor:cols,borderWidth:0,grouped:false,barThickness:1,order:2},
+      {label:'body',data:pts.map(x=>[x[1],x[4]]),backgroundColor:cols,borderColor:cols,borderWidth:1,grouped:false,
+        barPercentage:.72,categoryPercentage:.85,maxBarThickness:14,minBarLength:1,order:1},
+      {label:'close',type:'line',data:pts.map(x=>x[4]),borderColor:BLUE,borderWidth:1.5,pointRadius:0,pointHoverRadius:0,tension:.25,fill:false,order:0},
+      {label:'vol',data:pts.map(x=>x[5]),backgroundColor:cols.map(c=>c+'40'),borderWidth:0,grouped:false,yAxisID:'vol',
+        barPercentage:.72,categoryPercentage:.85,maxBarThickness:14,order:3}]},
+    options:{responsive:true,maintainAspectRatio:false,animation:false,layout:{padding:{right:52}},
+      interaction:{mode:'index',intersect:false},
+      plugins:{legend:{display:false},lastClose:{value:last[4],label:fmt(last[4],dec),color:colOf(last)},
+        tooltip:{filter:i=>i.datasetIndex===1,displayColors:false,
+          titleFont:{family:'JetBrains Mono',size:10},bodyFont:{family:'JetBrains Mono',size:10},
+          callbacks:{title:c=>c.length?c[0].label.split('-').reverse().join('.'):'',
+            label:c=>{const x=pts[c.dataIndex];return ['O '+fmt(x[1],dec)+'  H '+fmt(x[2],dec),'L '+fmt(x[3],dec)+'  C '+fmt(x[4],dec),'Vol '+vol(x[5])];}}}},
+      scales:{x:{grid:{display:false},ticks:{color:MUT,font:{family:'JetBrains Mono',size:9},maxRotation:0,autoSkip:true,maxTicksLimit:7,
           callback:function(v){return dl(this.getLabelForValue(v));}}},
-        y:{grid:{color:'rgba(44,56,74,.5)'},ticks:{color:MUT,font:{family:'JetBrains Mono',size:9},maxTicksLimit:4,
-          callback:v=>fmt(v,v>=100?0:2)}}}}});
+        y:{position:'right',min:lo-rg*0.32,max:hi+rg*0.06,grid:{color:'rgba(44,56,74,.55)',borderDash:[3,3]},border:{dash:[3,3]},
+          ticks:{color:MUT,font:{family:'JetBrains Mono',size:9},maxTicksLimit:5,padding:4,callback:v=>fmt(v,dec)}},
+        vol:{position:'left',display:false,min:0,max:maxV*4.2}}}},
+    );
 }
 function renderPos(){
   tkOpen.clear(); Object.keys(tkCharts).forEach(t=>{tkCharts[t].destroy();delete tkCharts[t];});   // nové řádky = zavřené

@@ -138,8 +138,8 @@ def fetch_yahoo(prices, failed):
 def fetch_prev_close(positions):
     """Poslední DVĚ uzavřené denní close (svíčky přede dneškem) pro denní změnu:
     včerejší close vs předvčerejší close. Dnešní rozpracovaná svíčka se ignoruje.
-    Zároveň vrací denní close za ~3 měsíce (vč. dnešní rozehrané) pro grafy
-    tickerů 7D/30D v rozbaleném řádku pozice."""
+    Zároveň vrací denní svíčky OHLCV za ~3 měsíce (vč. dnešní rozehrané) pro
+    grafy tickerů 7D/30D v rozbaleném řádku pozice: [datum, open, high, low, close, volume]."""
     out, series = {}, {}
     tz = PRAGUE or timezone.utc
     today = datetime.now(timezone.utc).astimezone(tz).strftime('%Y-%m-%d')
@@ -151,12 +151,17 @@ def fetch_prev_close(positions):
                 f'https://query1.finance.yahoo.com/v8/finance/chart/{urllib.parse.quote(sym)}'
                 '?range=3mo&interval=1d'))['chart']['result'][0]
             closes, ser = [], []
-            for t_, c in zip(res.get('timestamp') or [],
-                             res['indicators']['quote'][0].get('close') or []):
+            q = res['indicators']['quote'][0]
+            n = len(res.get('timestamp') or [])
+            col = lambda k: (q.get(k) or [None] * n)
+            for t_, o, h, l, c, v in zip(res.get('timestamp') or [], col('open'), col('high'),
+                                         col('low'), col('close'), col('volume')):
                 if c is None: continue
                 d = datetime.fromtimestamp(t_, tz=timezone.utc).astimezone(tz).strftime('%Y-%m-%d')
                 if d < today: closes.append(float(c))
-                if c > 0: ser.append([d, round(float(c) / div, 4)])
+                if c > 0:
+                    r4 = lambda x: round(float(x if x is not None else c) / div, 4)
+                    ser.append([d, r4(o), r4(h), r4(l), r4(c), int(v or 0)])
             if len(closes) >= 2 and closes[-1] > 0 and closes[-2] > 0:
                 out[tk] = (round(closes[-1] / div, 4), round(closes[-2] / div, 4))
             if ser: series[tk] = ser[-70:]
