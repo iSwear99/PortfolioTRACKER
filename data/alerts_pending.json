@@ -1,86 +1,37 @@
 [
  {
-  "ticker": "AMZN",
-  "chg_pct": 4.56,
-  "px_prev": 240.47,
-  "px_now": 251.44,
-  "ts": "2026-11-02T18:17"
+  "ticker": "ASML",
+  "chg_pct": -2.75,
+  "px_prev": 1569.53,
+  "px_now": 1526.36,
+  "ts": "2026-11-03T02:07"
  },
  {
-  "ticker": "BABA",
-  "chg_pct": 5.29,
-  "px_prev": 97.97,
-  "px_now": 103.15,
-  "ts": "2026-11-02T18:17"
+  "ticker": "BYDDY",
+  "chg_pct": 2.76,
+  "px_prev": 8.71,
+  "px_now": 8.95,
+  "ts": "2026-11-03T02:07"
  },
  {
-  "ticker": "EEFT",
-  "chg_pct": 4.29,
-  "px_prev": 63.18,
-  "px_now": 65.89,
-  "ts": "2026-11-02T18:17"
+  "ticker": "MSFT",
+  "chg_pct": -2.81,
+  "px_prev": 521.805,
+  "px_now": 507.13,
+  "ts": "2026-11-03T02:07"
  },
  {
-  "ticker": "GRAB",
-  "chg_pct": 6.8,
-  "px_prev": 2.72,
-  "px_now": 2.905,
-  "ts": "2026-11-02T18:17"
- },
- {
-  "ticker": "JD",
-  "chg_pct": 3.31,
-  "px_prev": 25.705,
-  "px_now": 26.555,
-  "ts": "2026-11-02T18:17"
- },
- {
-  "ticker": "KSPI",
-  "chg_pct": 2.74,
-  "px_prev": 91.285,
-  "px_now": 93.79,
-  "ts": "2026-11-02T18:17"
- },
- {
-  "ticker": "KWEB",
-  "chg_pct": 3.56,
-  "px_prev": 22.75,
-  "px_now": 23.56,
-  "ts": "2026-11-02T18:17"
- },
- {
-  "ticker": "PYPL",
-  "chg_pct": 2.92,
-  "px_prev": 57.01,
-  "px_now": 58.675,
-  "ts": "2026-11-02T18:17"
+  "ticker": "NICE",
+  "chg_pct": -2.83,
+  "px_prev": 115.74,
+  "px_now": 112.47,
+  "ts": "2026-11-03T02:07"
  },
  {
   "ticker": "SOFI",
-  "chg_pct": 3.67,
-  "px_prev": 16.755,
-  "px_now": 17.37,
-  "ts": "2026-11-02T18:17"
- },
- {
-  "ticker": "TTD",
-  "chg_pct": 4.07,
-  "px_prev": 12.29,
-  "px_now": 12.79,
-  "ts": "2026-11-02T18:17"
- },
- {
-  "ticker": "UBER",
-  "chg_pct": 3.15,
-  "px_prev": 65.24,
-  "px_now": 67.295,
-  "ts": "2026-11-02T18:17"
- },
- {
-  "ticker": "WIZZ",
-  "chg_pct": 5.28,
-  "px_prev": 9.755,
-  "px_now": 10.27,
-  "ts": "2026-11-02T18:17"
+  "chg_pct": -4.43,
+  "px_prev": 17.37,
+  "px_now": 16.5999,
+  "ts": "2026-11-03T02:07"
  }
 ]
