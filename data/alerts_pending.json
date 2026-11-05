@@ -1,58 +1,44 @@
 [
  {
-  "ticker": "AMZN",
-  "chg_pct": -3.3,
-  "px_prev": 266.14,
-  "px_now": 257.345,
-  "ts": "2026-11-05T16:40"
- },
- {
   "ticker": "ASML",
-  "chg_pct": -7.0,
-  "px_prev": 1496.5,
-  "px_now": 1391.69,
-  "ts": "2026-11-05T16:40"
+  "chg_pct": -2.55,
+  "px_prev": 1391.69,
+  "px_now": 1356.23,
+  "ts": "2026-11-06T00:45"
  },
  {
   "ticker": "AVGO",
-  "chg_pct": -6.81,
-  "px_prev": 325.7,
-  "px_now": 303.51,
-  "ts": "2026-11-05T16:40"
+  "chg_pct": -4.0,
+  "px_prev": 303.51,
+  "px_now": 291.38,
+  "ts": "2026-11-06T00:45"
  },
  {
-  "ticker": "KSPI",
-  "chg_pct": -5.35,
-  "px_prev": 95.5,
-  "px_now": 90.39,
-  "ts": "2026-11-05T16:40"
+  "ticker": "GRAB",
+  "chg_pct": 4.83,
+  "px_prev": 3.315,
+  "px_now": 3.475,
+  "ts": "2026-11-06T00:45"
  },
  {
-  "ticker": "MSFT",
-  "chg_pct": -2.84,
-  "px_prev": 556.03,
-  "px_now": 540.26,
-  "ts": "2026-11-05T16:40"
- },
- {
-  "ticker": "NOV",
-  "chg_pct": -4.88,
-  "px_prev": 37.945,
-  "px_now": 36.095,
-  "ts": "2026-11-05T16:40"
+  "ticker": "NICE",
+  "chg_pct": -3.69,
+  "px_prev": 99.74,
+  "px_now": 96.06,
+  "ts": "2026-11-06T00:45"
  },
  {
   "ticker": "NU",
-  "chg_pct": -4.71,
-  "px_prev": 11.985,
-  "px_now": 11.42,
-  "ts": "2026-11-05T16:40"
+  "chg_pct": 2.85,
+  "px_prev": 11.42,
+  "px_now": 11.745,
+  "ts": "2026-11-06T00:45"
  },
  {
-  "ticker": "SOFI",
-  "chg_pct": -8.11,
-  "px_prev": 17.39,
-  "px_now": 15.98,
-  "ts": "2026-11-05T16:40"
+  "ticker": "WIX",
+  "chg_pct": -3.45,
+  "px_prev": 79.19,
+  "px_now": 76.46,
+  "ts": "2026-11-06T00:45"
  }
 ]
