@@ -1,16 +1,16 @@
 [
  {
-  "ticker": "AVGO",
-  "chg_pct": 3.35,
-  "px_prev": 319.53,
-  "px_now": 330.22,
-  "ts": "2026-11-10T16:43"
+  "ticker": "TTD",
+  "chg_pct": 2.83,
+  "px_prev": 15.0,
+  "px_now": 15.425,
+  "ts": "2026-11-11T00:34"
  },
  {
-  "ticker": "SOFI",
-  "chg_pct": -3.88,
-  "px_prev": 16.75,
-  "px_now": 16.1,
-  "ts": "2026-11-10T16:43"
+  "ticker": "WIX",
+  "chg_pct": -8.36,
+  "px_prev": 70.3,
+  "px_now": 64.42,
+  "ts": "2026-11-11T00:34"
  }
 ]
