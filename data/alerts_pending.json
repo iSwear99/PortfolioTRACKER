@@ -1,65 +1,16 @@
 [
  {
-  "ticker": "AMZN",
-  "chg_pct": 3.66,
-  "px_prev": 259.35,
-  "px_now": 268.85,
-  "ts": "2026-11-09T18:43"
- },
- {
-  "ticker": "ASML",
-  "chg_pct": 6.21,
-  "px_prev": 1424.75,
-  "px_now": 1513.295,
-  "ts": "2026-11-09T18:43"
- },
- {
-  "ticker": "AVGO",
-  "chg_pct": 9.6,
-  "px_prev": 293.33,
-  "px_now": 321.485,
-  "ts": "2026-11-09T18:43"
- },
- {
-  "ticker": "BABA",
-  "chg_pct": -3.59,
-  "px_prev": 109.46,
-  "px_now": 105.53,
-  "ts": "2026-11-09T18:43"
- },
- {
-  "ticker": "JD",
-  "chg_pct": -2.94,
-  "px_prev": 29.13,
-  "px_now": 28.275,
-  "ts": "2026-11-09T18:43"
- },
- {
-  "ticker": "SOFI",
-  "chg_pct": 4.01,
-  "px_prev": 16.205,
-  "px_now": 16.855,
-  "ts": "2026-11-09T18:43"
- },
- {
-  "ticker": "TTD",
-  "chg_pct": 16.64,
-  "px_prev": 12.92,
-  "px_now": 15.07,
-  "ts": "2026-11-09T18:43"
+  "ticker": "BYDDY",
+  "chg_pct": -2.96,
+  "px_prev": 9.45,
+  "px_now": 9.17,
+  "ts": "2026-11-10T02:41"
  },
  {
   "ticker": "WIX",
-  "chg_pct": -4.14,
-  "px_prev": 76.12,
-  "px_now": 72.965,
-  "ts": "2026-11-09T18:43"
- },
- {
-  "ticker": "WIZZ",
-  "chg_pct": 6.12,
-  "px_prev": 10.62,
-  "px_now": 11.27,
-  "ts": "2026-11-09T18:43"
+  "chg_pct": -4.79,
+  "px_prev": 72.965,
+  "px_now": 69.47,
+  "ts": "2026-11-10T02:41"
  }
 ]
