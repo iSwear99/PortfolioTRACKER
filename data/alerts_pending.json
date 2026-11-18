@@ -1,72 +1,16 @@
 [
  {
-  "ticker": "ASML",
-  "chg_pct": -3.52,
-  "px_prev": 1406.51,
-  "px_now": 1357.07,
-  "ts": "2026-11-17T18:00"
- },
- {
-  "ticker": "BABA",
-  "chg_pct": -4.29,
-  "px_prev": 90.625,
-  "px_now": 86.74,
-  "ts": "2026-11-17T18:00"
- },
- {
-  "ticker": "JD",
-  "chg_pct": -7.43,
-  "px_prev": 27.54,
-  "px_now": 25.495,
-  "ts": "2026-11-17T18:00"
- },
- {
-  "ticker": "MSFT",
-  "chg_pct": -3.56,
-  "px_prev": 518.07,
-  "px_now": 499.62,
-  "ts": "2026-11-17T18:00"
- },
- {
-  "ticker": "NICE",
-  "chg_pct": -3.74,
-  "px_prev": 93.38,
-  "px_now": 89.89,
-  "ts": "2026-11-17T18:00"
- },
- {
-  "ticker": "NOV",
-  "chg_pct": -3.31,
-  "px_prev": 38.07,
-  "px_now": 36.81,
-  "ts": "2026-11-17T18:00"
- },
- {
-  "ticker": "NU",
-  "chg_pct": -2.53,
-  "px_prev": 12.665,
-  "px_now": 12.345,
-  "ts": "2026-11-17T18:00"
- },
- {
-  "ticker": "SOFI",
-  "chg_pct": -3.43,
-  "px_prev": 14.85,
-  "px_now": 14.34,
-  "ts": "2026-11-17T18:00"
- },
- {
-  "ticker": "UBER",
-  "chg_pct": -3.44,
-  "px_prev": 69.995,
-  "px_now": 67.59,
-  "ts": "2026-11-17T18:00"
+  "ticker": "DIDIY",
+  "chg_pct": -2.82,
+  "px_prev": 3.19,
+  "px_now": 3.1,
+  "ts": "2026-11-18T02:04"
  },
  {
   "ticker": "WIX",
-  "chg_pct": -6.58,
-  "px_prev": 66.46,
-  "px_now": 62.09,
-  "ts": "2026-11-17T18:00"
+  "chg_pct": 3.06,
+  "px_prev": 62.09,
+  "px_now": 63.99,
+  "ts": "2026-11-18T02:04"
  }
 ]
