@@ -1,27 +1,27 @@
 {
  "4GLD": {
-  "px": 107.94,
+  "px": 103.72,
   "q": "4GLD",
   "exchange": "XETR"
  },
  "AMZN": {
-  "px": 257.145,
+  "px": 255.06,
   "q": "AMZN"
  },
  "ASML": {
-  "px": 1355.88,
+  "px": 1298.31,
   "q": "ASML"
  },
  "AVGO": {
-  "px": 346.55,
+  "px": 318.58,
   "q": "AVGO"
  },
  "BABA": {
-  "px": 83.31,
+  "px": 83.665,
   "q": "BABA"
  },
  "BTC": {
-  "px": 61470.11,
+  "px": 59478.83,
   "q": "BTC/USD"
  },
  "BYDDY": {
@@ -29,7 +29,7 @@
   "q": "BYDDY"
  },
  "CSPX": {
-  "px": 789.16,
+  "px": 764.81,
   "q": "CSPX",
   "exchange": "LSE"
  },
@@ -38,84 +38,84 @@
   "q": "DIDIY"
  },
  "EEFT": {
-  "px": 64.75,
+  "px": 64.94,
   "q": "EEFT"
  },
  "EVO": {
-  "px": 861.8,
+  "px": 858.4,
   "q": "EVO",
   "exchange": "OMX"
  },
  "GRAB": {
-  "px": 2.925,
+  "px": 2.875,
   "q": "GRAB"
  },
  "JD": {
-  "px": 25.62,
+  "px": 25.38,
   "q": "JD"
  },
  "KSPI": {
-  "px": 85.845,
+  "px": 85.11,
   "q": "KSPI"
  },
  "KWEB": {
-  "px": 21.33,
+  "px": 21.05,
   "q": "KWEB"
  },
  "META": {
-  "px": 596.19,
+  "px": 577.385,
   "q": "META"
  },
  "MSFT": {
-  "px": 498.16,
+  "px": 493.99,
   "q": "MSFT"
  },
  "NICE": {
-  "px": 86.77,
+  "px": 87.62,
   "q": "NICE"
  },
  "NOV": {
-  "px": 35.44,
+  "px": 35.37,
   "q": "NOV",
   "exchange": "XETR",
   "verify": true
  },
  "NU": {
-  "px": 11.825,
+  "px": 11.57,
   "q": "NU"
  },
  "P911": {
-  "px": 43.16,
+  "px": 43.235,
   "q": "P911",
   "exchange": "XETR"
  },
  "PYPL": {
-  "px": 56.38,
+  "px": 54.88,
   "q": "PYPL"
  },
  "SOFI": {
-  "px": 13.5258,
+  "px": 13.05,
   "q": "SOFI"
  },
  "TTD": {
-  "px": 14.545,
+  "px": 13.945,
   "q": "TTD"
  },
  "UBER": {
-  "px": 65.61,
+  "px": 66.165,
   "q": "UBER"
  },
  "VOW3": {
-  "px": 64.64,
+  "px": 62.82,
   "q": "VOW3",
   "exchange": "XETR"
  },
  "WIX": {
-  "px": 59.225,
+  "px": 59.95,
   "q": "WIX"
  },
  "WIZZ": {
-  "px": 11.02,
+  "px": 10.8,
   "q": "WIZZ",
   "exchange": "LSE",
   "divide": 100
