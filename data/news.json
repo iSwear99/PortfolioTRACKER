@@ -398,5 +398,85 @@
   "text": "Akcie pokračovala v zotavování po výsledcích za 3Q 2026 z 9. listopadu, kdy tržby 736 mil. USD překonaly firmou nastavenou hranici 650 mil. USD a výhled 4Q na nejméně 755 mil. USD doplnilo rozšíření odkupu akcií na 1 mld. USD a následná vlna zvyšování cílových cen (Wells Fargo na 15 USD, Guggenheim a Piper Sandler na 16 USD, Truist na 17 USD, RBC na 18 USD).",
   "source": "Traders Union",
   "source_time": "2026-11-18"
+ },
+ {
+  "ticker": "AMZN",
+  "date": "2026-11-20",
+  "chg_pct": -4.58,
+  "text": "Bez zjevné zprávy — akcie klesla v celotržním výprodeji 19. listopadu, kdy S&P 500 odepsalo 2,0 % a Dow přes 1 100 bodů v šesté ztrátové seanci v řadě, protože debut Anthropicu na Nasdaqu (emisní cena 83 USD, uzavření +17 % na 97,17 USD) nedokázal oživit AI trade a investoři prodávali AI tituly včetně Amazonu, jednoho z největších držitelů podílu v Anthropicu.",
+  "source": null,
+  "source_time": null
+ },
+ {
+  "ticker": "ASML",
+  "date": "2026-11-20",
+  "chg_pct": -4.7,
+  "text": "Akcie oslabila spolu s celým polovodičovým sektorem v den, kdy americký úřad BIS zveřejnil nové pravidlo rozšiřující kontrolu vývozu čipů na vzdálený přístup k výpočetnímu výkonu a na datová centra v Indonésii, Malajsii, Singapuru, Thajsku a Brazílii, ačkoli litografických zařízení se omezení dotýká jen druhotně (Čína tvoří přibližně 20 % tržeb ASML).",
+  "source": "TradingView / GuruFocus",
+  "source_time": "2026-11-17"
+ },
+ {
+  "ticker": "AVGO",
+  "date": "2026-11-20",
+  "chg_pct": -4.03,
+  "text": "Akcie odevzdala ranní zisk až 4,3 % a uzavřela o 2,1 % slabší na 346,65 USD, protože Broadcom drží přes 13 milionů akcií Anthropicu za cca 1 mld. USD z private placementu a kurz Anthropicu po úvodním skoku na 111,50 USD většinu zisku během dne odepsal.",
+  "source": "The Motley Fool",
+  "source_time": "2026-11-19"
+ },
+ {
+  "ticker": "BABA",
+  "date": "2026-11-20",
+  "chg_pct": -3.54,
+  "text": "ADR se posunulo na nové 52týdenní minimum po výsledcích za záříové čtvrtletí z 19. listopadu, kdy tržby vzrostly o 10 % na 271,5 mld. CNY nad očekávání a čistý zisk podle GAAP o 207 % na 64,5 mld. CNY, ale upravený zisk na akcii 8,10 CNY zaostal za konsensem a trh dál tíží náklady na AI i nová americká omezení přístupu Číny k čipům.",
+  "source": "Yahoo Finance / TipRanks",
+  "source_time": "2026-11-19"
+ },
+ {
+  "ticker": "GRAB",
+  "date": "2026-11-20",
+  "chg_pct": -4.26,
+  "text": "Bez zjevné zprávy — akcie klesla v rámci širokého výprodeje, který stáhl dolů dopravní i technologické tituly, bez nového firemního oznámení; v pozadí zůstává nedávný závazek 750 mil. USD do malajsijských AI datových center.",
+  "source": null,
+  "source_time": null
+ },
+ {
+  "ticker": "MSFT",
+  "date": "2026-11-20",
+  "chg_pct": -3.27,
+  "text": "Bez zjevné zprávy — titul se přidal k výprodeji AI a růstových akcií v den debutu Anthropicu na Nasdaqu, kdy Nasdaq Composite klesl o 2,3 % a index volatility VIX vyskočil o 16 % na 28,4, na pozadí trvajících obav z návratnosti rekordních investic do AI infrastruktury.",
+  "source": null,
+  "source_time": null
+ },
+ {
+  "ticker": "NICE",
+  "date": "2026-11-20",
+  "chg_pct": -3.59,
+  "text": "Bez zjevné zprávy — ADR pokračovalo k dolní hranici 52týdenního rozpětí spolu se softwarovým sektorem zasaženým obavami z disrupce umělou inteligencí, v doznívající reakci na výsledky za 3Q 2026 ze 4. listopadu, po nichž firma snížila výhled růstu cloudu na cca 12 % a RBC i Mizuho stáhly cílovou cenu ze 145 na 130 USD.",
+  "source": null,
+  "source_time": null
+ },
+ {
+  "ticker": "SOFI",
+  "date": "2026-11-20",
+  "chg_pct": -3.7,
+  "text": "Akcie spadla na nové 52týdenní minimum 13,57 USD v osmé ztrátové seanci v řadě, protože finanční a fintech tituly tíží obavy z vyšších úrokových sazeb, které zdražují financování.",
+  "source": "Benzinga",
+  "source_time": "2026-11-19"
+ },
+ {
+  "ticker": "TTD",
+  "date": "2026-11-20",
+  "chg_pct": -6.04,
+  "text": "Bez zjevné zprávy — akcie se dál propadala v rámci výprodeje technologií a obav o životnost AI rallye, v doznívající reakci na výsledky za 3Q 2026 z 9. listopadu (tržby −0,5 % na 736 mil. USD, čistý zisk 38 mil. USD) a na pokračující přesun reklamních budgetů k Amazon DSP, kvůli němuž UBS snížila cílovou cenu na 15 USD.",
+  "source": null,
+  "source_time": null
+ },
+ {
+  "ticker": "WIX",
+  "date": "2026-11-20",
+  "chg_pct": -6.08,
+  "text": "Bez zjevné zprávy — akcie prohloubila sérii ztrát spolu se softwarovými tituly ohroženými nástupem AI nástrojů, v doznívající reakci na dvojí snížení ratingu od BofA na Underperform s cílem 68 USD z 10. listopadu a na snížený výhled marže volného cash flow na cca 16 % kvůli investicím do Base44.",
+  "source": null,
+  "source_time": null
  }
 ]
