@@ -1,44 +1,9 @@
 [
  {
-  "ticker": "4GLD",
-  "chg_pct": -3.47,
-  "px_prev": 108.37,
-  "px_now": 104.61,
-  "ts": "2026-11-24T20:01"
- },
- {
-  "ticker": "ASML",
-  "chg_pct": -3.16,
-  "px_prev": 1383.37,
-  "px_now": 1339.72,
-  "ts": "2026-11-24T20:01"
- },
- {
-  "ticker": "AVGO",
-  "chg_pct": -3.06,
-  "px_prev": 313.54,
-  "px_now": 303.96,
-  "ts": "2026-11-24T20:01"
- },
- {
-  "ticker": "NOV",
-  "chg_pct": 2.66,
-  "px_prev": 35.77,
-  "px_now": 36.72,
-  "ts": "2026-11-24T20:01"
- },
- {
-  "ticker": "VOW3",
-  "chg_pct": -2.5,
-  "px_prev": 63.96,
-  "px_now": 62.36,
-  "ts": "2026-11-24T20:01"
- },
- {
-  "ticker": "WIX",
-  "chg_pct": 5.49,
-  "px_prev": 62.8,
-  "px_now": 66.25,
-  "ts": "2026-11-24T20:01"
+  "ticker": "DIDIY",
+  "chg_pct": -2.69,
+  "px_prev": 2.97,
+  "px_now": 2.89,
+  "ts": "2026-11-25T03:39"
  }
 ]
