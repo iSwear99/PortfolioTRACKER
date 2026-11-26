@@ -1,79 +1,23 @@
 [
  {
-  "ticker": "4GLD",
-  "chg_pct": -3.04,
-  "px_prev": 104.61,
-  "px_now": 101.43,
-  "ts": "2026-11-25T19:05"
- },
- {
-  "ticker": "AMZN",
-  "chg_pct": -3.21,
-  "px_prev": 252.31,
-  "px_now": 244.215,
-  "ts": "2026-11-25T19:05"
- },
- {
-  "ticker": "ASML",
-  "chg_pct": -4.2,
-  "px_prev": 1335.5,
-  "px_now": 1279.44,
-  "ts": "2026-11-25T19:05"
- },
- {
   "ticker": "AVGO",
-  "chg_pct": -3.91,
-  "px_prev": 301.23,
-  "px_now": 289.45,
-  "ts": "2026-11-25T19:05"
+  "chg_pct": 3.81,
+  "px_prev": 289.45,
+  "px_now": 300.49,
+  "ts": "2026-11-26T02:53"
  },
  {
-  "ticker": "GRAB",
-  "chg_pct": 2.7,
-  "px_prev": 2.775,
-  "px_now": 2.85,
-  "ts": "2026-11-25T19:05"
- },
- {
-  "ticker": "NICE",
-  "chg_pct": 2.85,
-  "px_prev": 89.72,
-  "px_now": 92.28,
-  "ts": "2026-11-25T19:05"
- },
- {
-  "ticker": "NU",
-  "chg_pct": 3.88,
-  "px_prev": 11.86,
-  "px_now": 12.32,
-  "ts": "2026-11-25T19:05"
+  "ticker": "DIDIY",
+  "chg_pct": -2.77,
+  "px_prev": 2.89,
+  "px_now": 2.81,
+  "ts": "2026-11-26T02:53"
  },
  {
   "ticker": "TTD",
-  "chg_pct": 3.45,
-  "px_prev": 14.07,
-  "px_now": 14.555,
-  "ts": "2026-11-25T19:05"
- },
- {
-  "ticker": "UBER",
-  "chg_pct": 2.86,
-  "px_prev": 64.71,
-  "px_now": 66.56,
-  "ts": "2026-11-25T19:05"
- },
- {
-  "ticker": "VOW3",
-  "chg_pct": 4.62,
-  "px_prev": 62.36,
-  "px_now": 65.24,
-  "ts": "2026-11-25T19:05"
- },
- {
-  "ticker": "WIX",
-  "chg_pct": 4.65,
-  "px_prev": 65.66,
-  "px_now": 68.71,
-  "ts": "2026-11-25T19:05"
+  "chg_pct": -3.13,
+  "px_prev": 14.555,
+  "px_now": 14.1,
+  "ts": "2026-11-26T02:53"
  }
 ]
